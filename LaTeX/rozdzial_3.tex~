@@ -1,0 +1,221 @@
+\chapter{Wybrane metody sztucznej inteligencji w~grze}
+
+Ten rozdział pracy charakteryzuje wybrane metody sztucznej inteligencji w~aplikacji opisanej w~rozdziale drugim.
+Na~konkretnym przykładzie zaprezentowane jest użycie logiki rozmytej oraz mapy wpływu w~grze strategicznej.
+
+\section{Logika rozmyta}
+
+Jednostka w~grze ocenia swoją skuteczność ataku wobec każdego dostępnego dla siebie wroga.
+Następnie wybiera tego agenta, z~którym starcie szacunkowo wypadnie najkorzystniej i~w zależności od oddanej wartości ze sterownika rozmytego podejmuje jedną z~trzech możliwych decyzji (wymienionych w~rozdziale 2).
+  
+\subsection{Zmienne lingwistyczne}
+
+Agent swoją decyzję musi oprzeć o bieżącą sytuację na planszy gry, uwzględniając swoją kondycję oraz kondycję przeciwnika.
+W~aplikacji wykorzystane zostały w~tym celu 4 zmienne lingwistyczne wraz z~wartościami:
+\begin{itemize}
+ \item MOJE OBRAŻENIA (DUŻE, ŚREDNIE, MAŁE),
+ \item OBRAŻENIA PRZECIWNIKA (DUŻE, ŚREDNIE, MAŁE),
+ \item MOJE ZDROWIE (DOBRE, ŚREDNIE, SŁABE),
+ \item ZDROWIE PRZECIWNIKA (DOBRE, ŚREDNIE, SŁABE).
+\end{itemize}
+
+Wartości wejściowe są wyrażone w~procentach, gdzie maksymalną jest największa możliwa liczba reprezentująca punkty zdrowia (dla zmiennej odzwierciedlającej zdrowie) lub największa możliwa liczba zadanych obrażeń (dla zmiennej odpowiedzialnej za obrażenia) przez którąkolwiek jednostkę na aktualnej planszy.
+Wyjściową zmienną lingwistyczną jest natomiast zmienna DZIAŁANIE z~wartościami: ATAK, ZMIEŃ POZYCJE, UCIEKAJ.
+
+\subsection{Funkcje przynależności}
+
+Jak w~każdym systemie rozmytym potrzebne są funkcje przynależności dla zmiennych lingwistycznych.
+W~przypadku par zmiennych: MOJE OBRAŻENIA i~OBRAŻENIA PRZECIWNIKA oraz MOJE ZDROWIE i~ZDROWIE PRZECIWNIKA funkcje te są wspólne.
+Na~rysunkach poniżej przedstawione są ich wykresy.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=400px]{./img/obrazenia.png}
+ \caption{Wykresy funkcji przynależności dla zadawanych obrażeń}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=400px]{./img/zdrowie.png}
+ \caption{Wykresy funkcji przynależności dla zdrowia jednostki}
+\end{figure}
+
+Na~ostatnim w~tej sekcji rysunku znajduje się wykres funkcji przynależności dla zmiennej wyjściowej.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=400px]{./img/wynikowa.png}
+ \caption{Wykresy funkcji przynależności dla zmiennej wyjściowej}
+\end{figure}
+
+\subsection{System rozmyty}
+
+Sterownik zaimplementowany przez autorkę składa się standardowo z~bloku rozmywania, wnioskowania i~wyostrzania. 
+W~bloku rozmywania wyliczane są wartości funkcji przynależności dla poszczególnych zmiennych lingwistycznych. 
+Blok wnioskowania na podstawie określonych reguł wylicza wartości zmiennej wyjściowej.
+Reguł powinno być dokładnie tyle, by wyczerpać wszystkie możliwe kombinacje zestawionych ze sobą wartości zmiennych lingwistycznych.
+Łatwo policzyć, że dla wybranego zestawu zmiennych takich reguł należy stworzyć 81.
+\\
+
+\begin{table}[H] %
+\caption {Przykładowa baza reguł}
+{\scriptsize\renewcommand{\arraystretch}{1.2}\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}
+|m{5mm}|m{20mm}|m{15mm}|m{25mm}|m{25mm}|m{30mm}|}
+\hline
+ &MOJE\linebreak OBRAŻENIA & MOJE\linebreak ZDROWIE & OBRAŻENIA\linebreak PRZECIWNIKA & ZDROWIE\linebreak PRZECIWNIKA & DZIAŁANIE\\
+\hline
+1 & DUŻE & DOBRE & MAŁE & SŁABE & ATAK\\
+2 & DUŻE & DOBRE & MAŁE & ŚREDNIE & ATAK\\
+... &&&&&\\
+... & ŚREDNIE & ŚREDNIE & ŚREDNIE & SŁABE & ZMIEŃ\linebreak POZYCJĘ\\
+... &&&&&\\
+81 & MAŁE & SŁABE & DUŻE & DOBRE & UCIEKAJ\\\hline
+\end{tabular*}
+}
+\end{table}
+
+
+Blok wyostrzania zwraca ostateczny wynik $x \subseteq [0,4]$, korzystając z~metody środka ciężkości.
+Z~otrzymaną liczbą agent postępuje w~następujący sposób:
+\begin{itemize}
+ \item $x \leq 1 \Rightarrow $UCIEKAJ,
+ \item $x \leq 2 \Rightarrow $ZMIEŃ POZYCJĘ,
+ \item $x > 2 \Rightarrow $ATAK.
+\end{itemize}
+
+\subsection{Metoda Combsa}
+
+Wraz ze wzrostem liczby zmiennych lingwistycznych i~ich wartości drastycznie rośnie złożoność problemu, ponieważ liczba potrzebnych reguł rośnie wykładniczo.
+Zaleca się, by używać przynajmniej 5 wartości dla każdej zmiennej lingwistycznej.
+Wtedy dla omawianego systemu należałoby stworzyć aż 625 reguł. 
+
+Jednak w~algorytmach dla gier liczy się przede wszystkim szybkość działania. 
+Dlatego decydując się na logikę rozmytą bardzo często używa się metody Combsa, która znacznie ogranicza liczbę potrzebnych reguł (dla 4 zmiennych o trzech wartościach zamiast 81 potrzeba ich 12, a w~przypadku 4 zmiennych o pięciu wartościach zamiast 625 wystarczy jedynie 20).
+Metoda ta zmienia nieco sposób wnioskowania, dlatego ostateczny wynik różni się od tego, który otrzymałoby się korzystając z~tradycyjnej bazy reguł. 
+Różnica jednak jest niewielka, a rezultaty wciąż są satysfakcjonujące.
+
+Wnioskowanie w~systemie rozmytym odbywa się w~następujący sposób:
+Wartości przekazane do systemu rozmytego są rozmywane i~przypisane wartościom zmiennych lingwistycznych według podanych funkcji przynależności.
+Tak otrzymane zmienne są przepuszczane przez blok wnioskowania, który wykorzystując każdą z~reguł bada stopień przynależności danej wartości do wartości zmiennych wynikowych.
+Blok wnioskowania używa w~tym celu mnożenia logicznego, co jest równoznaczne z~wzięciem minimalnej wartości dla każdej z~wartości wejściowych.
+Ostatecznie po przejściu wartości wynikowej przez blok rozmywania brana jest maksymalna liczba spośród wartości zmiennej wyjściowej.
+
+Metoda Combsa w~pewnym sensie odwraca tę kolejność sumując najpierw logicznie wartości, następnie je logicznie mnożąc (na początku pobiera maksimum z~wartości, następnie minimum).
+Zasada działania metody Combsa opiera się na jednym z~twierdzeń logiki klasycznej:
+$p \wedge q \Rightarrow r \Leftrightarrow (p \Rightarrow q) \vee (q \Rightarrow r)$
+
+\begin{table}[H] %
+\caption {Dowód za pomocą tabelki prawdy i~fałszu}
+{\scriptsize\renewcommand{\arraystretch}{1.2}\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}
+|>{\centering\arraybackslash}m{5mm}|>{\centering\arraybackslash}m{5mm}|>{\centering\arraybackslash}m{10mm}|>{\centering\arraybackslash}m{5mm}|>{\centering\arraybackslash\bfseries}m{20mm}|>{\centering\arraybackslash}m{15mm}|>{\centering\arraybackslash}m{15mm}|>{\centering\arraybackslash\bfseries}m{40mm}|}
+\hline
+$p$ & $q$ & $p \wedge q$ & $r$ & $p \wedge q \Rightarrow r$ & $p \Rightarrow q$ & $q \Rightarrow r$ & $(p \Rightarrow q) \vee (q \Rightarrow r)$\\\hline
+1&1&1&1&1&1&1&1\\
+1&1&1&0&0&0&0&0\\
+1&0&0&1&1&1&1&1\\
+1&0&0&0&1&0&1&1\\
+0&1&0&1&1&1&1&1\\
+0&1&0&0&1&1&0&1\\
+0&0&0&1&1&1&1&1\\
+0&0&0&0&1&1&1&1\\
+
+\hline
+\end{tabular*}
+}
+\end{table}
+
+O~ile dla logiki klasycznej wynik jest identyczny, w~przypadku zbiorów rozmytych występują różnice spowodowane właśnie ich rozmytą naturą.
+
+Korzystając z~opisanej metody na potrzeby aplikacji powstały następujące reguły:
+
+\begin{table}[H] %
+\caption {Baza reguł z~wykorzystaniem metody Combsa}
+{\scriptsize\renewcommand{\arraystretch}{1.2}\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}
+|m{5mm}|m{60mm}|m{30mm}|m{30mm}|}
+\hline
+& Zmienna & Wartość & Działanie \\\hline
+1 &MOJE OBRAŻENIA & DUŻE & ATAK\\\hline
+2 &MOJE OBRAŻENIA & ŚREDNIE & ZMIEŃ POZYCJĘ\\\hline
+3 &MOJE OBRAŻENIA & MAŁE & UCIEKAJ\\\hline
+& & & \\\hline
+4 &MOJE ZDROWIE & DOBRE & ATAK\\\hline
+5 &MOJE ZDROWIE & ŚREDNIE & ZMIEŃ POZYCJĘ\\\hline
+6 &MOJE ZDROWIE & SŁABE & UCIEKAJ\\\hline
+& & & \\\hline
+7 &OBRAŻENIA PRZECIWNIKA& DUŻE & UCIEKAJ\\\hline
+8 &OBRAŻENIA PRZECIWNIKA& ŚREDNIE & ZMIEŃ POZYCJĘ\\\hline
+9 &OBRAŻENIA PRZECIWNIKA& MAŁE & ATAK\\\hline
+& & & \\\hline
+10 &ZDROWIE PRZECIWNIKA& DOBRE & UCIEKAJ\\\hline
+11 &ZDROWIE PRZECIWNIKA& ŚREDNIE & ZMIEŃ POZYCJĘ\\\hline
+12 &ZDROWIE PRZECIWNIKA& SŁABE & ATAK\\\hline
+\end{tabular*}
+}
+\end{table}
+
+\section{Mapa wpływu}
+
+Zastosowana mapa wpływu w~aplikacji realizującej problem podobnie jak w~przypadku logiki rozmytej wykorzystuje do podjęcia decyzji wiedzę na temat siły oraz zdrowia jednostek. 
+Wielkość tablicy z~wartościami jest uzależniona od wielkości planszy gry, ale nie przekracza liczby 200 pól. 
+Mapa jest wspólna dla wszystkich jednostek wykorzystujących tę technikę i~odświeża się co określony interwał czasowy. 
+Tablica jest niewielka, a obliczenia niezbyt skomplikowane, więc również sama metoda w~tym przypadku nie obciąża nadmiernie urządzenia, na którym program się wykonuje.
+
+Na poniższym zrzucie ekranu pokazana jest graficzna interpretacja wartości mapy.
+Pierwsza drużyna jest reprezentowana przez kolor niebieski i~wartości dodatnie, druga drużyna przez kolor czerwony i~wartości ujemne.
+W~oparciu o~wartości mapy można wnioskować gdzie znajdują się skupiska przeciwnej drużyny i~jaki jest rozkład sił na planszy. 
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=350px]{./img/3.png}
+ \caption{Widok mapy wpływu z~aplikacji}
+\end{figure}
+
+Ciekawą specyfiką mapy wpływu jest fakt, że jednostka podejmująca decyzje nie musi analizować dużej ilości czynników zewnętrznych indywidualnie dla każdego agenta. 
+Wystarczy, że odczyta wartość pola z~mapy odpowiadającego przeciwnikowi i~porówna z~polem odpowiadającym jej samej. 
+
+\subsection{Potrzebne wartości}
+
+Tablica wypełnia się wartościami w~opisany poniżej sposób.
+Tworzone są dwie pomocnicze tablice dla obu drużyn tej samej wielkości co wynikowa mapa wpływu.
+Każda jednostka dodaje do pola, w~którym się znajduje wartość swoich obrażeń oraz punkty zdrowia, redukowane przez rodzaj terenu, na którym się ta jednostka znajduje. 
+Wartość startowa dla rozważanej komórki mieści się w~przedziale [0,1], a~w~aplikacji wyliczana jest z~następującego wzoru:
+\begin{equation}
+ WS = TT * (\frac{ZJ}{MZ} + \frac{OJ}{MO} ),
+\end{equation}
+gdzie:
+\begin{itemize}
+ \item ZJ -- zdrowie jednostki,
+ \item OJ -- zadawane obrażenia,
+ \item TT -- trudność terenu,
+ \item MZ -- maksymalne zdrowie najzdrowszej jednostki,
+ \item MO -- maksymalne obrażenia najsilniejszej jednostki.
+\end{itemize}
+
+Następnie rozprzestrzeniany jest wpływ na sąsiadujące komórki w~promieniu 3 pól, każdorazowo zmniejszając dodawaną wartość o połowę.
+Tak wypełnione tablice łączone są w~jedną przez odjęcie odpowiadającej wartości z~jednej z~tablic od odpowiadającej wartości z~drugiej tablicy (w ten sposób uzyskamy ujemne wartości dla jednej z~drużyn).
+
+Rozprzestrzenianie się wpływu zobrazowane jest na poniższym rysunku. 
+Przykładowa wartość początkowa dla komórki, w~której znajduje się jednostka jest wyliczona dla następujących danych:
+\begin{itemize}
+ \item ZJ = 100,
+ \item OJ = 10,
+ \item TT = 0.6,
+ \item MZ = 150,
+ \item MO = 20.
+\end{itemize}
+
+W~przedstawionym przykładzie wartość początkowa komórki WS = 0,7.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=350px]{./img/rozp.png}
+ \caption{Przykład rozprzestrzeniania się wpływu}
+\end{figure}
+
+\subsection{Decyzje postaci w~oparciu o wykorzystaną mapę wpływu}
+
+Przy podejmowaniu decyzji jednostka sumuje wartość swojej komórki z~wartością komórki przeciwnika. 
+Jeśli wynik jest bliski zeru postać postanowi poszukać bardziej dogodnej pozycji ataku (to znaczy przeszuka komórki w~okół atakowanej jednostki i~wybierze tę z~wartością największą, jeśli jej drużyna operuje na wartościach dodatnich lub tę z~najmniejszą wartością, jeśli drużyna operuje na wartościach ujemnych).
+W~przeciwnym wypadku jednostka zbada moduł z~obu liczb. 
+Jeśli wartość bezwzględna z~liczby atakowanej postaci jest mniejsza od wartości bezwzględnej jednostki decydującej, to taka jednostka postanowi atakować.
+Jeśli wartość okaże się większa -- postać ucieknie. 

@@ -1,0 +1,397 @@
+\chapter{Sztuczna inteligencja w~grach i~gry strategiczne}
+
+Pierwszy rozdział pracy jest poświęcony technikom dostępnym programistom gier w~trakcie ich tworzenia.
+Szczególny nacisk położony jest na konkretną grupę, jaką stanowią strategie.
+Na~początku znajdują się informacje o różnych gatunkach gier i~powiązanymi z~nimi technikami sztucznej inteligencji.
+Następnie zostają wymienione najważniejsze elementy, z~których składa się typowa gra strategiczna.
+Rozdział zakończony jest krótkim przeglądem metod sztucznej inteligencji, które najczęściej identyfikowane są z~grami strategicznymi.
+
+\section{Gry i~używane techniki}
+
+Istnieje pewna główna kategoria, według której możemy podzielić gry -- to liczba rozwiązań.
+Wyróżnić w~ten sposób możemy dwa rodzaje gier: deterministyczne, w~których mamy do czynienia ze skończoną liczbą rozwiązań (do tych gier zaliczymy szachy lub kółko i~krzyżyk) i~niedeterministyczne, gdzie akcja gry jest sumą wszystkich działań wszystkich postaci w~grze.
+Gry deterministyczne nie są głównym tematem pracy, więc autorka nie zgłębia tego zagadnienia.
+
+Świat gry, w~którym poruszają się postaci może mieć dwojaki charakter: dyskretny lub ciągły.
+Świat dyskretny (lub inaczej ,,kafelkowy'') reprezentuje najprostszy sposób przesunięcia obiektu w~grze, odbywający się pole po polu.
+Co~więcej obiekt może poruszać się tylko w~określonych kierunkach (dla tradycyjnego obszaru podzielonego na kwadraty jest to ruch w~górę, w~dół, w~bok i~opcjonalnie po skosie).
+Dyskretny sposób poruszania się wykorzystywany jest często w~grach deterministycznych i~oczywiście w~wielu starych grach (na przykład \emph{Robbo} -- klasyk z~1989 roku firmy LK Avalon na platformę Atari).
+W~środowisku ciągłym pozycję obiektu reprezentują współrzędne zmiennopozycyjne, co pozwala umieścić agenta w~dowolnym miejscu i~nadać mu dowolny kierunek ruchu \cite{AIforGameDevelopers}.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=300px]{./img/tennis.jpg}
+ \caption{Gra Tennis For Two}
+\end{figure}
+
+U~podwalin wszystkich gier leży egoizm i~swego rodzaju ludzka potrzeba samotnej rozrywki.
+Egoizm, bo gry komputerowe nie były nastawione na zabawę wieloosobową (poza bardzo wczesnymi pozycjami jak oscyloskopowa produkcja \emph{Tennis For Two} z~1958 roku, gdy zaprogramowanie przeciwnika było czymś bardzo trudnym).
+Wraz z~grami narodziła się potrzeba tworzenia jednostek, niesterowanych przez człowieka, które same potrafią o sobie stanowić.
+Takie jednostki w~grze nazywane są agentami.
+Agent jest systemem, będącym częścią środowiska gry, działającym w~porządku narzuconym mu przez sztuczną inteligencję, którą obdarzy go programista.
+Zachowanie agenta może być niesłychanie proste i~opierać się na banalnej instrukcji: ,,biegaj na oślep w~kółko, a jeśli spotkasz wroga, to go zaatakuj''.
+Czasem jednak agent może wręcz ,,odczuwać'' emocje, a w~decyzjach być łudząco podobnym do człowieka.
+
+Z~każdą grą niedeterministyczną (w której niezbędne jest programowanie agentów) wiąże się poruszanie.
+W~świecie programistów gier nie ma chyba nikogo, kto nie spotkałby się z~terminem ,,chase \& evade''.
+Jest to podział ról, w~którym agent staje się drapieżnikiem, ścigając i~atakując inne postaci lub ofiarą, uciekając przed drapieżnikami.
+Jeśli wykorzystujemy w~grze taki model (a rzadko się zdarza, że tego nie robimy), nieodzowna wręcz jest implementacja odpowiedniego algorytmu poszukiwania drogi \cite{AIforGames}.
+
+O~algorytmach poruszania się w~grze można przeczytać w~pracy licencjackiej autorki \cite{Lic}.
+
+O~ile algorytmy ruchu potrzebne są nawet w~najprostszych aplikacjach tego typu, o tyle istnieje wiele technik sztucznej inteligencji wyspecjalizowanych dla konkretnego gatunku elektronicznej rozgrywki.
+Pomysłów na inteligencję jest mnóstwo.
+Kiedyś nawet padła nieśmiała propozycja, by w~grach wykorzystywać metody planowania, których używa NASA do budowy semi-autonomicznych robotów.
+
+W~kolejnych sekcjach omówione są najbardziej znane gatunki gier i~związane z~nimi metody SI.
+
+\subsection{Gry platformowe}
+
+Ten rodzaj komputerowej rozrywki cieszył się ogromną popularnością we~wczesnych latach 90.
+Gry platformowe to gry zręcznościowe, w~których gracz prowadzi bohatera po wielopoziomowych planszach gry, unikając lub likwidując wrogów.
+Warta wspomnienia jest tutaj pozycja z~1998 roku \emph{Oddworld: Abe's Exodus} z~nadzwyczaj rozbudowaną fabułą i~nietypowym poczuciem humoru.
+
+
+\begin{figure}[H]
+\centering
+\subfloat[Oddworld: Abe's Exodus][Oddworld: Abe's Exodus]{
+\includegraphics[width=250px]{./img/abe.jpg}
+\label{fig:subfig1}}
+\qquad
+\subfloat[Super Mario Bros.][Super Mario Bros.]{
+\includegraphics[width=250px]{./img/mario.jpg}
+\label{fig:subfig2}}
+\caption{Przykładowe gry platformowe}
+\label{fig:globfig}
+\end{figure}
+
+Charakterystyczny dla gier platformowych jest sposób poruszania się agentów, gdyż na ogół jest to proste zastosowanie tak zwanego motywu ruchu.
+Agent porusza się jedynie po wyznaczonym dla niego terenie według określonego schematu.
+Starcie rozpoczyna się czasami tylko wtedy, gdy gracz dosłownie wpadnie na agenta.
+Można śmiało powiedzieć, że gra platformowa pod względem SI to jeden z~najmniej wymagających gatunków.
+Mimo to nie ma osoby, która nie wspomniałaby z~uśmiechem gry \emph{Super Mario Bros}.
+
+\subsection{Bijatyki}
+
+Bijatyka, czyli starcie dwóch graczy w~walce na kopnięcia, ciosy i~uderzenia.
+Gatunek ten odznacza się dość ubogą inteligencją.
+W~pierwszym jego reprezentancie, \emph{International Karate} komputer opierał swoje decyzje o niezbyt skomplikowane schematy, a po pewnym czasie rozgrywka stawała się bardzo przewidywalna.
+W~bijatyce wszystko zazwyczaj sprowadza się do predykcji kolejnego ruchu przeciwnika.
+Od~czasu do czasu można jednak natknąć się na nowatorskie podejścia, na przykład zezwolenie agentowi na uczenie się od swojego przeciwnika.
+
+\subsection{Wyścigi}
+
+W~grach wyścigowych na pierwszy rzut oka sztucznej inteligencji jest niewiele.
+Na~początku tak faktycznie było (drastyczny przykład -- \emph{Gran Trak} z~1974 roku nie posiadał w~ogóle inteligencji, mniej drastyczny -- \emph{Lotus} z~1990 roku, w~którym sztuczna inteligencja sterowała samochodem na wzór początkującego kursanta prawa jazdy, czyli odbijając się od jednego krawężnika do drugiego).
+Jednak ta tendencja zmieniła się dość szybko.
+Okazało się, że gry wyścigowe są bardzo popularne, a ich fani coraz bardziej wymagający, jeśli chodzi o poziom trudności.
+
+Pierwsza metoda SI, która przyszłaby na myśl w~takiej sytuacji to z~całą pewnością logika rozmyta (zwolnij, przyspiesz, skręć delikatnie, skręć mocno -- wszystko to można animować za pomocą sterownika).
+Prawda jest jednak taka, że jeśli logika rozmyta jest używana w~grach wyścigowych, to tylko jako dodatkowy moduł, podczas gdy za prawdziwą inteligencję odpowiadają algorytmy poszukiwania drogi, metody taktyczne oraz coraz częściej sieci neuronowe.
+
+\subsection{FPP, FPS, TPP}
+
+Na~początek spis definicji:
+
+\begin{itemize}
+\item FPP -- First-person perspective -- gra, w~której sterujemy bohaterem oglądając świat jego oczami (często łączone z~grami RPG lub przygodowymi),
+\item FPS -- First-person shooter -- rozszerzenie gry FPP, gdzie dodatkowo widzimy ramię postaci (\emph{Quake}, \emph{Counter Strike}, \emph{Halo}, \emph{Doom}),
+\item TPP -- Third-person perspective - bohaterem sterujemy patrząc na niego z~góry (\emph{Tomb Raider}, \emph{Grand Theft Auto}).
+\end{itemize}
+
+Te~gatunki bardziej niż każdy inny wykorzystują przeróżne metody sztucznej inteligencji.
+Twórcy gier prześcigają się w~tworzeniu coraz to nowych modeli agentów, by rozgrywka była ciekawa i~w~jak największym stopniu przypominała interakcję z~prawdziwym człowiekiem.
+Bardzo często dają oni możliwość implementacji własnego przeciwnika komputerowego -- bota (np. QuakeBot).
+Właściwie każda produkcja FPP, FPS i~TPP posiada swój własny silnik sztucznej inteligencji (AI Director w~grze \emph{Left 4 Dead}, STRIPS-planner z~\emph{F.E.A.R.}).
+Silniki te mogą modyfikować warunki pogodowe, dopasowują liczbę wrogów i~ich cechy do poziomu gracza.
+
+\begin{figure}[H]
+\centering
+\subfloat[Doom][Doom]{
+\includegraphics[width=250px]{./img/doom.png}
+\label{fig:subfig1}}
+\qquad
+\subfloat[F.E.A.R.][F.E.A.R.]{
+\includegraphics[width=250px]{./img/fear.jpg}
+\label{fig:subfig2}}
+\caption{Przykładowe gry FPP}
+\label{fig:globfig}
+\end{figure}
+
+Na~architekturę SI składają się cztery rzeczy: animacja, ruch, walka, zachowanie.
+Animacja związana jest z~poruszaniem się ludzkiego (przeważnie) ciała z~uwzględnieniem lokacji, w~której się znajduje i~własnych predyspozycji (gracz nie może szybko biegać, jeśli jest umierający).
+Ruch zajmuje się możliwością kontroli tego, w~jakim kierunku porusza się bohater, między innymi rozwiązuje kwestię omijania przeszkód, podążania za innymi graczami, wyszukiwania optymalnych dróg, eksplorowania otoczenia.
+Walka jest najbardziej ambitną częścią, mającą na celu ustalenie używanej broni, taktyki.
+Nie może zezwalać komputerowemu przeciwnikowi na działania niezgodne z~jego percepcją (na przykład widzenie w~ciemności).
+Zachowanie natomiast steruje reakcjami postaci.
+Często znajdują tu zastosowanie automaty stanów skończonych (,,patrolowanie'', ,,szukanie'', ,,walka''), logika rozmyta, algorytmy genetyczne.
+Na~zachowanie postaci składa się: podejmowanie decyzji, analiza taktyczna i~tak zwana sztuczna głupota.
+
+Ostatnia kwestia jest szczególnie ciekawa. Gracz chciałby rywalizować z~inteligentnym przeciwnikiem, mimo to jego podstawowym celem jest wygrywanie.
+Dlatego tworząc SI w~grze należy pamiętać, by nie czynić z~agenta nieomylnego geniusza.
+Istnieje kilka interesujących wskazań, które ogłupiają postać sterowaną przez komputer i~jednocześnie czynią ją bardziej naturalną.
+Z~pewnością niewielu graczy zwróciło na to uwagę, ale strzelający do nas przeciwnik nigdy nie trafia naszego bohatera za pierwszym razem.
+Zanim przeciwnik zaatakuje często ostrzega o tym, na przykład mówiąc coś (,,Tu jesteś, tchórzu!'') lub przeładowując broń.
+Taka praktyka daje człowiekowi czas na reakcję.
+SI w~grze tak jak człowiek powinna popełniać od czasu do czasu gafy (spadając do lawy lub następując na minę).
+Jednak dodając do silnika ,,system popełniania błędów'' trzeba mieć świadomość, że agent, który robi coś niemądrego wygląda głupio, jeśli nie odpowie jakąś reakcją na swoją pomyłkę.
+Przykład: Zdarza się, że bohater rzuca granatem, który odbija się od ściany i~niefortunnie ląduje u jego stóp.
+W~wykonaniu jednostki, sterowanej przez komputer sprawia to fatalne wrażenie.
+Wszystko się jednak zmienia, jeśli taka jednostka patrząc na wracający granat zrobi zaskoczoną minę i~krzyknie coś ze~zdumieniem.
+
+\subsection{RPG}
+
+RPG, czyli Role Playing Game to gry fabularne, na których przebieg ogromny wpływ ma gracz (a co ważniejsze cechy i~usposobienie samego gracza).
+Najbardziej wyróżniającą własnością RPG są parametry postaci: niezmienne w~trakcie gry (takie jak brawura, agresja, życzliwość, wpływające na podejmowane decyzje) oraz takie, które się zmieniają wraz z~nabieraniem przez postać doświadczenia.
+
+Nie ma innego gatunku, w~którym tak wielką rolę odgrywają emocje, od których zależy wszystko: przebieg walki, przyjęcie bohatera do drużyny, nastawienie do bohatera.
+Dlatego z~pewnością największe znaczenie mają tu metody podejmowania decyzji (użycie logiki rozmytej, automatów stanów skończonych).
+Bardzo ciekawą propozycją jest wykorzystanie stosunkowo nowej metody zwanej sieciami społecznymi, służących do modelowania populacji i~przepływu opinii w~grze pomiędzy bohaterami, które mogłyby w~ciekawy sposób sterować rozprzestrzenianiem się reputacji danego bohatera.
+
+\subsection{Gry strategiczne TBS i~RTS}
+
+\begin{itemize}
+\item TBS -- turn-based strategy -- rodzaj gry strategicznej, w~której gracze wykonują swoje ruchy po kolei w~przydzielonym dla siebie czasie. Przykłady to \emph{Civiliztation}, \emph{Battle for Wesnoth} czy \emph{Heroes of Might \& Magic}.
+\item RTS -- real-time strategy -- gra strategiczna czasu rzeczywistego. Do tego rodzaju należą \emph{Warcraft}, \emph{Age of Empires}, klasyk gatunku -- \emph{Dune}.
+\end{itemize}
+
+Praca autorki dotyczy w~głównej mierze gier strategicznych, dlatego zagadnienie wykorzystywanych metod jest rozwinięte w~kolejnej sekcji.
+
+\begin{figure}[H]
+\centering
+\subfloat[Heroes of Might \& Magic][Heroes of Might \& Magic]{
+\includegraphics[width=300px]{./img/heroes.jpg}
+\label{fig:subfig1}}
+\qquad
+\subfloat[Warcraft][Warcraft]{
+\includegraphics[width=300px]{./img/warcraft.jpg}
+\label{fig:subfig2}}
+\caption{Przykład gry strategicznej turowej (a) oraz strategii czasu rzeczywistego (b)}
+\label{fig:globfig}
+\end{figure}
+
+\subsection{Gry przygodowe}
+
+Gra przygodowa to gra wyjątkowo nastawiona na eksplorowanie świata gry.
+W~większości przypadków zmusza gracza do rozwiązywania zagadek, wykonywania pewnych czynności w~określonym logicznym porządku i~odkrywania kolejnych faktów ważnych dla fabuły gry.
+Najlepszymi przykładami są \emph{King's Quest}, \emph{Grim Fandango} i~nad wyraz dowcipna seria \emph{Monkey Island}.
+W~opinii autorki SI tego gatunku wyróżnia się od innych tak naprawdę brakiem prawdziwego SI.
+Z~programistycznego punktu widzenia najbardziej skomplikowaną grę przygodową udałoby się zamknąć w~serii instrukcji if-else.
+Rodzajowi temu jednak należy się krótka wzmianka, bo w~przeciwieństwie do wielu popularnych i~grywalnych pozycji na rynku wymaga inteligencji od samego gracza.
+
+\section{Elementy gry strategicznej}
+
+Najbardziej charakterystyczny dla gry strategicznej jest sposób przedstawienia świata.
+Przeważnie mamy do czynienia z~dwuwymiarową mapą o zróżnicowanym terenie, na której możemy wznosić budowle oraz przemieszczać swoje jednostki.
+O~ile w~innych grach bohaterowie, którymi sterujemy są raczej indywidualnymi osobowościami, o tyle w~strategiach mamy do czynienia z~kilkoma egzemplarzami pewnej postaci wyspecjalizowanej w~danej czynności z~określoną siłą i~wytrzymałością bojową. 
+
+Interesującym składnikiem gry strategicznej jest tak zwana mgła wojny (,,fog of war''). 
+W~praktyce oznacza to, że mapa dla każdego z~graczy jest inna i~pokazuje dokładnie te partie świata, które konkretny gracz już odkrył z~pomocą swoich jednostek zwiadowczych. 
+Każda z~takich jednostek poruszając się ujawnia taką część terenu, na jaką pozwala jej pole widzenia. 
+Raz pokazana część mapy pozostaje zapamiętana i~najczęściej również widać na niej poruszające się jednostki wroga.
+Można się jednak spotkać z~odmienny podejściem, wykorzystanym przykładowo w~grze \emph{Battle for Wesnoth} (turowej strategii napisanej ku chwale wolnego oprogramowania), w~której gracze widzą całą mapę, lecz jednostki przeciwnika, są widoczne dopiero, gdy znajdują się w~polu widzenia któregokolwiek osobnika.
+
+Wygrana rozgrywki w~strategii jest uzależniona od misji, jaka zostanie zadana graczowi. 
+Zasadniczo, by ją ukończyć zawodnik musi wykonywać wiele czynności pośrednich, związanych z~innymi częściami gry strategicznej, do których należy między innymi stawianie konstrukcji, zbieranie surowców, trenowanie nowych jednostek, eksplorowanie mapy i~atakowanie wrogich oddziałów.
+Misją jest zazwyczaj pokonanie wszystkich wrogów na mapie, zniszczenie konkretnej budowli przeciwnika lub zebranie określonej ilości któregoś z~zasobów.
+
+Jak można wywnioskować najważniejszym zagadnieniem gier strategicznych jest podejmowanie decyzji taktycznych i~strategicznych w~danym momencie: czy zbierać surowce, czy rekrutować wojowników, czy inwestować w~budowle.
+Decyzje takie można podzielić na neutralne (eksplorowanie terenu, patrolowanie, zbieranie surowców, budowanie), obronne (odejście z~linii ognia, unikanie starcia, ucieczka) i~agresywne (atak, polowanie). 
+Często przy dokonywaniu wyboru spotykane jest użycie drzewa przydziału zasobów, które dzieli możliwe decyzje na kategorie (na przykład Armia, Wywiad, Ekonomia). 
+Te~z~kolei kategorie są dzielone na podkategorie (Ekonomia: postawienie budowli, szukanie surowców). 
+Podziału dokonujemy dopóki nie dotrzemy do najbardziej elementarnych działań typu ,,przesuń jednostkę''.
+Każdemu węzłowi w~takim drzewie przyznajemy wartość oznaczającą część przydziału, jaką pożąda dana kategoria od swojej kategorii-rodzica.
+Wartości te zależą od projektu gry i~są wynikiem testów, dzięki którym można modyfikować przydziały, jeśli powodują nieoptymalne zachowania \cite{Perelki1}.
+
+\section{SI w~grach strategicznych}
+
+Implementacja SI w~grze strategicznej, w~szczególności grze czasu rzeczywistego, jest największym programistycznym wyzwaniem. 
+Projektując takie SI należy uwzględnić następujące elementy:
+
+\begin{itemize}
+ \item SI głównego dowódcy, 
+ \item SI jednostek bojowych i~ekonomicznych,
+ \item SI dowódców (dowodzący grupą jednostek bojowych),
+ \item budowanie konstrukcji,
+ \item jednostki natywne,
+ \item system wspierający strategię i~taktykę.
+\end{itemize}
+
+Należy zwrócić uwagę na fakt, że wszystkie decyzje dotyczące przemieszczania się i~akcji jednostek, budowania, eksplorowania terenu i~zarządzania surowcami są podejmowane w~czasie rzeczywistym (wyjątkiem są gry strategiczne odgrywające się w~sposób turowy).
+Główny problem w~projektowaniu SI w~grach RTS polega na odpowiednim wyważeniu metod sztucznej inteligencji tak, by złożoność obliczeniowa nie wpływała na inne elementy gry i~nie ,,zabijała'' procesora.
+Do~tej pory jednak na rynku nie pojawiła się taka produkcja, która zadowoliłaby wymagającego gracza.
+Komputerowi przeciwnicy wciąż mają problemy z~uczeniem się zachowań od ludzkich graczy i~wciąż popełniają dokładnie te same błędy. 
+Bardzo często można się również spotkać z~przypadkiem, gdy SI w~którymś momencie rozgrywki ugrzęźnie, na przykład z~powodu braku zasobów. 
+Autor książki \emph{AI Game Engine Programming} (który częstokroć przytacza różne wpadki z~gry \emph{Age of Empires}) powołuje się na następującą sytuację: 
+Gracz, który ma za zadanie zniszczyć wszystkie jednostki i~budowle wroga musi zbadać całą mapę w~poszukiwaniu zagubionej jednostki ekonomicznej, która nie otrzymując rozkazów i~nie mając magazynu, do którego składałaby zebrane surowce stoi gdzieś bezczynnie \cite{AIGameEngine}.
+
+\subsection{Główny dowódca}
+W~grze strategicznej istnieje nadrzędna instancja, odzwierciedlająca ludzkiego gracza.
+Będzie on dalej nazywany głównym dowódcą i~można o nim myśleć jak o SI wysokopoziomowej.
+Na~podstawie informacji odebranych z~niższych poziomów SI główny dowódca podejmuje decyzje o kolejnych ruchach innych jednostek, grup czy też kolejnych działaniach przy budowaniu konstrukcji.
+
+\subsection{Jednostki bojowe i~ekonomiczne}
+
+Obecność głównego dowódcy nie oznacza, że pojedyncze postaci w~środowisku gry są pozbawione jakiejkolwiek woli.
+Każda taka jednostka powinna w~pewnym stopniu stanowić o sobie, to znaczy omijać przeszkody, szukać drogi, kolejkować rozkazy. 
+O~tym rodzaju inteligencji mówi się SI niskiego poziomu.
+Jeśli jednostka dodatkowo jest jednostką bojową ma za zadanie obierać sobie odpowiedni cel ataku czy też wycofywać się, jeśli czuje znaczną przewagę wroga. 
+Paradoksalnie, nawet jednostka ekonomiczna, popularnie nazywana ,,peon'', zajmująca się jedynie zbieraniem surowców (zwykle nie posiada żadnych predyspozycji do walki) potrzebuje minimalnej SI.
+Takiej, która po skończeniu się surowca w~jednym miejscu postara się poszukać go w~innym, niezbyt odległym, a w~przypadku ataku pozwoli na ucieczkę, wołając o pomoc (zamiast dalszego wykonywania pracy).
+
+\subsection{Dowódcy mniejszych grup jednostek}
+
+Do~gier strategicznych (choć nie tylko) dołącza się dowódców, czyli specjalne jednostki, prowadzące grupę i~wydające rozkazy. 
+Taki zabieg sprawia, że ważniejsze i~bardziej kompleksowe decyzje nie są podejmowane przez każdą jednostkę osobno.
+Wykorzystanie dowódców łączy się z~implementacją algorytmów stadnych, które drastycznie zmniejszają złożoność problemu. 
+Przykładowo w~kwestii poszukiwania drogi: dowódca podejmuje decyzję o wybranej ścieżce, a cała reszta grupy podąża za nim z~zachowaniem zasad stada (omówione dokładniej w~kolejnej sekcji).
+
+\subsection{Budowanie konstrukcji}
+
+Budowanie konstrukcji jest istotnym elementem strategicznym. 
+Sztuczna inteligencja tego modułu ma za zadanie rozmieścić struktury odpowiednio blisko siebie, tak by łatwiejsza była ich ochrona.
+Jednocześnie muszą być odpowiednio odległe, by poszerzać pole widzenia gracza. 
+Częstą praktyką jest tutaj zastosowanie żelaznych zasad, które początkowo sprawdzają się świetnie, lecz mają problemy z~przystosowaniem się do zmieniających się warunków.
+
+\subsection{Jednostki natywne}
+
+Wiele gier strategicznych zawiera w~środowisku gry natywne elementy, które również biorą mniej lub bardziej aktywny udział w~rozgrywce (fauna jako surowce, wygłodniałe wilki jako utrudnienie lub elementy ozdobne jak owce). 
+SI dla takich jednostek jest z~reguły minimalne, lecz generując mapę warto zwrócić uwagę na to, by pozycji utrudniających komponentów nie ustawiać zbyt blisko gracza na samym początku gry. 
+
+\subsection{System wspierania decyzji i~taktyki}
+
+Ostatnia część, o której wskazane jest wspomnieć to system wspierający dla strategii i~taktyki.
+W~jego skład wchodzą takie zagadnienia jak analiza terenu, tworzenie modelu przeciwnika, zarządzanie surowcami, rekonesans czy dyplomacja.
+
+Pierwszy z~wymienionych składników -- analiza terenu -- może dostarczyć mnóstwo przydatnych informacji w~procesie podejmowania decyzji. 
+Śledzenie pozycji wroga może ujawnić słabe punkty w~jego obronie.
+Wiele z~tych informacji można uzyskać wykorzystując tak zwaną mapę wpływu, która jest po prostu inną nazwą dwuwymiarowej tablicy odzwierciedlającej mapę gry podzieloną na małe kwadraty. 
+Każdy taki kwadrat opisuje dany wycinek mapy pod względem siły znajdujących się na nich jednostek, trudności terenu czy umieszczonych tam zasobów.
+
+Modelowanie wroga z~kolei opiera się na obserwacji fizycznych możliwości lub też zachowań wroga (przykładowo słysząc ryk smoka gracz sterowany przez komputer może dedukować, że przeciwnik posiada jakiegoś smoka w~swoim arsenale, a~zauważając, że wróg zazwyczaj atakuje z~prawej strony każe przypuszczać, że tam znajduje się jego baza).
+
+Zarządzanie surowcami obejmuje głównie sposób wykorzystania surowców na budowle i~jednostki. 
+Można tak jak już było wcześniej wspomniane konstruować wszystko według ustalonych reguł i~kolejności, jednak wtedy rozgrywka staje się przewidywalna.
+Lepszą praktyką jest uzależnienie decyzji o stawianiu budynków czy powoływaniu nowych jednostek od aktualnych potrzeb.
+
+Rekonesans jest naturalną potrzebą w~każdej grze, w~której mamy do czynienia ze wspomnianą już wcześniej mgłą wojny. 
+Gracz, by odnaleźć położenie wroga musi wysyłać swoje jednostki eksplorujące teren i~odkrywające kolejne połacie mapy. 
+Zawodnik komputerowy zazwyczaj radzi sobie z~tym problem bardzo dobrze, gdyż decyzje o tym, by eksplorować teren pochodzą od głównego dowódcy, lecz problem tego, gdzie go eksplorować jest rozwiązywany przez niskopoziomowe SI, co czyni odkrywanie terenu bardziej efektywne niż w~przypadku ludzkiego gracza. 
+
+Ostatni wymieniony element -- dyplomacja -- dotyczy gier, w~których możliwa jest współpraca graczy dla osiągnięcia wspólnego zwycięstwa. 
+Najczęściej polega jedynie na nieatakowaniu się nawzajem. 
+
+\section{Opis wybranych metod}
+
+Po~opisie komponentów SI przyjrzyjmy się bliżej przywołanym już wcześniej metodom.
+
+\subsection{Algorytmy stadne}
+
+Z~terminem ,,algorytm stadny'' po raz pierwszy można było się zetknąć w~1987 roku dzięki Craigowi Reynoldsowi, który opisał proste zasady (początkowo było ich trzy, później zostały rozszerzone o czwartą), pozwalające grupie autonomicznych agentów zachowywać się jak prawdziwe stado.
+Zasady te to:
+\begin{itemize}
+ \item rozdzielność -- nie dopuszczanie do tłoczenia się członków stada w~jednym miejscu,
+ \item wyrównywanie -- utrzymywanie stałego kierunku poruszania się do wspólnego celu z~tą samą lub podobną prędkością,
+ \item spójność -- nie odłączanie się od stada na zbyt dużą odległość,
+ \item unikanie -- zachowanie stada wobec przeszkód lub wrogów stojących na drodze \cite{CoreTechniques}.
+\end{itemize}
+
+W~grach strategicznych algorytmy stadne są niezwykle pomocne przy sterowaniu grupami jednostek. 
+Jeśli gracz kieruje większy oddział na bazę wroga wystarczy, że tylko jeden z~agentów będzie wyliczał optymalną drogę. 
+Reszta będzie działała w~myśl algorytmu podążania za liderem (,,follow-the-leader'' -- dające wiele możliwości rozszerzenie algorytmów stadnych) dostosowując swój kierunek zgodnie z~zasadami wymienionymi powyżej.
+W~przypadku natrafienia na przeszkodę wywoływana jest procedura omijania jej, po czym kierunek ponownie jest ustalany.
+Może się oczywiście zdarzyć, że to lider natrafi na przeszkodę i~sam musi ją ominąć.
+Jeśli zlecimy reszcie stada ślepo za nim podążać zaczną oni omijać niewidzialną przeszkodę (co z~boku będzie wyglądało jak element tańca synchronicznego).
+Istnieją dwa rozwiązania takiego problemu. 
+Pierwsze to stworzenie niewidzialnego lidera z~umiejętnością przenikania przez mniejsze przeszkody.
+Drugie również wykorzystuje niewidzialnego lidera, ale tworzy go tylko na czas omijania przeszkody przez widzialnego lidera. 
+
+\subsection{Logika rozmyta}
+
+Logika rozmyta jest istotnym narzędziem w~rękach programistów gier. 
+Znajduje zastosowanie zawsze, gdy intencją jest symulowanie ludzkich zachowań czy emocji.
+W~odróżnieniu od tradycyjnej logiki operuje na przymiotnikach i~określa w~jakim stopniu coś przynależy do danego zbioru.
+
+Dana wartość jest określona przez jej stopień przynależności do zdefiniowanych wcześniej zbiorów. 
+Stopień przynależności jest wyznaczany na podstawie funkcji przynależności dla konkretnego zbioru. 
+
+Ważnym pojęciem w~logice rozmytej są zmienne lingwistyczne.
+Według definicji samego pomysłodawcy logiki rozmytej Lotfi Zadeha: ,,Zmienną lingwistyczną nazywamy zmienną, której wartościami są słowa lub zdania w~języku naturalnym lub sztucznym. 
+Powyższe słowa lub zdania nazywamy wartościami lingwistycznymi zmiennej lingwistycznej''.
+
+Program wykorzystujący logikę rozmytą do podejmowania decyzji możemy nazwać sterownikiem rozmytym. 
+Składa się on z~następujących części:
+\begin{itemize}
+ \item baza reguł -- zbiór reguł rozmytych, 
+ \item blok rozmywania (fuzyfikacja) -- wyliczanie wartości funkcji przynależności dla zadanej na wejściu wartości, 
+ \item blok wnioskowania -- uruchomienie reguł, dla których spełnione są przesłanki, 
+ \item blok wyostrzania -- zwrócenie ostatecznej lingwistycznej wartości wyjściowej, z~wykorzystaniem różnych metod wyostrzających (środek najlepszego odcinka, pierwsze z~lewej maksimum, pierwsze z~prawej maksimum, środek ciężkości).
+\end{itemize}
+
+Korzystając z~logiki rozmytej należy brać pod uwagę to, że im więcej zmiennych lingwistycznych użyjemy oraz im więcej każda ze zmiennych ma wartości, tym więcej otrzymamy reguł i~tym więcej sterownik pochłonie zasobów komputera. 
+W~grze komputerowej można sobie jednak poradzić z~tym problemem modyfikując delikatnie sposób wnioskowania za pomocą metody Combsa. 
+Metoda ta zostanie szerzej wyjaśniona w~rozdziale 3.
+
+\subsection{Mapa wpływu}
+
+Pamiętajmy, że mapa wpływu jest tak naprawdę tablicą dwuwymiarową przechowującą informację o danej cząstce mapy gry. 
+Informacją taką może być to, ile jednostek bojowych w~takim jednym polu się znajduje, jaka jest trudność terenu, jaka jest tam umieralność.
+Wyliczoną wartość dla danego pola rozszerzamy na pola sąsiadujące, zmniejszając ją za każdym razem (najczęściej o połowę). 
+
+O~przykładowym wykorzystaniu mapy można przeczytać w~książce \emph{Core Techniques and Algorithms in Game Programming}: wartości ujemne oznaczają jednostki wroga, wartości dodatnie -- jednostki SI, korzystającej z~mapy \cite{CoreTechniques}.
+Analizując tablicę można ocenić, w~którym rejonie mapy jednostki mogą szukać schronienia, czy też w~którym mają większe szanse skutecznego ataku. 
+Inne użyteczne informacje to:
+
+\begin{itemize}
+ \item balans sił -- po zsumowaniu wartości z~wszystkich pól można oszacować, która strona ma większe szanse zwycięstwa,
+ \item położenie linii frontu -- zlokalizowanie miejsc na mapie, których wartości oscylują przy zerze,
+ \item miejsce przełamania oddziałów wroga -- po odnalezieniu dwóch najmniejszych wartości na mapie należy sprawdzić jak bardzo zróżnicowane wartości znajdują się pomiędzy odnalezionymi komórkami (jeśli różnica jest znaczna można przypuszczać, że wrogie oddziały są podzielone),
+ \item najsłabszy przeciwnik -- odnalezienie najsłabszej jednostki wroga i~przepuszczenie ataku na nią,
+ \item wykrywanie szarży -- odświeżanie mapy i~sprawdzanie zmian wartości w~pobliżu jednostek należących do SI,
+ \item szukanie bezpiecznych ścieżek -- poruszanie się po polach z~wartościami z~tym samym znakiem.
+\end{itemize}
+
+Mapa wpływu z~pewnością jest niezwykle użyteczna, jednak decydując się na nią należy pamiętać, że zbyt częste odświeżanie i~dzielenie jej na zbyt małe części może poważnie odbić się na szybkości gry.
+
+\subsection{Automaty stanów skończonych}
+
+Automaty stanów skończonych (FSM -- \emph{finite state machine}) są prostą metodą, dzięki której postać w~grze może szybko podjąć decyzję jedynie w~oparciu o sytuację, w~jakiej się znajduje i~czynnik, który w~danej chwili na nią wpływa.
+Każdy automat stanów powinien umożliwiać realizowanie takich czynności jak wykonanie kodu inicjalizującego i~czyszczącego po wejściu i~wyjściu z~klasy automatu, odpowiedź na komunikat wejściowy i~wysłanie komunikatu do innego obiektu. 
+Do~klasy automatu przekazywany jest sygnał wejściowy, który w~oparciu o stan, w~którym dany element się aktualnie znajduje zwraca nowy stan i~wykonuje czynności związane z~tym. 
+
+Przykład dla dowolnego agenta w~grze:
+
+\begin{itemize}
+ \item aktualny stan: ,,obojętność'',
+ \item sygnał wejściowy: ,,słychać ryk smoka'',
+ \item sygnał wyjściowy: ,,niepokój''
+\end{itemize}
+
+lub:
+
+\begin{itemize}
+ \item aktualny stan: ,,niepokój'',
+ \item sygnał wejściowy: ,,widać smoka'',
+ \item sygnał wyjściowy: ,,panika''.
+\end{itemize}
+
+Zmiana stanu jest związana z~wykonaniem procedur zdefiniowanych dla nowego stanu. W przykładzie powyżej dla stanu ,,niepokój'' może to być wzmożona czujność i~patrolowanie okolicy, a dla stanu ,,panika'' -- szukanie drogi ucieczki. 
+
+Wygodnym rozszerzeniem metody są automaty stanów rozmytych, to znaczy automaty działające w~oparciu o logikę rozmytą -- FuSM (fuzzy state machine). 
+Przekształcenie FSM na automat rozmyty wymaga kilku modyfikacji, między innymi obsługę kilku stanów aktualnych i~określenia procedur dla różnych stopni przynależenia do stanu. 
+
+\subsection{Inne}
+
+Omówione do tej pory metody autorka uznała za najbardziej godne uwagi, co nie oznacza, że są to jedyne dobre sposoby dodania sztucznej inteligencji do gry.
+
+W~trakcie rozgrywki agenci napotykają różne trudności związane z~dokonywaniem wyborów. 
+Podczas wykonywania misji oddział może wpaść w~zasadzkę. Pytanie, czy będzie dalej podążał do określonego celu, pozostawiając za sobą kilka jednostek, które zatrzymają wroga, czy może cel nie jest na tyle istotny i~zatrzymają się wszyscy, próbując rozwiązać problem. 
+W~takich przypadkach pomaga hierarchiczna sztuczna inteligencja, wspomagająca strategię. 
+
+Jeśli twórcy gry zależy na oszczędności zasobów komputera nieoceniona jest baza reguł, która oczywiście może prowadzić do przewidywalnych zachowań, jednak przy bardzo prostych zdarzeniach jest znakomitym rozwiązaniem.
+
+Warto również wspomnieć o przekazywaniu komunikatów. 
+Percepcja zmian w~środowisku gry może się odbywać na dwa sposoby: jednostka może śledzić zmiany w~swoim otoczeniu, aktualizując co pewien interwał czasowy posiadane informacje lub odbierać sygnały o zmianach od samego środowiska czy innych obiektów. 
+Smok ziejący ogniem jest w~stanie zadać uszkodzenia kilku jednostkom w~tym samym czasie. 
+Jednostki te są w~stanie same to zauważyć odświeżając dane o środowisku, jednak znacznie ,,tańsze'' jest przekazanie takiej informacji od samego smoka: ,,Komunikat do: jednostka nr 3; od: smok; obrażenia: 5 punktów''. 
+Efekt jest taki sam, lecz oszczędność zasobów większa. 

@@ -1,0 +1,39 @@
+\chapter*{Wstęp}
+\addcontentsline{toc}{chapter}{Wstęp}
+
+
+Od powstania pierwszej gry komputerowej minęło już ponad pół wieku. 
+Postęp jaki się dokonał w~dziedzinie gier jest ogromny, jednak na tym polu wciąż nie zostało wypowiedziane ostatnie słowo. 
+Dopóki istnieje ludzka potrzeba rozrywki, dopóty twórcy gier będą rywalizować o przychylność gracza. 
+Co~więcej, dopóki człowiek nie znajdzie lekarstwa na nudę, dopadającą go w~samotnie spędzane wieczory, dopóty będzie istniała potrzeba dostarczania wraz z~grami możliwości sprawdzenia swoich sił w~walce ze sztucznym przeciwnikiem. 
+Programiści gier w~tym celu korzystają z~arsenału metod sztucznej inteligencji (w skrócie SI), które sprawiają, że zachowanie komputerowego rywala łudząco przypomina ludzkie.
+
+Trudno jest dokładnie zdefiniować czym jest sztuczna inteligencja, gdyż inteligencja sama w~sobie nie posiada usystematyzowanej definicji. 
+Problemem jest fakt, że nie można jednoznacznie stwierdzić, gdzie inteligencja się zaczyna. 
+W~zależności od podejścia za inteligencję można uznać zdolność uczenia się, wyciągania wniosków czy też wyrażania emocji.
+Natomiast sama sztuczna inteligencja najczęściej jest określana jako zdolność komputera do wykonywania działań, wymagających użycia inteligencji.
+Termin SI narodził się jeszcze w~pierwszej połowie ubiegłego wieku wraz z~rozpoczęciem prac Alana Turinga nad stworzeniem myślącej maszyny \cite{Istota}.
+
+Definicja sztucznej inteligencji w~grze komputerowej jest nieco mniej wymagająca. 
+Otóż każde zachowanie, które przypomina zachowanie człowieka i~czyni grę bardziej atrakcyjną, stawiającą przed graczem wyzwania jest rozpatrywane w~kategorii sztucznej inteligencji.
+Technik SI dla gier jest wiele: sieci neuronowe, algorytmy genetyczne, logika rozmyta, automaty stanów skończonych, algorytmy stadne, bazy reguł. 
+Problemem jest wybranie tych właściwych z~uwzględnieniem potrzeb oraz rodzaju gry.
+Nawet po odkryciu, że pewna technika daje znakomite rezultaty może się okazać, że zajmuje zbyt dużo zasobów i~należy zrezygnować z~niej na rzecz gorszej metody. 
+W~pracy autorki szczególny nacisk zostanie położony na używane techniki w~grach strategicznych. 
+SI potrzebne dla tego typu rozgrywki cechuje się wysokim stopniem skomplikowania i~stanowi największe wyzwanie dla programisty gier.
+
+Głównym celem przedkładanej pracy będzie wykorzystanie wybranych metod sztucznej inteligencji w~grze strategicznej oraz porównanie ich ze sobą. 
+Użyte algorytmy sterować będą zachowaniem komputerowych jednostek, których zadaniem jest wyeliminowanie oddziału przeciwnika. 
+Autorka obrała sobie gry strategiczne czasu rzeczywistego, gdyż kwestia sztucznej inteligencji w~tego rodzaju grach wciąż pozostawia wiele do życzenia. 
+Twórcy inwestują swój czas i~zasoby ulepszając grafikę oraz fabułę gier strategicznych, by zmniejszyć jakoś niedosyt gracza po skonfrontowaniu ze sztucznym przeciwnikiem. 
+Wybrane techniki -- logika rozmyta oraz mapa wpływu -- mają dobrą skuteczność i~stawiają przed graczem wyzwania. 
+Dodatkowo sposób implementacji nie zwiększa radykalnie zużycia zasobów. 
+Według tezy autorki obie metody okażą się efektywne i~satysfakcjonujące dla gracza, jednak logika rozmyta wykaże lepszą skuteczność w~walce przeciwko mapie wpływu.
+
+Praca składa się z~czterech rozdziałów. 
+W~pierwszym rozdziale autorka zajęła się omówieniem wybranych przez siebie typów gier oraz powiązanych z~nimi technik sztucznej inteligencji. 
+Szczególnie rozwinięto temat konstruowania SI na potrzeby gry strategicznej.
+Drugi rozdział został poświęcony opisowi aplikacji w~systemie Android realizującej problem pracy. 
+Na~łamach trzeciego rozdziału omówiono wspomniane wyżej metody, które zostały wykorzystane przez autorkę w~stworzonej grze.
+Opisany zostanie sposób ich użycia oraz implementacji.
+W~ostatnim, czwartym rozdziale zamieszczono porównanie oparte o dokładne testy obu technik.

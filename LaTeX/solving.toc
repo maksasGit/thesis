@@ -1,0 +1,101 @@
+\babel@toc {russian}{}\relax 
+\contentsline {chapter}{Wstęp}{1}{}%
+\contentsline {chapter}{\numberline {1}Rozdzial 1}{3}{}%
+\contentsline {section}{\numberline {1.1}Klasterzyacja}{3}{}%
+\contentsline {subsection}{\numberline {1.1.1}Defenicja}{3}{}%
+\contentsline {subsection}{\numberline {1.1.2}Цели кластеризации}{3}{}%
+\contentsline {subsection}{\numberline {1.1.3}Методы кластеризации}{3}{}%
+\contentsline {subsection}{\numberline {1.1.4}Этапы кластеризации}{4}{}%
+\contentsline {subsection}{\numberline {1.1.5}Применение}{4}{}%
+\contentsline {subsection}{\numberline {1.1.6}Оценка эффективности кластеризации}{5}{}%
+\contentsline {section}{\numberline {1.2}Обработка естественного языка}{5}{}%
+\contentsline {subsection}{\numberline {1.2.1}Opis}{5}{}%
+\contentsline {subsection}{\numberline {1.2.2}Предобработка текста}{5}{}%
+\contentsline {subsection}{\numberline {1.2.3}Стемминг}{6}{}%
+\contentsline {subsection}{\numberline {1.2.4}Лемматизация}{6}{}%
+\contentsline {section}{\numberline {1.3}Векторизация}{6}{}%
+\contentsline {subsection}{\numberline {1.3.1}Opis}{6}{}%
+\contentsline {subsection}{\numberline {1.3.2}Задачи векторизации}{6}{}%
+\contentsline {subsection}{\numberline {1.3.3}Методы векторизации}{6}{}%
+\contentsline {subsection}{\numberline {1.3.4}Применение}{7}{}%
+\contentsline {section}{\numberline {1.4}снижения разменрности}{7}{}%
+\contentsline {subsection}{\numberline {1.4.1}Дефениция}{7}{}%
+\contentsline {subsection}{\numberline {1.4.2}Методы снижения размерности}{7}{}%
+\contentsline {subsubsection}{Выбор признаков}{7}{}%
+\contentsline {subsubsection}{Выделение признаков}{7}{}%
+\contentsline {subsubsection}{Методы выделения признаков}{8}{}%
+\contentsline {subsection}{\numberline {1.4.3}Применение}{8}{}%
+\contentsline {chapter}{\numberline {2}Rozdzial 2}{9}{}%
+\contentsline {section}{\numberline {2.1}Приложение}{9}{}%
+\contentsline {subsection}{\numberline {2.1.1}Opis}{9}{}%
+\contentsline {subsection}{\numberline {2.1.2}Технологии}{9}{}%
+\contentsline {subsection}{\numberline {2.1.3}GUI}{9}{}%
+\contentsline {subsection}{\numberline {2.1.4}OOP}{10}{}%
+\contentsline {section}{\numberline {2.2}Текстовые данные}{10}{}%
+\contentsline {subsection}{\numberline {2.2.1}Opis}{10}{}%
+\contentsline {subsection}{\numberline {2.2.2}API запросы}{10}{}%
+\contentsline {subsection}{\numberline {2.2.3}Обработка полученных данных}{11}{}%
+\contentsline {subsection}{\numberline {2.2.4}Хранение}{11}{}%
+\contentsline {section}{\numberline {2.3}Обработка текста}{11}{}%
+\contentsline {subsection}{\numberline {2.3.1}Opis}{11}{}%
+\contentsline {subsection}{\numberline {2.3.2}Обязательная обработка}{12}{}%
+\contentsline {subsection}{\numberline {2.3.3}Примитивная обработка}{12}{}%
+\contentsline {subsection}{\numberline {2.3.4}Удаление stop-words}{12}{}%
+\contentsline {subsection}{\numberline {2.3.5}Лематизация}{12}{}%
+\contentsline {subsection}{\numberline {2.3.6}Анализ}{13}{}%
+\contentsline {subsubsection}{freq analysis}{13}{}%
+\contentsline {subsubsection}{length analysis}{13}{}%
+\contentsline {subsection}{\numberline {2.3.7}Итог}{13}{}%
+\contentsline {section}{\numberline {2.4}Wektoryzacja}{13}{}%
+\contentsline {subsection}{\numberline {2.4.1}Opis}{13}{}%
+\contentsline {subsection}{\numberline {2.4.2}TF-IDF}{14}{}%
+\contentsline {subsubsection}{Пояснение алгоритма}{14}{}%
+\contentsline {subsubsection}{Параметры }{14}{}%
+\contentsline {subsubsection}{Пример использования}{14}{}%
+\contentsline {subsection}{\numberline {2.4.3}Word2Vec}{14}{}%
+\contentsline {subsubsection}{Важные параметры}{15}{}%
+\contentsline {subsubsection}{Описание алгоритма}{15}{}%
+\contentsline {subsubsection}{Пример использования}{16}{}%
+\contentsline {subsection}{\numberline {2.4.4}Ocena}{16}{}%
+\contentsline {subsubsection}{Критерии}{16}{}%
+\contentsline {subsubsection}{Оценка TF-IDF}{16}{}%
+\contentsline {subsubsection}{Оценка Word2Vec}{16}{}%
+\contentsline {subsection}{\numberline {2.4.5}Итог}{16}{}%
+\contentsline {section}{\numberline {2.5}Кластеризация}{17}{}%
+\contentsline {subsection}{\numberline {2.5.1}Opis}{17}{}%
+\contentsline {subsection}{\numberline {2.5.2}K-means}{17}{}%
+\contentsline {subsubsection}{Описание алгоритма}{17}{}%
+\contentsline {subsubsection}{Параметры}{17}{}%
+\contentsline {subsubsection}{Пример использования}{17}{}%
+\contentsline {subsection}{\numberline {2.5.3}DBSCAN}{18}{}%
+\contentsline {subsubsection}{Параметры}{18}{}%
+\contentsline {subsubsection}{Описание алгоритма}{18}{}%
+\contentsline {subsubsection}{Пример использования}{18}{}%
+\contentsline {subsection}{\numberline {2.5.4}Выбор параметров}{19}{}%
+\contentsline {section}{\numberline {2.6}Визуализация}{19}{}%
+\contentsline {subsection}{\numberline {2.6.1}Opis}{19}{}%
+\contentsline {subsection}{\numberline {2.6.2}Cнижение размерности}{19}{}%
+\contentsline {subsection}{\numberline {2.6.3}T-SNE}{19}{}%
+\contentsline {subsubsection}{Параметры}{19}{}%
+\contentsline {subsubsection}{Описание алгоритма}{20}{}%
+\contentsline {subsubsection}{Пример использования}{20}{}%
+\contentsline {chapter}{\numberline {3}Rozdzial 3}{21}{}%
+\contentsline {section}{\numberline {3.1}Описание работы}{21}{}%
+\contentsline {subsection}{\numberline {3.1.1}Рабочее окно}{21}{}%
+\contentsline {subsection}{\numberline {3.1.2}Меню}{21}{}%
+\contentsline {subsubsection}{Создавние workspace}{21}{}%
+\contentsline {subsubsection}{Получение комментариев}{21}{}%
+\contentsline {subsection}{\numberline {3.1.3}Workspace}{22}{}%
+\contentsline {subsubsection}{Поле для графиков}{22}{}%
+\contentsline {subsection}{\numberline {3.1.4}Text}{22}{}%
+\contentsline {subsubsection}{Vectorization}{22}{}%
+\contentsline {subsubsection}{Cluster}{23}{}%
+\contentsline {subsubsection}{Result Window}{23}{}%
+\contentsline {section}{\numberline {3.2}Пример использования}{23}{}%
+\contentsline {subsection}{\numberline {3.2.1}Получение комментариев}{23}{}%
+\contentsline {subsection}{\numberline {3.2.2}Создание Workspace}{23}{}%
+\contentsline {subsection}{\numberline {3.2.3}Выбор методов и параметров}{23}{}%
+\contentsline {subsection}{\numberline {3.2.4}Интерпритиация результатов}{23}{}%
+\contentsline {chapter}{\numberline {4}Tytuł 4}{25}{}%
+\contentsline {section}{\numberline {4.1}Sekcja}{25}{}%
+\contentsline {chapter}{Podsumowanie}{27}{}%

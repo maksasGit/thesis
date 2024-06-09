@@ -1,0 +1,70 @@
+\thispagestyle{empty}
+\hspace{-1.9cm}
+\begin{minipage}[-10cm]{450pt} 
+\vspace{-1.9cm}
+\begin{figure}[H]
+  \includegraphics[width=0.5\textwidth]{./img/logo.jpg}
+\end{figure}
+\end{minipage}
+\vspace{1.5cm}
+
+
+\begin{changemargin}{1.9cm}
+\renewcommand\familydefault{\sfdefault}
+ 
+\linespread{1}
+\begin{minipage}{400pt}
+\fontsize{20pt}{1pt}{\sffamily 
+UNIWERSYTET MARII CURIE-SKŁODOWSKIEJ 
+\\
+W~LUBLINIE
+\\
+Wydział TWÓJ WYDZIAŁ}
+\end{minipage}
+
+\vspace{\stretch{1}}
+\begin{table}[H]
+\hspace{2cm}
+\begin{tabular}{|cc}
+  &
+\begin{minipage}{350pt}
+
+\vspace{0.2cm}
+
+Kierunek: WPISAĆ\\
+Specjalność: WPISAĆ\\
+
+\vspace{1cm}
+
+{\bf\large{IMIĘ NAZWISKO\\}}
+nr albumu: NR\\
+
+
+\vspace{1.5cm}
+
+{\bf \Large TYTUŁ POLSKI\\}
+
+{\bf TYTUŁ ANGIELSKI\\
+
+\vspace{3.5cm}
+}
+{Praca magisterska\\
+napisana w Zakładzie JAKIMŚ\\
+pod kierunkiem dr. CZYIMŚ\\
+}
+\end{minipage}
+
+\end{tabular}
+
+\end{table}
+
+\vfill
+{\bf Lublin rok 2012}
+
+\end{changemargin}
+
+\newpage
+
+\thispagestyle{empty}
+
+\vspace*{\stretch{1}}

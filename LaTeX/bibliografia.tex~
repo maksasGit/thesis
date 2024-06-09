@@ -1,0 +1,9 @@
+\begin{thebibliography}{9}
+\small
+\bibitem{JAKAŚ NAZWA}
+AUTOR, \emph{TYTUŁ}, WYDAWNICTWO, ROK.
+\bibitem{SyntheticCreatures}
+Alex J. Champandard, \emph{AI Game Development: Synthetic Creatures with Learning and Reactive Behaviors}, New Riders Publishing, 2003.
+\bibitem{AIGameEngine}
+Brian Schwab, \emph{AI Game Engine Programming}, Charles River Media, 2004.
+\end{thebibliography}

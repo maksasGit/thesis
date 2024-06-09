@@ -1,0 +1,14 @@
+
+\chapter{Porównanie}
+
+W~ostatnim rozdziale pracy zawarte jest porównanie wykorzystanych w~grze metod. 
+
+\section{Skuteczność logiki rozmytej}
+
+A tutaj wstawiam obrazek.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=350px]{./img/logo.jpg}
+ \caption{Podpis}
+\end{figure}

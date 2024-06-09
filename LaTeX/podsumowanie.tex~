@@ -1,0 +1,30 @@
+\chapter*{Podsumowanie}
+\addcontentsline{toc}{chapter}{Podsumowanie}
+
+Celem pracy było praktyczne zastosowanie metod sztucznej inteligencji w~grze w~systemie Android. 
+Scharakteryzowane zostały różne techniki SI, z~jakimi najczęściej można się spotkać, szczególnie uwzględniając te związane z~grami strategicznymi. 
+W~skrócie również opisana była platforma, pod którą powstała aplikacja realizująca temat pracy. 
+Autorka zdecydowała się na implementację starcia dwóch oddziałów w~grze strategicznej, w~której postaci podejmują decyzje w~oparciu o logikę rozmytą oraz mapę wpływu. 
+
+Według początkowego założenia te dwie techniki miały się wykazać dobrą skutecznością, lecz w~walce przeciwko sobie logika rozmyta powinna okazać się bardziej efektywna. 
+Testy aplikacji potwierdziły tę tezę.
+Niespodziewanie dla autorki w~trakcie działania aplikacji logika rozmyta w~pewnych przypadkach okazała się zawodna, zbyt często wybierając ucieczkę przed przeciwnikiem. 
+Seria testów pokazała, że obie metody dość dobrze sprawdzają się w~grze strategicznej, jednak można wyszczególnić w~jakich sytuacjach, na którą metodę jest lepiej się zdecydować.
+
+Należy pamiętać o tym, że logika rozmyta ma sens w~grach czasu rzeczywistego tylko wtedy, gdy zredukuje się eksplozję kombinacji wszystkich zmiennych lingwistycznych (a to jest możliwe między innymi dzięki metodzie Combsa). 
+Agenci opierający decyzję o system rozmyty sprawiają wrażenie inteligentnych, wygrywają potyczki z~agentami używającymi mapy wpływu, a gracz ludzki może ich pokonać tylko przy obraniu odpowiedniej taktyki. 
+Jednakże zastosowanie tej techniki nie sprawdzi się w~grze, w~której znajduje się zbyt wiele komputerowych jednostek. 
+Pochłaniane zasoby będą rosnąć proporcjonalnie do liczby agentów i~na pewnym etapie zbyt wiele operacji będzie musiało się wykonać w~jednostce czasu. 
+
+Mapa wpływu z~łatwością zwyciężana przez system rozmyty okazała się zaskakująco trudna do pokonania przez gracza, będącego człowiekiem. 
+Może to wynikać z~większej odporności na zmianę taktyki. 
+Mapę wpływu można wykorzystywać na wiele sposobów i~wyciągać z~niej wiele informacji. 
+Jest niezwykle przydatnym narzędziem w~analizie strategicznej terenu.
+Pozwala również w~pewnym stopniu na predykcję działań przeciwnika. 
+W przeciwieństwie do logiki rozmytej zużycie zasobów jest niezależne od liczby jednostek, które są sterowane przez komputer. 
+Tutaj jednak trzeba mieć na uwadze fakt, że mapa wpływu jest doskonałym wyborem tylko przy rozsądnym czasie odświeżania wartości w~mapie oraz siatce gry, podzielonej na relatywnie duże obszary.
+
+Programowanie aplikacji dla systemu Android okazało się dobrym wyborem, nie tylko ze względu na popularność platformy. 
+Obsługa gry strategicznej na panelu dotykowym (o ile jest on odpowiednio duży) jest dużo bardziej wygodna niż obsługa innych rodzajów gier (w szczególności gier zręcznościowych). 
+Faktem jest, że w~tym momencie najbardziej popularne są gry proste bez żadnej sztucznej inteligencji. 
+Warto jednak zainwestować jeszcze trochę czasu w~stworzenie naprawdę efektywnego komputerowego przeciwnika w~grze strategicznej: przyjaznego dla słabszego sprzętu i~dającego satysfakcję graczowi.
