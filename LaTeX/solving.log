@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  9 JUN 2024 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  9 JUN 2024 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1033,8 +1033,8 @@ Underfull \hbox (badness 4886) in paragraph at lines 58--59
  []
 
 
-Overfull \hbox (16.67595pt too wide) in paragraph at lines 60--61
-[]\T2A/cmr/m/n/10 »спользу€ video id, вы-пол-н€-ет-с€ за-прос GET https://www.g
+Overfull \hbox (22.23015pt too wide) in paragraph at lines 60--61
+[]\T2A/cmr/m/n/10 »спользу€ video_id, вы-пол-н€-ет-с€ за-прос GET https://www.g
 oogleapis.com/youtube/v3/videos
  []
 
@@ -1086,120 +1086,123 @@ Underfull \hbox (badness 3009) in paragraph at lines 149--150
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 167--169
-\T2A/cmr/m/n/10 Ёта функ-ци€ так-же ис-поль-зу-ет об-ра-бо-тан-ные стро-ки ком-
-мен-та-ри-ев, опре-де-л€€ дли-ну
+Underfull \hbox (badness 2478) in paragraph at lines 168--169
+\T2A/cmr/m/n/10 ко-то-рый бу-дет ис-поль-зо-ван дл€ по-стро-е-ни€ ги-сто-грам-м
+ы (histogram), по-ка-зы-ва-ю-щей
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 167--169
-\T2A/cmr/m/n/10 каж-до-го ком-мен-та-ри€. ¬ ко-неч-ном ито-ге ге-не-ри-ру-ет-с€
- мас-сив длин, ко-то-рый бу-дет
- []
-
-
-Underfull \hbox (badness 1221) in paragraph at lines 177--178
+Underfull \hbox (badness 1221) in paragraph at lines 191--192
 []\T2A/cmr/m/n/10 Ќа дан-ном эта-пе текст го-тов к сле-ду-ю-ще-му эта-пу об-ра-
 бот-ки. ƒл€ по-сле-ду-ю-ще-го
  []
 
-[13]
-Underfull \hbox (badness 1748) in paragraph at lines 180--181
+
+Underfull \vbox (badness 1028) has occurred while \output is active []
+
+ [13]
+Underfull \hbox (badness 1748) in paragraph at lines 194--195
 []\T2A/cmr/m/n/10 TF-IDF (Term Frequency-Inverse Document Frequency) ^^V это ст
 а-ти-сти-че-ска€ ме-ра,
  []
 
 
-Underfull \hbox (badness 4266) in paragraph at lines 180--181
+Underfull \hbox (badness 4266) in paragraph at lines 194--195
 \T2A/cmr/m/n/10 ис-поль-зу-е-ма€ дл€ оцен-ки важ-но-сти тер-ми-на в до-ку-мен-т
 е от-но-си-тель-но кол-лек-ции
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 195--196
-[]\T2A/cmr/m/n/10 stop words: —пи-сок слов или стро-ка, опре-де-л€-ю-ща€ сло-ва
+Underfull \hbox (badness 5460) in paragraph at lines 202--203
+[]\T2A/cmr/m/n/10 stop_words: —пи-сок слов или стро-ка, опре-де-л€-ю-ща€ сло-ва
 , ко-то-рые сле-ду-ет
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 219--220
+Underfull \hbox (badness 1097) in paragraph at lines 233--234
 []\T2A/cmr/m/n/10 Word2Vec ^^V это ал-го-ритм, раз-ра-бо-тан-ный дл€ обу-че-ни€
  век-тор-ных пред-став-ле-ний
  []
 
-
-Underfull \hbox (badness 2538) in paragraph at lines 225--226
+[14]
+Underfull \hbox (badness 2538) in paragraph at lines 239--240
 []\T2A/cmr/m/n/10 window: ћак-си-маль-ное рас-сто-€-ние меж-ду те-ку-щим и пред
 -ска-зан-ным сло-вом в
  []
 
-[14] [15]
-Overfull \hbox (19.3497pt too wide) in paragraph at lines 277--277
+[15]
+Overfull \hbox (19.3497pt too wide) in paragraph at lines 286--286
 []\T2A/cmtt/m/n/10 model = Word2Vec(sentences=tokens, vector_size=100, window=5
 , min_count=1, workers=4)[] 
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 289--290
+Underfull \hbox (badness 1400) in paragraph at lines 298--299
 []\T2A/cmr/m/n/10 ѕосле век-то-ри-за-ции тек-ста с ис-поль-зо-ва-ни-ем ме-то-до
 в TF-IDF и Word2Vec важ-но
  []
 
 [16]
-Underfull \hbox (badness 1881) in paragraph at lines 330--331
+Underfull \hbox (badness 1881) in paragraph at lines 336--337
 []\T2A/cmr/m/n/10 tol: ѕо-рог дл€ оста-нов-ки ал-го-рит-ма. ≈с-ли раз-ни-ца меж
 -ду ста-ры-ми и но-вы-ми
  []
 
 
-Overfull \hbox (35.09586pt too wide) in paragraph at lines 338--338
+Overfull \hbox (35.09586pt too wide) in paragraph at lines 344--344
 []\T2A/cmtt/m/n/10 kmeans = KMeans(n_clusters=2, init='k-means++', max_iter=300
 , n_init=10, random_state=0) 
  []
 
 [17]
-Underfull \hbox (badness 3965) in paragraph at lines 352--353
+Underfull \hbox (badness 3965) in paragraph at lines 358--359
 []\T2A/cmr/m/n/10 јлгоритм DBSCAN (Density-Based Spatial Clustering of Applicat
 ions with Noise)
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 373--374
+Underfull \hbox (badness 1874) in paragraph at lines 366--367
+[]\T2A/cmr/m/n/10 algorithm: јл-го-ритм, ис-поль-зу-е-мый дл€ вы-чис-ле-ни€ бли
+-жай-ших со-се-дей ('auto',
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 379--380
 \T2A/cmr/m/n/10 јлгоритм DBSCAN де-тер-ми-ни-ро-ван и все-гда ге-не-ри-ру-ет од
 и-на-ко-вые кла-сте-ры при
  []
 
 [18]
-Underfull \hbox (badness 6188) in paragraph at lines 397--398
+Underfull \hbox (badness 6188) in paragraph at lines 403--404
 []\T2A/cmr/m/n/10 «аключителый про-цесс ана-ли-за это ви-зу-а-ли-за-ци€ дан-ных
 . »то-го-вый ре-зуль-тат
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 400--401
+Underfull \hbox (badness 3482) in paragraph at lines 406--407
 []\T2A/cmr/m/n/10 ƒл€ воз-мож-но-сти ви-зу-а-ли-за-ции век-то-ри-зи-ро-ва-ных д
 ан-ных в ка-че-стве 2D то-чек
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 400--401
+Underfull \hbox (badness 2229) in paragraph at lines 406--407
 \T2A/cmr/m/n/10 необ-хо-ди-мо вос-поль-зо-вать-с€ ме-то-дом сни-же-ни€ раз-мер-
 но-сти (T-SNE). ƒан-ный ме-тод
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 400--401
+Underfull \hbox (badness 1112) in paragraph at lines 406--407
 \T2A/cmr/m/n/10 от-ве-ча-ют при-зна-ки, то вы-брать какие-то наи-бо-лее под-хо-
 д€-щие при-зна-ки невоз-мож-но.
  []
 
-
-Underfull \hbox (badness 2809) in paragraph at lines 419--420
+[19]
+Underfull \hbox (badness 2809) in paragraph at lines 425--426
 []\T2A/cmr/m/n/10 ѕреобразование рас-сто-€-ний в ве-ро-€т-но-сти: ƒл€ каж-дой т
 оч-ки рас-счи-ты-ва-ют-с€
  []
 
-[19]) (rozdzial_3.tex [20]
+) (rozdzial_3.tex [20]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 
 Underfull \hbox (badness 1009) in paragraph at lines 5--6
@@ -1234,20 +1237,32 @@ Underfull \hbox (badness 7238) in paragraph at lines 44--46
  []
 
 [22]
-Underfull \hbox (badness 1178) in paragraph at lines 87--88
+Underfull \hbox (badness 1178) in paragraph at lines 88--89
 \T2A/cmr/m/n/10 на-ви-га-ции по гра-фи-ку и дру-гих опе-ра-ций. ќк-но со-хра-н€
 -ет-с€, и поль-зо-ва-тель мо-жет
  []
 
-) (rozdzial_4.tex [23] [24
 
-]
+Underfull \hbox (badness 3118) in paragraph at lines 108--109
+[]\T2A/cmr/m/n/10 »сходные гра-фи-ки, гра-фи-ки по-сле. ¬и-зу-аль-но гра-фи-ки 
+недолж-ны бы-ли силь-но
+ []
+
+[23]
+Underfull \hbox (badness 1515) in paragraph at lines 115--116
+\T2A/cmr/m/n/10 ви-зу-а-ли-зи-ро-вать на-ши век-то-ре-зи-ро-ван-ные дан-ные, та
+к как необ-ход-мо вы-брать ме-тод
+ []
+
+) (rozdzial_4.tex [24]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
 File: ./img/logo.jpg Graphic file (type jpg)
 <use ./img/logo.jpg>
 Package pdftex.def Info: ./img/logo.jpg  used on input line 12.
 (pdftex.def)             Requested size: 351.31378pt x 121.36653pt.
-) (podsumowanie.tex [25] [26
+) (podsumowanie.tex [25
+
+] [26
 
 ]) (bibliografia.tex [27] [28
 
@@ -1291,44 +1306,46 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10914 strings out of 475248
- 172156 string characters out of 5757812
- 2012785 words of memory out of 5000000
- 32189 multiletter control sequences out of 15000+600000
- 579722 words of font info for 77 fonts, out of 8000000 for 9000
+ 10944 strings out of 475248
+ 172653 string characters out of 5757812
+ 2096785 words of memory out of 5000000
+ 32217 multiletter control sequences out of 15000+600000
+ 580935 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,16n,82p,1647b,1302s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,16n,82p,1596b,1302s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati09
 00.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
-rm0900.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi37
-5\latt0800.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/d
-pi600\larm0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t
-2a/dpi600\labx0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/
-lh-t2a/dpi600\larm0800.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour
-/lh/lh-t2a/dpi600\latt1000.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/lj
-four/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts
-/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\imaks\AppData\Local\MiKTeX\f
-onts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\imaks\AppData\Local\MiKT
-eX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\imaks\AppData\Local\
-MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\imaks\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\imaks\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\imaks\Ap
-pData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1000.pk> <C:\Users\imak
-s\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1440.pk> <C:\Users\
-imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1200.pk> <C:\Us
-ers\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass1000.pk> <C
-:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass2074.pk
-><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mbx10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr9.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/imaks/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/imaks/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on solving.pdf (41 pages, 465496 bytes).
+rm0900.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\tcrm0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
+/dpi600\lati0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
+-t2a/dpi375\latt0800.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/l
+h/lh-t2a/dpi600\larm0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/lh/lh-t2a/dpi600\labx0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/
+ljfour/lh/lh-t2a/dpi600\larm0800.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts
+/pk/ljfour/lh/lh-t2a/dpi600\latt1000.pk> <C:\Users\imaks\AppData\Local\MiKTeX\f
+onts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\imaks\AppData\Local\Mi
+KTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\imaks\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\imaks\AppData\
+Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\imaks\AppD
+ata\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\imaks\
+AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\im
+aks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\User
+s\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1000.pk> <C:\
+Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1440.pk> 
+<C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1200.
+pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass1
+000.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\l
+ass2074.pk><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/imaks/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/imaks/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/imaks/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/imaks/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on solving.pdf (41 pages, 483274 bytes).
 PDF statistics:
- 1014 PDF objects out of 1200 (max. 8388607)
+ 1065 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
