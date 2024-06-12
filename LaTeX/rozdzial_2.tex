@@ -347,10 +347,10 @@
 			\begin{verbatim}
 				kmeans = KMeans(n_clusters=2, init='k-means++', max_iter=300, n_init=10, random_state=0)
 
-				# Обучение модели
+
 				kmeans.fit(X)
 
-				# Предсказание кластеров для данных
+
 				y_kmeans = kmeans.predict(X)
 			\end{verbatim}
 			
@@ -390,10 +390,10 @@
 				X = np.array([[0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
              			 [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]])
 
-					# Создание модели t-SNE
+
 					tsne = TSNE(n_components=2, perplexity=5, n_iter=300, random_state=0)
 
-					# Преобразование данных
+
 					X_embedded = tsne.fit_transform(X)
 			\end{verbatim}
 			
@@ -413,54 +413,46 @@
 			
 	
 	
-\section{Визуализация}
-	\subsection{Opis}
-		Заключителый процесс анализа это визуализация данных. Итоговый результат представляет из себя \textbf{2D Plot}, где каждая точка будет представлять некоторые текстовые данные (комментарии) с опрелённым цветом, соотвутсвующим цвету кластера, которому она принадлежит, или же цвету отсутсвия кластера как в случае DBSCAN. Так же на графике будут визуализироваться центра каждого кластера в виде красного крестика. Для удобства навигации и проверки результатов  при наведении на точку(коментарий) или крустик(центр кластера) будет высчевиваться информация с содержанием элемента, которая репрезентуется с помощью библиотеки \textbf{mplcursor}. В случае точки это содержание обработоного комментария. В случае крестика репрезентуется центр кластера, которая с помощью метода обратного векторизации будет пытаться представить данную точку как слово.
+\section{Wizualizacja}
+	\subsection{Defenicja}
+		Ostatnim etapem analizy jest wizualizacja danych. Końcowy wynik to wykres 2D, gdzie każdy punkt będzie reprezentował pewne dane tekstowe (komentarze) z określonym kolorem odpowiadającym klastrowi, do którego należy, lub kolorem braku klastra, jak w przypadku DBSCAN. Na wykresie będą również wizualizowane centroidy każdego klastra w postaci czerwonego krzyżyka.
 	
-	\subsection{Cнижение размерности}
-		Для возможности визуализации векторизированых данных в качестве 2D точек необходимо воспользоваться методом снижения размерности (T-SNE). Данный метод является нелейным методом выделения признаков. Изначально трудно определить за что отвечают признаки, то выбрать какие-то наиболее подходящие признаки невозможно. Нелейный метод поможет нам сохранить неленейные связи.
+	\subsection{Redukcja wymiarowości}
+		Aby możliwa była wizualizacja zwektoryzowanych danych jako punktów 2D, konieczne jest skorzystanie z metody redukcji wymiarowości (T-SNE). Ta metoda jest nieliniową metodą ekstrakcji cech. Na początku trudno jest określić, za co odpowiadają cechy, więc wybór odpowiednich cech jest niemożliwy. Metoda nieliniowa pomoże nam zachować nieliniowe zależności \cite{t-sne}.
+	
 		
 	\subsection{T-SNE}
 	
-		\subsubsection{Параметры}
+		\subsubsection{Parametry}
 			\begin{itemize}
-				\item n\_components: Количество измерений, в которое нужно проецировать данные (обычно 2 или 3 для визуализации).
-				\item perplexity: Параметр, связанный с количеством ближайших соседей. Он влияет на баланс между локальной и глобальной структурой данных.
-				\item early\_exaggeration: Параметр, который контролирует расстояния между точками в начальной фазе оптимизации.
-				\item learning\_rate: Скорость обучения для градиентного спуска.
-				\item n\_iter: Количество итераций для оптимизации.
-				\item metric: Метрика для вычисления расстояний между точками (по умолчанию 'euclidean').
-				\item init: Метод инициализации ('random' или 'pca').			
-				\item random\_state: Начальное значение генератора случайных чисел для воспроизводимости результатов.
+				\item n\_components: Liczba wymiarów, na które należy zrzutować dane (zwykle 2 lub 3 dla wizualizacji).
+				\item perplexity: Parametr związany z liczbą najbliższych sąsiadów. Wpływa na równowagę między lokalną a globalną strukturą danych.
+				\item early\_exaggeration: Parametr kontrolujący odległości między punktami na początkowym etapie optymalizacji.
+				\item learning\_rate: Szybkość uczenia się dla spadku gradientowego.
+				\item n\_iter: Liczba iteracji do optymalizacji.
+				\item metric: Metryka do obliczania odległości między punktami (domyślnie 'euclidean').
+				\item init: Metoda inicjalizacji ('random' lub 'pca').			
+				\item random\_state: Początkowa wartość generatora liczb losowych dla reprodukowalności wyników.
 			\end{itemize}				
 		
-		\subsubsection{Описание алгоритма}
-			Алгоритм t-SNE выполняется следующим образом:
+		\subsubsection{Opis algorytmu}
+			Algorytm t-SNE działa w następujący sposób: 
 			\begin{enumerate}
-				\item Преобразование расстояний в вероятности: Для каждой точки рассчитываются вероятности Пирсона, которые определяют вероятность того, что соседняя точка будет выбрана в качестве соседа.
-				\item Определение целевых вероятностей: На низкоразмерной проекции рассчитываются вероятности Q, аналогичные вероятностям Пирсона, но в другой размерности.
-				\item  Минимизация расхождения (Kullback-Leibler divergence): Градиентный спуск используется для минимизации расхождения между распределениями P и Q, что приводит к сохранению близости точек.
+				\item Przekształcenie odległości na prawdopodobieństwa: Dla każdego punktu obliczane są prawdopodobieństwa Pearsona, które określają prawdopodobieństwo wybrania sąsiedniego punktu jako sąsiada.
+				\item Określenie docelowych prawdopodobieństw: Na niskowymiarowej projekcji obliczane są prawdopodobieństwa Q, podobne do prawdopodobieństw Pearsona, ale w innym wymiarze.
+				\item Minimalizacja rozbieżności (Kullback-Leibler divergence): Używany jest spadek gradientowy do minimalizacji rozbieżności między rozkładami P i Q, co prowadzi do zachowania bliskości punktów.
 			\end{enumerate}
 			
 			
-		\subsubsection{Пример использования}
+		\subsubsection{Przykład użycia}
 			\begin{verbatim}
-				X = np.array([[1, 2], [2, 2], [2, 3],
-              					[8, 7], [8, 8], [25, 80]])
-
-				# Создание модели DBSCAN
-				dbscan = DBSCAN(eps=3, min_samples=2)
-
-				# Обучение модели
-				dbscan.fit(X)
-
-				# Предсказание кластеров для данных
-				labels = dbscan.labels_
+				I use T-SNE
 			\end{verbatim}
 			
 			
-			Пример преобразования данных:
-				\textbf{тут фотку}
+			Przykład przekształcenia danych:
+			
+				\textbf{tu będzie zdjęcie}
 	
 	
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 19:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1022,63 +1022,35 @@ Overfull \hbox (19.3497pt too wide) in paragraph at lines 287--287
  []
 
 [15] [16]
-Underfull \hbox (badness 1881) in paragraph at lines 338--339
-[]\T2A/cmr/m/n/10 tol: По-рог для оста-нов-ки ал-го-рит-ма. Ес-ли раз-ни-ца меж
--ду ста-ры-ми и но-вы-ми
- []
-
-
-Overfull \hbox (35.09586pt too wide) in paragraph at lines 346--346
+Overfull \hbox (35.09586pt too wide) in paragraph at lines 348--348
 []\T2A/cmtt/m/n/10 kmeans = KMeans(n_clusters=2, init='k-means++', max_iter=300
 , n_init=10, random_state=0) 
  []
 
-
-Underfull \hbox (badness 3965) in paragraph at lines 360--361
-[]\T2A/cmr/m/n/10 Алгоритм DBSCAN (Density-Based Spatial Clustering of Applicat
-ions with Noise)
- []
-
-
-Underfull \hbox (badness 1874) in paragraph at lines 368--369
-[]\T2A/cmr/m/n/10 algorithm: Ал-го-ритм, ис-поль-зу-е-мый для вы-чис-ле-ния бли
--жай-ших со-се-дей ('auto',
- []
-
 [17]
-Underfull \hbox (badness 2913) in paragraph at lines 381--382
-\T2A/cmr/m/n/10 Алгоритм DBSCAN де-тер-ми-ни-ро-ван и все-гда ге-не-ри-ру-ет од
-и-на-ко-вые кла-сте-ры при
+Underfull \hbox (badness 1400) in paragraph at lines 418--419
+\T2A/cmr/m/n/10 DBSCAN. Na wykresie b[]d[] r^^Aownie
+z wizualizowane centroidy ka
+zdego klastra w postaci
  []
 
 
-Underfull \hbox (badness 6188) in paragraph at lines 405--406
-[]\T2A/cmr/m/n/10 Заключителый про-цесс ана-ли-за это ви-зу-а-ли-за-ция дан-ных
-. Ито-го-вый ре-зуль-тат
- []
-
-
-Underfull \hbox (badness 3482) in paragraph at lines 408--409
-[]\T2A/cmr/m/n/10 Для воз-мож-но-сти ви-зу-а-ли-за-ции век-то-ри-зи-ро-ва-ных д
-ан-ных в ка-че-стве 2D то-чек
- []
-
-
-Underfull \hbox (badness 2229) in paragraph at lines 408--409
-\T2A/cmr/m/n/10 необ-хо-ди-мо вос-поль-зо-вать-ся ме-то-дом сни-же-ния раз-мер-
-но-сти (T-SNE). Дан-ный ме-тод
- []
-
-
-Underfull \hbox (badness 1112) in paragraph at lines 408--409
-\T2A/cmr/m/n/10 от-ве-ча-ют при-зна-ки, то вы-брать какие-то наи-бо-лее под-хо-
-дя-щие при-зна-ки невоз-мож-но.
+Underfull \hbox (badness 1173) in paragraph at lines 421--422
+\T2A/cmr/m/n/10 ekstrakcji cech. Na pocz[]tku trudno jest okre^^Asli^^Ac, za co
+ odpowiadaj[] cechy, wi[]c wyb^^Aor
  []
 
 [18]
-Underfull \hbox (badness 2809) in paragraph at lines 427--428
-[]\T2A/cmr/m/n/10 Преобразование рас-сто-я-ний в ве-ро-ят-но-сти: Для каж-дой т
-оч-ки рас-счи-ты-ва-ют-ся
+Underfull \hbox (badness 1783) in paragraph at lines 435--436
+[]\T2A/cmr/m/n/10 random_state: Pocz[]tkowa warto^^As^^Ac generatora liczb loso
+wych dla reprodukowalno^^Asci
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 441--442
+[]\T2A/cmr/m/n/10 Przekszta\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 cenie odleg\OT1/cm
+r/m/n/10  l\T2A/cmr/m/n/10 o^^Asci na prawdopodobie^^Anstwa: Dla ka
+zdego punktu obliczane s[]
  []
 
 ) (rozdzial_3.tex [19] [20
@@ -1196,13 +1168,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10965 strings out of 475248
- 172880 string characters out of 5757812
- 2101785 words of memory out of 5000000
- 32237 multiletter control sequences out of 15000+600000
+ 10967 strings out of 475248
+ 172910 string characters out of 5757812
+ 2100785 words of memory out of 5000000
+ 32239 multiletter control sequences out of 15000+600000
  581809 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,16n,82p,1596b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,16n,82p,1298b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati09
 00.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
 rm0900.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
@@ -1234,9 +1206,9 @@ fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/imaks/AppData/Local/Programs
 rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/imaks/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/ima
 ks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on solving.pdf (41 pages, 522722 bytes).
+Output written on solving.pdf (41 pages, 511001 bytes).
 PDF statistics:
- 1170 PDF objects out of 1200 (max. 8388607)
+ 1134 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

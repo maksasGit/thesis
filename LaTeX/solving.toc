@@ -63,24 +63,24 @@
 \contentsline {subsubsection}{Kryteria}{16}{}%
 \contentsline {subsubsection}{Ocena TF-IDF}{16}{}%
 \contentsline {subsubsection}{Ocena Word2Vec}{16}{}%
-\contentsline {section}{\numberline {2.5}Кластеризация}{16}{}%
-\contentsline {subsection}{\numberline {2.5.1}Opis}{16}{}%
+\contentsline {section}{\numberline {2.5}Klasteryzacja}{16}{}%
+\contentsline {subsection}{\numberline {2.5.1}Defenicja}{16}{}%
 \contentsline {subsection}{\numberline {2.5.2}K-means}{16}{}%
 \contentsline {subsubsection}{Описание алгоритма}{16}{}%
-\contentsline {subsubsection}{Параметры}{17}{}%
-\contentsline {subsubsection}{Пример использования}{17}{}%
+\contentsline {subsubsection}{Parametry}{17}{}%
+\contentsline {subsubsection}{Przykład użycia}{17}{}%
 \contentsline {subsection}{\numberline {2.5.3}DBSCAN}{17}{}%
-\contentsline {subsubsection}{Параметры}{17}{}%
-\contentsline {subsubsection}{Описание алгоритма}{18}{}%
-\contentsline {subsubsection}{Пример использования}{18}{}%
-\contentsline {subsection}{\numberline {2.5.4}Выбор параметров}{18}{}%
-\contentsline {section}{\numberline {2.6}Визуализация}{18}{}%
-\contentsline {subsection}{\numberline {2.6.1}Opis}{18}{}%
-\contentsline {subsection}{\numberline {2.6.2}Cнижение размерности}{18}{}%
+\contentsline {subsubsection}{Parametry}{17}{}%
+\contentsline {subsubsection}{Opis algorytmu}{18}{}%
+\contentsline {subsubsection}{Przykład użycia}{18}{}%
+\contentsline {subsection}{\numberline {2.5.4}Dobór parametrów}{18}{}%
+\contentsline {section}{\numberline {2.6}Wizualizacja}{18}{}%
+\contentsline {subsection}{\numberline {2.6.1}Defenicja}{18}{}%
+\contentsline {subsection}{\numberline {2.6.2}Redukcja wymiarowości}{19}{}%
 \contentsline {subsection}{\numberline {2.6.3}T-SNE}{19}{}%
-\contentsline {subsubsection}{Параметры}{19}{}%
-\contentsline {subsubsection}{Описание алгоритма}{19}{}%
-\contentsline {subsubsection}{Пример использования}{19}{}%
+\contentsline {subsubsection}{Parametry}{19}{}%
+\contentsline {subsubsection}{Opis algorytmu}{19}{}%
+\contentsline {subsubsection}{Przykład użycia}{19}{}%
 \contentsline {chapter}{\numberline {3}Rozdzial 3}{21}{}%
 \contentsline {section}{\numberline {3.1}Описание приложения}{21}{}%
 \contentsline {subsection}{\numberline {3.1.1}Рабочее окно}{21}{}%
