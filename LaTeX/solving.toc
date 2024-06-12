@@ -10,24 +10,24 @@
 \contentsline {subsection}{\numberline {1.1.3}Metody klasteryzacji}{3}{}%
 \contentsline {subsection}{\numberline {1.1.4}Etapy klasteryzacji}{4}{}%
 \contentsline {subsection}{\numberline {1.1.5}Zastosowanie}{4}{}%
-\contentsline {subsection}{\numberline {1.1.6}Оценка эффективности кластеризации}{4}{}%
+\contentsline {subsection}{\numberline {1.1.6}Ocena efektywności klasteryzacji}{4}{}%
 \contentsline {section}{\numberline {1.2}Przetwarzanie języka naturalnego}{5}{}%
 \contentsline {subsection}{\numberline {1.2.1}Defenicja}{5}{}%
 \contentsline {subsection}{\numberline {1.2.2}Przedprzetwarzanie tekstu}{5}{}%
 \contentsline {subsection}{\numberline {1.2.3}Stemming}{5}{}%
 \contentsline {subsection}{\numberline {1.2.4}Lematyzacja}{6}{}%
-\contentsline {section}{\numberline {1.3}Векторизация}{6}{}%
+\contentsline {section}{\numberline {1.3}Wektoryzacja}{6}{}%
 \contentsline {subsection}{\numberline {1.3.1}Opis}{6}{}%
 \contentsline {subsection}{\numberline {1.3.2}Celi wektoryzacji}{6}{}%
 \contentsline {subsection}{\numberline {1.3.3}Metody wektoryzacji}{6}{}%
 \contentsline {subsection}{\numberline {1.3.4}Zastosowanie}{7}{}%
-\contentsline {section}{\numberline {1.4}снижения разменрности}{7}{}%
-\contentsline {subsection}{\numberline {1.4.1}Дефениция}{7}{}%
-\contentsline {subsection}{\numberline {1.4.2}Методы снижения размерности}{7}{}%
-\contentsline {subsubsection}{Выбор признаков}{7}{}%
-\contentsline {subsubsection}{Выделение признаков}{7}{}%
-\contentsline {subsubsection}{Методы выделения признаков}{8}{}%
-\contentsline {subsection}{\numberline {1.4.3}Применение}{8}{}%
+\contentsline {section}{\numberline {1.4}Redukcja wymiarowości}{7}{}%
+\contentsline {subsection}{\numberline {1.4.1}Definicja}{7}{}%
+\contentsline {subsection}{\numberline {1.4.2}Metody redukcji wymiarowości}{7}{}%
+\contentsline {subsubsection}{Wybór cech}{7}{}%
+\contentsline {subsubsection}{Wydobywanie cech}{7}{}%
+\contentsline {subsubsection}{Metody wydobywania cech}{7}{}%
+\contentsline {subsection}{\numberline {1.4.3}Zastosowanie}{8}{}%
 \contentsline {chapter}{\numberline {2}Rozdzial 2}{9}{}%
 \contentsline {section}{\numberline {2.1}Приложение}{9}{}%
 \contentsline {subsection}{\numberline {2.1.1}Opis}{9}{}%

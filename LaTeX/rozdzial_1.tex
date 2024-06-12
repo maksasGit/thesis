@@ -51,7 +51,7 @@
 				\item grupowanie tekstowych dokumentów według ich tematyki, takich jak artykuły prasowe, publikacje naukowe lub wiadomości w mediach społecznościowych
 			\end{itemize}
 
-	\subsection{Оценка эффективности кластеризации}
+	\subsection{Ocena efektywności klasteryzacji}
 		Problem oceny jakości w zadaniu klasteryzacji jest trudny do rozwiązania z co najmniej dwóch powodów. Po pierwsze, zgodnie z twierdzeniem o niemożności Kleinberga \cite{Kleinberg}, nie istnieje optymalny algorytm klasteryzacji. Po drugie, wiele algorytmów klasteryzacji nie jest w stanie samodzielnie określić rzeczywistej liczby klastrów w danych; najczęściej liczba klastrów jest zadawana na wejściu algorytmu i dobierana kilkoma uruchomieniami.
 		Niemniej jednak, wyróżnia się dwie grupy metod oceny jakości klasteryzacji:
 		\begin{enumerate}
@@ -94,7 +94,7 @@
 		\end{itemize}
 		
 
-\section{Векторизация}
+\section{Wektoryzacja}
 
 	\subsection{Opis}
 		Większość modeli matematycznych działa w przestrzeniach wektorowych o dużych wymiarach, dlatego konieczne jest przekształcenie tekstu w przestrzeń wektorową. Głównym celem wektoryzacji tekstu jest stworzenie reprezentacji danych tekstowych, która zachowuje informacje semantyczne i syntaktyczne o tekście, a jednocześnie nadaje się do wykorzystania w modelach matematycznych. Pozwala to na efektywną analizę i przetwarzanie danych tekstowych za pomocą algorytmów i metod uczenia maszynowego. \cite{Vectorization}
@@ -127,32 +127,34 @@
 		\end{itemize}
 
 
-\section{снижения разменрности}
+\section{Redukcja wymiarowości}
 
-	\subsection{Дефениция}
-		Снижение размерности - это процесс уменьшения количества признаков (измерений) в наборе данных, сохраняя при этом как можно больше информации. Часто используется в машином обучении где главная цель устранение в наборе  признаков избыточных , неинформативных или слабо информативных которые могут  понизить эффективность модели, а после такого преобразования она упрощается, и соответственно уменьшается размер набора данных в памяти и ускоряется работа алгоритмов на нем. Так же используется для упрощение анализа и визуализации данных, например путем редукции до низких размерностей таких как 2D или 3D. \cite{DimensionReduction}
+	\subsection{Definicja}
+		Redukcja wymiarowości to proces zmniejszania liczby cech (wymiarów) w zbiorze danych, przy jednoczesnym zachowaniu jak największej ilości informacji. Często stosowana jest w uczeniu maszynowym, gdzie głównym celem jest eliminacja nadmiarowych, nieinformatywnych lub mało istotnych cech, które mogą obniżać skuteczność modelu. Po takim przekształceniu model staje się prostszy, co zmniejsza rozmiar zbioru danych w pamięci i przyspiesza działanie algorytmów. Redukcja wymiarowości jest również używana do uproszczenia analizy i wizualizacji danych, na przykład poprzez redukcję do niskich wymiarów takich jak 2D lub 3D. \cite{DimensionReduction}
 
-	\subsection{Методы снижения размерности}
-		Уменьшение размерности может быть осуществлено методами выбора признаков (англ. feature selection) или выделения признаков (англ. feature extraction).
+	\subsection{Metody redukcji wymiarowości}
+		Redukcja wymiarowości może być realizowana metodami wyboru cech (ang. feature selection) lub wydobywania cech (ang. feature extraction).
 		
-		\subsubsection{Выбор признаков}
-			Метод Выбор признаков оставляют некоторое подмножество исходного набора признаков, избавляясь от признаков избыточных и слабо информативных. Основные преимущества этого класса алгоритмов:
+		
+		\subsubsection{Wybór cech}
+			Metody wyboru cech pozostawiają pewne podzbiory oryginalnego zestawu cech, eliminując cechy nadmiarowe i mało informatywne. Główne zalety tego rodzaju algorytmów to:
 			\begin{itemize}
-				\item Уменьшение вероятности переобучения
-				\item Увеличение точности предсказания модели;
-				\item Сокращение времени обучения;
-				\item Увеличивается семантическое понимание модели.\\
+				\item Zmniejszenie prawdopodobieństwa przeuczenia
+				\item Zwiększenie dokładności predykcji modelu
+				\item Skrócenie czasu uczenia
+				\item Zwiększenie semantycznego zrozumienia modelu.
 			\end{itemize}
 		
-		\subsubsection{Выделение признаков}	
-			Другим способом уменьшить размерность входных данных является выделение признаков. Эти методы каким-то образом составляют из уже исходных признаков новые, все также полностью описывающие пространство набора данных, но уменьшая его размерность и теряя в репрезентативности данных, т.к. становится непонятно, за что отвечают новые признаки. Все методы feature extraction можно разделить на линейные и нелинейные.\\
+		\subsubsection{Wydobywanie cech}	
+			Innym sposobem zmniejszenia wymiarowości danych wejściowych jest wydobywanie cech. Te metody tworzą z oryginalnych cech nowe, które nadal w pełni opisują przestrzeń zbioru danych, ale zmniejszają jego wymiarowość, tracąc na reprezentatywności danych, ponieważ staje się niejasne, za co odpowiadają nowe cechy. Metody wydobywania cech można podzielić na liniowe i nieliniowe.
 
-		\subsubsection{Методы выделения признаков}
-			Линейные методы основываются на предположение, что зависимость между независимыми переменными и зависимой переменной линейна. Поэтому они с помощью линейых комбинацией, которые означают, что изменение в одной переменной приводит к пропорциональному изменению в другой. Одним из самых известных методов линейного выделения признаков является PCA . Основной идеей этого метода является поиск  гиперплоскости, на которую при ортогональной проекции всех признаков максимизируется дисперсия.
-			Нелинейные методы позволяют моделировать более сложные и нелинейные зависимости между переменными. Алгоритм t-sne стремится сохранить относительные расстояния между точками в исходном пространстве высокой размерности, а затем  пытается воссоздать это распределение в низкоразмерном пространстве.
+		\subsubsection{Metody wydobywania cech}
+			Liniowe metody opierają się na założeniu, że zależność między zmiennymi niezależnymi a zmienną zależną jest liniowa. Oznacza to, że zmiana jednej zmiennej prowadzi do proporcjonalnej zmiany innej. Jedną z najbardziej znanych metod liniowego wydobywania cech jest PCA (Principal Component Analysis). Główną ideą tej metody jest znalezienie hiperpłaszczyzny, na którą przy ortogonalnej projekcji wszystkich cech maksymalizowana jest wariancja.
+		
+			Nieliniowe metody pozwalają modelować bardziej złożone i nieliniowe zależności między zmiennymi. Algorytm t-SNE (t-distributed Stochastic Neighbor Embedding) stara się zachować względne odległości między punktami w oryginalnej przestrzeni wysokowymiarowej, a następnie próbuje odtworzyć to rozkład w przestrzeni niskowymiarowej.
 
-	\subsection{Применение}
-		Метод снижение размерности часто и успешно используется в Машином обучение , Обработка изображений и компьютерное зрение, Биоинформатика и геномика , Финансовый анализ и торговля и многие другие области. Где снижение количества признаков позволяет оптимизировать обработку данных.
+	\subsection{Zastosowanie}
+		Metoda redukcji wymiarowości jest często i skutecznie stosowana w uczeniu maszynowym, przetwarzaniu obrazów i widzeniu komputerowym, bioinformatyce i genomice, analizie finansowej i handlu oraz wielu innych dziedzinach. Zmniejszenie liczby cech pozwala na optymalizację przetwarzania danych.
 
 
 
