@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 12:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -882,155 +882,100 @@ Underfull \hbox (badness 2237) in paragraph at lines 7--8
 ]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
 
-Underfull \hbox (badness 1762) in paragraph at lines 6--7
-\T2A/cmr/m/n/10 пси-хо-ло-гии, хи-мии, био-ло-гии, го-су-дар-ствен-ном управ-ле
--нии, фи-ло-ло-гии, ан-тро-по-ло-гии,
+Underfull \hbox (badness 3098) in paragraph at lines 6--7
+\T2A/cmr/m/n/10 administracji pa^^Anstwowej, filologii, antropologii, marketing
+u, socjologii, geologii i innych
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 21--22
-[]\T2A/cmr/m/n/10 Вероятностные ал-го-рит-мы кла-сте-ри-за-ции. Эти ал-го-рит-м
-ы при-сва-и-ва-ют каж-до-му
+Underfull \hbox (badness 1371) in paragraph at lines 13--14
+[]\T2A/cmr/m/n/10 Wykrywanie nowo^^Asci (odchyle^^An lub anomalii). Klasteryzac
+ja pozwala na wyr^^Ao
+znienie
  []
 
 [3]
-Underfull \hbox (badness 1158) in paragraph at lines 25--26
-[]\T2A/cmr/m/n/10 K-средних. Ите-ра-тив-ный ал-го-ритм, ос-но-ван-ный на ми-ни-
-ми-за-ции сум-мар-но-го
- []
-
-
-Underfull \hbox (badness 5607) in paragraph at lines 28--29
-[]\T2A/cmr/m/n/10 Спектральная кла-сте-ри-за-ция. Ме-тод, ис-поль-зу-ю-щий соб-
-ствен-ные зна-че-ния
- []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 29--30
-\T2A/cmr/m/n/10 груп-пи-ру-ю-щий точ-ки в один кла-стер в об-ла-стях с вы-со-ко
-й плот-но-стью и
- []
-
-
-Underfull \hbox (badness 4859) in paragraph at lines 34--35
-[]\T2A/cmr/m/n/10 Независимо от пред-ме-та ис-сле-до-ва-ния при-ме-не-ние ана-л
-и-за кла-сте-ров вклю-ча-ет
- []
-
-
-Underfull \hbox (badness 7704) in paragraph at lines 36--37
-\T2A/cmr/m/n/10 толь-ко ко-ли-че-ствен-ные дан-ные, по-сколь-ку чис-ло-вые по-к
-а-за-те-ли мо-гут быть
- []
-
-
-Underfull \hbox (badness 1845) in paragraph at lines 37--38
-[]\T2A/cmr/m/n/10 Определение на-бо-ра пе-ре-мен-ных, на ос-но-ве ко-то-рых объ
--ек-ты в вы-бор-ке бу-дут
- []
-
-
-Underfull \hbox (badness 1924) in paragraph at lines 39--40
-[]\T2A/cmr/m/n/10 Применение ме-то-да кла-стер-но-го ана-ли-за для со-зда-ния г
-рупп схо-жих объ-ек-тов.
- []
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 44--45
-\T2A/cmr/m/n/10 и дис-ци-пли-нах. Так-же дан-ный ме-тод ши-ро-ко ис-поль-зу-ет-
-ся в ин-фор-ма-ти-ке. Наи-бо-лее
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+[]\T2A/cmr/m/n/10 Rozpowszechnianie podobie^^Anstwa (Affinity Propagation). Alg
+orytm, kt^^Aory
  []
 
 [4]
-Underfull \hbox (badness 7256) in paragraph at lines 55--56
-[]\T2A/cmr/m/n/10 Внешние ме-то-ды срав-ни-ва-ют ре-зуль-тат кла-сте-ри-за-ции 
-с апри-о-ри из-вест-ным
- []
+Underfull \hbox (badness 6220) in paragraph at lines 70--71
+[]\T2A/cmr/m/n/10 Przedprzetwarzanie tekstu jest wa
+znym etapem NLP, kt^^Aory przekszta\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 ca tekst w
 
-
-Underfull \hbox (badness 1546) in paragraph at lines 55--56
-\T2A/cmr/m/n/10 раз-де-ле-ни-ем на клас-сы. При-ме-ром внеш-не-го ме-то-да оцен
--ки мож-но рас-смот-реть
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 63--64
-[]\T2A/cmr/m/n/10 Обработка есте-ствен-но-го язы-ка (Natural Language Processin
-g, NLP) ^^V это об-ласть
- []
-
-
-Underfull \hbox (badness 5862) in paragraph at lines 63--64
-\T2A/cmr/m/n/10 ис-сле-до-ва-ний, ко-то-рая объ-еди-ня-ет ме-то-ды ма-шин-но-го
- обу-че-ния и ма-те-ма-ти-че-ской
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 67--68
-[]\T2A/cmr/m/n/10 Предобработка тек-ста яв-ля-ет-ся важ-ным эта-пом NLP, ко-то-
-рая пе-ре-во-дит текст на
- []
-
-
-Underfull \hbox (badness 2809) in paragraph at lines 67--68
-\T2A/cmr/m/n/10 ра-бо-ты. Пре-до-б-ра-бот-ка со-сто-ит из раз-лич-ных эта-пов, 
-ко-то-рые мо-гут от-ли-чать-ся в
  []
 
 [5]
-Underfull \hbox (badness 5985) in paragraph at lines 112--113
-\T2A/cmr/m/n/10 пре-об-ра-зу-ют сло-ва в век-то-ры непре-рыв-но-го про-стран-ст
-ва с со-хра-не-ни-ем их
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+[]\T2A/cmr/m/n/10 dla czasownik^^Aow, imies\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 ow
+^^Aow, rzeczownik^^Aow odczasownikowych ^^V czasownik w
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 3884) in paragraph at lines 108--109
+[]\T2A/cmr/m/n/10 Tworzenie modeli uczenia maszynowego do automatycznego uog^^A
+olniania informacji
+ []
+
+
+Underfull \hbox (badness 2486) in paragraph at lines 117--118
+[]\T2A/cmr/m/n/10 Word Embeddings: S[] to metody oparte na trenowaniu sieci neu
+ronowych, kt^^Aore
+ []
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 117--118
+\T2A/cmr/m/n/10 przekszta\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 caj[] s\OT1/cmr/m/n/
+10  l\T2A/cmr/m/n/10 owa w wektory w przestrzeni ci[]g\OT1/cmr/m/n/10  l\T2A/cm
+r/m/n/10 ej, zachowuj[]c ich w\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 a^^Asciwo^^Asci
 
  []
 
 [6]
-Underfull \hbox (badness 1147) in paragraph at lines 128--129
+Underfull \hbox (badness 1147) in paragraph at lines 133--134
 \T2A/cmr/m/n/10 неин-фор-ма-тив-ных или сла-бо ин-фор-ма-тив-ных ко-то-рые мо-г
 ут по-ни-зить эф-фек-тив-ность
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 146--148
+Underfull \hbox (badness 1533) in paragraph at lines 151--153
 []\T2A/cmr/m/n/10 Линейные ме-то-ды ос-но-вы-ва-ют-ся на пред-по-ло-же-ние, что
  за-ви-си-мость меж-ду неза-
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 146--148
+Underfull \hbox (badness 1960) in paragraph at lines 151--153
 \T2A/cmr/m/n/10 ви-си-мы-ми пе-ре-мен-ны-ми и за-ви-си-мой пе-ре-мен-ной ли-ней
 -на. По-это-му они с по-мо-щью
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 146--148
+Underfull \hbox (badness 1584) in paragraph at lines 151--153
 \T2A/cmr/m/n/10 вы-де-ле-ния при-зна-ков яв-ля-ет-ся PCA . Ос-нов-ной иде-ей эт
 о-го ме-то-да яв-ля-ет-ся по-иск
  []
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 146--148
+Underfull \hbox (badness 1048) in paragraph at lines 151--153
 \T2A/cmr/m/n/10 за-ви-си-мо-сти меж-ду пе-ре-мен-ны-ми. Ал-го-ритм t-sne стре-м
 ит-ся со-хра-нить от-но-си-тель-ные
  []
 
 [7]) (rozdzial_2.tex [8]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-<./img/rys1.jpg, id=62, 447.47176pt x 225.2415pt>
+<./img/rys1.jpg, id=63, 447.47176pt x 225.2415pt>
 File: ./img/rys1.jpg Graphic file (type jpg)
 <use ./img/rys1.jpg>
 Package pdftex.def Info: ./img/rys1.jpg  used on input line 6.
@@ -1040,6 +985,9 @@ Underfull \hbox (badness 2644) in paragraph at lines 15--16
 \T2A/cmr/m/n/10 вклю-ча-ю-ще-го пре-до-б-ра-бот-ку тек-ста, век-то-ри-за-цию и 
 кла-сте-ри-за-цию. Ос-нов-ная цель
  []
+
+
+LaTeX Warning: Citation `Python' on page 9 undefined on input line 18.
 
 
 Underfull \hbox (badness 6001) in paragraph at lines 35--36
@@ -1332,12 +1280,15 @@ L3 programming layer <2023-08-29>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 10959 strings out of 475248
- 172804 string characters out of 5757812
+ 10960 strings out of 475248
+ 172812 string characters out of 5757812
  2096785 words of memory out of 5000000
- 32232 multiletter control sequences out of 15000+600000
+ 32233 multiletter control sequences out of 15000+600000
  580935 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,16n,82p,1596b,1302s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1371,9 +1322,9 @@ TeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/imaks/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/imaks/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/imaks/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on solving.pdf (41 pages, 508007 bytes).
+Output written on solving.pdf (41 pages, 513806 bytes).
 PDF statistics:
- 1127 PDF objects out of 1200 (max. 8388607)
+ 1143 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

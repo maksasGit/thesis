@@ -62,66 +62,68 @@
 
 \section{Przetwarzanie języka naturalnego}
 
-	\subsection{Opis}
-		Обработка естественного языка (Natural Language Processing, NLP) — это область исследований, которая объединяет методы машинного обучения и математической лингвистики с целью изучения и создания алгоритмов для анализа, понимания и генерации текста на естественных языках. \cite{NLP}
+	\subsection{Defenicja}
+		Przetwarzanie języka naturalnego (ang. Natural Language Processing, NLP) to dziedzina badań, która łączy metody uczenia maszynowego i lingwistyki matematycznej w celu opracowania algorytmów do analizy, rozumienia i generowania tekstu w językach naturalnych. \cite{NLP}
 
 
-	\subsection{Предобработка текста}
-		Предобработка текста является важным этапом NLP, которая переводит текст на естественном языке в формат удобный для распознования алгоритмами и дальнейшей работы. Предобработка состоит из различных этапов, которые могут отличаться в зависимости от задачи и реализации. Далее приведены одни из самых популярных основных подходов:
+	\subsection{Przedprzetwarzanie tekstu}
+		Przedprzetwarzanie tekstu jest ważnym etapem NLP, który przekształca tekst w języku naturalnym w format wygodny do rozpoznawania przez algorytmy i dalszej pracy. Przedprzetwarzanie składa się z różnych etapów, które mogą się różnić w zależności od zadania i implementacji. Oto niektóre z najpopularniejszych podstawowych podejść:
 	\begin{itemize}
-		\item Перевод всех букв в тексте в нижний или верхний регистры
-		\item Удаление цифр (чисел) или замена на текстовый эквивалент (обычно используются регулярные выражения)
-		\item Удаление пробельных символов (whitespaces)
-		\item Токенизация (обычно реализуется на основе регулярных выражений)
-		\item Удаление стоп слов
-		\item Стемминг
-		\item Лемматизация
-		\item Векторизация
+		\item Konwersja wszystkich liter w tekście na małe lub wielkie litery
+		\item Usuwanie cyfr (liczb) lub zamiana na tekstowy ekwiwalent (zwykle używane są wyrażenia regularne)
+		\item Usuwanie znaków białych (whitespaces)
+		\item Tokenizacja (zwykle realizowana na podstawie wyrażeń regularnych)
+		\item Usuwanie słów stop
+		\item Stemming
+		\item Lematyzacja
+		\item Wektoryzacja
 	\end{itemize}
-	Далее подробнее будут описаны три последних метода.
+	Poniżej bardziej szczegółowo opisane są trzy ostatnie metody.
 
-	\subsection{Стемминг}
-		Количество корректных словоформ, значения которых схожи, но написания отличаются суффиксами, приставками, окончаниями и прочим, очень велико, что усложняет создание словарей и дальнейшую обработку. Стемминг позволяет привести слово к его основной форме. Суть подхода в нахождении основы слова, для этого с конца и начала слова последовательно отрезаются его части. Правила отсекания для стеммера создаются заранее, и чаще всего представляют из себя регулярные выражения, что делает данный подход трудоемким, так как при подключении очередного языка нужны новые лингвистические исследования. Вторым недостатком подхода является возможная потеря информации при отрезании частей, например, мы можем потерять информацию о части речи.
 
-	\subsection{Лемматизация}
-		Данный подход является альтернативой стемминга. Основная идея в приведении слова к словарной форме — лемме. 				Пример лемматиации для польского языка:
+
+	\subsection{Stemming}
+		Liczba poprawnych form wyrazowych, których znaczenia są podobne, ale pisownia różni się sufiksami, przedrostkami, końcówkami itp., jest bardzo duża, co utrudnia tworzenie słowników i dalsze przetwarzanie. Stemming pozwala sprowadzić słowo do jego podstawowej formy. Istota podejścia polega na znalezieniu rdzenia słowa, w tym celu z końca i początku słowa kolejno odcinane są jego części. Reguły odcinania dla stemmera tworzone są z góry i najczęściej stanowią wyrażenia regularne, co sprawia, że podejście to jest pracochłonne, ponieważ przy dodawaniu kolejnego języka potrzebne są nowe badania lingwistyczne. Drugą wadą podejścia jest możliwa utrata informacji podczas odcinania części, na przykład możemy stracić informację o części mowy.
+
+	\subsection{Lematyzacja}
+		Podejście to stanowi alternatywę dla stemmingu. Główna idea polega na sprowadzeniu słowa do formy słownikowej — lematu. Przykład lematyzacji dla języka polskiego:
 		\begin{itemize}
-			\item для существительных — именительный падеж, единственное число;
-			\item для прилагательных — именительный падеж, единственное число, мужской род;
-			\item для глаголов, причастий, деепричастий — глагол в инфинитиве несовершенного вида.
+			\item dla rzeczowników — mianownik liczby pojedynczej;
+			\item dla przymiotników — mianownik liczby pojedynczej, rodzaj męski;
+			\item dla czasowników, imiesłowów, rzeczowników odczasownikowych — czasownik w bezokoliczniku aspektu niedokonanego.
 		\end{itemize}
 		
 
 \section{Векторизация}
 
 	\subsection{Opis}
-		Большинство математических моделей работают в векторных пространствах больших размерностей, поэтому необходимо отобразить текст в векторном пространстве. Основной целью векторизации текста является создание представления текстовых данных, которое сохраняет семантическую и синтаксическую информацию о тексте и одновременно подходит для использования в математических моделях. Это позволяет эффективно анализировать и обрабатывать текстовые данные с помощью алгоритмов и алгоритмов машинного обучения. \cite{Vectorization}
+		Większość modeli matematycznych działa w przestrzeniach wektorowych o dużych wymiarach, dlatego konieczne jest przekształcenie tekstu w przestrzeń wektorową. Głównym celem wektoryzacji tekstu jest stworzenie reprezentacji danych tekstowych, która zachowuje informacje semantyczne i syntaktyczne o tekście, a jednocześnie nadaje się do wykorzystania w modelach matematycznych. Pozwala to na efektywną analizę i przetwarzanie danych tekstowych za pomocą algorytmów i metod uczenia maszynowego. \cite{Vectorization}
 
-	\subsection{Задачи векторизации}
-		Основные задачи векторизации текста включают:
+	\subsection{Celi wektoryzacji}
+		Główne celi wektoryzacji tekstu obejmują:
 		\begin{itemize}
-			\item Представление текста для анализа машинными алгоритмами.
-			\item Поиск схожести между текстами или категоризация текстов по темам.
-			\item Решение задач классификации, кластеризации или регрессии на основе текстовых данных.
-			\item Создание моделей машинного обучения для автоматического обобщения текстовой информации
+			\item Reprezentowanie tekstu do analizy przez algorytmy maszynowe.
+			\item Znajdowanie podobieństw między tekstami lub kategoryzowanie tekstów według tematyki.
+			\item Rozwiązywanie zadań klasyfikacji, klasteryzacji lub regresji na podstawie danych tekstowych.
+			\item Tworzenie modeli uczenia maszynowego do automatycznego uogólniania informacji tekstowych.
 		\end{itemize}
 
-	\subsection{Методы векторизации}
-		Первый шаг в векторизации текста - это определение пространства признаков, в котором текст будет представлен в виде векторов. Каждый признак может представлять собой слово, фразу, символ или иной элемент текста.\\
-		Существует несколько методов векторизации текста, включая:
+	\subsection{Metody wektoryzacji}
+		Pierwszym krokiem w wektoryzacji tekstu jest określenie przestrzeni cech, w której tekst będzie reprezentowany jako wektory. Każda cecha może reprezentować słowo, frazę, symbol lub inny element tekstu.
+		Istnieje kilka metod wektoryzacji tekstu, w tym:
 		\begin{itemize}
-			\item Мешок слов (Bag of Words, BoW): Каждый документ представляется в виде вектора, где каждый элемент соответствует отдельному слову, а значениями являются частоты встречаемости слов в документе.
-			\item TF-IDF (Term Frequency-Inverse Document Frequency): Этот метод учитывает не только частоту встречаемости слов в документе (TF), но и инверсную частоту встречаемости слова во всех документах корпуса (IDF), что позволяет выделить ключевые слова.
-			\item Word Embeddings: Это методы, основанные на обучении нейронных сетей, которые преобразуют слова в векторы непрерывного пространства с сохранением их семантических свойств.\\
+			\item Bag of Words (BoW): Każdy dokument jest reprezentowany jako wektor, gdzie każdy element odpowiada poszczególnemu słowu, a wartościami są częstotliwości występowania słów w dokumencie.
+			\item TF-IDF (Term Frequency-Inverse Document Frequency): Metoda ta uwzględnia nie tylko częstotliwość występowania słów w dokumencie (TF), ale także odwrotną częstotliwość występowania słowa we wszystkich dokumentach korpusu (IDF), co pozwala wyróżnić słowa kluczowe.
+			\item Word Embeddings: Są to metody oparte na trenowaniu sieci neuronowych, które przekształcają słowa w wektory w przestrzeni ciągłej, zachowując ich właściwości semantyczne.\
 		\end{itemize}
 
-	\subsection{Применение}
-		Векторизация текста находит применение во многих областях, включая:
+	\subsection{Zastosowanie}
+		Wektoryzacja tekstu znajduje zastosowanie w wielu dziedzinach, w tym:
 		\begin{itemize}
-			\item Анализ тональности и сентиментов в социальных медиа и отзывах
-			\item Классификация текстов на тематику или категории
-			\item Рекомендательные системы, основанные на текстовых описаниях
-			\item Автоматический перевод текста и реализация чат-ботов.
+			\item Analiza nastrojów i sentymentów w mediach społecznościowych i recenzjach.
+			\item Klasyfikacja tekstów według tematyki lub kategorii.
+			\item Systemy rekomendacyjne oparte na opisach tekstowych.
+			\item Automatyczne tłumaczenie tekstu i implementacja chatbotów.
 		\end{itemize}
 
 
