@@ -80,41 +80,44 @@
 		\item \textbf{Mały wpływ na analizę}: Format przechowywania nie ma znaczącego wpływu na sam proces analizy danych. Główne znaczenie ma zawartość komentarzy, a nie sposób ich przechowywania.
 	\end{itemize}
 
-\section{Обработка текста}
+\section{Przetwarzania tekstu}
 
-	\subsection{Opis}
-		Следующим процессом является обработка текста. Важно понимать, как выглядят комментарии после их получения и сохранения с YouTube. Реализация обработки будет выполнена с помощью библиотеки NLTK (Natural Language Toolkit) и встроенных функций Python. Ознакомиться с документацией NLTK можно здесь \cite{nltk}. Обработка текста разделена на несколько этапов:
+	\subsection{Defenicja}
+		Następnym procesem jest przetwarzanie tekstu. Ważne jest, aby zrozumieć, jak wyglądają komentarze po ich pobraniu i zapisaniu z YouTube. Implementacja przetwarzania zostanie wykonana za pomocą biblioteki NLTK (Natural Language Toolkit) oraz wbudowanych funkcji Pythona. Dokumentację NLTK można znaleźć tutaj \cite{nltk}. Przetwarzanie tekstu jest podzielone na kilka etapów:
 		\begin{itemize}
-			\item Обязательная обработка выполняющеся независимо от выбораных параметров пользователем.
-			\item Примитивная обрботка удаление символ  и цифр
-			\item Удаление stop-words
-			\item Лематизация
-			\item Aнализ
+			\item Przetwarzanie obowiązkowe, które jest wykonywane niezależnie od wybranych parametrów przez użytkownika.
+			\item Przetwarzanie prymitywne, czyli usuwanie symboli i cyfr.
+			\item Usuwanie stop-words.
+			\item Lematyzacja.
+			\item Analiza.
 		\end{itemize}
-		Все методы кроме обязательной обработки и анализа, являются необязательным, то есть будут выполняться только в случае если пользователь укажет что хочет использовать данные методы.
+		Wszystkie metody, oprócz przetwarzania obowiązkowego i analizy, są opcjonalne, co oznacza, że będą wykonywane tylko wtedy, gdy użytkownik wskaże, że chce używać tych metod.
 		
-	\subsection{Обязательная обработка}
-		Обязательными этапами обработки текста являются приведение слов к нижнему регистру и процесс токенизации, который устраняет необходимость удаления пробелов. С помощью функции \textbf{nltk.word tokenize} каждое слово будет разделено на токены. Эти этапы обязательны, так как они упрощают дальнейшую работу с текстом и гарантируют правильную работу многих последующих функций, которые могут быть чувствительны к регистру.
+	\subsection{Przetwarzanie obowiązkowe}
+		Obowiązkowe etapy przetwarzania tekstu to zmiana wszystkich słów na małe litery oraz proces tokenizacji, który eliminuje potrzebę usuwania spacji. Za pomocą funkcji \textbf{nltk.word_tokenize} każde słowo zostanie podzielone na tokeny. Te etapy są obowiązkowe, ponieważ upraszczają dalszą pracę z tekstem i gwarantują poprawne działanie wielu późniejszych funkcji, które mogą być czułe na wielkość liter.
+	
 		
-	\subsection{Примитивная обработка}
-		Примитивная обработка подразумевает удаление неалфавитных символов или слов. Этот процесс не является обязательным, однако его использование помогает избавиться от различных языков разметки, которые YouTube использует для визуализации смайликов или инструментов изменения текста. 
-		Пример таких комментариев:
+	\subsection{Przetwarzanie prymitywne}
+		Przetwarzanie prymitywne polega na usuwaniu niealfabetycznych symboli lub słów. Ten proces nie jest obowiązkowy, jednak jego zastosowanie pomaga pozbyć się różnych języków znaczników, które YouTube używa do wizualizacji emotikonów lub narzędzi do zmiany tekstu.
+
+		Przykłady takich komentarzy:
+
 		\begin{verbatim}
-			"Great video! (here should be emoji"
+			"Great video! (tu musi byc emoji, ale nie wiem jak tu wkleic)"
 			"Check this out: <a href='https://example.com'>link</a>"
 		\end{verbatim}
-		В данном проекте это реализовано с помощью встроенной функции Python \textbf{isalpha()}, которая проверяет символы или слова на наличие неалфавитных символов.
+		W tym projekcie jest to realizowane za pomocą wbudowanej funkcji Pythona \textbf{isalpha()}, która sprawdza, czy symbole lub słowa zawierają niealfabetyczne znaki.
 		\begin{lstlisting}[language=Python]
 			def remove_non_alpha(tokens):
 			return [word for word in tokens if word.isalpha()]
 		\end{lstlisting}
 		
-	\subsection{Удаление stop-words}
-		Этот этап реализует удаление слов, которые не несут значимой информации. Типичными примерами таких слов являются:
+	\subsection{Usuwanie stop-words}
+		Ten etap polega na usuwaniu słów, które nie niosą znaczącej informacji. Typowymi przykładami takich słów są:
 		\begin{verbatim}
 			"the", "is", "in", "and"
 		\end{verbatim}
-		Удаление стоп-слов уменьшает размер текста и делает информативные слова более заметными. Для этого используется словарь стоп-слов из библиотеки NLTK, который в случае необходимости можно дополнить своими словами.
+		Usuwanie stop-words zmniejsza rozmiar tekstu i sprawia, że znaczące słowa są bardziej widoczne. Do tego celu używa się słownika stop-words z biblioteki NLTK, który w razie potrzeby można uzupełnić własnymi słowami.
 		\begin{lstlisting}[language=Python]
 		from nltk.corpus import stopwords
 
@@ -123,8 +126,8 @@
 			return [word for word in tokens if word not in stop_words]
 		\end{lstlisting}
 
-	\subsection{Лематизация}
-		Последним необязательным процессом является лемматизация, которая приводит слова к их базовой форме. Это полезно в случаях, когда нам нужно сгруппировать разные формы одного слова (например, "running", "ran", "runs" к "run").
+	\subsection{Lematyzacja}
+		Ostatnim opcjonalnym procesem jest lematyzacja, która sprowadza słowa do ich podstawowej formy. Jest to przydatne w sytuacjach, gdy trzeba zgrupować różne formy jednego słowa (np. "running", "ran", "runs" do "run").
 
 		\begin{lstlisting}[language=Python]
 		from nltk.stem import WordNetLemmatizer
@@ -135,13 +138,13 @@
 		\end{lstlisting}
 
 	
-	\subsection{Анализ}
-		В конце, независимо от выбранных пользователем этапов, все токены проверяются на непустые значения, чтобы избежать полностью пустых слов и строк. Далее все токены объединяются в одну строку, разделённую пробелами. На этом этапе результат обработки возвращается и анализируется функциями частотного анализа (\textbf{freq\_analysis}) и анализа длины (\textbf{length\_analysis}). Эти функции будут использоваться для построения графиков, которые помогут пользователю визуально оценить частоту встречаемых слов и длины комментариев для последующего принятия решений.
+	\subsection{Analiza}
+		Na końcu, niezależnie od wybranych przez użytkownika etapów, wszystkie tokeny są sprawdzane pod kątem niepustych wartości, aby uniknąć całkowicie pustych słów i wierszy. Następnie wszystkie tokeny są łączone w jeden ciąg znaków, oddzielony spacjami. Na tym etapie wynik przetwarzania jest zwracany i analizowany za pomocą funkcji analizy częstotliwości (\textbf{freq\_analysis}) i analizy długości (\textbf{length\_analysis}). Te funkcje będą używane do tworzenia wykresów, które pomogą użytkownikowi wizualnie ocenić częstotliwość występowania słów i długość komentarzy w celu podejmowania dalszych decyzji.
 	
-		\subsubsection{freq analysis}
-			Эта функция использует обработанные строки, создавая единый массив со всеми словами из всех комментариев, и применяет класс \textbf{collections.Counter} в Python. \textbf{Counter} используется для подсчёта хэшируемых объектов, таких как строки или числа, и предоставляет удобные методы для работы с частотными данными. Таким образом, функция генерирует два массива: массив слов и соответствующий ему массив количества каждого слова в тексте. Эти массивы будут использоваться для построения столбчатой диаграммы (bar chart), показывающей частоту встречаемости слов.
+		\subsubsection{Analiza częstotliwości (freq analysis)}
+			Ta funkcja używa przetworzonych ciągów znaków, tworząc pojedynczą tablicę ze wszystkimi słowami ze wszystkich komentarzy, i stosuje klasę \textbf{collections.Counter} w Pythonie. \textbf{Counter} jest używany do zliczania hashowalnych obiektów, takich jak ciągi znaków lub liczby, i dostarcza wygodne metody do pracy z danymi częstotliwości. W ten sposób funkcja generuje dwie tablice: tablicę słów i odpowiadającą jej tablicę liczby wystąpień każdego słowa w tekście. Te tablice będą używane do tworzenia wykresu słupkowego (bar chart), pokazującego częstotliwość występowania słów.
 			
-			Пример реализации алгоритма в проекте:
+			Przykład implementacji algorytmu w projekcie:
 			\begin{lstlisting}[language=Python]
 				from collections import Counter
 				import matplotlib.pyplot as plt
@@ -157,10 +160,10 @@
 					self.counts_sorted = [word_count[1] for word_count in words_counts_sorted]
 			\end{lstlisting}
 		
-		\subsubsection{length analysis}
-			Эта функция также использует обработанные строки комментариев, определяя количество слов для каждого комментария. В конечном итоге генерируется массив количеств слов, который будет использован для построения гистограммы (histogram), показывающей распределение длины комментариев.
+		\subsubsection{Analiza długości (length analysis)}
+			Ta funkcja również używa przetworzonych ciągów znaków komentarzy, określając liczbę słów w każdym komentarzu. Ostatecznie generowana jest tablica z liczbą słów, która będzie używana do tworzenia histogramu (histogram), pokazującego rozkład długości komentarzy.
 			
-			Пример реализации алгоритма в проекте:
+			Przykład implementacji algorytmu w projekcie:
 			\begin{lstlisting}[language=Python]
 				from collections import Counter
 				import matplotlib.pyplot as plt
@@ -174,8 +177,8 @@
 					endTime = time.time()
 			\end{lstlisting}
 	
-	\subsection{Итог}
-		Все этапы обработки текста, от обязательных до необязательных, играют важную роль в подготовке данных для дальнейшего анализа. Их правильное выполнение гарантирует структурированный и удобный вид для обработки. В визуализация графиков анализруещих содержания комментариев позволит пользователям лучше понимать структуру и содержание комментариев, а также принимать обоснованные решения на основе представленных данных.
+	\subsection{Podsumowanie}
+		Wszystkie etapy przetwarzania tekstu, od obowiązkowych do opcjonalnych, odgrywają ważną rolę w przygotowaniu danych do dalszej analizy. Ich poprawne wykonanie gwarantuje strukturalizowany i wygodny do przetwarzania wygląd danych. Wizualizacja wykresów analizujących zawartość komentarzy pozwoli użytkownikom lepiej zrozumieć strukturę i treść komentarzy, a także podejmować uzasadnione decyzje na podstawie przedstawionych danych.
 	
 	
 \section{Wektoryzacja}
