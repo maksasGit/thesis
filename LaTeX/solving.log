@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 20:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 20:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -218,231 +218,7 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/babel-polish\polish.ldf
 Language: polish 2022/03/12 1.3 Babel support for Polish
 Package babel Info: Making " an active character on input line 101.
-)
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/babel-russian\russianb.
-ldf
-File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
-Language: russian 2020/09/09 1.3k Russian support for the Babel system
-
-
-Package babel Warning: No Cyrillic font encoding has been loaded so far.
-(babel)                A font encoding should be declared before babel.
-(babel)                Default `T2A' encoding will be loaded  on input line 78.
-
-
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2aenc.def
-File: t2aenc.def 2022/06/11 v1.0j Cyrillic encoding definition file
-Now handling font encoding T2A ...
-... processing UTF-8 mapping file for font encoding T2A
-
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/base\t2aenc.dfu
-File: t2aenc.dfu 2022/06/07 v1.3c UTF-8 support
-   defining Unicode char U+00A4 (decimal 164)
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0237 (decimal 567)
-   defining Unicode char U+0400 (decimal 1024)
-   defining Unicode char U+0401 (decimal 1025)
-   defining Unicode char U+0402 (decimal 1026)
-   defining Unicode char U+0403 (decimal 1027)
-   defining Unicode char U+0404 (decimal 1028)
-   defining Unicode char U+0405 (decimal 1029)
-   defining Unicode char U+0406 (decimal 1030)
-   defining Unicode char U+0407 (decimal 1031)
-   defining Unicode char U+0408 (decimal 1032)
-   defining Unicode char U+0409 (decimal 1033)
-   defining Unicode char U+040A (decimal 1034)
-   defining Unicode char U+040B (decimal 1035)
-   defining Unicode char U+040C (decimal 1036)
-   defining Unicode char U+040D (decimal 1037)
-   defining Unicode char U+040E (decimal 1038)
-   defining Unicode char U+040F (decimal 1039)
-   defining Unicode char U+0410 (decimal 1040)
-   defining Unicode char U+0411 (decimal 1041)
-   defining Unicode char U+0412 (decimal 1042)
-   defining Unicode char U+0413 (decimal 1043)
-   defining Unicode char U+0414 (decimal 1044)
-   defining Unicode char U+0415 (decimal 1045)
-   defining Unicode char U+0416 (decimal 1046)
-   defining Unicode char U+0417 (decimal 1047)
-   defining Unicode char U+0418 (decimal 1048)
-   defining Unicode char U+0419 (decimal 1049)
-   defining Unicode char U+041A (decimal 1050)
-   defining Unicode char U+041B (decimal 1051)
-   defining Unicode char U+041C (decimal 1052)
-   defining Unicode char U+041D (decimal 1053)
-   defining Unicode char U+041E (decimal 1054)
-   defining Unicode char U+041F (decimal 1055)
-   defining Unicode char U+0420 (decimal 1056)
-   defining Unicode char U+0421 (decimal 1057)
-   defining Unicode char U+0422 (decimal 1058)
-   defining Unicode char U+0423 (decimal 1059)
-   defining Unicode char U+0424 (decimal 1060)
-   defining Unicode char U+0425 (decimal 1061)
-   defining Unicode char U+0426 (decimal 1062)
-   defining Unicode char U+0427 (decimal 1063)
-   defining Unicode char U+0428 (decimal 1064)
-   defining Unicode char U+0429 (decimal 1065)
-   defining Unicode char U+042A (decimal 1066)
-   defining Unicode char U+042B (decimal 1067)
-   defining Unicode char U+042C (decimal 1068)
-   defining Unicode char U+042D (decimal 1069)
-   defining Unicode char U+042E (decimal 1070)
-   defining Unicode char U+042F (decimal 1071)
-   defining Unicode char U+0430 (decimal 1072)
-   defining Unicode char U+0431 (decimal 1073)
-   defining Unicode char U+0432 (decimal 1074)
-   defining Unicode char U+0433 (decimal 1075)
-   defining Unicode char U+0434 (decimal 1076)
-   defining Unicode char U+0435 (decimal 1077)
-   defining Unicode char U+0436 (decimal 1078)
-   defining Unicode char U+0437 (decimal 1079)
-   defining Unicode char U+0438 (decimal 1080)
-   defining Unicode char U+0439 (decimal 1081)
-   defining Unicode char U+043A (decimal 1082)
-   defining Unicode char U+043B (decimal 1083)
-   defining Unicode char U+043C (decimal 1084)
-   defining Unicode char U+043D (decimal 1085)
-   defining Unicode char U+043E (decimal 1086)
-   defining Unicode char U+043F (decimal 1087)
-   defining Unicode char U+0440 (decimal 1088)
-   defining Unicode char U+0441 (decimal 1089)
-   defining Unicode char U+0442 (decimal 1090)
-   defining Unicode char U+0443 (decimal 1091)
-   defining Unicode char U+0444 (decimal 1092)
-   defining Unicode char U+0445 (decimal 1093)
-   defining Unicode char U+0446 (decimal 1094)
-   defining Unicode char U+0447 (decimal 1095)
-   defining Unicode char U+0448 (decimal 1096)
-   defining Unicode char U+0449 (decimal 1097)
-   defining Unicode char U+044A (decimal 1098)
-   defining Unicode char U+044B (decimal 1099)
-   defining Unicode char U+044C (decimal 1100)
-   defining Unicode char U+044D (decimal 1101)
-   defining Unicode char U+044E (decimal 1102)
-   defining Unicode char U+044F (decimal 1103)
-   defining Unicode char U+0450 (decimal 1104)
-   defining Unicode char U+0451 (decimal 1105)
-   defining Unicode char U+0452 (decimal 1106)
-   defining Unicode char U+0453 (decimal 1107)
-   defining Unicode char U+0454 (decimal 1108)
-   defining Unicode char U+0455 (decimal 1109)
-   defining Unicode char U+0456 (decimal 1110)
-   defining Unicode char U+0457 (decimal 1111)
-   defining Unicode char U+0458 (decimal 1112)
-   defining Unicode char U+0459 (decimal 1113)
-   defining Unicode char U+045A (decimal 1114)
-   defining Unicode char U+045B (decimal 1115)
-   defining Unicode char U+045C (decimal 1116)
-   defining Unicode char U+045D (decimal 1117)
-   defining Unicode char U+045E (decimal 1118)
-   defining Unicode char U+045F (decimal 1119)
-   defining Unicode char U+0490 (decimal 1168)
-   defining Unicode char U+0491 (decimal 1169)
-   defining Unicode char U+0492 (decimal 1170)
-   defining Unicode char U+0493 (decimal 1171)
-   defining Unicode char U+0496 (decimal 1174)
-   defining Unicode char U+0497 (decimal 1175)
-   defining Unicode char U+0498 (decimal 1176)
-   defining Unicode char U+0499 (decimal 1177)
-   defining Unicode char U+049A (decimal 1178)
-   defining Unicode char U+049B (decimal 1179)
-   defining Unicode char U+049C (decimal 1180)
-   defining Unicode char U+049D (decimal 1181)
-   defining Unicode char U+04A0 (decimal 1184)
-   defining Unicode char U+04A1 (decimal 1185)
-   defining Unicode char U+04A2 (decimal 1186)
-   defining Unicode char U+04A3 (decimal 1187)
-   defining Unicode char U+04A4 (decimal 1188)
-   defining Unicode char U+04A5 (decimal 1189)
-   defining Unicode char U+04AA (decimal 1194)
-   defining Unicode char U+04AB (decimal 1195)
-   defining Unicode char U+04AE (decimal 1198)
-   defining Unicode char U+04AF (decimal 1199)
-   defining Unicode char U+04B0 (decimal 1200)
-   defining Unicode char U+04B1 (decimal 1201)
-   defining Unicode char U+04B2 (decimal 1202)
-   defining Unicode char U+04B3 (decimal 1203)
-   defining Unicode char U+04B6 (decimal 1206)
-   defining Unicode char U+04B7 (decimal 1207)
-   defining Unicode char U+04B8 (decimal 1208)
-   defining Unicode char U+04B9 (decimal 1209)
-   defining Unicode char U+04BA (decimal 1210)
-   defining Unicode char U+04BB (decimal 1211)
-   defining Unicode char U+04C0 (decimal 1216)
-   defining Unicode char U+04C1 (decimal 1217)
-   defining Unicode char U+04C2 (decimal 1218)
-   defining Unicode char U+04D0 (decimal 1232)
-   defining Unicode char U+04D1 (decimal 1233)
-   defining Unicode char U+04D2 (decimal 1234)
-   defining Unicode char U+04D3 (decimal 1235)
-   defining Unicode char U+04D4 (decimal 1236)
-   defining Unicode char U+04D5 (decimal 1237)
-   defining Unicode char U+04D6 (decimal 1238)
-   defining Unicode char U+04D7 (decimal 1239)
-   defining Unicode char U+04D8 (decimal 1240)
-   defining Unicode char U+04D9 (decimal 1241)
-   defining Unicode char U+04DA (decimal 1242)
-   defining Unicode char U+04DB (decimal 1243)
-   defining Unicode char U+04DC (decimal 1244)
-   defining Unicode char U+04DD (decimal 1245)
-   defining Unicode char U+04DE (decimal 1246)
-   defining Unicode char U+04DF (decimal 1247)
-   defining Unicode char U+04E2 (decimal 1250)
-   defining Unicode char U+04E3 (decimal 1251)
-   defining Unicode char U+04E4 (decimal 1252)
-   defining Unicode char U+04E5 (decimal 1253)
-   defining Unicode char U+04E6 (decimal 1254)
-   defining Unicode char U+04E7 (decimal 1255)
-   defining Unicode char U+04E8 (decimal 1256)
-   defining Unicode char U+04E9 (decimal 1257)
-   defining Unicode char U+04EC (decimal 1260)
-   defining Unicode char U+04ED (decimal 1261)
-   defining Unicode char U+04EE (decimal 1262)
-   defining Unicode char U+04EF (decimal 1263)
-   defining Unicode char U+04F0 (decimal 1264)
-   defining Unicode char U+04F1 (decimal 1265)
-   defining Unicode char U+04F2 (decimal 1266)
-   defining Unicode char U+04F3 (decimal 1267)
-   defining Unicode char U+04F4 (decimal 1268)
-   defining Unicode char U+04F5 (decimal 1269)
-   defining Unicode char U+04F8 (decimal 1272)
-   defining Unicode char U+04F9 (decimal 1273)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2116 (decimal 8470)
-   defining Unicode char U+2329 (decimal 9001)
-   defining Unicode char U+3008 (decimal 12296)
-   defining Unicode char U+232A (decimal 9002)
-   defining Unicode char U+3009 (decimal 12297)
-   defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+27E8 (decimal 10216)
-   defining Unicode char U+27E9 (decimal 10217)
-   defining Unicode char U+FB00 (decimal 64256)
-   defining Unicode char U+FB01 (decimal 64257)
-   defining Unicode char U+FB02 (decimal 64258)
-   defining Unicode char U+FB03 (decimal 64259)
-   defining Unicode char U+FB04 (decimal 64260)
-   defining Unicode char U+FB05 (decimal 64261)
-   defining Unicode char U+FB06 (decimal 64262)
 ))
-Package babel Info: Default for \cyrdash is provided on input line 163.
-))
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/ru\babel
--russian.tex
-Package babel Info: Importing font and identification data for russian
-(babel)             from babel-ru.ini. Reported on input line 11.
-)
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/pl\babel
 -polish.tex
 Package babel Info: Importing font and identification data for polish
@@ -656,13 +432,7 @@ tex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box66
-) (solving.aux
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 5
-.
-
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmr.fd
-File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
+) (solving.aux)
 \openout1 = `solving.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
@@ -678,8 +448,6 @@ LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
@@ -719,7 +487,6 @@ LaTeX Font Info:    ... okay on input line 2.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count312
-LaTeX Info: Redefining \th on input line 2.
 
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -767,26 +534,12 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 8.
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
+LaTeX Font Info:    Trying to load font information for OT4+cmss on input line 
 17.
 
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmss.fd
-File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmss.fd
+File: ot4cmss.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-
-LaTeX Font Warning: Font shape `T2A/cmss/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 17.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 18.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--23
-[]\T2A/cmss/m/n/20.74 UNIWERSYTET MARII CURIE-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 18--23
 
  []
@@ -827,7 +580,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--56
  []
 
 
-Overfull \hbox (6.73582pt too wide) in paragraph at lines 27--59
+Overfull \hbox (6.73636pt too wide) in paragraph at lines 27--59
 []  [] 
  []
 
@@ -836,8 +589,9 @@ Non-PDF special ignored!
 <special> header=psfrag.pro
 
 
-{C:/Users/imaks/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./img/logo.j
-pg>]) [2] (solving.toc [3
+{C:/Users/imaks/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/imak
+s/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <./img/logo.jpg>])
+[2] (solving.toc [3
 
 ])
 \tf@toc=\write5
@@ -845,226 +599,417 @@ pg>]) [2] (solving.toc [3
 
  [4] [5] [6
 
-] (wstep.tex
-Underfull \hbox (badness 1052) in paragraph at lines 4--5
-\T2A/cmr/m/n/10 ˝ÚËı ÚÂÍ-ÒÚÓ-‚˚ı ‰‡Ì-Ì˚ı ÏÓ-ÊÂÚ ÔÂ‰Ó-ÒÚ‡-‚ËÚ¸ ˆÂÌ-ÌÛ˛ ËÌ-ÙÓ-Ï
-‡-ˆË˛ ‰Îˇ Ï‡-ÍÂ-ÚËÌ-„Ó-‚˚ı
- []
-
-
-Underfull \hbox (badness 2884) in paragraph at lines 4--5
-\T2A/cmr/m/n/10 ËÒ-ÒÎÂ-‰Ó-‚‡-ÌËÈ, ÒÓ-ˆË-‡Î¸-Ì˚ı ËÒ-ÒÎÂ-‰Ó-‚‡-ÌËÈ, ‡ Ú‡Í-ÊÂ ‰Îˇ 
-ÛÎÛ˜-¯Â-ÌËˇ ‚Á‡-Ë-ÏÓ-‰ÂÈ-ÒÚ‚Ëˇ Ò
- []
-
-
-Underfull \hbox (badness 1769) in paragraph at lines 7--8
-[]\T2A/cmr/m/n/10 ƒ‡ÌÌ˚È ÔÓ-ÂÍÚ ÔÓ-ÂÍÚ ÔÂ‰-ÒÚ‡‚-Îˇ-ÂÚ ÒÓ-·ÓÈ GUI-ÔËÎÓÊÂÌËÂ,
- ÔÂ‰-Ì‡-ÁÌ‡-˜ÂÌ-ÌÓÂ ‰Îˇ
- []
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 7--8
-\T2A/cmr/m/n/10 ÔÓÎ¸-ÁÓ-‚‡-ÚÂ-ÎˇÏ ÎÂ„-ÍÓ Ë ·˚ÒÚ-Ó ÔÓ-ÎÛ-˜‡Ú¸ Ë ‡Ì‡-ÎË-ÁË-Ó-‚‡
-Ú¸ ˝ÚË ‰‡Ì-Ì˚Â. œÓ-ÒÎÂ ‚˚-·Ó-‡
- []
-
-
-Underfull \hbox (badness 2237) in paragraph at lines 7--8
-\T2A/cmr/m/n/10 ·Û-‰ÛÚ ‚Ë-ÁÛ-‡Î¸-ÌÓ ‡Á-‰Â-ÎÂ-ÌÂ˚ ÚÂÍ-ÒÚÓ-‚˚Â ‰‡Ì-Ì˚Â Ì‡ „ÛÔ˚(
-ÍÎ‡ÒÚÂ˚). ƒÎˇ ÔÓ-ÏÓ-˘Ë ‚
- []
-
-) (rozdzial_1.tex [1
+] (wstep.tex) (rozdzial_1.tex [1
 
 ] [2
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
+Rozdzia\l  1.
 
-Underfull \hbox (badness 3098) in paragraph at lines 6--7
-\T2A/cmr/m/n/10 administracji pa^^Anstwowej, filologii, antropologii, marketing
-u, socjologii, geologii i innych
+Underfull \hbox (badness 3068) in paragraph at lines 6--7
+\OT4/cmr/m/n/10 ad-mi-ni-stra-cji pa´-stwo-wej, fi-lo-lo-gii, an-tro-po-lo-gii,
+ mar-ke-tingu, so-cjo-lo-gii, geo-lo-gii i in-nych
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 13--14
-[]\T2A/cmr/m/n/10 Wykrywanie nowo^^Asci (odchyle^^An lub anomalii). Klasteryzac
-ja pozwala na wyr^^Ao
-znienie
+Underfull \hbox (badness 1253) in paragraph at lines 13--14
+[]\OT4/cmr/m/n/10 Wykrywanie no-wo-±ci (od-chy-le´ lub ano-ma-lii). Kla-ste-ry-
+za-cja po-zwala na wy-rÛª-nie-nie
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-[]\T2A/cmr/m/n/10 Rozpowszechnianie podobie^^Anstwa (Affinity Propagation). Alg
-orytm, kt^^Aory
+Underfull \hbox (badness 1127) in paragraph at lines 58--59
+[]\OT4/cmr/m/n/10 Zewn¶trzne me-tody po-rÛw-nuj° wy-nik kla-ste-ry-za-cji z apr
+io-rycz-nie zna-nym po-dzia-™em
  []
 
 [4]
-Underfull \hbox (badness 6220) in paragraph at lines 70--71
-[]\T2A/cmr/m/n/10 Przedprzetwarzanie tekstu jest wa
-znym etapem NLP, kt^^Aory przekszta\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 ca tekst w
-
+Underfull \hbox (badness 6001) in paragraph at lines 70--71
+[]\OT4/cmr/m/n/10 Przedprzetwarzanie tek-stu jest waª-nym eta-pem NLP, ktÛry pr
+ze-kszta™ca tekst w
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-[]\T2A/cmr/m/n/10 dla czasownik^^Aow, imies\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 ow
-^^Aow, rzeczownik^^Aow odczasownikowych ^^V czasownik w
+Underfull \hbox (badness 3623) in paragraph at lines 108--109
+[]\OT4/cmr/m/n/10 Tworzenie mo-deli ucze-nia ma-szy-no-wego do au-to-ma-tycz-ne
+go uogÛl-nia-nia in-for-ma-cji
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 108--109
-[]\T2A/cmr/m/n/10 Tworzenie modeli uczenia maszynowego do automatycznego uog^^A
-olniania informacji
+Underfull \hbox (badness 2478) in paragraph at lines 117--118
+[]\OT4/cmr/m/n/10 Word Em-bed-dings: S° to me-tody oparte na tre-no-wa-niu siec
+i neu-ro-no-wych, ktÛre
  []
 
 
-Underfull \hbox (badness 2486) in paragraph at lines 117--118
-[]\T2A/cmr/m/n/10 Word Embeddings: S[] to metody oparte na trenowaniu sieci neu
-ronowych, kt^^Aore
- []
-
-
-Underfull \hbox (badness 3482) in paragraph at lines 117--118
-\T2A/cmr/m/n/10 przekszta\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 caj[] s\OT1/cmr/m/n/
-10  l\T2A/cmr/m/n/10 owa w wektory w przestrzeni ci[]g\OT1/cmr/m/n/10  l\T2A/cm
-r/m/n/10 ej, zachowuj[]c ich w\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 a^^Asciwo^^Asci
-
+Underfull \hbox (badness 2932) in paragraph at lines 117--118
+\OT4/cmr/m/n/10 prze-kszta™-caj° s™owa w wek-tory w prze-strzeni ci°-g™ej, za-c
+ho-wu-j°c ich w™a-±ci-wo-±ci
  []
 
 [6] [7]) (rozdzial_2.tex [8]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
+Rozdzia\l  2.
 
-Underfull \hbox (badness 1466) in paragraph at lines 7--8
-\T2A/cmr/m/n/10 wst[]pne przetwarzanie tekstu, wektoryzacj[] i klasteryzacj[]. 
-G\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 ^^Aownym celem aplikacji jest
+Underfull \hbox (badness 1418) in paragraph at lines 7--8
+\OT4/cmr/m/n/10 wst¶pne prze-twa-rza-nie tek-stu, wek-to-ry-za-cj¶ i kla-ste-ry
+-za-cj¶. G™Ûw-nym ce-lem apli-ka-cji jest
  []
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 7--8
-\T2A/cmr/m/n/10 umo
-zliwienie u
-zytkownikowi elastycznego dostosowania i wykorzystania r^^Ao
-znych metod
+Underfull \hbox (badness 5985) in paragraph at lines 7--8
+\OT4/cmr/m/n/10 umoª-li-wie-nie uªyt-kow-ni-kowi ela-stycz-nego do-sto-so-wa-ni
+a i wy-ko-rzy-sta-nia rÛª-nych me-tod
  []
 
 
-LaTeX Warning: Citation `Python' on page 9 undefined on input line 11.
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 25--26
-\T2A/cmr/m/n/10 Interfejs graficzny umo
-zliwia u
-zytkownikowi \OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 adowanie danych, konfigurowanie 
-parametr^^Aow
+Underfull \hbox (badness 1215) in paragraph at lines 25--26
+\OT4/cmr/m/n/10 Interfejs gra-ficzny umoª-li-wia uªyt-kow-ni-kowi ™a-do-wa-nie 
+da-nych, kon-fi-gu-ro-wa-nie pa-ra-me-trÛw
  []
 
 [9
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
-[]\T2A/cmr/m/n/10 Za pomoc[] \T2A/cmr/bx/n/10 video_id \T2A/cmr/m/n/10 wykonywa
-ne jest zapytanie GET
+[]\OT4/cmr/m/n/10 Za po-moc° \OT4/cmr/bx/n/10 vi-deo[]id \OT4/cmr/m/n/10 wy-ko-
+ny-wane jest za-py-ta-nie GET
  []
 
 
-Underfull \hbox (badness 6125) in paragraph at lines 54--55
-\T2A/cmr/m/n/10 https://www.googleapis.com/youtube/v3/videos, aby uzyska^^Ac po
-dstawowe informacje
+Underfull \hbox (badness 6063) in paragraph at lines 54--55
+\OT4/cmr/m/n/10 https://www.googleapis.com/youtube/v3/videos, aby uzy-ska¢ pod-
+sta-wowe in-for-ma-cje
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 54--55
-\T2A/cmr/m/n/10 o filmie. To pozwala u
-zytkownikowi upewni^^Ac si[], 
-ze wybrany film odpowiada jego
+Underfull \hbox (badness 1533) in paragraph at lines 54--55
+\OT4/cmr/m/n/10 o fil-mie. To po-zwala uªyt-kow-ni-kowi upew-ni¢ si¶, ªe wy-bra
+ny film od-po-wiada jego
  []
 
 [10] [11]
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
+LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
 105.
 
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
+File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-[12]
-Underfull \hbox (badness 1635) in paragraph at lines 181--182
-[]\T2A/cmr/m/n/10 Wszystkie etapy przetwarzania tekstu, od obowi[]zkowych do op
-cjonalnych, odgrywaj[]
+[12{C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/pltt.enc}{C
+:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plsc.enc}]
+Underfull \hbox (badness 1502) in paragraph at lines 181--182
+[]\OT4/cmr/m/n/10 Wszystkie etapy prze-twa-rza-nia tek-stu, od obo-wi°z-ko-wych
+ do opcjo-nal-nych, od-gry-waj°
  []
 
 
-Underfull \hbox (badness 4341) in paragraph at lines 181--182
-\T2A/cmr/m/n/10 strukturalizowany i wygodny do przetwarzania wygl[]d danych. Wi
-zualizacja wykres^^Aow
+Underfull \hbox (badness 4391) in paragraph at lines 181--182
+\OT4/cmr/m/n/10 struk-tu-ra-li-zo-wany i wy-godny do prze-twa-rza-nia wy-gl°d d
+a-nych. Wi-zu-ali-za-cja wy-kre-sÛw
  []
 
-[13]
-Underfull \hbox (badness 1205) in paragraph at lines 252--253
-\T2A/cmr/m/n/10 efektywno^^Asci uczenia. Parametr negative okre^^Asla liczb[] "
-negatywnych"przyk\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 ad^^Aow dla
+[13{C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.enc}]
+Underfull \hbox (badness 1117) in paragraph at lines 252--253
+\OT4/cmr/m/n/10 efek-tyw-no-±ci ucze-nia. Pa-ra-metr ne-ga-tive okre-±la liczb¶
+ "ne-ga-tyw-nych"przyk™adÛw dla
  []
 
 [14]
-Underfull \hbox (badness 4967) in paragraph at lines 274--275
-[]\T2A/cmr/m/n/10 Propagacja wsteczna (Backpropagation): B\OT1/cmr/m/n/10  l[]\
-T2A/cmr/m/n/10 d przewidywania jest obliczany przez
+Underfull \hbox (badness 4726) in paragraph at lines 274--275
+[]\OT4/cmr/m/n/10 Propagacja wsteczna (Back-pro-pa-ga-tion): B™°d prze-wi-dy-wa
+-nia jest ob-li-czany przez
  []
 
 
-Overfull \hbox (19.3497pt too wide) in paragraph at lines 287--287
-[]\T2A/cmtt/m/n/10 model = Word2Vec(sentences=tokens, vector_size=100, window=5
+Overfull \hbox (19.45476pt too wide) in paragraph at lines 287--287
+[]\OT4/cmtt/m/n/10 model = Word2Vec(sentences=tokens, vector_size=100, window=5
 , min_count=1, workers=4)[] 
  []
 
-[15] [16]
-Overfull \hbox (35.09586pt too wide) in paragraph at lines 348--348
-[]\T2A/cmtt/m/n/10 kmeans = KMeans(n_clusters=2, init='k-means++', max_iter=300
+[15]
+
+! LaTeX Error: Unicode character –û (U+041E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –ø (U+043F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –∏ (U+0438)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character —Å (U+0441)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –∞ (U+0430)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –Ω (U+043D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –∏ (U+0438)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –µ (U+0435)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –∞ (U+0430)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –ª (U+043B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –≥ (U+0433)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –æ (U+043E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character —Ä (U+0440)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –∏ (U+0438)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character —Ç (U+0442)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –º (U+043C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –∞ (U+0430)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...tion{–û–ø–∏—Å–∞–Ω–∏–µ –∞–ª–≥–æ—Ä–∏—Ç–º–∞}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[16]
+Overfull \hbox (35.20462pt too wide) in paragraph at lines 348--348
+[]\OT4/cmtt/m/n/10 kmeans = KMeans(n_clusters=2, init='k-means++', max_iter=300
 , n_init=10, random_state=0) 
  []
 
+
+Underfull \hbox (badness 1028) in paragraph at lines 372--373
+[]\OT4/cmr/m/n/10 algorithm: Al-go-rytm uªy-wany do ob-li-cza-nia naj-bliª-szyc
+h s°-sia-dÛw ('auto', 'ball[]tree',
+ []
+
 [17]
-Underfull \hbox (badness 1400) in paragraph at lines 418--419
-\T2A/cmr/m/n/10 DBSCAN. Na wykresie b[]d[] r^^Aownie
-z wizualizowane centroidy ka
-zdego klastra w postaci
+Underfull \hbox (badness 1394) in paragraph at lines 418--419
+\OT4/cmr/m/n/10 DBSCAN. Na wy-kre-sie b¶d° rÛw-nieª wi-zu-ali-zo-wane cen-tro-i
+dy kaª-dego kla-stra w po-staci
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 421--422
-\T2A/cmr/m/n/10 ekstrakcji cech. Na pocz[]tku trudno jest okre^^Asli^^Ac, za co
- odpowiadaj[] cechy, wi[]c wyb^^Aor
+Underfull \hbox (badness 1142) in paragraph at lines 421--422
+\OT4/cmr/m/n/10 eks-trak-cji cech. Na po-cz°tku trudno jest okre-±li¢, za co od
+-po-wia-daj° ce-chy, wi¶c wy-bÛr
  []
 
 [18]
-Underfull \hbox (badness 1783) in paragraph at lines 435--436
-[]\T2A/cmr/m/n/10 random_state: Pocz[]tkowa warto^^As^^Ac generatora liczb loso
-wych dla reprodukowalno^^Asci
+Underfull \hbox (badness 2600) in paragraph at lines 435--436
+[]\OT4/cmr/m/n/10 random[]state: Po-cz°t-kowa war-to±¢ ge-ne-ra-tora liczb lo-s
+o-wych dla re-pro-du-ko-wal-no-±ci
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 441--442
-[]\T2A/cmr/m/n/10 Przekszta\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 cenie odleg\OT1/cm
-r/m/n/10  l\T2A/cmr/m/n/10 o^^Asci na prawdopodobie^^Anstwa: Dla ka
-zdego punktu obliczane s[]
+Underfull \hbox (badness 1205) in paragraph at lines 441--442
+[]\OT4/cmr/m/n/10 Przekszta™cenie od-le-g™o-±ci na praw-do-po-do-bie´-stwa: Dla
+ kaª-dego punktu ob-li-czane s°
  []
 
 ) (rozdzial_3.tex [19] [20
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
+Rozdzia\l  3.
+
+Underfull \hbox (badness 1122) in paragraph at lines 12--13
+[]\OT4/cmr/m/n/10 Otwieranie okna dia-lo-go-wego w celu po-bra-nia ko-men-ta-rz
+y z YouTube ("Com-ments->
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 26--27
+[]\OT4/cmr/m/n/10 Po utwo-rze-niu przy-naj-mniej jed-nej prze-strzeni ro-bo-cze
+j po-ja-wia si¶ menu na-wi-ga-cyjne
+ []
+
 [21]
-Underfull \hbox (badness 1990) in paragraph at lines 77--79
-\T2A/cmr/m/n/10 proponowanych metod klasteryzacji i okre^^Asli^^Ac parametry dl
-a wybranej metody. Oto jak
+Underfull \hbox (badness 1975) in paragraph at lines 77--79
+\OT4/cmr/m/n/10 pro-po-no-wa-nych me-tod kla-ste-ry-za-cji i okre-±li¢ pa-ra-me
+-try dla wy-bra-nej me-tody. Oto jak
  []
 
 [22]
-<./img/rys1.jpg, id=115, 447.47176pt x 225.2415pt>
+<./img/rys1.jpg, id=106, 447.47176pt x 225.2415pt>
 File: ./img/rys1.jpg Graphic file (type jpg)
 <use ./img/rys1.jpg>
 Package pdftex.def Info: ./img/rys1.jpg  used on input line 104.
@@ -1072,7 +1017,7 @@ Package pdftex.def Info: ./img/rys1.jpg  used on input line 104.
 ) (rozdzial_4.tex [23 <./img/rys1.jpg>] [24
 
 ]
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+Rozdzia\l  4.
 File: ./img/logo.jpg Graphic file (type jpg)
 <use ./img/logo.jpg>
 Package pdftex.def Info: ./img/logo.jpg  used on input line 12.
@@ -1083,15 +1028,87 @@ Package pdftex.def Info: ./img/logo.jpg  used on input line 12.
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 16--18
-[]\T2A/cmr/m/n/9 Impossibility Theorem for Clustering \T2A/cmr/m/it/9 Theorem f
-or Clustering\T2A/cmr/m/n/9 ,
+[]\OT4/cmr/m/n/9 Impossibility The-orem for Clu-ste-ring \OT4/cmr/m/it/9 The-or
+em for Clu-ste-ring\OT4/cmr/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--26
-[]\T2A/cmr/m/n/9 Daniel Jurafsky, James H. Martin, \T2A/cmr/m/it/9 Speech and L
-anguage Processing\T2A/cmr/m/n/9 ,
- []
+! LaTeX Error: Unicode character –¥ (U+0434)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...h{https://mplcursors.readthedocs.io/}, (–¥
+                                                  –æ—Å—Ç—É–ø: 20.10.2023).
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –æ (U+043E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...https://mplcursors.readthedocs.io/}, (–¥–æ
+                                                  —Å—Ç—É–ø: 20.10.2023).
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character —Å (U+0441)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...tps://mplcursors.readthedocs.io/}, (–¥–æ—Å
+                                                  —Ç—É–ø: 20.10.2023).
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character —Ç (U+0442)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...s://mplcursors.readthedocs.io/}, (–¥–æ—Å—Ç
+                                                  —É–ø: 20.10.2023).
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character —É (U+0443)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...//mplcursors.readthedocs.io/}, (–¥–æ—Å—Ç—É
+                                                  –ø: 20.10.2023).
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character –ø (U+043F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...mplcursors.readthedocs.io/}, (–¥–æ—Å—Ç—É–ø
+                                                  : 20.10.2023).
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
 ) [29] [30
 
@@ -1117,57 +1134,36 @@ anguage Processing\T2A/cmr/m/n/9 ,
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.74pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 10967 strings out of 475248
- 172912 string characters out of 5757812
- 2100785 words of memory out of 5000000
- 32239 multiletter control sequences out of 15000+600000
- 582116 words of font info for 81 fonts, out of 8000000 for 9000
+ 10424 strings out of 475248
+ 165808 string characters out of 5757812
+ 2097785 words of memory out of 5000000
+ 31724 multiletter control sequences out of 15000+600000
+ 572347 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,16n,82p,1298b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati09
-00.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
-rm0900.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
-0\lati1000.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\tcrm0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
--t2a/dpi600\lati0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/l
-h/lh-t2a/dpi375\latt0800.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/lh/lh-t2a/dpi600\larm0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/
-ljfour/lh/lh-t2a/dpi600\labx0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts
-/pk/ljfour/lh/lh-t2a/dpi600\larm0800.pk> <C:\Users\imaks\AppData\Local\MiKTeX\f
-onts/pk/ljfour/lh/lh-t2a/dpi600\latt1000.pk> <C:\Users\imaks\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\imaks\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\imaks\AppData\
-Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\imaks\AppD
-ata\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\imaks\
-AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\im
-aks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\User
-s\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\
-Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1000.pk> 
-<C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1440.
-pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lasx1
-200.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\l
-ass1000.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi6
-00\lass2074.pk><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmbx10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/imaks/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/imaks/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/imaks/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/ima
-ks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on solving.pdf (41 pages, 490761 bytes).
+ 74i,11n,82p,846b,1304s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcrm1000.pk><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+pl/plbx10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+pl/plbx12.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+pl/plbx5.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/p
+l/plr10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl
+/plr5.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/p
+lr8.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr
+9.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss1
+0.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss1
+7.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plssb
+x10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plt
+i10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plt
+i7.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti
+9.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt1
+0.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt8
+.pfb>
+Output written on solving.pdf (41 pages, 320113 bytes).
 PDF statistics:
- 1083 PDF objects out of 1200 (max. 8388607)
+ 226 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

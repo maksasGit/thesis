@@ -1,8 +1,8 @@
-\babel@toc {russian}{}\relax 
+\babel@toc {polish}{}\relax 
 \contentsline {chapter}{Wstęp}{1}{}%
-\contentsline {section}{\numberline {0.1}Причина появления проекта}{1}{}%
-\contentsline {section}{\numberline {0.2}Идея проекта}{1}{}%
-\contentsline {section}{\numberline {0.3}Для кого это}{1}{}%
+\contentsline {section}{\numberline {0.1}Powód powstania projektu}{1}{}%
+\contentsline {section}{\numberline {0.2}Idea projektu}{1}{}%
+\contentsline {section}{\numberline {0.3}Dla kogo to}{1}{}%
 \contentsline {chapter}{\numberline {1}Rozdzial 1}{3}{}%
 \contentsline {section}{\numberline {1.1}Klasterzyacja}{3}{}%
 \contentsline {subsection}{\numberline {1.1.1}Defenicja}{3}{}%
