@@ -191,7 +191,7 @@
 
 	
 	\subsection{TF-IDF}
- 		TF-IDF (Term Frequency-Inverse Document Frequency) to miara statystyczna używana do oceny ważności terminu w dokumencie w odniesieniu do kolekcji dokumentów (korpusu). Jest szeroko stosowana w zadaniach przetwarzania języka naturalnego i wyszukiwania informacji. W bibliotece Scikit-learn istnieje wygodne narzędzie do obliczania TF-IDF: klasa TfidfVectorizer.
+ 		TF-IDF (Term Frequency-Inverse Document Frequency) to miara statystyczna używana do oceny ważności terminu w dokumencie w odniesieniu do kolekcji dokumentów (korpusu). Jest szeroko stosowana w zadaniach przetwarzania języka naturalnego i wyszukiwania informacji. W bibliotece Scikit-learn istnieje wygodne narzędzie do obliczania TF-IDF: klasa TfidfVectorizer. \cite{tf-idf}
 		
 		
 		\subsubsection{Parametry}
@@ -230,7 +230,7 @@
 			
  
 	\subsection{Word2Vec}
-		Word2Vec to algorytm opracowany do nauki wektorowych reprezentacji słów (embeddingów), które oddają semantyczne relacje między słowami. W bibliotece Gensim dostępny jest wygodny interfejs do pracy z Word2Vec.
+		Word2Vec to algorytm opracowany do nauki wektorowych reprezentacji słów (embeddingów), które oddają semantyczne relacje między słowami. W bibliotece Gensim dostępny jest wygodny interfejs do pracy z Word2Vec. \cite{word2vec}
 
 
 		\subsubsection{Parametry}	
@@ -316,32 +316,34 @@
 			\textit{Jest nie wielka czesc, ale napisano to bylo przez chatGPT, zeby ja mog sprawdzic}
 		
 	
-\section{Кластеризация}
+\section{Klasteryzacja}
 
-	\subsection{Opis}
-		Следующим этапом обработки данных является кластеризация, которая использует векторезированные комментарии и разбивает их на кластеры. Реализовано это будет с помощь дву методов K-means и DBSCAN используя библиотеку sklearn.
+	\subsection{Defenicja}
+		Kolejnym etapem przetwarzania danych jest klasteryzacja, która wykorzystuje zwektoryzowane komentarze i dzieli je na klastry. Zostanie to zrealizowane za pomocą dwóch metod: K-means i DBSCAN, z wykorzystaniem biblioteki sklearn \cite{scikit-learn}.  \cite{dbscan}
 	
 	\subsection{K-means}
- 		Алгоритм K-means  разбивает набор данных на непересекающиеся кластеры, каждый из которых описывается средним значением (центроидом) образцов в кластере. K-means стремится выбрать центроиды, минимизируя инерцию, или критерий суммы квадратов внутри кластеров.
+ 		Algorytm K-means dzieli zbiór danych na nieprzekrywające się klastry, z których każdy opisany jest średnią wartością (centroidem) próbek w klastrze. K-means dąży do wyboru centroidów, minimalizując bezwładność, czyli kryterium sumy kwadratów wewnątrz klastrów \cite{k-means}.
 	
 		\subsubsection{Описание алгоритма}
-			Алгоритм K-means можно понять через три основных шага. Первый шаг заключается в выборе начальных центроидов. Обычно используется простой метод выбора случайных образцов из набора данных. После инициализации K-means выполняется последовательное выполнение двух других шагов. Первый шаг заключается в присвоении каждого образца ближайшему центроиду. Второй шаг создает новые центроиды, вычисляя среднее значение всех образцов, принадлежащих каждому предыдущему центроиду. Разница между старыми и новыми центроидами вычисляется, и алгоритм повторяет эти два последних шага до тех пор, пока эта разница не станет менее определенного порога. Другими словами, алгоритм повторяется, пока центроиды не перестанут существенно перемещаться.
+			Algorytm K-means można zrozumieć przez trzy główne kroki. Pierwszy krok polega na wyborze początkowych centroidów. Zwykle używa się prostego metody losowego wyboru próbek z zestawu danych. Po inicjalizacji K-means wykonuje dwa kolejne kroki. Pierwszy krok polega na przypisaniu każdej próbki do najbliższego centroidu. Drugi krok tworzy nowe centroidy, obliczając średnią wartość wszystkich próbek przypisanych do każdego z poprzednich centroidów. Różnica między starymi a nowymi centroidami jest obliczana i algorytm powtarza te dwa ostatnie kroki, aż ta różnica nie będzie mniejsza od określonego progu. Innymi słowy, algorytm powtarza się, dopóki centroidy nie przestaną się znacząco przesuwać.
 
-			Как и многие алгоритмы, K-means подвержен проблеме локальных минимумов, что сильно зависит от начальной инициализации центроидов. Обычно алгоритм запускается несколько раз с различными инициализациями центроидов.
+			Jak wiele algorytmów, K-means jest podatny na problem lokalnych minimów, co silnie zależy od początkowej inicjalizacji centroidów. Zazwyczaj algorytm uruchamia się kilkakrotnie z różnymi inicjalizacjami centroidów.
+
+
 			
-		\subsubsection{Параметры}
-			Для настройки алгоритма K-means используются следующие параметры:
+		\subsubsection{Parametry}
+			Do konfiguracji algorytmu K-means używa się następujących parametrów:
 			\begin{itemize}
-				\item n\_clusters: Количество кластеров (K), на которые нужно разделить данные.
-				\item init: Метод инициализации центроидов.
-				\item max\_iter: Максимальное количество итераций для одного запуска K-means.
-				\item tol: Порог для остановки алгоритма. Если разница между старыми и новыми центроидами меньше этого значения, алгоритм останавливается.
-				\item n\_init: Количество запусков алгоритма с различными инициализациями. Результат с наименьшей инерцией будет выбран как окончательный.
-				\item random\_state: Начальное значение генератора случайных чисел для воспроизводимости результатов.
-				\item algorithm: Алгоритм для вычисления K-means. Возможные значения включают 'auto', 'full', и 'elkan'.
+				\item n\_clusters: Liczba klastrów (K), na które należy podzielić dane.
+				\item init: Metoda inicjalizacji centroidów.
+				\item max\_iter: Maksymalna liczba iteracji dla jednego uruchomienia K-means.
+				\item tol: Próg dla zatrzymania algorytmu. Jeśli różnica między starymi a nowymi centroidami jest mniejsza od tej wartości, algorytm zatrzymuje się.
+				\item n\_init: Liczba uruchomień algorytmu z różnymi inicjalizacjami. Wynik z najmniejszą bezwładnością zostanie wybrany jako ostateczny.
+				\item random\_state: Wartość początkowa generatora liczb losowych dla powtarzalności wyników.
+				\item algorithm: Algorytm do obliczania K-means. Możliwe wartości to 'auto', 'full' i 'elkan'.
 			\end{itemize}
 			
-		\subsubsection{Пример использования}
+		\subsubsection{Przykład użycia}
 			\begin{verbatim}
 				kmeans = KMeans(n_clusters=2, init='k-means++', max_iter=300, n_init=10, random_state=0)
 
@@ -353,34 +355,37 @@
 			\end{verbatim}
 			
 			
-			Пример преобразования данных:
-				были точки, а теперь число которое показывет в каком кластере.
+			Przykład przekształcenia danych:
+			\underline{tu przyklad}
+
 	  
 	\subsection{DBSCAN}
-		Алгоритм DBSCAN (Density-Based Spatial Clustering of Applications with Noise) рассматривает кластеры как области высокой плотности, отделенные от областей низкой плотности. Это позволяет DBSCAN обнаруживать кластеры любой формы, в отличие от K-means, который предполагает, что кластеры имеют выпуклую форму. Основной компонент DBSCAN - это понятие ядерных образцов, которые представляют собой образцы в областях высокой плотности.
-		
-		\subsubsection{Параметры}
-			Парметры алгоритам DBSCAN:
+		Algorytm DBSCAN (Density-Based Spatial Clustering of Applications with Noise) traktuje klastry jako obszary o wysokiej gęstości, oddzielone od obszarów o niskiej gęstości. Dzięki temu DBSCAN może wykrywać klastry o dowolnym kształcie, w przeciwieństwie do K-means, który zakłada, że klastry mają kształt wypukły. Głównym elementem DBSCAN jest pojęcie punktów rdzeniowych, które reprezentują próbki w obszarach o wysokiej gęstości. \cite{dbscan}
+
+
+		\subsubsection{Parametry}
+			Parametry algorytmu DBSCAN:
 			\begin{itemize}
-				\item eps: Максимальное расстояние между двумя образцами, при котором один считается соседом другого. Это параметр радиуса для определения плотности области.
-				\item min\_samples: Минимальное число образцов (включая сам образец), необходимое для того, чтобы область считалась плотной, т.е. чтобы образец стал ядерным.
-				\item metric: Метрика для вычисления расстояний между точками (по умолчанию 'euclidean'). Это может быть любая метрика, поддерживаемая функцией scipy.spatial.distance.pdist.
-				\item algorithm: Алгоритм, используемый для вычисления ближайших соседей ('auto', 'ball\_tree', 'kd\_tree', 'brute').
-				\item leaf\_size: Размер листа, передаваемый алгоритмам 'ball\_tree', 'kd\_tree'. Это может повлиять на скорость построения и запроса ближайших соседей.
-				\item p: Степень Минковского расстояния, когда используется метрика 'minkowski' (по умолчанию p=2, что соответствует евклидову расстоянию).	
+				\item eps: Maksymalna odległość między dwiema próbkami, przy której jedna jest uważana za sąsiada drugiej. Jest to parametr promienia do określania gęstości obszaru.
+				\item min\_samples: Minimalna liczba próbek (w tym sama próbka) potrzebna do uznania obszaru za gęsty, tj. do uznania próbki za rdzeniową.
+				\item metric: Metryka do obliczania odległości między punktami (domyślnie 'euclidean'). Może to być dowolna metryka obsługiwana przez funkcję scipy.spatial.distance.pdist.
+				\item algorithm: Algorytm używany do obliczania najbliższych sąsiadów ('auto', 'ball\_tree', 'kd\_tree', 'brute').
+				\item leaf\_size: Rozmiar liścia przekazywany algorytmom 'ball\_tree' i 'kd\_tree'. Może to wpłynąć na szybkość budowy i zapytania najbliższych sąsiadów.
+				\item p: Wykładnik odległości Minkowskiego, gdy używana jest metryka 'minkowski' (domyślnie p=2, co odpowiada odległości euklidesowej).
 			\end{itemize}
 			
 			
-		\subsubsection{Описание алгоритма}
-			Алгоритм DBSCAN реализуется следующим образом:
+		\subsubsection{Opis algorytmu}
+			Algorytm DBSCAN działa w następujący sposób:
 			\begin{enumerate}
-				\item Определяются ядерные образцы: Образцы, для которых количество соседей в пределах eps не меньше min\_samples.
-				\item Строятся кластеры: Для каждого ядерного образца строится кластер путем нахождения всех его соседей, которые также являются ядерными образцами, и их собственных соседей и так далее. Каждый кластер также включает не-ядерные образцы, которые являются соседями ядерных образцов в кластере.
-				\item Выделяются выбросы: Все образцы, которые не являются ядерными и не находятся на достаточном расстоянии от ядерных образцов, считаются выбросами.
+				\item Określenie punktów rdzeniowych: Próbki, dla których liczba sąsiadów w obrębie eps nie jest mniejsza niż min\_samples.
+				\item Tworzenie klastrów: Dla każdej próbki rdzeniowej tworzony jest klaster poprzez znalezienie wszystkich jej sąsiadów, którzy również są próbkami rdzeniowymi, oraz ich własnych sąsiadów itd. Każdy klaster obejmuje także próbki nie będące rdzeniowymi, które są sąsiadami próbek rdzeniowych w klastrze.
+				\item Wykrywanie szumów: Wszystkie próbki, które nie są rdzeniowe i nie znajdują się w wystarczającej odległości od próbek rdzeniowych, są uznawane za szumy.
 			\end{enumerate}
-			Алгоритм DBSCAN детерминирован и всегда генерирует одинаковые кластеры при одинаковых входных данных в одном и том же порядке. Однако результаты могут отличаться при предоставлении данных в другом порядке. Это происходит из-за того, что порядок обработки данных влияет на то, каким образом назначаются образцы кластерам.
+			Algorytm DBSCAN jest deterministyczny i zawsze generuje takie same klastry dla tych samych danych wejściowych w tej samej kolejności. Jednak wyniki mogą się różnić przy podaniu danych w innej kolejności. Wynika to z faktu, że kolejność przetwarzania danych wpływa na sposób, w jaki próbki są przypisywane do klastrów.
+
 			
-		\subsubsection{Пример использования}
+		\subsubsection{Przykład użycia}
 			\begin{verbatim}
 				X = np.array([[0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
              			 [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]])
@@ -393,10 +398,18 @@
 			\end{verbatim}
 			
 			
-			Пример преобразования данных:
-				были точки, а теперь число которое показывет в каком кластере.
+			Przykład przekształcenia danych:
+				\underline{tu przyklad}
 		
-	\subsection{Выбор параметров}
+	\subsection{Dobór parametrów}
+		Dobór odpowiednich parametrów dla algorytmów klasteryzacji, takich jak K-means i DBSCAN, jest kluczowy dla uzyskania satysfakcjonujących wyników. Poniżej przedstawione są niektóre techniki i wskazówki dotyczące doboru parametrów:
+		
+		\begin{itemize}
+			\item K-means: Ważnym parametrem jest liczba klastrów (n\_clusters). Można użyć metody "łokcia" (elbow method) lub średniego współczynnika sylwetki (silhouette score) do określenia optymalnej liczby klastrów. Parametry takie jak max\_iter, tol oraz n\_init mogą być dostosowane w celu poprawy zbieżności i stabilności algorytmu.
+			\item DBSCAN: Kluczowymi parametrami są eps i min\_samples. Wybór eps zależy od gęstości danych i można go oszacować na podstawie wykresu odległości K-najbliższych sąsiadów (K-distance plot). Parametr min\_samples można ustawić w zależności od oczekiwanej minimalnej liczby punktów w klastrze.
+		\end{itemize}
+		
+		\underline{this is new}
 			
 	
 	
