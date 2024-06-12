@@ -3,57 +3,60 @@
 \section{Klasterzyacja}
 
 	\subsection{Defenicja}
-		Кластеризация представляет собой многомерную процедуру статистического анализа, направленную на сбор данных, содержащих информацию (признаки) о выборке объектов, с последующим упорядочиванием этих объектов в относительно однородные группы. Область применения кластеризации чрезвычайно широка: её используют в археологии, медицине, психологии, химии, биологии, государственном управлении, филологии, антропологии, маркетинге, социологии, геологии и других дисциплинах. \cite{Clustering}
+		Klasteryzacja (ang. clustering) to wielowymiarowa procedura analizy statystycznej, mająca na celu zbieranie danych zawierających informacje (cechy) o próbie obiektów, a następnie porządkowanie tych obiektów w stosunkowo jednorodne grupy. Zakres zastosowania klasteryzacji jest niezwykle szeroki: używa się jej w archeologii, medycynie, psychologii, chemii, biologii, administracji państwowej, filologii, antropologii, marketingu, socjologii, geologii i innych dyscyplinach. \cite{Clustering}
 	
-	\subsection{Цели кластеризации}
-		Кластеризация чаще всего используется для следующих целей:
+	\subsection{Cele klasteryzacji}
+		Klasteryzacja jest najczęściej wykorzystywana do następujących celów:
 		\begin{enumerate}
-			\item Понимание данных путем идентификации структуры кластеров. Разделение выборки на группы похожих 	объектов позволяет упростить дальнейшую обработку данных и принятие решений, применяя для каждого кластера свой метод анализа.
-			\item Компрессия данных. Если исходная выборка слишком велика, её можно сжать, сохраняя только по одному наиболее типичному представителю из каждого кластера. Заменяя все объекты в каждом кластере одним наиболее типичным представителем, можно значительно снизить объём данных, сохраняя при этом основные характеристики и структуру исходных данных.
-			\item Выявление новизны (выбросов или аномалий). Кластеризация позволяет выделить нетипичные объекты, которые нельзя отнести к какому-либо из кластеров. Эти объекты могут представлять интерес как потенциальные аномалии или выбросы, требующие дополнительного изучения, исследования или внимания.
+			\item Zrozumienie danych poprzez identyfikację struktury klastrów. Podział próby na grupy podobnych obiektów pozwala uprościć dalsze przetwarzanie danych i podejmowanie decyzji, stosując dla każdego klastra odpowiednią metodę analizy.
+			\item Kompresja danych. Jeśli pierwotna próba jest zbyt duża, można ją skompresować, zachowując tylko jednego najbardziej typowego przedstawiciela z każdego klastra. Zastępując wszystkie obiekty w każdym klastrze jednym najbardziej typowym przedstawicielem, można znacznie zmniejszyć objętość danych, zachowując jednocześnie główne cechy i strukturę pierwotnych danych.
+			\item Wykrywanie nowości (odchyleń lub anomalii). Klasteryzacja pozwala na wyróżnienie nietypowych obiektów, które nie mogą być przypisane do żadnego z klastrów. Te obiekty mogą być interesujące jako potencjalne anomalie lub odchylenia, wymagające dodatkowych badań, analiz lub uwagi.
 		\end{enumerate}
 	
 	
-	\subsection{Методы кластеризации}
-		Общепринятой классификации методов кластеризации не существует, однако можно выделить ряд групп подходов:
+	\subsection{Metody klasteryzacji}
+		Nie ma powszechnie przyjętej klasyfikacji metod klasteryzacji, jednak można wyróżnić kilka grup podejść:
+
 		\begin{enumerate}
-			\item Графовые алгоритмы кластеризации. Этот класс включает примитивные алгоритмы, основанные на построении графа сходства между объектами. В настоящее время они практически не применяются на практике.
-			\item Вероятностные алгоритмы кластеризации. Эти алгоритмы присваивают каждому объекту из обучающей выборки вероятность принадлежности к каждому из кластеров.
-			\item Иерархические алгоритмы кластеризации. Эти алгоритмы упорядочивают данные, создавая иерархию вложенных кластеров.
-			\item Алгоритмы, основанные на плотности данных:
+			\item Algorytmy klasteryzacji oparte na grafach. Klasa ta obejmuje prymitywne algorytmy oparte na budowaniu grafu podobieństwa między obiektami. Obecnie są one praktycznie nie stosowane w praktyce.
+			\item Algorytmy klasteryzacji probabilistycznej. Algorytmy te przypisują każdemu obiektowi z próby treningowej prawdopodobieństwo przynależności do każdego z klastrów.
+			\item Hierarchiczne algorytmy klasteryzacji. Algorytmy te porządkują dane, tworząc hierarchię zagnieżdżonych klastrów.
+			\item Algorytmy oparte na gęstości danych:
 			\begin{itemize}
-				\item K-средних. Итеративный алгоритм, основанный на минимизации суммарного квадратичного отклонения точек кластеров от их центров.
-				\item Распространение похожести. Алгоритм, который распространяет сообщения о сходстве между парами объектов для выбора типичных представителей каждого кластера.
-				\item Сдвиг среднего значения (mean shift). Метод, выбирающий центроиды кластеров в областях с наибольшей плотностью.
-				\item Спектральная кластеризация. Метод, использующий собственные значения матрицы расстояний для понижения размерности перед применением других методов кластеризации.
-				\item DBSCAN (Density-Based Spatial Clustering of Applications with Noise). Алгоритм, группирующий точки в один кластер в областях с высокой плотностью и помечающий одиноко расположенные точки как шум.
+				\item K-średnich (K-means). Iteracyjny algorytm oparty na minimalizacji sumy kwadratowych odchyleń punktów klastrów od ich centrów.
+				\item Rozpowszechnianie podobieństwa (Affinity Propagation). Algorytm, który rozprzestrzenia wiadomości o podobieństwie między parami obiektów w celu wyboru typowych przedstawicieli każdego klastra.
+				\item Przesunięcie średniej (mean shift). Metoda wybierająca centroidy klastrów w obszarach o największej gęstości.
+				\item Klasteryzacja spektralna (spectral clustering). Metoda wykorzystująca wartości własne macierzy odległości do zmniejszenia wymiarowości przed zastosowaniem innych metod klasteryzacji.
+				\item DBSCAN (Density-Based Spatial Clustering of Applications with Noise). Algorytm grupujący punkty w jeden klaster w obszarach o wysokiej gęstości i oznaczający odosobnione punkty jako szum.
 			\end{itemize}
 		\end{enumerate}
 
-		\subsection{Этапы кластеризации}
-			Независимо от предмета исследования применение анализа кластеров включает следующие этапы:
+		\subsection{Etapy klasteryzacji}
+			Niezależnie od przedmiotu badań, zastosowanie analizy klastrów obejmuje następujące etapy:
+			
 			\begin{enumerate}
-				\item Отбор выборки для кластеризации. Предполагается, что разумно классифицировать только количественные данные, поскольку числовые показатели могут быть количественно оценены.
-				\item Определение набора переменных, на основе которых объекты в выборке будут оцениваться, то есть пространства признаков. Признаки могут быть различными характеристиками объектов, которые имеют значение для исследования.
-				\item Вычисление значений той или иной меры сходства (или различия) между объектами. Цель - определить, насколько близки или различны объекты в выборке с точки зрения выбранных признаков.
-				\item Применение метода кластерного анализа для создания групп схожих объектов. Подруземевает использование одного из существуещего алгоритма кластеризации таким образом, чтобы объекты внутри одного кластера были максимально похожи друг на друга, а объекты из разных кластеров - максимально отличались.
-				\item Проверка достоверности результатов кластерного решения. Это может быть достигнуто с помощью различных методов, таких как визуализация кластеров, анализ стабильности кластеров и проверка качества разделения.
+				\item Wybór próby do klasteryzacji. Zakłada się, że klasyfikować można tylko dane ilościowe, ponieważ wskaźniki liczbowe mogą być ilościowo oceniane.
+				\item Określenie zestawu zmiennych, na podstawie których obiekty w próbie będą oceniane, tj. przestrzeni cech. Cechy mogą być różnymi charakterystykami obiektów, które mają znaczenie dla badań.
+				\item Obliczanie wartości wybranej miary podobieństwa (lub różnicy) między obiektami. Celem jest określenie, jak blisko lub różnią się obiekty w próbie pod względem wybranych cech.
+				\item Zastosowanie metody analizy klastrów do stworzenia grup podobnych obiektów. Zakłada się wykorzystanie jednego z istniejących algorytmów klasteryzacji w taki sposób, aby obiekty w jednym klastrze były maksymalnie podobne do siebie, a obiekty z różnych klastrów maksymalnie się różniły.
+				\item Sprawdzenie wiarygodności wyników klasteryzacji. Może to być osiągnięte za pomocą różnych metod, takich jak wizualizacja klastrów, analiza stabilności klastrów i ocena jakości podziału.
 			\end{enumerate}
 
-	\subsection{Применение}
-			Применение метода кластерного анализа успешно используется во многих областях и дисциплинах. Также данный метод широко используется в информатике. Наиболее успешными примерами использования кластеризации в работе с текстовыми данными являются: 
+	\subsection{Zastosowanie}
+		Zastosowanie metody analizy klastrów jest z powodzeniem wykorzystywane w wielu dziedzinach i dyscyplinach. Metoda ta jest również szeroko stosowana w informatyce. Najbardziej udanymi przykładami wykorzystania klasteryzacji w pracy z danymi tekstowymi są:
+			
 			\begin{itemize}
-				\item кластеризация результатов поисковых запросов
-				\item группировка пользователей со схожими интересами, которая помогает в персонализации контента, рекомендациях и таргетинге в рекламе
-				\item группировка текстовых документов по их тематике, таких как новостные статьи, научные публикации или сообщения в социальных сетях
+				\item klasteryzacja wyników wyszukiwania
+				\item grupowanie użytkowników o podobnych zainteresowaniach, co pomaga w personalizacji treści, rekomendacjach i targetowaniu w reklamie
+				\item grupowanie tekstowych dokumentów według ich tematyki, takich jak artykuły prasowe, publikacje naukowe lub wiadomości w mediach społecznościowych
 			\end{itemize}
 
 	\subsection{Оценка эффективности кластеризации}
-		Проблема оценки качества в задаче кластеризации трудноразрешима, как минимум, по двум причинам. Во-первых, согласно теореме невозможности Клейнберга \cite{Kleinberg}, не существует оптимального алгоритма кластеризации. Во-вторых, многие алгоритмы кластеризации не способны самостоятельно определить настоящее количество кластеров в данных; чаще всего количество кластеров задаётся на входе алгоритма и подбирается несколькими запусками.
-		Тем не менее, принято выделять две группы методов оценки качества кластеризации:
+		Problem oceny jakości w zadaniu klasteryzacji jest trudny do rozwiązania z co najmniej dwóch powodów. Po pierwsze, zgodnie z twierdzeniem o niemożności Kleinberga \cite{Kleinberg}, nie istnieje optymalny algorytm klasteryzacji. Po drugie, wiele algorytmów klasteryzacji nie jest w stanie samodzielnie określić rzeczywistej liczby klastrów w danych; najczęściej liczba klastrów jest zadawana na wejściu algorytmu i dobierana kilkoma uruchomieniami.
+		Niemniej jednak, wyróżnia się dwie grupy metod oceny jakości klasteryzacji:
 		\begin{enumerate}
-			\item Внешние методы сравнивают результат кластеризации с априори известным разделением на классы. Примером внешнего метода оценки можно рассмотреть индекс Рэнда. Этот метод оценивает, насколько много из тех пар элементов, которые находились в одном классе, и тех пар элементов, которые находились в разных классах, сохранили это состояние после применения алгоритма кластеризации.
-			\item Внутренние методы оценивают качество кластеризации, используя только информацию, содержащуюся в самих данных. Примером внутреннего метода является метод Cluster Cohesion. Идея данного метода заключается в том, что чем ближе друг к другу находятся объекты внутри кластеров, тем лучше разделение. Также можно отметить метод Cluster Separation, который оценивает качество кластеризации по тому, насколько далеко друг от друга находятся объекты разных кластеров.
+			\item Zewnętrzne metody porównują wynik klasteryzacji z apriorycznie znanym podziałem na klasy. Przykładem zewnętrznej metody oceny może być indeks Randa. Metoda ta ocenia, jak wiele spośród par elementów, które znajdowały się w jednej klasie, oraz tych, które znajdowały się w różnych klasach, zachowało ten stan po zastosowaniu algorytmu klasteryzacji.
+			\item Wewnętrzne metody oceniają jakość klasteryzacji, korzystając jedynie z informacji zawartych w samych danych. Przykładem wewnętrznej metody jest metoda Spójności Klastra (Cluster Cohesion). Idea tej metody polega na tym, że im bliżej siebie znajdują się obiekty w klastrach, tym lepsze jest podzielenie. Można również wyróżnić metodę Separacji Klastra (Cluster Separation), która ocenia jakość klasteryzacji na podstawie odległości między obiektami różnych klastrów.
 		\end{enumerate}
 
 
