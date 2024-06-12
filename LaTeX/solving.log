@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  10 JUN 2024 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,33 +846,9 @@ pg>]) [2] (solving.toc [3
  [4] [5] [6
 
 ] (wstep.tex
-Underfull \hbox (badness 1052) in paragraph at lines 4--5
-\T2A/cmr/m/n/10 этих тек-сто-вых дан-ных мо-жет предо-ста-вить цен-ную ин-фор-м
-а-цию для мар-ке-тин-го-вых
- []
-
-
-Underfull \hbox (badness 2884) in paragraph at lines 4--5
-\T2A/cmr/m/n/10 ис-сле-до-ва-ний, со-ци-аль-ных ис-сле-до-ва-ний, а так-же для 
-улуч-ше-ния вза-и-мо-дей-ствия с
- []
-
-
-Underfull \hbox (badness 1769) in paragraph at lines 7--8
-[]\T2A/cmr/m/n/10 Данный про-ект про-ект пред-став-ля-ет со-бой GUI-приложение,
- пред-на-зна-чен-ное для
- []
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 7--8
-\T2A/cmr/m/n/10 поль-зо-ва-те-лям лег-ко и быст-ро по-лу-чать и ана-ли-зи-ро-ва
-ть эти дан-ные. По-сле вы-бо-ра
- []
-
-
-Underfull \hbox (badness 2237) in paragraph at lines 7--8
-\T2A/cmr/m/n/10 бу-дут ви-зу-аль-но раз-де-ле-неы тек-сто-вые дан-ные на групы(
-кластеры). Для по-мо-щи в
+Underfull \hbox (badness 1107) in paragraph at lines 7--8
+\T2A/cmr/m/n/10 mog[] by^^Ac dowolnymi dokumentami tekstowymi. Projekt koncentr
+uje si[] na przetwarzaniu
  []
 
 ) (rozdzial_1.tex [1
@@ -1030,7 +1006,7 @@ Underfull \hbox (badness 1048) in paragraph at lines 146--148
 
 [7]) (rozdzial_2.tex [8]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-<./img/rys1.jpg, id=62, 447.47176pt x 225.2415pt>
+<./img/rys1.jpg, id=63, 447.47176pt x 225.2415pt>
 File: ./img/rys1.jpg Graphic file (type jpg)
 <use ./img/rys1.jpg>
 Package pdftex.def Info: ./img/rys1.jpg  used on input line 6.
@@ -1335,10 +1311,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10944 strings out of 475248
- 172653 string characters out of 5757812
+ 10945 strings out of 475248
+ 172661 string characters out of 5757812
  2096785 words of memory out of 5000000
- 32217 multiletter control sequences out of 15000+600000
+ 32218 multiletter control sequences out of 15000+600000
  580935 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,16n,82p,1596b,1302s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1372,9 +1348,9 @@ TeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/imaks/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/imaks/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/imaks/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on solving.pdf (41 pages, 487102 bytes).
+Output written on solving.pdf (41 pages, 487695 bytes).
 PDF statistics:
- 1071 PDF objects out of 1200 (max. 8388607)
+ 1073 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
