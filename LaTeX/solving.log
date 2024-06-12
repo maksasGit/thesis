@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  9 JUN 2024 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  10 JUN 2024 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -845,10 +845,39 @@ pg>]) [2] (solving.toc [3
 
  [4] [5] [6
 
-] (wstep.tex) (rozdzial_1.tex [1
+] (wstep.tex
+Underfull \hbox (badness 1052) in paragraph at lines 4--5
+\T2A/cmr/m/n/10 этих тек-сто-вых дан-ных мо-жет предо-ста-вить цен-ную ин-фор-м
+а-цию для мар-ке-тин-го-вых
+ []
 
-]
-[2
+
+Underfull \hbox (badness 2884) in paragraph at lines 4--5
+\T2A/cmr/m/n/10 ис-сле-до-ва-ний, со-ци-аль-ных ис-сле-до-ва-ний, а так-же для 
+улуч-ше-ния вза-и-мо-дей-ствия с
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 7--8
+[]\T2A/cmr/m/n/10 Данный про-ект про-ект пред-став-ля-ет со-бой GUI-приложение,
+ пред-на-зна-чен-ное для
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 7--8
+\T2A/cmr/m/n/10 поль-зо-ва-те-лям лег-ко и быст-ро по-лу-чать и ана-ли-зи-ро-ва
+ть эти дан-ные. По-сле вы-бо-ра
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 7--8
+\T2A/cmr/m/n/10 бу-дут ви-зу-аль-но раз-де-ле-неы тек-сто-вые дан-ные на групы(
+кластеры). Для по-мо-щи в
+ []
+
+) (rozdzial_1.tex [1
+
+] [2
 
 ]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
@@ -1325,8 +1354,8 @@ ljfour/lh/lh-t2a/dpi600\larm0800.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts
 /pk/ljfour/lh/lh-t2a/dpi600\latt1000.pk> <C:\Users\imaks\AppData\Local\MiKTeX\f
 onts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\imaks\AppData\Local\Mi
 KTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\imaks\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\imaks\AppData\
-Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\imaks\AppD
+l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\imaks\AppData\
+Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\imaks\AppD
 ata\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\imaks\
 AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\im
 aks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\User
@@ -1343,9 +1372,9 @@ TeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/imaks/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/imaks/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/imaks/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on solving.pdf (41 pages, 483274 bytes).
+Output written on solving.pdf (41 pages, 487102 bytes).
 PDF statistics:
- 1065 PDF objects out of 1200 (max. 8388607)
+ 1071 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

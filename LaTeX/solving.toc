@@ -1,5 +1,8 @@
 \babel@toc {russian}{}\relax 
 \contentsline {chapter}{Wstęp}{1}{}%
+\contentsline {section}{\numberline {0.1}Причина появления проекта}{1}{}%
+\contentsline {section}{\numberline {0.2}Идея проекта}{1}{}%
+\contentsline {section}{\numberline {0.3}Для кого это}{1}{}%
 \contentsline {chapter}{\numberline {1}Rozdzial 1}{3}{}%
 \contentsline {section}{\numberline {1.1}Klasterzyacja}{3}{}%
 \contentsline {subsection}{\numberline {1.1.1}Defenicja}{3}{}%
@@ -104,7 +107,7 @@
 \contentsline {subsection}{\numberline {3.2.6}Кластеризация}{24}{}%
 \contentsline {subsubsection}{k-means}{24}{}%
 \contentsline {subsubsection}{DBSCAN}{24}{}%
-\contentsline {subsection}{\numberline {3.2.7}Интерпритиация результатов}{24}{}%
+\contentsline {subsection}{\numberline {3.2.7}Интерпритиация результатов = Итог}{24}{}%
 \contentsline {chapter}{\numberline {4}Tytuł 4}{25}{}%
 \contentsline {section}{\numberline {4.1}Sekcja}{25}{}%
 \contentsline {chapter}{Podsumowanie}{27}{}%
