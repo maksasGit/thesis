@@ -9,36 +9,39 @@
 	\end{figure}
 		
 
-\section{Приложение}
+\section{Aplikacja}
 
-	\subsection{Opis}
-		Данный проект направлен на создание инструмента для анализа текстовых данных, включающего предобработку текста, векторизацию и кластеризацию. Основная цель приложения — предоставить пользователю возможность гибкой настройки и использования различных методов обработки данных для решения конкретных задач.
+	\subsection{Opis aplikacji}
+		Ten projekt ma na celu stworzenie narzędzia do analizy danych tekstowych, obejmującego wstępne przetwarzanie tekstu, wektoryzację i klasteryzację. Głównym celem aplikacji jest umożliwienie użytkownikowi elastycznego dostosowania i wykorzystania różnych metod przetwarzania danych do rozwiązywania konkretnych zadań.
 		
-	\subsection{Технологии}
-		Для реализации проекта был выбран язык программирования Python. Он обладает рядом преимуществ: \cite{Python}
+		
+	\subsection{Technologie}
+		Do realizacji projektu wybrano język programowania Python. Posiada on szereg zalet: \cite{Python}
 		\begin{itemize}
-			\item Богатый набор библиотек для реализации различных методов, таких как предобработка текста, векторизация и кластеризация.
-			\item Высокая эффективность для анализа данных благодаря библиотекам, таким как NumPy, scikit-learn.
-			\item Сообщество и документация, которые облегчают разработку и поддержку проектов.
+			\item Bogaty zestaw bibliotek do implementacji różnych metod, takich jak wstępne przetwarzanie tekstu, wektoryzacja i klasteryzacja.
+			\item Wysoka efektywność w analizie danych dzięki bibliotekom takim jak NumPy, scikit-learn.
+			\item Społeczność i dokumentacja, które ułatwiają rozwój i utrzymanie projektów.
 		\end{itemize}
 		
 		
 	\subsection{GUI}
-		Основная идея приложения заключается в создании удобного инструмента для анализа текстовых данных, где пользователь может самостоятельно выбирать и настраивать методы обработки под конкретные задачи с помощью графического интерфейса. Для разработки графического интерфейса были использованы библиотеки PyQt и Matplotlib:
+		Główną ideą aplikacji jest stworzenie wygodnego narzędzia do analizy danych tekstowych, w którym użytkownik może samodzielnie wybierać i dostosowywać metody przetwarzania do konkretnych zadań za pomocą interfejsu graficznego. Do opracowania interfejsu graficznego wykorzystano biblioteki PyQt i Matplotlib:
 		\begin{itemize}
-			\item PyQt: Обеспечивает создание интуитивно понятных пользовательских интерфейсов.
-			\item Matplotlib: Используется для визуализации данных, что позволяет пользователю легко интерпретировать результаты анализа.
+			\item PyQt: Umożliwia tworzenie intuicyjnych interfejsów użytkownika.
+			\item Matplotlib: Wykorzystywana do wizualizacji danych, co pozwala użytkownikowi łatwo interpretować wyniki analizy.
 		\end{itemize}
-		Графический интерфейс позволяет пользователю загружать данные, настраивать параметры обработки текста, векторизации и кластеризации, а также визуализировать результаты.
+		Interfejs graficzny umożliwia użytkownikowi ładowanie danych, konfigurowanie parametrów przetwarzania tekstu, wektoryzacji i klasteryzacji oraz wizualizację wyników.
+		
+		
 		
 	\subsection{OOP}
-		Главным компонентом моего приложения является класс \textbf{Workspace}, который представляет собой контейнер, хранящий параметры для трех основных процессов:
+		Głównym komponentem mojej aplikacji jest klasa \textbf{Workspace}, która stanowi kontener przechowujący parametry dla trzech głównych procesów:
 		\begin{itemize}
-			\item Обработка текста: Включает методы предобработки, такие как токенизация, удаление стоп-слов и лемматизация.
-			\item Векторизация: Преобразует текстовые данные в числовые векторы с использованием методов, таких как TF-IDF или Word2Vec.
-			\item Кластеризация: Реализует алгоритмы, такие как K-means или DBSCAN, для группировки текстовых данных.
+			\item Przetwarzanie tekstu: Obejmuje metody wstępnego przetwarzania, takie jak tokenizacja, usuwanie stop-słów i lematyzacja.
+			\item Wektoryzacja: Przekształca dane tekstowe w wektory liczbowe przy użyciu metod takich jak TF-IDF lub Word2Vec.
+			\item Klasteryzacja: Implementuje algorytmy, takie jak K-means lub DBSCAN, do grupowania danych tekstowych.
 		\end{itemize}
-		Класс \textbf{Workspace} обеспечивает структурированное хранение и управление параметрами каждого этапа, что упрощает процесс настройки и выполнения анализа.
+		Klasa \textbf{Workspace} zapewnia strukturalne przechowywanie i zarządzanie parametrami każdego etapu, co upraszcza proces konfiguracji i wykonania analizy.
 		
 	
 \section{Текстовые данные}
