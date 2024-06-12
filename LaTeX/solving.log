@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  10 JUN 2024 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 12:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1074,10 +1074,6 @@ Underfull \hbox (badness 3758) in paragraph at lines 66--67
  []
 
 [10]
-
-LaTeX Warning: Citation `nltk' on page 11 undefined on input line 93.
-
-
 Underfull \hbox (badness 5726) in paragraph at lines 95--96
 []\T2A/cmr/m/n/10 Обязательная об-ра-бот-ка вы-пол-ня-ю-ще-ся неза-ви-си-мо от 
 вы-бо-ра-ных па-ра-мет-ров
@@ -1296,9 +1292,15 @@ Package pdftex.def Info: ./img/logo.jpg  used on input line 12.
 ]) (bibliografia.tex [27] [28
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
 []\T2A/cmr/m/n/9 Impossibility Theorem for Clustering \T2A/cmr/m/it/9 Theorem f
 or Clustering\T2A/cmr/m/n/9 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
+[]\T2A/cmr/m/n/9 Daniel Jurafsky, James H. Martin, \T2A/cmr/m/it/9 Speech and L
+anguage Processing\T2A/cmr/m/n/9 ,
  []
 
 ) [29] [30
@@ -1330,15 +1332,12 @@ L3 programming layer <2023-08-29>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 10944 strings out of 475248
- 172653 string characters out of 5757812
+ 10959 strings out of 475248
+ 172804 string characters out of 5757812
  2096785 words of memory out of 5000000
- 32217 multiletter control sequences out of 15000+600000
+ 32232 multiletter control sequences out of 15000+600000
  580935 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,16n,82p,1596b,1302s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1372,9 +1371,9 @@ TeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/imaks/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/imaks/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/imaks/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on solving.pdf (41 pages, 487102 bytes).
+Output written on solving.pdf (41 pages, 508007 bytes).
 PDF statistics:
- 1071 PDF objects out of 1200 (max. 8388607)
+ 1127 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
