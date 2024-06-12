@@ -1,14 +1,6 @@
 \chapter{Rozdzial 2}
 	
-	
-	\begin{figure}
-		\centering
-		\scalebox{0.25} {\includegraphics[width=0.5\textwidth]{./img/rys1.jpg	}}
-		\caption{Przyklad rys}
-		\label{fig:rys1}
-	\end{figure}
 		
-
 \section{Aplikacja}
 
 	\subsection{Opis aplikacji}
@@ -44,50 +36,48 @@
 		Klasa \textbf{Workspace} zapewnia strukturalne przechowywanie i zarządzanie parametrami każdego etapu, co upraszcza proces konfiguracji i wykonania analizy.
 		
 	
-\section{Текстовые данные}
+\section{Dane tekstowe}
 
 	\subsection{Opis}
-		Для реализации данного проекта потребуются текстовые данные, которые в данном случае будут комментариями с YouTube. Мы будем использовать YouTube Data API v3 для получения информации о видео и связанных с ним комментариев. Данное API является бесплатным и простым в использовании. Для начала работы необходимо зарегистрироваться и создать проект в Google Cloud, а затем активировать YouTube Data API. После этого будет сгенерирован API-ключ, который мы будем использовать для аутентификации.
+		Aby zrealizować ten projekt, potrzebne będą dane tekstowe, które w tym przypadku będą komentarzami z YouTube. Do pozyskiwania informacji o filmach i powiązanych komentarzach będziemy używać YouTube Data API v3. API to jest darmowe i łatwe w użyciu. Aby rozpocząć pracę, należy zarejestrować się i utworzyć projekt w Google Cloud, a następnie aktywować YouTube Data API. Po tym wygenerowany zostanie klucz API, który będziemy używać do uwierzytelniania.
 		
-	\subsection{API запросы}
-		В данном проекте будут использованы два HTTP-запроса:
+	\subsection{Zapytania API}
+		W projekcie wykorzystane będą dwa zapytania HTTP:
 		\begin{itemize}
 			\item "GET https://www.googleapis.com/youtube/v3/commentThreads"
 			\item "GET https://www.googleapis.com/youtube/v3/videos"
 		\end{itemize}
-	 	Первый запрос помогает получить комментарии к конкретному видео, а второй — получить информацию о видео. Подрбобно ознакомиться с полной документацией можно в \cite{YouTubeAPI}.
-	 	 Этапы получения комментариев: 
+	 	Pierwsze zapytanie służy do pobierania komentarzy do konkretnego filmu, a drugie do uzyskiwania informacji o filmie. Szczegółowe informacje można znaleźć w dokumentacji \cite{YouTubeAPI}. Etapy pobierania komentarzy:
 	 	\begin{enumerate}
-	 		\item Пользователь с помощью графического интерфейса (GUI) вводит ссылку на интересующее его видео.
-	 		\item Программа извлекает video\_id из предоставленной ссылки.
-	 		\item Используя video\_id, выполняется запрос GET https://www.googleapis.com/youtube/v3/videos для получения краткой информации о видео. Это позволяет пользователю убедиться, что выбранное видео соответствует его ожиданиям.
-	 		\item После подтверждения пользователем, что видео корректное, выполняется запрос GET https://www.googleapis.com/youtube/v3/commentThreads, чтобы получить комментарии к этому видео.
-	 		\item Полученные комментарии сохраняются в текстовый файл, где каждый комментарий записан в отдельной строке. Название файла соответствует уникальному идентификатору видео (video\_id).
+	 		\item Użytkownik wprowadza w interfejsie graficznym (GUI) link do interesującego go filmu.
+	 		\item Program wyodrębnia \textbf{video\_id} z podanego linku.
+	 		\item Za pomocą \textbf{video\_id} wykonywane jest zapytanie GET https://www.googleapis.com/youtube/v3/videos, aby uzyskać podstawowe informacje o filmie. To pozwala użytkownikowi upewnić się, że wybrany film odpowiada jego oczekiwaniom.
+	 		\item Po potwierdzeniu przez użytkownika, że film jest prawidłowy, wykonywane jest zapytanie GET https://www.googleapis.com/youtube/v3/commentThreads, aby pobrać komentarze do tego filmu.
+	 		\item Uzyskane komentarze są zapisywane w pliku tekstowym, gdzie każdy komentarz jest zapisany w oddzielnej linii. Nazwa pliku odpowiada unikalnemu identyfikatorowi filmu (\textbf{video\_id}).
 	 	\end{enumerate}
 	
-	\subsection{Обработка полученных данных}
-		Результаты наших запросов будут предоставлены в формате JSON. Подробную информацию о структуре JSON-ответов можно найти в документации \cite{YouTubeAPI}. Для получения информации о видео будут использоваться только следующие поля:
+	\subsection{Przetwarzanie uzyskanych danych}
+		Wyniki naszych zapytań będą dostarczane w formacie JSON. Szczegółowe informacje o strukturze odpowiedzi JSON można znaleźć w dokumentacji \cite{YouTubeAPI}. Do uzyskiwania informacji o filmie będą używane tylko następujące pola:
 		\begin{itemize}
-			\item title: название видеоролика
-			\item channelTitle: имя автора канала
-			\item thumbnails: URL-адрес изображения
+			\item title: tytuł filmu
+			\item channelTitle: nazwa autora kanału
+			\item thumbnails: URL miniaturki
 		\end{itemize}				
-		 При получении комментариев необходимы только следующие поля:
+		 Przy pobieraniu komentarzy potrzebne są tylko następujące pola:
 		 \begin{itemize}
-		 	\item textDisplay: содержание комментария
-		 	\item replies: контейнер комментариев-ответов
+		 	\item textDisplay: treść komentarza
+		 	\item replies: kontener z odpowiedziami na komentarze
 		 \end{itemize}
- 		 Поле textDisplay содержит текст комментария, а поле replies является контейнером для комментариев-ответов. Каждый ответ в поле replies.comments также имеет поле textDisplay, которое мы можем отдельно обработать. 
-		В конечном итоге мы получим список всех комментариев, где каждый элемент представляет из себя отдельный комментарий.
+ 		 Pole \textbf{textDisplay} zawiera tekst komentarza, a pole \textbf{replies} jest kontenerem na odpowiedzi na komentarze. Każda odpowiedź w \textbf{replies.comments} również ma pole \textbf{textDisplay}, które możemy osobno przetwarzać. W końcowym wyniku otrzymamy listę wszystkich komentarzy, gdzie każdy element reprezentuje oddzielny komentarz.
 		
-	\subsection{Хранение}
-		После получения все комментарии будут сохраняться в отдельном каталоге comments, который будет создаваться в случае его отсутсвии, где каждый файл с коменатриями будет иметь название \textbf{video\_id.txt}, для возможности индефекации.		
-		Для упрощения процесса хранения и доступа к данным, а также для обеспечения их совместимости с различными инструментами анализа, принято решение использовать обычный текстовый файл (.txt) для хранения комментариев. Каждый комментарий будет записан в отдельную строку файла, что упрощает структурирование данных и позволяет легко считывать их для анализа.
-	Такой способ хранения данных был выбран по нескольким причинам:
+	\subsection{Przechowywanie}
+		Po uzyskaniu wszystkie komentarze będą przechowywane w osobnym katalogu \textbf{comments}, który zostanie utworzony w przypadku jego braku. Każdy plik z komentarzami będzie miał nazwę \textbf{video\_id.txt} dla łatwej identyfikacji.
+		Dla uproszczenia procesu przechowywania i dostępu do danych oraz zapewnienia ich kompatybilności z różnymi narzędziami analitycznymi, zdecydowano się na użycie zwykłego pliku tekstowego (.txt) do przechowywania komentarzy. Każdy komentarz będzie zapisany w oddzielnej linii pliku, co upraszcza strukturę danych i umożliwia łatwe ich odczytanie do analizy.
+		Taki sposób przechowywania danych został wybrany z kilku powodów:
 	\begin{itemize}
-		\item \textbf{Простота реализации}: Текстовые файлы легко создаются, читаются и редактируются с помощью множества программных средств и языков программирования.
-		\item \textbf{Совместимость}: Практически все аналитические инструменты и библиотеки могут работать с текстовыми файлами, что облегчает интеграцию данных в различные этапы анализа.
-		\item \textbf{Малое влияние на анализ}: Формат хранения не оказывает значительного влияния на сам процесс анализа данных. Основное внимание уделяется содержимому комментариев, а не способу их хранения.
+		\item \textbf{Prostota implementacji}: Pliki tekstowe łatwo tworzyć, czytać i edytować za pomocą wielu narzędzi programistycznych i języków programowania.
+		\item \textbf{Kompatybilność}: Praktycznie wszystkie narzędzia analityczne i biblioteki mogą pracować z plikami tekstowymi, co ułatwia integrację danych w różnych etapach analizy.
+		\item \textbf{Mały wpływ na analizę}: Format przechowywania nie ma znaczącego wpływu na sam proces analizy danych. Główne znaczenie ma zawartość komentarzy, a nie sposób ich przechowywania.
 	\end{itemize}
 
 \section{Обработка текста}

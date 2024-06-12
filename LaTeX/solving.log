@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 16:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,207 +935,208 @@ r/m/n/10 ej, zachowuj[]c ich w\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 a^^Asciwo^^Asci
 
 [6] [7]) (rozdzial_2.tex [8]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-<./img/rys1.jpg, id=63, 447.47176pt x 225.2415pt>
-File: ./img/rys1.jpg Graphic file (type jpg)
-<use ./img/rys1.jpg>
-Package pdftex.def Info: ./img/rys1.jpg  used on input line 6.
-(pdftex.def)             Requested size: 213.39568pt x 107.41354pt.
 
-Underfull \hbox (badness 2644) in paragraph at lines 15--16
-\T2A/cmr/m/n/10 вклю-ча-ю-ще-го пре-до-б-ра-бот-ку тек-ста, век-то-ри-за-цию и 
-кла-сте-ри-за-цию. Ос-нов-ная цель
+Underfull \hbox (badness 1466) in paragraph at lines 7--8
+\T2A/cmr/m/n/10 wst[]pne przetwarzanie tekstu, wektoryzacj[] i klasteryzacj[]. 
+G\OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 ^^Aownym celem aplikacji jest
  []
 
 
-LaTeX Warning: Citation `Python' on page 9 undefined on input line 18.
+Underfull \hbox (badness 6032) in paragraph at lines 7--8
+\T2A/cmr/m/n/10 umo
+zliwienie u
+zytkownikowi elastycznego dostosowania i wykorzystania r^^Ao
+znych metod
+ []
 
 
-Underfull \hbox (badness 6001) in paragraph at lines 35--36
-[]\T2A/cmr/m/n/10 Главным ком-по-нен-том мо-е-го при-ло-же-ния яв-ля-ет-ся клас
-с \T2A/cmr/bx/n/10 Workspace\T2A/cmr/m/n/10 , ко-то-рый
+LaTeX Warning: Citation `Python' on page 9 undefined on input line 11.
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 25--26
+\T2A/cmr/m/n/10 Interfejs graficzny umo
+zliwia u
+zytkownikowi \OT1/cmr/m/n/10  l\T2A/cmr/m/n/10 adowanie danych, konfigurowanie 
+parametr^^Aow
  []
 
 [9
 
- <./img/rys1.jpg>]
-Underfull \hbox (badness 4205) in paragraph at lines 39--40
-[]\T2A/cmr/m/n/10 Кластеризация: Ре-а-ли-зу-ет ал-го-рит-мы, та-кие как K-means
- или DBSCAN, для
+]
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+[]\T2A/cmr/m/n/10 Za pomoc[] \T2A/cmr/bx/n/10 video_id \T2A/cmr/m/n/10 wykonywa
+ne jest zapytanie GET
  []
 
 
-Underfull \hbox (badness 4886) in paragraph at lines 58--59
-[]\T2A/cmr/m/n/10 Пользователь с по-мо-щью гра-фи-че-ско-го ин-тер-фей-са (GUI)
- вво-дит ссыл-ку на
+Underfull \hbox (badness 6125) in paragraph at lines 54--55
+\T2A/cmr/m/n/10 https://www.googleapis.com/youtube/v3/videos, aby uzyska^^Ac po
+dstawowe informacje
  []
 
 
-Overfull \hbox (22.23015pt too wide) in paragraph at lines 60--61
-[]\T2A/cmr/m/n/10 Используя video_id, вы-пол-ня-ет-ся за-прос GET https://www.g
-oogleapis.com/youtube/v3/videos
- []
-
-
-Underfull \hbox (badness 3758) in paragraph at lines 66--67
-[]\T2A/cmr/m/n/10 Результаты на-ших за-про-сов бу-дут предо-став-ле-ны в фор-ма
--те JSON. По-дроб-ную
+Underfull \hbox (badness 1540) in paragraph at lines 54--55
+\T2A/cmr/m/n/10 o filmie. To pozwala u
+zytkownikowi upewni^^Ac si[], 
+ze wybrany film odpowiada jego
  []
 
 [10]
-Underfull \hbox (badness 5726) in paragraph at lines 95--96
+Underfull \hbox (badness 5726) in paragraph at lines 88--89
 []\T2A/cmr/m/n/10 Обязательная об-ра-бот-ка вы-пол-ня-ю-ще-ся неза-ви-си-мо от 
 вы-бо-ра-ных па-ра-мет-ров
  []
 
-[11]
-Underfull \hbox (badness 2359) in paragraph at lines 104--105
+
+Underfull \hbox (badness 2359) in paragraph at lines 97--98
 []\T2A/cmr/m/n/10 Обязательными эта-па-ми об-ра-бот-ки тек-ста яв-ля-ют-ся при-
 ве-де-ние слов к ниж-не-му
  []
 
+[11]
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-109.
+102.
+
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-Underfull \hbox (badness 2173) in paragraph at lines 124--125
+Underfull \hbox (badness 2173) in paragraph at lines 117--118
 \T2A/cmr/m/n/10 Удаление стоп-слов умень-ша-ет раз-мер тек-ста и де-ла-ет ин-фо
 р-ма-тив-ные сло-ва бо-лее
  []
 
-[12]
-Underfull \hbox (badness 1484) in paragraph at lines 149--150
+
+Underfull \hbox (badness 1484) in paragraph at lines 142--143
 []\T2A/cmr/m/n/10 Эта функ-ция ис-поль-зу-ет об-ра-бо-тан-ные стро-ки, со-зда-в
 ая еди-ный мас-сив со все-ми
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 149--150
+Underfull \hbox (badness 3009) in paragraph at lines 142--143
 \T2A/cmr/m/n/10 ис-поль-зу-ет-ся для под-счј-та хэ-ши-ру-е-мых объ-ек-тов, та-к
 их как стро-ки или чис-ла, и
  []
 
-
-Underfull \hbox (badness 2478) in paragraph at lines 168--169
+[12]
+Underfull \hbox (badness 2478) in paragraph at lines 161--162
 \T2A/cmr/m/n/10 ко-то-рый бу-дет ис-поль-зо-ван для по-стро-е-ния ги-сто-грам-м
 ы (histogram), по-ка-зы-ва-ю-щей
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 191--192
+Underfull \hbox (badness 1221) in paragraph at lines 184--185
 []\T2A/cmr/m/n/10 На дан-ном эта-пе текст го-тов к сле-ду-ю-ще-му эта-пу об-ра-
 бот-ки. Для по-сле-ду-ю-ще-го
  []
 
 
-Underfull \vbox (badness 1028) has occurred while \output is active []
-
- [13]
-Underfull \hbox (badness 1748) in paragraph at lines 194--195
+Underfull \hbox (badness 1748) in paragraph at lines 187--188
 []\T2A/cmr/m/n/10 TF-IDF (Term Frequency-Inverse Document Frequency) ^^V это ст
 а-ти-сти-че-ская ме-ра,
  []
 
 
-Underfull \hbox (badness 4266) in paragraph at lines 194--195
+Underfull \hbox (badness 4266) in paragraph at lines 187--188
 \T2A/cmr/m/n/10 ис-поль-зу-е-мая для оцен-ки важ-но-сти тер-ми-на в до-ку-мен-т
 е от-но-си-тель-но кол-лек-ции
  []
 
-
-Underfull \hbox (badness 5460) in paragraph at lines 202--203
+[13]
+Underfull \hbox (badness 5460) in paragraph at lines 195--196
 []\T2A/cmr/m/n/10 stop_words: Спи-сок слов или стро-ка, опре-де-ля-ю-щая сло-ва
 , ко-то-рые сле-ду-ет
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 233--234
+Underfull \hbox (badness 1097) in paragraph at lines 226--227
 []\T2A/cmr/m/n/10 Word2Vec ^^V это ал-го-ритм, раз-ра-бо-тан-ный для обу-че-ния
  век-тор-ных пред-став-ле-ний
  []
 
-[14]
-Underfull \hbox (badness 2538) in paragraph at lines 239--240
+
+Underfull \hbox (badness 2538) in paragraph at lines 232--233
 []\T2A/cmr/m/n/10 window: Мак-си-маль-ное рас-сто-я-ние меж-ду те-ку-щим и пред
 -ска-зан-ным сло-вом в
  []
 
-[15]
-Overfull \hbox (19.3497pt too wide) in paragraph at lines 286--286
+[14]
+Overfull \hbox (19.3497pt too wide) in paragraph at lines 279--279
 []\T2A/cmtt/m/n/10 model = Word2Vec(sentences=tokens, vector_size=100, window=5
 , min_count=1, workers=4)[] 
  []
 
-
-Underfull \hbox (badness 1400) in paragraph at lines 298--299
+[15]
+Underfull \hbox (badness 1400) in paragraph at lines 291--292
 []\T2A/cmr/m/n/10 После век-то-ри-за-ции тек-ста с ис-поль-зо-ва-ни-ем ме-то-до
 в TF-IDF и Word2Vec важ-но
  []
 
 [16]
-Underfull \hbox (badness 1881) in paragraph at lines 336--337
+Underfull \hbox (badness 1881) in paragraph at lines 329--330
 []\T2A/cmr/m/n/10 tol: По-рог для оста-нов-ки ал-го-рит-ма. Ес-ли раз-ни-ца меж
 -ду ста-ры-ми и но-вы-ми
  []
 
 
-Overfull \hbox (35.09586pt too wide) in paragraph at lines 344--344
+Overfull \hbox (35.09586pt too wide) in paragraph at lines 337--337
 []\T2A/cmtt/m/n/10 kmeans = KMeans(n_clusters=2, init='k-means++', max_iter=300
 , n_init=10, random_state=0) 
  []
 
-[17]
-Underfull \hbox (badness 3965) in paragraph at lines 358--359
+
+Underfull \hbox (badness 3965) in paragraph at lines 351--352
 []\T2A/cmr/m/n/10 Алгоритм DBSCAN (Density-Based Spatial Clustering of Applicat
 ions with Noise)
  []
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 366--367
+Underfull \hbox (badness 1874) in paragraph at lines 359--360
 []\T2A/cmr/m/n/10 algorithm: Ал-го-ритм, ис-поль-зу-е-мый для вы-чис-ле-ния бли
 -жай-ших со-се-дей ('auto',
  []
 
-
-Underfull \hbox (badness 2913) in paragraph at lines 379--380
+[17]
+Underfull \hbox (badness 2913) in paragraph at lines 372--373
 \T2A/cmr/m/n/10 Алгоритм DBSCAN де-тер-ми-ни-ро-ван и все-гда ге-не-ри-ру-ет од
 и-на-ко-вые кла-сте-ры при
  []
 
-[18]
-Underfull \hbox (badness 6188) in paragraph at lines 403--404
+
+Underfull \hbox (badness 6188) in paragraph at lines 396--397
 []\T2A/cmr/m/n/10 Заключителый про-цесс ана-ли-за это ви-зу-а-ли-за-ция дан-ных
 . Ито-го-вый ре-зуль-тат
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 406--407
+Underfull \hbox (badness 3482) in paragraph at lines 399--400
 []\T2A/cmr/m/n/10 Для воз-мож-но-сти ви-зу-а-ли-за-ции век-то-ри-зи-ро-ва-ных д
 ан-ных в ка-че-стве 2D то-чек
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 406--407
+Underfull \hbox (badness 2229) in paragraph at lines 399--400
 \T2A/cmr/m/n/10 необ-хо-ди-мо вос-поль-зо-вать-ся ме-то-дом сни-же-ния раз-мер-
 но-сти (T-SNE). Дан-ный ме-тод
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 406--407
+Underfull \hbox (badness 1112) in paragraph at lines 399--400
 \T2A/cmr/m/n/10 от-ве-ча-ют при-зна-ки, то вы-брать какие-то наи-бо-лее под-хо-
 дя-щие при-зна-ки невоз-мож-но.
  []
 
-[19]
-Underfull \hbox (badness 2809) in paragraph at lines 425--426
+[18]
+Underfull \hbox (badness 2809) in paragraph at lines 418--419
 []\T2A/cmr/m/n/10 Преобразование рас-сто-я-ний в ве-ро-ят-но-сти: Для каж-дой т
 оч-ки рас-счи-ты-ва-ют-ся
  []
 
-) (rozdzial_3.tex [20]
+) (rozdzial_3.tex [19] [20
+
+]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 
 Underfull \hbox (badness 1009) in paragraph at lines 5--6
@@ -1143,9 +1144,7 @@ Underfull \hbox (badness 1009) in paragraph at lines 5--6
 -баром, со-дер-жа-щим два
  []
 
-[21
-
-]
+[21]
 Underfull \hbox (badness 1142) in paragraph at lines 30--31
 []\T2A/cmr/m/n/10 Кнопку Apply для при-ме-не-ния всех вы-бран-ных па-ра-мет-ров
  и от-кры-тия ок-на с
@@ -1175,14 +1174,19 @@ Underfull \hbox (badness 1178) in paragraph at lines 88--89
 -ет-ся, и поль-зо-ва-тель мо-жет
  []
 
-
-Underfull \hbox (badness 3118) in paragraph at lines 108--109
+<./img/rys1.jpg, id=114, 447.47176pt x 225.2415pt>
+File: ./img/rys1.jpg Graphic file (type jpg)
+<use ./img/rys1.jpg>
+Package pdftex.def Info: ./img/rys1.jpg  used on input line 94.
+(pdftex.def)             Requested size: 213.39568pt x 107.41354pt.
+[23 <./img/rys1.jpg>]
+Underfull \hbox (badness 3118) in paragraph at lines 114--115
 []\T2A/cmr/m/n/10 Исходные гра-фи-ки, гра-фи-ки по-сле. Ви-зу-аль-но гра-фи-ки 
 недолж-ны бы-ли силь-но
  []
 
-[23]
-Underfull \hbox (badness 1515) in paragraph at lines 115--116
+
+Underfull \hbox (badness 1515) in paragraph at lines 121--122
 \T2A/cmr/m/n/10 ви-зу-а-ли-зи-ро-вать на-ши век-то-ре-зи-ро-ван-ные дан-ные, та
 к как необ-ход-мо вы-брать ме-тод
  []
@@ -1247,7 +1251,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  10960 strings out of 475248
  172812 string characters out of 5757812
- 2096785 words of memory out of 5000000
+ 2095785 words of memory out of 5000000
  32233 multiletter control sequences out of 15000+600000
  580935 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1282,7 +1286,7 @@ TeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/imaks/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/imaks/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/imaks/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on solving.pdf (41 pages, 515509 bytes).
+Output written on solving.pdf (41 pages, 515565 bytes).
 PDF statistics:
  1149 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
