@@ -94,7 +94,7 @@
 		Wszystkie metody, oprócz przetwarzania obowiązkowego i analizy, są opcjonalne, co oznacza, że będą wykonywane tylko wtedy, gdy użytkownik wskaże, że chce używać tych metod.
 		
 	\subsection{Przetwarzanie obowiązkowe}
-		Obowiązkowe etapy przetwarzania tekstu to zmiana wszystkich słów na małe litery oraz proces tokenizacji, który eliminuje potrzebę usuwania spacji. Za pomocą funkcji \textbf{nltk.word_tokenize} każde słowo zostanie podzielone na tokeny. Te etapy są obowiązkowe, ponieważ upraszczają dalszą pracę z tekstem i gwarantują poprawne działanie wielu późniejszych funkcji, które mogą być czułe na wielkość liter.
+		Obowiązkowe etapy przetwarzania tekstu to zmiana wszystkich słów na małe litery oraz proces tokenizacji, który eliminuje potrzebę usuwania spacji. Za pomocą funkcji \textbf{nltk.word\_tokenize} każde słowo zostanie podzielone na tokeny. Te etapy są obowiązkowe, ponieważ upraszczają dalszą pracę z tekstem i gwarantują poprawne działanie wielu późniejszych funkcji, które mogą być czułe na wielkość liter.
 	
 		
 	\subsection{Przetwarzanie prymitywne}
@@ -183,22 +183,26 @@
 	
 \section{Wektoryzacja}
 	
-	\subsection{Opis}
-		На данном этапе текст готов к следующему этапу обработки. Для последующего анализа необходимо преобразовать комментарии в векторную форму (векторизировать). Будт использовано два метода: TF-IDF и Word2Vec. Эти методы позволят представить текстовые данные в виде числовых векторов, что облегчит дальнейший анализ и обработку. Векторизация будет реализована с использованием библиотек \textbf{scikit-learn} для метода TF-IDF и \textbf{gensim} для метода Word2Vec.
+	\subsection{Defenicja}
+		Na tym etapie tekst jest gotowy do dalszego przetwarzania. Aby przeprowadzić analizę, konieczne jest przekształcenie komentarzy w formę wektorową (wektoryzacja). Zostaną użyte dwie metody: TF-IDF i Word2Vec. Te metody umożliwiają przedstawienie danych tekstowych w postaci wektorów liczbowych, co ułatwia dalszą analizę i przetwarzanie. Wektoryzacja będzie realizowana przy użyciu bibliotek \textbf{scikit-learn} \cite{scikit-learn} dla metody TF-IDF i \textbf{gensim} \cite{gensim} dla metody Word2Vec. 
+
+		\underline{Moje pytanie}\\
+		\textbf{Tu jak i w nastepnych sekcjach mam pytnasnie, bo nie wiem jak opisac dlaczego wybralem dokladnie te metody. Wybralem tak naprawde 2 najpopularniуjszy metody, i wybralem 2 bo chcial to porownywac w wyniku}
+
 	
 	\subsection{TF-IDF}
- 		TF-IDF (Term Frequency-Inverse Document Frequency) — это статистическая мера, используемая для оценки важности термина в документе относительно коллекции документов (корпуса). Она широко применяется в задачах обработки естественного языка и информационного поиска. В библиотеке Scikit-learn существует удобный инструмент для расчета TF-IDF: класс TfidfVectorizer.
+ 		TF-IDF (Term Frequency-Inverse Document Frequency) to miara statystyczna używana do oceny ważności terminu w dokumencie w odniesieniu do kolekcji dokumentów (korpusu). Jest szeroko stosowana w zadaniach przetwarzania języka naturalnego i wyszukiwania informacji. W bibliotece Scikit-learn istnieje wygodne narzędzie do obliczania TF-IDF: klasa TfidfVectorizer.
 		
 		
-		\subsubsection{Параметры }
+		\subsubsection{Parametry}
 			\begin{itemize}
-				\item max\_df: Число или доля. Термины, которые встречаются в большем числе документов, чем указано, игнорируются. Полезно для удаления общеупотребительных слов.
-				\item min\_df: Число или доля. Термины, которые встречаются в меньшем числе документов, чем указано, игнорируются. Полезно для удаления редких слов.
-				\item ngram range: Тупл (min\_n, max\_n). Определяет диапазон для извлечения n-грамм.
-				\item stop\_words: Список слов или строка, определяющая слова, которые следует игнорировать. 
+				\item max\_df: Liczba lub udział. Terminy, które występują w większej liczbie dokumentów niż podano, są ignorowane. Przydatne do usuwania powszechnie używanych słów.
+				\item min\_df: Liczba lub udział. Terminy, które występują w mniejszej liczbie dokumentów niż podano, są ignorowane. Przydatne do usuwania rzadkich słów.
+				\item ngra\_range: Krotka (min\_n, max\_n). Określa zakres dla ekstrakcji n-gramów.
+				\item stop\_words: Lista słów lub ciąg znaków określający słowa, które należy ignorować.
 			\end{itemize}
 		
-		\subsubsection{Пояснение алгоритма}
+		\subsubsection{Wyjaśnienie algorytmu}
 			\begin{itemize}
 				\item Term Frequency (TF)
 				\item Inverse Document Frequency (IDF)
@@ -206,7 +210,7 @@
 			\end{itemize}
 			
 				
-		\subsubsection{Пример использования}
+		\subsubsection{Przykład użycia}
 			\begin{verbatim}
 				from sklearn.feature_extraction.text import TfidfVectorizer
 	
@@ -216,65 +220,66 @@
 				return tfidf_matrix
 			\end{verbatim}
 
-			Пример преобразования текстовых данных:
+			Przykład przekształcenia danych tekstowych:	
 			\begin{itemize}
-				\item До: ["This is a great video", "I love this content"]
-				\item После: [[0.5, 0.5, 0, 0.5, 0, 0.5], [0, 0, 0.7, 0, 0.7, 0]]
+				\item Przed: ["This is a great video", "I love this content"]
+				\item Po: [[0.5, 0.5, 0, 0.5, 0, 0.5], [0, 0, 0.7, 0, 0.7, 0]]
 			\end{itemize}
 			
-			Для работы с TF-IDF необходимо иметь корпус текстов, который можно представить в виде списка строк, где каждая строка — это отдельный документ.
+			Aby korzystać z TF-IDF, potrzebny jest korpus tekstów, który można przedstawić jako listę ciągów znaków, gdzie każdy ciąg znaków to osobny dokument.
 			
  
 	\subsection{Word2Vec}
- 		Word2Vec — это алгоритм, разработанный для обучения векторных представлений слов (эмбеддингов), которые захватывают семантические отношения между словами. В библиотеке Gensim предоставляется удобный интерфейс для работы с Word2Vec.
-		
-		\subsubsection{Важные параметры}	
+		Word2Vec to algorytm opracowany do nauki wektorowych reprezentacji słów (embeddingów), które oddają semantyczne relacje między słowami. W bibliotece Gensim dostępny jest wygodny interfejs do pracy z Word2Vec.
+
+
+		\subsubsection{Parametry}	
 			\begin{itemize}
-				\item sentences: Корпус текстов, представленный в виде списка списков слов.
-				\item vector\_size: Размерность векторного представления слов.
-				\item window: Максимальное расстояние между текущим и предсказанным словом в предложении.
-				\item min\_count: Минимальная частота слова в корпусе для его учета.
-				\item workers: Количество потоков для параллельного обучения.
+				\item sentences: Korpus tekstów, przedstawiony jako lista list słów.
+				\item vector\_size: Wymiarowość wektorowej reprezentacji słów.
+				\item window: Maksymalna odległość między bieżącym a przewidywanym słowem w zdaniu.
+				\item min\_count: Minimalna częstotliwość słowa w korpusie, aby je uwzględnić.
+				\item workers: Liczba wątków do równoległego uczenia.
 			\end{itemize}
 		
-			Более глабальные настройки
+			Dodatkowe ustawienia:
 			\begin{itemize}
-				\item SG (Skip-Gram) и CBOW (Continuous Bag of Words): В Word2Vec есть два основных архитектурных подхода — Skip-Gram и CBOW. Параметр sg в Gensim позволяет выбрать между ними:
+				\item SG (Skip-Gram) i CBOW (Continuous Bag of Words): W Word2Vec są dwa główne podejścia architektoniczne — Skip-Gram i CBOW. Parametr sg w Gensim pozwala wybrać między nimi:
 					\begin{itemize}
-						\item sg=0 использует CBOW (по умолчанию).
-						\item sg=1 использует Skip-Gram.
+						\item sg=0 używa CBOW (domyślnie).
+						\item sg=1 używa Skip-Gram.
 					\end{itemize}
-				\item Negative Sampling: В Word2Vec используется негативное сэмплирование для повышения эффективности обучения. Параметр negative задает количество "негативных" примеров для каждого положительного примера.
-				\item Learning Rate: Параметр alpha задает начальную скорость обучения, а min\_alpha — минимальную скорость обучения, которая уменьшается до этого значения по мере обучения.
+				\item Negative Sampling: W Word2Vec używa się negatywnego próbkowania dla zwiększenia efektywności uczenia. Parametr negative określa liczbę "negatywnych" przykładów dla każdego pozytywnego przykładu.
+				\item Learning Rate: Parametr alpha określa początkową szybkość uczenia, a min\_alpha — minimalną szybkość uczenia, która zmniejsza się do tej wartości w trakcie uczenia..
 			\end{itemize}
 		
-		\subsubsection{Описание алгоритма}
+		\subsubsection{Opis algorytmu}
 			\begin{enumerate}
-				\item Инициализация весов: Веса нейронной сети инициализируются случайными значениями. Это веса между входным слоем и скрытым слоем, а также между скрытым слоем и выходным слоем.
-				\item Прямой проход (Forward Pass): Для каждого слова в предложении создается входной вектор. В случае Skip-Gram этот входной вектор используется для предсказания контекстных слов. В случае CBOW контекстные слова используются для предсказания текущего слова.
+				\item Inicjalizacja wag: Wagi sieci neuronowej są inicjalizowane losowymi wartościami. Są to wagi między warstwą wejściową a ukrytą, oraz między warstwą ukrytą a wyjściową.
+				\item Przejście do przodu (Forward Pass): Dla każdego słowa w zdaniu tworzony jest wektor wejściowy. W przypadku Skip-Gram ten wektor wejściowy jest używany do przewidywania słów kontekstowych. W przypadku CBOW słowa kontekstowe są używane do przewidywania bieżącego słowa.
 				\begin{itemize}
 					\item Skip-Gram:
 					\begin{itemize}
-						\item Входное слово кодируется в виде одноразового вектора.
-						\item Одноразовый вектор умножается на веса между входным и скрытым слоями для получения скрытого представления.
-						\item Скрытое представление умножается на веса между скрытым и выходным слоями для предсказания контекстных слов.
+						\item Słowo wejściowe jest kodowane jako jednowymiarowy wektor.
+						\item Jednowymiarowy wektor jest mnożony przez wagi między warstwą wejściową a ukrytą, aby uzyskać ukrytą reprezentację.
+						\item Ukryta reprezentacja jest mnożona przez wagi między warstwą ukrytą a wyjściową, aby przewidzieć słowa kontekstowe.
 					\end{itemize}
 					\item CBOW:
 					\begin{itemize}
-						\item Контекстные слова кодируются в виде одноразовых векторов.
-						\item Одноразовые векторы суммируются и умножаются на веса между входным и скрытым слоями для получения скрытого представления.
-						\item Скрытое представление умножается на веса между скрытым и выходным слоями для предсказания текущего слова.
+						\item Słowa kontekstowe są kodowane jako jednowymiarowe wektory.
+						\item Jednowymiarowe wektory są sumowane i mnożone przez wagi między warstwą wejściową a ukrytą, aby uzyskać ukrytą reprezentację.
+						\item Ukryta reprezentacja jest mnożona przez wagi między warstwą ukrytą a wyjściową, aby przewidzieć bieżące słowo.
 					\end{itemize}								
 				\end{itemize}
-				\item Обратное распространение (Backpropagation): Ошибка предсказания рассчитывается путем сравнения предсказанного слова с фактическим. Затем эта ошибка распространяется обратно через сеть для обновления весов. Используется метод стохастического градиентного спуска (SGD) и, в некоторых случаях, негативное сэмплирование для ускорения обучения.
+				\item Propagacja wsteczna (Backpropagation): Błąd przewidywania jest obliczany przez porównanie przewidywanego słowa z faktycznym. Następnie ten błąd jest propagowany wstecz przez sieć, aby zaktualizować wagi. Używa się metody stochastycznego spadku gradientu (SGD) i, w niektórych przypadkach, negatywnego próbkowania, aby przyspieszyć uczenie.
 				\begin{itemize}
-					\item Обновление весов: Веса обновляются в направлении, противоположном градиенту ошибки. Это помогает минимизировать ошибку предсказания.
+					\item Aktualizacja wag: Wagi są aktualizowane w kierunku przeciwnym do gradientu błędu. To pomaga zminimalizować błąd przewidywania.
 				\end{itemize}
-				\item Повторение процесса: Этот процесс повторяется для всех слов в предложении и для всех предложений в корпусе. Модель проходит через корпус несколько раз, как определено параметром epochs.
+				\item Powtarzanie procesu: Proces ten powtarza się dla wszystkich słów w zdaniu i dla wszystkich zdań w korpusie. Model przechodzi przez korpus kilka razy, zgodnie z wartością parametru epochs.
 			\end{enumerate}
 	
 	
- 		\subsubsection{Пример использования}
+ 		\subsubsection{Przykład użycia}
  			\begin{verbatim}
 				from gensim.models import Word2Vec
 	
@@ -284,30 +289,31 @@
 				return word_vectors
 			\end{verbatim}
 
-			Пример преобразования текстовых данных:
+			Przykład przekształcenia danych tekstowych:
+
 			\begin{itemize}
-				\item До: ["This is a great video", "I love this content"]
-				\item После: Векторы слов: { "this": [...], "is": [...], "a": [...], "great": [...], "video": [...], "I": [...], "love": [...], "content": [...] }
+				\item Przed: ["This is a great video", "I love this content"]
+				\item Po: Wektory słów: { "this": [...], "is": [...], "a": [...], "great": [...], "video": [...], "I": [...], "love": [...], "content": [...] }
 			\end{itemize}
  	
  	\subsection{Ocena}
- 		После векторизации текста с использованием методов TF-IDF и Word2Vec важно провести оценку их эффективности и понять, насколько хорошо они справляются с задачей представления текстовых данных. В данной секции будут рассмотрены критерии оценки и результаты применения каждого из методов на наших данных.
+ 		Po wektoryzacji tekstu za pomocą metod TF-IDF i Word2Vec ważne jest przeprowadzenie oceny ich skuteczności i zrozumienie, jak dobrze radzą sobie z zadaniem przedstawiania danych tekstowych. W tej sekcji zostaną omówione kryteria oceny i wyniki zastosowania każdej z metod na naszych danych.
  	
- 		\subsubsection{Критерии}
- 			Для оценки работы методов TF-IDF и Word2Vec используются следующие критерии:
-
+ 		\subsubsection{Kryteria}
+ 			Do oceny pracy metod TF-IDF i Word2Vec używane są następujące kryteria:
+ 		
 			\begin{itemize}
-				\item \textbf{Семантическая значимость:} Насколько хорошо метод улавливает семантические связи 	между словами и контекст их использования.
-				\item \textbf{Скорость вычислений:} Время, необходимое для векторизации текстов.
-				\item \textbf{Простота интерпретации:} Насколько легко интерпретировать результаты векторизации и использовать их в дальнейших анализах.
-				\item \textbf{Применимость к задачам машинного обучения:} Насколько хорошо векторы подходят для задач классификации, кластеризации и других методов машинного обучения.
+				\item \textbf{Znaczenie semantyczne:} Jak dobrze metoda uchwytuje semantyczne związki między słowami i kontekstem ich użycia.
+				\item \textbf{Szybkość obliczeń:} Czas potrzebny na wektoryzację tekstów.
+				\item \textbf{Łatwość interpretacji:} Jak łatwo interpretować wyniki wektoryzacji i używać ich w dalszych analizach.
+				\item \textbf{Zastosowalność do zadań uczenia maszynowego:} Jak dobrze wektory nadają się do zadań klasyfikacji, klasteryzacji i innych metod uczenia maszynowego.
 			\end{itemize}
 		
-		\subsubsection{Оценка TF-IDF}
-			
+		\subsubsection{Ocena  TF-IDF}
+			\textit{Tego nie mam w kodzie, moze to i nie jest potrzebne}
 		
-		\subsubsection{Оценка Word2Vec}
-
+		\subsubsection{Ocena  Word2Vec}
+			\textit{Jest nie wielka czesc, ale napisano to bylo przez chatGPT, zeby ja mog sprawdzic}
 		
 	
 \section{Кластеризация}

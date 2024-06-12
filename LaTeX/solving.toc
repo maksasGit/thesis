@@ -39,30 +39,30 @@
 \contentsline {subsection}{\numberline {2.2.2}Zapytania API}{10}{}%
 \contentsline {subsection}{\numberline {2.2.3}Przetwarzanie uzyskanych danych}{10}{}%
 \contentsline {subsection}{\numberline {2.2.4}Przechowywanie}{11}{}%
-\contentsline {section}{\numberline {2.3}Обработка текста}{11}{}%
-\contentsline {subsection}{\numberline {2.3.1}Opis}{11}{}%
-\contentsline {subsection}{\numberline {2.3.2}Обязательная обработка}{11}{}%
-\contentsline {subsection}{\numberline {2.3.3}Примитивная обработка}{12}{}%
-\contentsline {subsection}{\numberline {2.3.4}Удаление stop-words}{12}{}%
-\contentsline {subsection}{\numberline {2.3.5}Лематизация}{12}{}%
-\contentsline {subsection}{\numberline {2.3.6}Анализ}{12}{}%
-\contentsline {subsubsection}{freq analysis}{12}{}%
-\contentsline {subsubsection}{length analysis}{13}{}%
-\contentsline {subsection}{\numberline {2.3.7}Итог}{13}{}%
+\contentsline {section}{\numberline {2.3}Przetwarzania tekstu}{11}{}%
+\contentsline {subsection}{\numberline {2.3.1}Defenicja}{11}{}%
+\contentsline {subsection}{\numberline {2.3.2}Przetwarzanie obowiązkowe}{11}{}%
+\contentsline {subsection}{\numberline {2.3.3}Przetwarzanie prymitywne}{12}{}%
+\contentsline {subsection}{\numberline {2.3.4}Usuwanie stop-words}{12}{}%
+\contentsline {subsection}{\numberline {2.3.5}Lematyzacja}{12}{}%
+\contentsline {subsection}{\numberline {2.3.6}Analiza}{12}{}%
+\contentsline {subsubsection}{Analiza częstotliwości (freq analysis)}{12}{}%
+\contentsline {subsubsection}{Analiza długości (length analysis)}{13}{}%
+\contentsline {subsection}{\numberline {2.3.7}Podsumowanie}{13}{}%
 \contentsline {section}{\numberline {2.4}Wektoryzacja}{13}{}%
-\contentsline {subsection}{\numberline {2.4.1}Opis}{13}{}%
+\contentsline {subsection}{\numberline {2.4.1}Defenicja}{13}{}%
 \contentsline {subsection}{\numberline {2.4.2}TF-IDF}{13}{}%
-\contentsline {subsubsection}{Параметры }{14}{}%
-\contentsline {subsubsection}{Пояснение алгоритма}{14}{}%
-\contentsline {subsubsection}{Пример использования}{14}{}%
+\contentsline {subsubsection}{Parametry}{14}{}%
+\contentsline {subsubsection}{Wyjaśnienie algorytmu}{14}{}%
+\contentsline {subsubsection}{Przykład użycia}{14}{}%
 \contentsline {subsection}{\numberline {2.4.3}Word2Vec}{14}{}%
-\contentsline {subsubsection}{Важные параметры}{14}{}%
-\contentsline {subsubsection}{Описание алгоритма}{15}{}%
-\contentsline {subsubsection}{Пример использования}{15}{}%
+\contentsline {subsubsection}{Parametry}{14}{}%
+\contentsline {subsubsection}{Opis algorytmu}{15}{}%
+\contentsline {subsubsection}{Przykład użycia}{15}{}%
 \contentsline {subsection}{\numberline {2.4.4}Ocena}{16}{}%
-\contentsline {subsubsection}{Критерии}{16}{}%
-\contentsline {subsubsection}{Оценка TF-IDF}{16}{}%
-\contentsline {subsubsection}{Оценка Word2Vec}{16}{}%
+\contentsline {subsubsection}{Kryteria}{16}{}%
+\contentsline {subsubsection}{Ocena TF-IDF}{16}{}%
+\contentsline {subsubsection}{Ocena Word2Vec}{16}{}%
 \contentsline {section}{\numberline {2.5}Кластеризация}{16}{}%
 \contentsline {subsection}{\numberline {2.5.1}Opis}{16}{}%
 \contentsline {subsection}{\numberline {2.5.2}K-means}{16}{}%
@@ -76,7 +76,7 @@
 \contentsline {subsection}{\numberline {2.5.4}Выбор параметров}{18}{}%
 \contentsline {section}{\numberline {2.6}Визуализация}{18}{}%
 \contentsline {subsection}{\numberline {2.6.1}Opis}{18}{}%
-\contentsline {subsection}{\numberline {2.6.2}Cнижение размерности}{19}{}%
+\contentsline {subsection}{\numberline {2.6.2}Cнижение размерности}{18}{}%
 \contentsline {subsection}{\numberline {2.6.3}T-SNE}{19}{}%
 \contentsline {subsubsection}{Параметры}{19}{}%
 \contentsline {subsubsection}{Описание алгоритма}{19}{}%
