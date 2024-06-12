@@ -1,94 +1,103 @@
 \chapter{Rozdzial 3}
 
-\section{Описание приложения}
-	\subsection{Рабочее окно}
-		Графическое приложение представляет собой окно с меню-баром, содержащим два поля ("File" и "Comments"), и основной зоной, где располагается таб-меню. Каждый таб представляет собой отдельное рабочее пространство (workspace). Рассмотрим эти элементы детальнее.
+\section{Opis aplikacji}
+	\subsection{Okno pracy}
+		Graficzna aplikacja składa się z okna z paskiem menu zawierającym dwa pola ("File" i "Comments"), oraz główną strefą, w której znajduje się menu zakładek. Każda zakładka odpowiada osobnej przestrzeni roboczej (workspace). Przyjrzyjmy się tym elementom bliżej.
+
 		
-	\subsection{Меню}
-		Меню-бар позволяет быстро навигировать по рабочему окну в любой момент. В меню-баре реализованы следующие функции:
+	\subsection{Menu}
+		Pasek menu umożliwia szybką nawigację po oknie pracy w dowolnym momencie. W menu zaimplementowane są następujące funkcje:
 		\begin{itemize}
-			\item Открытие диалогового окна для создания нового рабочего пространства ("File" -> "New Project").
-			\item Открытие диалогового окна для получения комментариев с YouTube ("Comments" -> "YouTube").
+			\item Otwieranie okna dialogowego w celu utworzenia nowej przestrzeni roboczej ("File" -> "New Project").
+			\item Otwieranie okna dialogowego w celu pobrania komentarzy z YouTube ("Comments" -> "YouTube").
 		\end{itemize}
 
-		Рассмотрим более подробно использование этих функций:
+		Podglądamy bardziej szczegółowo sposób korzystania z tych funkcji:
+
 		
-		\subsubsection{Создавние workspace}
-			Для создания нового рабочего пространства необходимо указать имя рабочей области (Workspace name) и файл-источник (Source file) с текстовыми данными. Вот как выглядит пустое окно \textbf{CreateWorkspaceWindowEmpty}. Пользователю необходимо ввести любое имя для рабочего пространства, а также указать путь к текстовому файлу с данными. Это можно сделать вручную или выбрать файл с помощью диалогового окна FileDialog из библиотеки PyQt, что позволяет найти необходимый файл на компьютере. Пример правильно заполненного окна \textbf{CreateWorkspaceWindowFill}.
+		\subsubsection{Tworzenie przestrzeni roboczej}
+			Aby utworzyć nową przestrzeń roboczą, należy podać nazwę przestrzeni roboczej (Workspace name) i plik źródłowy (Source file) zawierający dane tekstowe. Oto jak wygląda puste okno \textbf{CreateWorkspaceWindowEmpty}. Użytkownik musi podać dowolną nazwę dla przestrzeni roboczej i wybrać ścieżkę do pliku tekstowego z danymi. Można to zrobić ręcznie lub wybrać plik za pomocą okna dialogowego FileDialog z biblioteki PyQt, co pozwala odnaleźć potrzebny plik na komputerze. Przykład wypełnionego poprawnie okna \textbf{CreateWorkspaceWindowFill}.
+
 		
-		\subsubsection{Получение комментариев}
-			Для получения комментариев используется диалоговое окно, в котором необходимо указать ссылку на интересующее видео, как показано на скриншоте \textbf{CommentsWindowStep1}. Если видео найдено, то в поле Video Info появится информация о нем, позволяющая пользователю убедиться, что это именно то видео, комментарии которого необходимо получить. Далее пользователю остается только нажать на кнопку Download comments, которая сохранит все комментарии.
-				
+		\subsubsection{Pobieranie komentarzy}
+			Do pobrania komentarzy służy okno dialogowe, w którym należy podać link do interesującego nas filmu, jak pokazano na zrzucie ekranu \textbf{CommentsWindowStep1}. Jeśli film zostanie znaleziony, w polu Video Info pojawią się informacje o nim, pozwalając użytkownikowi upewnić się, że to właśnie ten film, komentarze z którego chcemy pobrać. Następnie użytkownik musi kliknąć przycisk Download comments, który zapisze wszystkie komentarze.
+		
 	\subsection{Workspace}
-		После создания хотя бы одного рабочего пространства появляется меню навигации по вкладкам, где каждая вкладка соответствует отдельному рабочему пространству. По этим вкладкам можно свободно переключаться и закрывать их. Содержимое каждой вкладки включает:
+		Po utworzeniu przynajmniej jednej przestrzeni roboczej pojawia się menu nawigacyjne zakładek, gdzie każda zakładka odpowiada osobnej przestrzeni roboczej. Można swobodnie przełączać się między tymi zakładkami i zamykać je. Zawartość każdej zakładki obejmuje:
 		\begin{itemize}
-			\item Поле для графиков.
-			\item Кнопки Previous и Next для переключения графиков в поле для графиков.
-			\item Кнопку Text для открытия диалогового окна управления обработкой текста.
-			\item Кнопку Vectorization для открытия диалогового окна управления векторизацией.
-			\item Кнопку Cluster для открытия диалогового окна управления кластеризацией.
-			\item Кнопку Apply для применения всех выбранных параметров и открытия окна с результатами кластеризации.
+			\item Pole na wykresy.
+			\item Przyciski Previous i Next do przełączania wykresów w polu na wykresy.
+			\item Przycisk Text do otwierania okna dialogowego zarządzania przetwarzaniem tekstu.
+			\item Przycisk Vectorization do otwierania okna dialogowego zarządzania wektoryzacją.
+			\item Przycisk Cluster do otwierania okna dialogowego zarządzania klasteryzacją.
+			\item Przycisk Apply do zastosowania wszystkich wybranych parametrów i otwarcia okna z wynikami klasteryzacji.
 		\end{itemize}
 		
-	\subsubsection{Поле для графиков}
-			Поле для графиков в каждый момент времени может отображать один из трех предложенных графиков:
+	\subsubsection{Pole na wykresy}
+			Pole na wykresy w każdej chwili może wyświetlać jeden z trzech proponowanych wykresów:
 			\begin{itemize}
-				\item График частот слов (freq). Описан ранее в 
-				\item График длин текста(length). Описан ранее в
-				\item График ближайших соседей (k-nearest). Описан ранее в
+				\item Wykres częstości słów (freq). 
+				\item Wykres długości tekstu (length).
+				\item Wykres najbliższych sąsiadów (k-nearest). 
 			\end{itemize}					
 			
-			С помощью кнопок Previous и Next графики можно переключать соответственно вперед и назад.		
+			Za pomocą przycisków Previous i Next można przełączać wykresy odpowiednio do przodu i do tyłu.		
+					
 		
 	\subsection{Text}
-			Кнопка Text открывает диалоговое окно, в котором пользователь может указать параметры для обработки текста. Вот как выглядит окно по умолчанию \textbf{TextProcessingWindowStandard}. По умолчанию все параметры установлены на значение true, то есть используются.
-		Пользователь может выбрать один из предложеных опций обработки текста:
+			Przycisk Text otwiera okno dialogowe, w którym użytkownik może określić parametry przetwarzania tekstu. Oto jak domyślne okno wygląda \textbf{TextProcessingWindowStandard}. Domyślnie wszystkie parametry są ustawione na wartość true, co oznacza, że są używane.
+
+			Użytkownik może wybrać jedną z proponowanych opcji przetwarzania tekstu:
+
+			\begin{itemize}
+				\item Alpha - podstawowa obróbka opisana wcześniej
+				\item Stop-words - usuwanie stop słów opisane wcześniej
+				\item Lematize - lematyzacja opisana wcześniej
+			\end{itemize}
+			
+	\subsection{Wektoryzacja}
+		Przycisk Vectorization otwiera okno dialogowe, w którym użytkownik może wybrać jeden z proponowanych metod wektoryzacji i określić parametry dla wybranej metody. Oto jak domyślne okno wygląda \textbf{VectorizationWindowStandard}. Domyślnie wybrana jest metoda TF-IDF z domyślnymi parametrami.
+		Następnie wymieniono listę dostępnych metod i parametrów dla każdej metody:
 		\begin{itemize}
-			\item Alpha - примитиваная обработка описанная ранее
-			\item Stop-words - удаленее стоп слов описаная ранее
-			\item Lematize - лемматизациия описаная ранее
+			\item Metoda TF-IDF. Dostępne parametry do konfiguracji:
+			\begin{itemize}
+				\item max\_df: Zakres dozwolonych wartości ()
+				\item min\_df: Zakres dozwolonych wartości ()
+			\end{itemize}
+			\item Metody Word2vec. Dostępne parametry do konfiguracji:
+			\begin{itemize}
+				\item vector\_size: Zakres dozwolonych wartości ()
+				\item window: Zakres dozwolonych wartości ()
+				\item min\_count: Zakres dozwolonych wartości ()
+				\item sg: Zakres dozwolonych wartości ()
+			\end{itemize}
 		\end{itemize}
 			
-		\subsubsection{Vectorization}
-			Кнопка Vectorization открывает диалоговое окно, в котором пользователь может выбрать один из предложенных методов векторизации и указать параметры для выбранного метода. Вот как выглядит окно по умолчанию \textbf{VectorizationWindowStandard}. По умолчанию выбран метод TF-IDF с параметрами по умолчанию.
-			Далее описан список доступных методов и параметров для каждого метода:
+	\subsection{Cluster}
+		Przycisk Cluster otwiera okno dialogowe, w którym użytkownik może wybrać jedną z proponowanych metod klasteryzacji i określić parametry dla wybranej metody. Oto jak domyślne okno wygląda \textbf{ClusterWindowStandard}. Domyślnie wybrana jest metoda K-means z domyślnymi parametrami.
+		Następnie wymieniono listę dostępnych metod i parametrów dla każdej metody:
+		\begin{itemize}
+			\item Metoda K-means. Dostępne parametry do konfiguracji:
 			\begin{itemize}
-				\item Метод TF-IDF. Доступные параметры для настройки:
-					\begin{itemize}
-						\item max\_df: Диапозон допустимых значений ()
-						\item min\_df: Диапозон допустимых значений ()
-					\end{itemize}
-				\item Методы Word2vec. Доступные парметры для настройки:
-					\begin{itemize}
-						\item vector\_size: Диапозон допустимых значений ()
-						\item window: Диапозон допустимых значений ()
-						\item min\_count: Диапозон допустимых значений ()
-						\item sg: Диапозон допустимых значений ()
-					\end{itemize}
+				\item n\_cluster: Zakres dozwolonych wartości ()
+				\item max\_iter: Zakres dozwolonych wartości ()
+				\item n\_iter: Zakres dozwolonych wartości ()
 			\end{itemize}
-			
-		\subsubsection{Cluster}
-			Кнопка Cluster открывает диалоговое окно, в котором пользователь может выбрать один из предложенных методов кластеризации и указать параметры для выбранного метода. Вот как выглядит окно по умолчанию \textbf{ClusterWindowStandard}. По умолчанию выбран метод K-means с параметрами по умолчанию.
-			Далее описан список доступных методов и параметров для каждого метода:
+			\item Metody DBSCAN. Dostępne parametry do konfiguracji:
 			\begin{itemize}
-				\item Метод K-means. Доступные параметры для настройки:
-					\begin{itemize}
-						\item n\_cluster: Диапозон допустимых значений ()
-						\item max\_iter: Диапозон допустимых значений ()
-						\item n\_iter: Диапозон допустимых значений ()
-					\end{itemize}
-				\item Методы DBSCAN. Доступные парметры для настройки:
-					\begin{itemize}
-						\item min\_samples: Диапозон допустимых значений ()
-						\item eps: Диапозон допустимых значений ()
-					\end{itemize}
+				\item min\_samples: Zakres dozwolonych wartości ()
+				\item eps: Zakres dozwolonych wartości ()
 			\end{itemize}
+		\end{itemize}
 			
-		\subsubsection{Result Window}		
-			Кнопка Apply открывает новое окно с результатами проделанной работы. Данное окно включает поле с графиком (2D plot) и панель инструментов (toolbar), где пользователь может воспользоваться готовыми функциями, предложенными библиотекой Matplotlib, для навигации по графику и других операций. Окно сохраняется, и пользователь может анализировать результаты, закрывать окно или сворачивать его и продолжать работу. Для упрощения навигации по всем окнам с результатами (ResultWindows) они будут иметь уникальные названия, чтобы можно было легко идентифицировать нужное окно.
+		\subsection{Result Window}		
+			Przycisk Apply otwiera nowe okno z wynikami wykonanej pracy. Okno to zawiera pole z wykresem (2D plot) i pasek narzędziowy (toolbar), gdzie użytkownik może skorzystać z gotowych funkcji zaproponowanych przez bibliotekę Matplotlib do nawigacji po wykresie i innych operacji. 
 			
 
 \section{Пример использования}
+
+
+	\underline{how use image}
 	\begin{figure}
 		\centering
 		\scalebox{0.25} {\includegraphics[width=0.5\textwidth]{./img/rys1.jpg	}}
