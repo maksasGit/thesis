@@ -82,32 +82,32 @@
 \contentsline {subsubsection}{Opis algorytmu}{19}{}%
 \contentsline {subsubsection}{Przykład użycia}{19}{}%
 \contentsline {chapter}{\numberline {3}Rozdzial 3}{21}{}%
-\contentsline {section}{\numberline {3.1}Описание приложения}{21}{}%
-\contentsline {subsection}{\numberline {3.1.1}Рабочее окно}{21}{}%
-\contentsline {subsection}{\numberline {3.1.2}Меню}{21}{}%
-\contentsline {subsubsection}{Создавние workspace}{21}{}%
-\contentsline {subsubsection}{Получение комментариев}{21}{}%
-\contentsline {subsection}{\numberline {3.1.3}Workspace}{22}{}%
-\contentsline {subsubsection}{Поле для графиков}{22}{}%
+\contentsline {section}{\numberline {3.1}Opis aplikacji}{21}{}%
+\contentsline {subsection}{\numberline {3.1.1}Okno pracy}{21}{}%
+\contentsline {subsection}{\numberline {3.1.2}Menu}{21}{}%
+\contentsline {subsubsection}{Tworzenie przestrzeni roboczej}{21}{}%
+\contentsline {subsubsection}{Pobieranie komentarzy}{21}{}%
+\contentsline {subsection}{\numberline {3.1.3}Workspace}{21}{}%
+\contentsline {subsubsection}{Pole na wykresy}{22}{}%
 \contentsline {subsection}{\numberline {3.1.4}Text}{22}{}%
-\contentsline {subsubsection}{Vectorization}{22}{}%
-\contentsline {subsubsection}{Cluster}{23}{}%
-\contentsline {subsubsection}{Result Window}{23}{}%
-\contentsline {section}{\numberline {3.2}Пример использования}{23}{}%
-\contentsline {subsection}{\numberline {3.2.1}Получение текстовых данных}{23}{}%
-\contentsline {subsection}{\numberline {3.2.2}Создание Workspace}{23}{}%
-\contentsline {subsection}{\numberline {3.2.3}Выбор методов и параметров}{23}{}%
-\contentsline {subsection}{\numberline {3.2.4}Текстовая обработка}{23}{}%
-\contentsline {subsubsection}{Alpha}{24}{}%
-\contentsline {subsubsection}{stop-words}{24}{}%
-\contentsline {subsubsection}{lemmatize}{24}{}%
-\contentsline {subsection}{\numberline {3.2.5}Векторизация}{24}{}%
-\contentsline {subsubsection}{TF-IDF}{24}{}%
-\contentsline {subsubsection}{Word2Vec}{24}{}%
-\contentsline {subsection}{\numberline {3.2.6}Кластеризация}{24}{}%
-\contentsline {subsubsection}{k-means}{24}{}%
-\contentsline {subsubsection}{DBSCAN}{24}{}%
-\contentsline {subsection}{\numberline {3.2.7}Интерпритиация результатов = Итог}{24}{}%
+\contentsline {subsection}{\numberline {3.1.5}Wektoryzacja}{22}{}%
+\contentsline {subsection}{\numberline {3.1.6}Cluster}{23}{}%
+\contentsline {subsection}{\numberline {3.1.7}Result Window}{23}{}%
+\contentsline {section}{\numberline {3.2}Przykład użycia}{23}{}%
+\contentsline {subsection}{\numberline {3.2.1}Pobieranie danych tekstowych}{23}{}%
+\contentsline {subsection}{\numberline {3.2.2}Tworzenie Workspace}{23}{}%
+\contentsline {subsection}{\numberline {3.2.3}Wybór metod i parametrów}{23}{}%
+\contentsline {subsection}{\numberline {3.2.4}Przetwarzanie tekstu}{23}{}%
+\contentsline {subsubsection}{Alpha}{23}{}%
+\contentsline {subsubsection}{Stop-words}{23}{}%
+\contentsline {subsubsection}{Lemmatize}{23}{}%
+\contentsline {subsection}{\numberline {3.2.5}Wektoryzacja}{23}{}%
+\contentsline {subsubsection}{TF-IDF}{23}{}%
+\contentsline {subsubsection}{Word2Vec}{23}{}%
+\contentsline {subsection}{\numberline {3.2.6}Klasteryzacja}{23}{}%
+\contentsline {subsubsection}{K-means}{23}{}%
+\contentsline {subsubsection}{DBSCAN}{23}{}%
+\contentsline {subsection}{\numberline {3.2.7}Analiza wynkiow pracy}{23}{}%
 \contentsline {chapter}{\numberline {4}Tytuł 4}{25}{}%
 \contentsline {section}{\numberline {4.1}Sekcja}{25}{}%
 \contentsline {chapter}{Podsumowanie}{27}{}%

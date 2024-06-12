@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 20:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  12 JUN 2024 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1057,68 +1057,27 @@ zdego punktu obliczane s[]
 
 ]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
-
-Underfull \hbox (badness 1009) in paragraph at lines 5--6
-[]\T2A/cmr/m/n/10 Графическое при-ло-же-ние пред-став-ля-ет со-бой ок-но с меню
--баром, со-дер-жа-щим два
- []
-
 [21]
-Underfull \hbox (badness 1142) in paragraph at lines 30--31
-[]\T2A/cmr/m/n/10 Кнопку Apply для при-ме-не-ния всех вы-бран-ных па-ра-мет-ров
- и от-кры-тия ок-на с
- []
-
-
-Underfull \hbox (badness 1540) in paragraph at lines 34--35
-[]\T2A/cmr/m/n/10 Поле для гра-фи-ков в каж-дый мо-мент вре-ме-ни мо-жет отоб-р
-а-жать один из трех
- []
-
-
-Underfull \hbox (badness 4832) in paragraph at lines 44--46
-[]\T2A/cmr/m/n/10 Кнопка Text от-кры-ва-ет диа-ло-го-вое ок-но, в ко-то-ром пол
-ь-зо-ва-тель мо-жет ука-
- []
-
-
-Underfull \hbox (badness 7238) in paragraph at lines 44--46
-\T2A/cmr/m/n/10 зать па-ра-мет-ры для об-ра-бот-ки тек-ста. Вот как вы-гля-дит 
-ок-но по умол-ча-нию
+Underfull \hbox (badness 1990) in paragraph at lines 77--79
+\T2A/cmr/m/n/10 proponowanych metod klasteryzacji i okre^^Asli^^Ac parametry dl
+a wybranej metody. Oto jak
  []
 
 [22]
-Underfull \hbox (badness 1178) in paragraph at lines 88--89
-\T2A/cmr/m/n/10 на-ви-га-ции по гра-фи-ку и дру-гих опе-ра-ций. Ок-но со-хра-ня
--ет-ся, и поль-зо-ва-тель мо-жет
- []
-
 <./img/rys1.jpg, id=115, 447.47176pt x 225.2415pt>
 File: ./img/rys1.jpg Graphic file (type jpg)
 <use ./img/rys1.jpg>
-Package pdftex.def Info: ./img/rys1.jpg  used on input line 94.
+Package pdftex.def Info: ./img/rys1.jpg  used on input line 104.
 (pdftex.def)             Requested size: 213.39568pt x 107.41354pt.
-[23 <./img/rys1.jpg>]
-Underfull \hbox (badness 3118) in paragraph at lines 114--115
-[]\T2A/cmr/m/n/10 Исходные гра-фи-ки, гра-фи-ки по-сле. Ви-зу-аль-но гра-фи-ки 
-недолж-ны бы-ли силь-но
- []
+) (rozdzial_4.tex [23 <./img/rys1.jpg>] [24
 
-
-Underfull \hbox (badness 1515) in paragraph at lines 121--122
-\T2A/cmr/m/n/10 ви-зу-а-ли-зи-ро-вать на-ши век-то-ре-зи-ро-ван-ные дан-ные, та
-к как необ-ход-мо вы-брать ме-тод
- []
-
-) (rozdzial_4.tex [24]
+]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
 File: ./img/logo.jpg Graphic file (type jpg)
 <use ./img/logo.jpg>
 Package pdftex.def Info: ./img/logo.jpg  used on input line 12.
 (pdftex.def)             Requested size: 351.31378pt x 121.36653pt.
-) (podsumowanie.tex [25
-
-] [26
+) (podsumowanie.tex [25] [26
 
 ]) (bibliografia.tex [27] [28
 
@@ -1169,10 +1128,10 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  10967 strings out of 475248
- 172910 string characters out of 5757812
+ 172912 string characters out of 5757812
  2100785 words of memory out of 5000000
  32239 multiletter control sequences out of 15000+600000
- 581809 words of font info for 80 fonts, out of 8000000 for 9000
+ 582116 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,16n,82p,1298b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati09
@@ -1206,9 +1165,9 @@ fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/imaks/AppData/Local/Programs
 rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/imaks/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/ima
 ks/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on solving.pdf (41 pages, 511001 bytes).
+Output written on solving.pdf (41 pages, 490761 bytes).
 PDF statistics:
- 1134 PDF objects out of 1200 (max. 8388607)
+ 1083 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
