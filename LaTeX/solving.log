@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  14 JUN 2024 19:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  14 JUN 2024 20:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,19 +722,7 @@ Underfull \hbox (badness 4726) in paragraph at lines 274--275
 -nia jest ob-li-czany przez
  []
 
-
-Overfull \hbox (19.45476pt too wide) in paragraph at lines 287--287
-[]\OT4/cmtt/m/n/10 model = Word2Vec(sentences=tokens, vector_size=100, window=5
-, min_count=1, workers=4)[] 
- []
-
 [15] [16]
-Overfull \hbox (35.20462pt too wide) in paragraph at lines 348--348
-[]\OT4/cmtt/m/n/10 kmeans = KMeans(n_clusters=2, init='k-means++', max_iter=300
-, n_init=10, random_state=0) 
- []
-
-
 Underfull \hbox (badness 1028) in paragraph at lines 372--373
 []\OT4/cmr/m/n/10 algorithm: Al-go-rytm u»y-wany do ob-li-cza-nia naj-bli»-szyc
 h s¡-sia-dów ('auto', 'ball[]tree',
@@ -796,9 +784,6 @@ Package pdftex.def Info: ./img/rys1.jpg  used on input line 104.
 
 ]
 Rozdzia\l  4.
-
-LaTeX Warning: Reference `nazwa_obrazu' on page 25 undefined on input line 8.
-
 File: ./img/logo.jpg Graphic file (type jpg)
 <use ./img/logo.jpg>
 Package pdftex.def Info: ./img/logo.jpg  used on input line 12.
@@ -837,19 +822,12 @@ em for Clu-ste-ring\OT4/cmr/m/n/9 ,
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 10409 strings out of 475248
- 165733 string characters out of 5757812
+ 10448 strings out of 475248
+ 166245 string characters out of 5757812
  2097785 words of memory out of 5000000
- 31709 multiletter control sequences out of 15000+600000
+ 31748 multiletter control sequences out of 15000+600000
  572347 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,11n,82p,846b,1304s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -871,7 +849,7 @@ i7.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti
 9.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt1
 0.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt8
 .pfb>
-Output written on solving.pdf (41 pages, 319936 bytes).
+Output written on solving.pdf (41 pages, 323534 bytes).
 PDF statistics:
  226 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
