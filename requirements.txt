@@ -1,0 +1,9 @@
+PyQt5
+scikit-learn
+numpy
+matplotlib
+mplcursors
+nltk
+gensim
+google-api-python-client
+requests
