@@ -324,7 +324,7 @@
 	\subsection{K-means}
  		Algorytm K-means dzieli zbiór danych na nieprzekrywające się klastry, z których każdy opisany jest średnią wartością (centroidem) próbek w klastrze. K-means dąży do wyboru centroidów, minimalizując bezwładność, czyli kryterium sumy kwadratów wewnątrz klastrów \cite{k-means}.
 	
-		\subsubsection{Описание алгоритма}
+		\subsubsection{Opis algorytmu}
 			Algorytm K-means można zrozumieć przez trzy główne kroki. Pierwszy krok polega na wyborze początkowych centroidów. Zwykle używa się prostego metody losowego wyboru próbek z zestawu danych. Po inicjalizacji K-means wykonuje dwa kolejne kroki. Pierwszy krok polega na przypisaniu każdej próbki do najbliższego centroidu. Drugi krok tworzy nowe centroidy, obliczając średnią wartość wszystkich próbek przypisanych do każdego z poprzednich centroidów. Różnica między starymi a nowymi centroidami jest obliczana i algorytm powtarza te dwa ostatnie kroki, aż ta różnica nie będzie mniejsza od określonego progu. Innymi słowy, algorytm powtarza się, dopóki centroidy nie przestaną się znacząco przesuwać.
 
 			Jak wiele algorytmów, K-means jest podatny na problem lokalnych minimów, co silnie zależy od początkowej inicjalizacji centroidów. Zazwyczaj algorytm uruchamia się kilkakrotnie z różnymi inicjalizacjami centroidów.

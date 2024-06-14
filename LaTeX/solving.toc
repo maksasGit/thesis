@@ -66,7 +66,7 @@
 \contentsline {section}{\numberline {2.5}Klasteryzacja}{16}{}%
 \contentsline {subsection}{\numberline {2.5.1}Defenicja}{16}{}%
 \contentsline {subsection}{\numberline {2.5.2}K-means}{16}{}%
-\contentsline {subsubsection}{Описание алгоритма}{16}{}%
+\contentsline {subsubsection}{Opis algorytmu}{16}{}%
 \contentsline {subsubsection}{Parametry}{17}{}%
 \contentsline {subsubsection}{Przykład użycia}{17}{}%
 \contentsline {subsection}{\numberline {2.5.3}DBSCAN}{17}{}%
