@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  14 JUN 2024 20:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  28 JUN 2024 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,15 +591,14 @@ Non-PDF special ignored!
 
 {C:/Users/imaks/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/imak
 s/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <./img/logo.jpg>])
-[2] (solving.toc [3
-
-])
+[2] (solving.toc)
 \tf@toc=\write5
 \openout5 = `solving.toc'.
 
- [4] [5] [6
+ [3
 
-] (wstep.tex) (rozdzial_1.tex [1
+] [4] (wstep.tex) (rozdzial_1.tex [1
+
 
 ] [2
 
@@ -612,33 +611,27 @@ Underfull \hbox (badness 3068) in paragraph at lines 6--7
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 13--14
-[]\OT4/cmr/m/n/10 Wykrywanie no-wo-±ci (od-chy-le« lub ano-ma-lii). Kla-ste-ry-
-za-cja po-zwala na wy-ró»-nie-nie
+Underfull \hbox (badness 1838) in paragraph at lines 23--24
+[]\OT4/cmr/bx/n/10 Hierarchiczne al-go-rytmy kla-ste-ry-za-cji\OT4/cmr/m/n/10 .
+ Al-go-rytmy te po-rz¡d-kuj¡ dane, two-rz¡c
  []
 
 [3]
+Underfull \hbox (badness 2401) in paragraph at lines 26--27
+[]\OT4/cmr/bx/n/10 K-±rednich (K-means) \OT4/cmr/m/n/10 - ite-ra-cyjny al-go-ry
+tm oparty na mi-ni-ma-li-za-cji sumy
+ []
+
+[4]
 Underfull \hbox (badness 1127) in paragraph at lines 58--59
 []\OT4/cmr/m/n/10 Zewn¦trzne me-tody po-rów-nuj¡ wy-nik kla-ste-ry-za-cji z apr
 io-rycz-nie zna-nym po-dzia-ªem
  []
 
-[4]
-Underfull \hbox (badness 6001) in paragraph at lines 70--71
-[]\OT4/cmr/m/n/10 Przedprzetwarzanie tek-stu jest wa»-nym eta-pem NLP, który pr
-ze-ksztaªca tekst w
- []
-
 [5]
-Underfull \hbox (badness 3623) in paragraph at lines 108--109
-[]\OT4/cmr/m/n/10 Tworzenie mo-deli ucze-nia ma-szy-no-wego do au-to-ma-tycz-ne
+Underfull \hbox (badness 4739) in paragraph at lines 108--109
+[]\OT4/cmr/m/n/10 tworzenie mo-deli ucze-nia ma-szy-no-wego do au-to-ma-tycz-ne
 go uogól-nia-nia in-for-ma-cji
- []
-
-
-Underfull \hbox (badness 2478) in paragraph at lines 117--118
-[]\OT4/cmr/m/n/10 Word Em-bed-dings: S¡ to me-tody oparte na tre-no-wa-niu siec
-i neu-ro-no-wych, które
  []
 
 
@@ -775,7 +768,7 @@ Underfull \hbox (badness 1975) in paragraph at lines 77--79
  []
 
 [22]
-<./img/rys1.jpg, id=106, 447.47176pt x 225.2415pt>
+<./img/rys1.jpg, id=100, 447.47176pt x 225.2415pt>
 File: ./img/rys1.jpg Graphic file (type jpg)
 <use ./img/rys1.jpg>
 Package pdftex.def Info: ./img/rys1.jpg  used on input line 104.
@@ -830,7 +823,7 @@ Here is how much of TeX's memory you used:
  31748 multiletter control sequences out of 15000+600000
  572347 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,11n,82p,846b,1304s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,11n,82p,937b,1304s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1000.pk><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -849,9 +842,9 @@ i7.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti
 9.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt1
 0.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt8
 .pfb>
-Output written on solving.pdf (41 pages, 323534 bytes).
+Output written on solving.pdf (39 pages, 322268 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
+ 220 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

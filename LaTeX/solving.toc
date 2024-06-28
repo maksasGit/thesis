@@ -3,18 +3,18 @@
 \contentsline {section}{\numberline {0.1}Powód powstania projektu}{1}{}%
 \contentsline {section}{\numberline {0.2}Idea projektu}{1}{}%
 \contentsline {section}{\numberline {0.3}Dla kogo to}{1}{}%
-\contentsline {chapter}{\numberline {1}Rozdzial 1}{3}{}%
+\contentsline {chapter}{\numberline {1}Techniki analizy danych}{3}{}%
 \contentsline {section}{\numberline {1.1}Klasterzyacja}{3}{}%
 \contentsline {subsection}{\numberline {1.1.1}Defenicja}{3}{}%
 \contentsline {subsection}{\numberline {1.1.2}Cele klasteryzacji}{3}{}%
 \contentsline {subsection}{\numberline {1.1.3}Metody klasteryzacji}{3}{}%
 \contentsline {subsection}{\numberline {1.1.4}Etapy klasteryzacji}{4}{}%
 \contentsline {subsection}{\numberline {1.1.5}Zastosowanie}{4}{}%
-\contentsline {subsection}{\numberline {1.1.6}Ocena efektywności klasteryzacji}{4}{}%
+\contentsline {subsection}{\numberline {1.1.6}Ocena efektywności klasteryzacji}{5}{}%
 \contentsline {section}{\numberline {1.2}Przetwarzanie języka naturalnego}{5}{}%
 \contentsline {subsection}{\numberline {1.2.1}Defenicja}{5}{}%
-\contentsline {subsection}{\numberline {1.2.2}Przedprzetwarzanie tekstu}{5}{}%
-\contentsline {subsection}{\numberline {1.2.3}Stemming}{5}{}%
+\contentsline {subsection}{\numberline {1.2.2}Wstępne przetwarzanie tekstu}{5}{}%
+\contentsline {subsection}{\numberline {1.2.3}Stemming}{6}{}%
 \contentsline {subsection}{\numberline {1.2.4}Lematyzacja}{6}{}%
 \contentsline {section}{\numberline {1.3}Wektoryzacja}{6}{}%
 \contentsline {subsection}{\numberline {1.3.1}Opis}{6}{}%
@@ -26,7 +26,7 @@
 \contentsline {subsection}{\numberline {1.4.2}Metody redukcji wymiarowości}{7}{}%
 \contentsline {subsubsection}{Wybór cech}{7}{}%
 \contentsline {subsubsection}{Wydobywanie cech}{7}{}%
-\contentsline {subsubsection}{Metody wydobywania cech}{7}{}%
+\contentsline {subsubsection}{Metody wydobywania cech}{8}{}%
 \contentsline {subsection}{\numberline {1.4.3}Zastosowanie}{8}{}%
 \contentsline {chapter}{\numberline {2}Rozdzial 2}{9}{}%
 \contentsline {section}{\numberline {2.1}Aplikacja}{9}{}%
