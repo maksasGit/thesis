@@ -7,8 +7,8 @@
 		Ten projekt ma na celu stworzenie narzędzia do analizy danych tekstowych, obejmującego wstępne przetwarzanie tekstu, wektoryzację i klasteryzację. Głównym celem aplikacji jest umożliwienie użytkownikowi elastycznego dostosowania i wykorzystania różnych metod przetwarzania danych do rozwiązywania konkretnych zadań.
 		
 		
-	\subsection{Technologie}
-		Do realizacji projektu wybrano język programowania Python. Posiada on szereg zalet:
+	\subsection{Zastosowane technologie}
+		Do realizacji projektu wybrano język programowania Python versji 3.10.2 . Posiada on szereg zalet:
 		\begin{itemize}
 			\item Bogaty zestaw bibliotek do implementacji różnych metod, takich jak wstępne przetwarzanie tekstu, wektoryzacja i klasteryzacja.
 			\item Wysoka efektywność w analizie danych dzięki bibliotekom takim jak NumPy, scikit-learn.
@@ -16,22 +16,22 @@
 		\end{itemize}
 		
 		
-	\subsection{GUI}
-		Główną ideą aplikacji jest stworzenie wygodnego narzędzia do analizy danych tekstowych, w którym użytkownik może samodzielnie wybierać i dostosowywać metody przetwarzania do konkretnych zadań za pomocą interfejsu graficznego. Do opracowania interfejsu graficznego wykorzystano biblioteki PyQt i Matplotlib:
+	\subsection{Technologie tworzenia interfejsów graficznych}
+		Główną ideą aplikacji jest stworzenie wygodnego narzędzia do analizy danych tekstowych, w którym użytkownik może samodzielnie wybierać i dostosowywać metody przetwarzania do konkretnych zadań za pomocą interfejsu graficznego. Do opracowania interfejsu graficznego wykorzystano biblioteki PyQt versji 5.15.10 i Matplotlib versji 3.9.0:
 		\begin{itemize}
-			\item PyQt: Umożliwia tworzenie intuicyjnych interfejsów użytkownika.
-			\item Matplotlib: Wykorzystywana do wizualizacji danych, co pozwala użytkownikowi łatwo interpretować wyniki analizy.
+			\item \textbf{PyQt} umożliwia tworzenie intuicyjnych interfejsów użytkownika.
+			\item \textbf{Matplotlib} jest wykorzystywany do wizualizacji danych.
 		\end{itemize}
 		Interfejs graficzny umożliwia użytkownikowi ładowanie danych, konfigurowanie parametrów przetwarzania tekstu, wektoryzacji i klasteryzacji oraz wizualizację wyników.
 		
 		
 		
-	\subsection{OOP}
-		Głównym komponentem mojej aplikacji jest klasa \textbf{Workspace}, która stanowi kontener przechowujący parametry dla trzech głównych procesów:
+	\subsection{Struktura aplikacji}
+		Głównym komponentem niniejszej aplikacji jest klasa \textbf{Workspace}, która stanowi kontener przechowujący parametry dla trzech głównych procesów:
 		\begin{itemize}
-			\item Przetwarzanie tekstu: Obejmuje metody wstępnego przetwarzania, takie jak tokenizacja, usuwanie stop-słów i lematyzacja.
-			\item Wektoryzacja: Przekształca dane tekstowe w wektory liczbowe przy użyciu metod takich jak TF-IDF lub Word2Vec.
-			\item Klasteryzacja: Implementuje algorytmy, takie jak K-means lub DBSCAN, do grupowania danych tekstowych.
+			\item \textbf{Przetwarzanie tekstu} obejmuje metody wstępnego przetwarzania, takie jak tokenizacja, usuwanie stop-words i lematyzacja.
+			\item \textbf{Wektoryzacja} przekształca dane tekstowe w wektory liczbowe przy użyciu metod takich jak TF-IDF lub Word2Vec.
+			\item \textbf{Klasteryzacja} implementuje algorytmy, takie jak K-means lub DBSCAN, do grupowania danych tekstowych.
 		\end{itemize}
 		Klasa \textbf{Workspace} zapewnia strukturalne przechowywanie i zarządzanie parametrami każdego etapu, co upraszcza proces konfiguracji i wykonania analizy.
 		
