@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  28 JUN 2024 19:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  30 JUN 2024 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,35 +259,156 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \Gin@req@height=\dimen163
 \Gin@req@width=\dimen164
 )
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.s
-ty
-Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
 
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-))
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
 .sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-08-07 v2.53 Cross-referencing by name of section
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count288
+)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count289
+)
+\@linkdim=\dimen165
+\Hy@linkcounter=\count290
+\Hy@pagecounter=\count291
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count292
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4167.
+Package hyperref Info: Link nesting OFF on input line 4172.
+Package hyperref Info: Hyper index ON on input line 4175.
+Package hyperref Info: Plain pages OFF on input line 4182.
+Package hyperref Info: Backreferencing OFF on input line 4187.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4434.
+\c@Hy@tempcnt=\count293
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4772.
+\XeTeXLinkMargin=\dimen166
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count294
+\Field@Width=\dimen167
+\Fld@charsize=\dimen168
+Package hyperref Info: Hyper figures OFF on input line 6051.
+Package hyperref Info: Link nesting OFF on input line 6056.
+Package hyperref Info: Hyper index ON on input line 6059.
+Package hyperref Info: backreferencing OFF on input line 6066.
+Package hyperref Info: Link coloring OFF on input line 6071.
+Package hyperref Info: Link coloring with OCG OFF on input line 6076.
+Package hyperref Info: PDF/A mode OFF on input line 6081.
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count295
+\c@Item=\count296
+\c@Hfootnote=\count297
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2023-07-08 v7.01b Hyperref driver for pdfTeX
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count298
+\c@bookmark@seq@number=\count299
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip56
+)
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.s
+ty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+ (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 )
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -309,58 +430,59 @@ Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen165
-\captionmargin=\dimen166
-\caption@leftmargin=\dimen167
-\caption@rightmargin=\dimen168
-\caption@width=\dimen169
-\caption@indent=\dimen170
-\caption@parindent=\dimen171
-\caption@hangindent=\dimen172
+\caption@tempdima=\dimen169
+\captionmargin=\dimen170
+\caption@leftmargin=\dimen171
+\caption@rightmargin=\dimen172
+\caption@width=\dimen173
+\caption@indent=\dimen174
+\caption@parindent=\dimen175
+\caption@hangindent=\dimen176
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count288
-\c@continuedfloat=\count289
+\c@caption@flags=\count300
+\c@continuedfloat=\count301
+Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
-\c@KVtest=\count290
-\sf@farskip=\skip56
-\sf@captopadj=\dimen173
-\sf@capskip=\skip57
-\sf@nearskip=\skip58
-\c@subfigure=\count291
-\c@subfigure@save=\count292
-\c@lofdepth=\count293
-\c@subtable=\count294
-\c@subtable@save=\count295
-\c@lotdepth=\count296
-\sf@top=\skip59
-\sf@bottom=\skip60
+\c@KVtest=\count302
+\sf@farskip=\skip57
+\sf@captopadj=\dimen177
+\sf@capskip=\skip58
+\sf@nearskip=\skip59
+\c@subfigure=\count303
+\c@subfigure@save=\count304
+\c@lofdepth=\count305
+\c@subtable=\count306
+\c@subtable@save=\count307
+\c@lotdepth=\count308
+\sf@top=\skip60
+\sf@bottom=\skip61
 ) (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
-\wrapoverhang=\dimen174
-\WF@size=\dimen175
-\c@WF@wrappedlines=\count297
+\wrapoverhang=\dimen178
+\WF@size=\dimen179
+\c@WF@wrappedlines=\count309
 \WF@box=\box56
 \WF@everypar=\toks33
 Package: wrapfig 2003/01/31  v 3.6
 )
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip61
-\LTright=\skip62
-\LTpre=\skip63
-\LTpost=\skip64
-\LTchunksize=\count298
-\LTcapwidth=\dimen176
+\LTleft=\skip62
+\LTright=\skip63
+\LTpre=\skip64
+\LTpost=\skip65
+\LTchunksize=\count310
+\LTcapwidth=\dimen180
 \LT@head=\box57
 \LT@firsthead=\box58
 \LT@foot=\box59
 \LT@lastfoot=\box60
 \LT@gbox=\box61
-\LT@cols=\count299
-\LT@rows=\count300
-\c@LT@tables=\count301
-\c@LT@chunks=\count302
+\LT@cols=\count311
+\LT@rows=\count312
+\c@LT@tables=\count313
+\c@LT@chunks=\count314
 \LT@p@ftn=\toks34
 )
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
@@ -371,7 +493,7 @@ Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
 )
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count303
+\c@float@type=\count315
 \float@exts=\toks37
 \float@box=\box62
 \@float@everytoks=\toks38
@@ -379,8 +501,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/psfrag\psfrag.sty
 Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
-\pfg@pcount=\count304
-\pfg@scount=\count305
+\pfg@pcount=\count316
+\pfg@scount=\count317
 \pfg@temp=\write4
 )
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
@@ -388,29 +510,29 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen177
+\col@sep=\dimen181
 \ar@mcellbox=\box64
-\extrarowheight=\dimen178
+\extrarowheight=\dimen182
 \NC@list=\toks39
-\extratabsurround=\skip65
-\backup@length=\skip66
+\extratabsurround=\skip66
+\backup@length=\skip67
 \ar@cellbox=\box65
 )
-\rotheadsize=\dimen179
-\c@nlinenum=\count306
+\rotheadsize=\dimen183
+\c@nlinenum=\count318
 \TeXr@lab=\toks40
 )
-\c@defscounter=\count307
-\c@odeexample=\count308
+\c@defscounter=\count319
+\c@odeexample=\count320
 
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen180
-\TX@old@table=\dimen181
-\TX@old@col=\dimen182
-\TX@target=\dimen183
-\TX@delta=\dimen184
-\TX@cols=\count309
+\TX@col@width=\dimen184
+\TX@old@table=\dimen185
+\TX@old@col=\dimen186
+\TX@target=\dimen187
+\TX@delta=\dimen188
+\TX@cols=\count321
 \TX@ftn=\toks41
 )
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
@@ -424,13 +546,13 @@ Package color Info: Driver file: pdftex.def on input line 149.
 ) (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks42
-\minrowclearance=\skip67
-\rownum=\count310
+\minrowclearance=\skip68
+\rownum=\count322
 ))
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count311
+\l__color_backend_stack_int=\count323
 \l__pdf_internal_box=\box66
 ) (solving.aux)
 \openout1 = `solving.aux'.
@@ -450,6 +572,10 @@ LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 
 *geometry* driver: auto-detecting
@@ -486,34 +612,41 @@ LaTeX Font Info:    ... okay on input line 2.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count312
+\c@lstlisting=\count324
 
 (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
-\scratchdimen=\dimen185
+\scratchcounter=\count325
+\scratchdimen=\dimen189
 \scratchbox=\box67
-\nofMPsegments=\count314
-\nofMParguments=\count315
+\nofMPsegments=\count326
+\nofMParguments=\count327
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count316
-\MPscratchDim=\dimen186
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
+\MPscratchCnt=\count328
+\MPscratchDim=\dimen190
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
 \everyMPtoPDFconversion=\toks44
 )
+Package hyperref Info: Link coloring OFF on input line 2.
+ (solving.out) (solving.out)
+\@outlinefile=\write5
+\openout5 = `solving.out'.
+
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
- (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+
+(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (title.tex
-<./img/logo.jpg, id=1, 854.19125pt x 295.1025pt>
+
+(title.tex
+<./img/logo.jpg, id=91, 854.19125pt x 295.1025pt>
 File: ./img/logo.jpg Graphic file (type jpg)
 <use ./img/logo.jpg>
 Package pdftex.def Info: ./img/logo.jpg  used on input line 6.
@@ -592,8 +725,8 @@ Non-PDF special ignored!
 {C:/Users/imaks/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/imak
 s/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <./img/logo.jpg>])
 [2] (solving.toc)
-\tf@toc=\write5
-\openout5 = `solving.toc'.
+\tf@toc=\write6
+\openout6 = `solving.toc'.
 
  [3
 
@@ -680,67 +813,59 @@ Underfull \hbox (badness 1533) in paragraph at lines 54--55
 ny film od-po-wiada jego
  []
 
-[10] [11]
+[10{C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.enc}]
+[11]
 LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
 105.
-
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
+ (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-(C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+) (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 111.
 [12{C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/pltt.enc}{C
 :/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plsc.enc}]
-Underfull \hbox (badness 1502) in paragraph at lines 181--182
-[]\OT4/cmr/m/n/10 Wszystkie etapy prze-twa-rza-nia tek-stu, od obo-wi¡z-ko-wych
- do opcjo-nal-nych, od-gry-waj¡
- []
+
+LaTeX Warning: Reference `lst;freqanalysis' on page 13 undefined on input line 
+148.
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 181--182
-\OT4/cmr/m/n/10 struk-tu-ra-li-zo-wany i wy-godny do prze-twa-rza-nia wy-gl¡d d
-a-nych. Wi-zu-ali-za-cja wy-kre-sów
- []
+LaTeX Warning: Reference `lst;lengthanalysis' on page 13 undefined on input lin
+e 164.
 
-[13{C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.enc}]
-Underfull \hbox (badness 1117) in paragraph at lines 252--253
-\OT4/cmr/m/n/10 efek-tyw-no-±ci ucze-nia. Pa-ra-metr ne-ga-tive okre-±la liczb¦
- "ne-ga-tyw-nych"przykªadów dla
- []
-
-[14]
-Underfull \hbox (badness 4726) in paragraph at lines 274--275
+[13] [14]
+Underfull \hbox (badness 4726) in paragraph at lines 269--270
 []\OT4/cmr/m/n/10 Propagacja wsteczna (Back-pro-pa-ga-tion): Bª¡d prze-wi-dy-wa
 -nia jest ob-li-czany przez
  []
 
 [15] [16]
-Underfull \hbox (badness 1028) in paragraph at lines 372--373
+Underfull \hbox (badness 1028) in paragraph at lines 367--368
 []\OT4/cmr/m/n/10 algorithm: Al-go-rytm u»y-wany do ob-li-cza-nia naj-bli»-szyc
 h s¡-sia-dów ('auto', 'ball[]tree',
  []
 
 [17]
-Underfull \hbox (badness 1394) in paragraph at lines 418--419
+Underfull \hbox (badness 1394) in paragraph at lines 412--413
 \OT4/cmr/m/n/10 DBSCAN. Na wy-kre-sie b¦d¡ rów-nie» wi-zu-ali-zo-wane cen-tro-i
 dy ka»-dego kla-stra w po-staci
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 421--422
+Underfull \hbox (badness 1142) in paragraph at lines 415--416
 \OT4/cmr/m/n/10 eks-trak-cji cech. Na po-cz¡tku trudno jest okre-±li¢, za co od
 -po-wia-daj¡ ce-chy, wi¦c wy-bór
  []
 
 [18]
-Underfull \hbox (badness 2600) in paragraph at lines 435--436
+Underfull \hbox (badness 2600) in paragraph at lines 429--430
 []\OT4/cmr/m/n/10 random[]state: Po-cz¡t-kowa war-to±¢ ge-ne-ra-tora liczb lo-s
 o-wych dla re-pro-du-ko-wal-no-±ci
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 441--442
+Underfull \hbox (badness 1205) in paragraph at lines 435--436
 []\OT4/cmr/m/n/10 Przeksztaªcenie od-le-gªo-±ci na praw-do-po-do-bie«-stwa: Dla
  ka»-dego punktu ob-li-czane s¡
  []
@@ -756,6 +881,12 @@ y z YouTube ("Com-ments->
  []
 
 
+Underfull \hbox (badness 5563) in paragraph at lines 19--20
+[]\OT4/cmr/m/n/10 Aby utwo-rzy¢ now¡ prze-strze« ro-bo-cz¡, na-le»y po-da¢ na-z
+w¦ prze-strzeni ro-bo-czej
+ []
+
+
 Underfull \hbox (badness 1067) in paragraph at lines 26--27
 []\OT4/cmr/m/n/10 Po utwo-rze-niu przy-naj-mniej jed-nej prze-strzeni ro-bo-cze
 j po-ja-wia si¦ menu na-wi-ga-cyjne
@@ -768,7 +899,7 @@ Underfull \hbox (badness 1975) in paragraph at lines 77--79
  []
 
 [22]
-<./img/rys1.jpg, id=100, 447.47176pt x 225.2415pt>
+<./img/rys1.jpg, id=447, 447.47176pt x 225.2415pt>
 File: ./img/rys1.jpg Graphic file (type jpg)
 <use ./img/rys1.jpg>
 Package pdftex.def Info: ./img/rys1.jpg  used on input line 104.
@@ -794,20 +925,20 @@ em for Clu-ste-ring\OT4/cmr/m/n/9 ,
 ) [29] [30
 
 ] (solving.lol)
-\tf@lol=\write6
-\openout6 = `solving.lol'.
+\tf@lol=\write7
+\openout7 = `solving.lol'.
 
  [31] [32
 
 ] (solving.lot)
-\tf@lot=\write7
-\openout7 = `solving.lot'.
+\tf@lot=\write8
+\openout8 = `solving.lot'.
 
  [33] [34
 
 ] (solving.lof)
-\tf@lof=\write8
-\openout8 = `solving.lof'.
+\tf@lof=\write9
+\openout9 = `solving.lof'.
 
 
 [35] (solving.aux)
@@ -815,15 +946,21 @@ em for Clu-ste-ring\OT4/cmr/m/n/9 ,
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `solving.out' has not changed.
+(rerunfilecheck)             Checksum: 53F7935955BAF262F17BD906F86338DF;2940.
  ) 
 Here is how much of TeX's memory you used:
- 10448 strings out of 475248
- 166245 string characters out of 5757812
- 2097785 words of memory out of 5000000
- 31748 multiletter control sequences out of 15000+600000
- 572347 words of font info for 73 fonts, out of 8000000 for 9000
+ 17160 strings out of 475248
+ 268220 string characters out of 5757812
+ 2054785 words of memory out of 5000000
+ 38108 multiletter control sequences out of 15000+600000
+ 571808 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,11n,82p,937b,1304s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,11n,82p,937b,1327s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1000.pk><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -838,13 +975,12 @@ lr8.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr
 7.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plssb
 x10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plt
 i10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plt
-i7.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti
-9.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt1
-0.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt8
-.pfb>
-Output written on solving.pdf (39 pages, 322268 bytes).
+i9.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt
+10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt
+8.pfb>
+Output written on solving.pdf (39 pages, 366752 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 675 PDF objects out of 1000 (max. 8388607)
+ 274 named destinations out of 1000 (max. 500000)
+ 187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

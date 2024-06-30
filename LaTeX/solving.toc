@@ -1,113 +1,112 @@
 \babel@toc {polish}{}\relax 
-\contentsline {chapter}{Wstęp}{1}{}%
-\contentsline {section}{\numberline {0.1}Powód powstania projektu}{1}{}%
-\contentsline {section}{\numberline {0.2}Idea projektu}{1}{}%
-\contentsline {section}{\numberline {0.3}Dla kogo to}{1}{}%
-\contentsline {chapter}{\numberline {1}Techniki analizy danych}{3}{}%
-\contentsline {section}{\numberline {1.1}Klasterzyacja}{3}{}%
-\contentsline {subsection}{\numberline {1.1.1}Defenicja}{3}{}%
-\contentsline {subsection}{\numberline {1.1.2}Cele klasteryzacji}{3}{}%
-\contentsline {subsection}{\numberline {1.1.3}Metody klasteryzacji}{3}{}%
-\contentsline {subsection}{\numberline {1.1.4}Etapy klasteryzacji}{4}{}%
-\contentsline {subsection}{\numberline {1.1.5}Zastosowanie}{4}{}%
-\contentsline {subsection}{\numberline {1.1.6}Ocena efektywności klasteryzacji}{5}{}%
-\contentsline {section}{\numberline {1.2}Przetwarzanie języka naturalnego}{5}{}%
-\contentsline {subsection}{\numberline {1.2.1}Defenicja}{5}{}%
-\contentsline {subsection}{\numberline {1.2.2}Wstępne przetwarzanie tekstu}{5}{}%
-\contentsline {subsection}{\numberline {1.2.3}Stemming}{6}{}%
-\contentsline {subsection}{\numberline {1.2.4}Lematyzacja}{6}{}%
-\contentsline {section}{\numberline {1.3}Wektoryzacja}{6}{}%
-\contentsline {subsection}{\numberline {1.3.1}Opis}{6}{}%
-\contentsline {subsection}{\numberline {1.3.2}Celi wektoryzacji}{6}{}%
-\contentsline {subsection}{\numberline {1.3.3}Metody wektoryzacji}{6}{}%
-\contentsline {subsection}{\numberline {1.3.4}Zastosowanie}{7}{}%
-\contentsline {section}{\numberline {1.4}Redukcja wymiarowości}{7}{}%
-\contentsline {subsection}{\numberline {1.4.1}Definicja}{7}{}%
-\contentsline {subsection}{\numberline {1.4.2}Metody redukcji wymiarowości}{7}{}%
-\contentsline {subsubsection}{Wybór cech}{7}{}%
-\contentsline {subsubsection}{Wydobywanie cech}{7}{}%
-\contentsline {subsubsection}{Metody wydobywania cech}{8}{}%
-\contentsline {subsection}{\numberline {1.4.3}Zastosowanie}{8}{}%
-\contentsline {chapter}{\numberline {2}Rozdzial 2}{9}{}%
-\contentsline {section}{\numberline {2.1}Aplikacja}{9}{}%
-\contentsline {subsection}{\numberline {2.1.1}Opis aplikacji}{9}{}%
-\contentsline {subsection}{\numberline {2.1.2}Technologie}{9}{}%
-\contentsline {subsection}{\numberline {2.1.3}GUI}{9}{}%
-\contentsline {subsection}{\numberline {2.1.4}OOP}{9}{}%
-\contentsline {section}{\numberline {2.2}Dane tekstowe}{10}{}%
-\contentsline {subsection}{\numberline {2.2.1}Opis}{10}{}%
-\contentsline {subsection}{\numberline {2.2.2}Zapytania API}{10}{}%
-\contentsline {subsection}{\numberline {2.2.3}Przetwarzanie uzyskanych danych}{10}{}%
-\contentsline {subsection}{\numberline {2.2.4}Przechowywanie}{11}{}%
-\contentsline {section}{\numberline {2.3}Przetwarzania tekstu}{11}{}%
-\contentsline {subsection}{\numberline {2.3.1}Defenicja}{11}{}%
-\contentsline {subsection}{\numberline {2.3.2}Przetwarzanie obowiązkowe}{11}{}%
-\contentsline {subsection}{\numberline {2.3.3}Przetwarzanie prymitywne}{12}{}%
-\contentsline {subsection}{\numberline {2.3.4}Usuwanie stop-words}{12}{}%
-\contentsline {subsection}{\numberline {2.3.5}Lematyzacja}{12}{}%
-\contentsline {subsection}{\numberline {2.3.6}Analiza}{12}{}%
-\contentsline {subsubsection}{Analiza częstotliwości (freq analysis)}{12}{}%
-\contentsline {subsubsection}{Analiza długości (length analysis)}{13}{}%
-\contentsline {subsection}{\numberline {2.3.7}Podsumowanie}{13}{}%
-\contentsline {section}{\numberline {2.4}Wektoryzacja}{13}{}%
-\contentsline {subsection}{\numberline {2.4.1}Defenicja}{13}{}%
-\contentsline {subsection}{\numberline {2.4.2}TF-IDF}{13}{}%
-\contentsline {subsubsection}{Parametry}{14}{}%
-\contentsline {subsubsection}{Wyjaśnienie algorytmu}{14}{}%
-\contentsline {subsubsection}{Przykład użycia}{14}{}%
-\contentsline {subsection}{\numberline {2.4.3}Word2Vec}{14}{}%
-\contentsline {subsubsection}{Parametry}{14}{}%
-\contentsline {subsubsection}{Opis algorytmu}{15}{}%
-\contentsline {subsubsection}{Przykład użycia}{15}{}%
-\contentsline {subsection}{\numberline {2.4.4}Ocena}{16}{}%
-\contentsline {subsubsection}{Kryteria}{16}{}%
-\contentsline {subsubsection}{Ocena TF-IDF}{16}{}%
-\contentsline {subsubsection}{Ocena Word2Vec}{16}{}%
-\contentsline {section}{\numberline {2.5}Klasteryzacja}{16}{}%
-\contentsline {subsection}{\numberline {2.5.1}Defenicja}{16}{}%
-\contentsline {subsection}{\numberline {2.5.2}K-means}{16}{}%
-\contentsline {subsubsection}{Opis algorytmu}{16}{}%
-\contentsline {subsubsection}{Parametry}{17}{}%
-\contentsline {subsubsection}{Przykład użycia}{17}{}%
-\contentsline {subsection}{\numberline {2.5.3}DBSCAN}{17}{}%
-\contentsline {subsubsection}{Parametry}{17}{}%
-\contentsline {subsubsection}{Opis algorytmu}{18}{}%
-\contentsline {subsubsection}{Przykład użycia}{18}{}%
-\contentsline {subsection}{\numberline {2.5.4}Dobór parametrów}{18}{}%
-\contentsline {section}{\numberline {2.6}Wizualizacja}{18}{}%
-\contentsline {subsection}{\numberline {2.6.1}Defenicja}{18}{}%
-\contentsline {subsection}{\numberline {2.6.2}Redukcja wymiarowości}{19}{}%
-\contentsline {subsection}{\numberline {2.6.3}T-SNE}{19}{}%
-\contentsline {subsubsection}{Parametry}{19}{}%
-\contentsline {subsubsection}{Opis algorytmu}{19}{}%
-\contentsline {subsubsection}{Przykład użycia}{19}{}%
-\contentsline {chapter}{\numberline {3}Rozdzial 3}{21}{}%
-\contentsline {section}{\numberline {3.1}Opis aplikacji}{21}{}%
-\contentsline {subsection}{\numberline {3.1.1}Okno pracy}{21}{}%
-\contentsline {subsection}{\numberline {3.1.2}Menu}{21}{}%
-\contentsline {subsubsection}{Tworzenie przestrzeni roboczej}{21}{}%
-\contentsline {subsubsection}{Pobieranie komentarzy}{21}{}%
-\contentsline {subsection}{\numberline {3.1.3}Workspace}{21}{}%
-\contentsline {subsubsection}{Pole na wykresy}{22}{}%
-\contentsline {subsection}{\numberline {3.1.4}Text}{22}{}%
-\contentsline {subsection}{\numberline {3.1.5}Wektoryzacja}{22}{}%
-\contentsline {subsection}{\numberline {3.1.6}Cluster}{23}{}%
-\contentsline {subsection}{\numberline {3.1.7}Result Window}{23}{}%
-\contentsline {section}{\numberline {3.2}Przykład użycia}{23}{}%
-\contentsline {subsection}{\numberline {3.2.1}Pobieranie danych tekstowych}{23}{}%
-\contentsline {subsection}{\numberline {3.2.2}Tworzenie Workspace}{23}{}%
-\contentsline {subsection}{\numberline {3.2.3}Wybór metod i parametrów}{23}{}%
-\contentsline {subsection}{\numberline {3.2.4}Przetwarzanie tekstu}{23}{}%
-\contentsline {subsubsection}{Alpha}{23}{}%
-\contentsline {subsubsection}{Stop-words}{23}{}%
-\contentsline {subsubsection}{Lemmatize}{23}{}%
-\contentsline {subsection}{\numberline {3.2.5}Wektoryzacja}{23}{}%
-\contentsline {subsubsection}{TF-IDF}{23}{}%
-\contentsline {subsubsection}{Word2Vec}{23}{}%
-\contentsline {subsection}{\numberline {3.2.6}Klasteryzacja}{23}{}%
-\contentsline {subsubsection}{K-means}{23}{}%
-\contentsline {subsubsection}{DBSCAN}{23}{}%
-\contentsline {subsection}{\numberline {3.2.7}Analiza wynkiow pracy}{23}{}%
-\contentsline {chapter}{\numberline {4}Tytuł 4}{25}{}%
-\contentsline {section}{\numberline {4.1}Sekcja}{25}{}%
-\contentsline {chapter}{Podsumowanie}{27}{}%
+\contentsline {chapter}{Wstęp}{1}{chapter*.4}%
+\contentsline {section}{\numberline {0.1}Powód powstania projektu}{1}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Idea projektu}{1}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Dla kogo to}{1}{section.0.3}%
+\contentsline {chapter}{\numberline {1}Techniki analizy danych}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Klasterzyacja}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Defenicja}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Cele klasteryzacji}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Metody klasteryzacji}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Etapy klasteryzacji}{4}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Zastosowanie}{4}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Ocena efektywności klasteryzacji}{5}{subsection.1.1.6}%
+\contentsline {section}{\numberline {1.2}Przetwarzanie języka naturalnego}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Defenicja}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Wstępne przetwarzanie tekstu}{5}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Stemming}{6}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Lematyzacja}{6}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Wektoryzacja}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Opis}{6}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Celi wektoryzacji}{6}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Metody wektoryzacji}{6}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Zastosowanie}{7}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}Redukcja wymiarowości}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Definicja}{7}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Metody redukcji wymiarowości}{7}{subsection.1.4.2}%
+\contentsline {subsubsection}{Wybór cech}{7}{section*.5}%
+\contentsline {subsubsection}{Wydobywanie cech}{7}{section*.6}%
+\contentsline {subsubsection}{Metody wydobywania cech}{8}{section*.7}%
+\contentsline {subsection}{\numberline {1.4.3}Zastosowanie}{8}{subsection.1.4.3}%
+\contentsline {chapter}{\numberline {2}Wykorzystanie metody i technologii w aplikacji}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Aplikacja}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Opis aplikacji}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Zastosowane technologie}{9}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Technologie tworzenia interfejsów graficznych}{9}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Struktura aplikacji}{9}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Dane tekstowe}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Opis}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Zapytania API}{10}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Przetwarzanie uzyskanych danych}{10}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Przechowywanie}{11}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Przetwarzania tekstu}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Defenicja}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Przetwarzanie obowiązkowe}{11}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Przetwarzanie prymitywne}{12}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Usuwanie stop-words}{12}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Lematyzacja}{12}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Analiza}{12}{subsection.2.3.6}%
+\contentsline {subsubsection}{Analiza częstotliwości (freq analysis)}{13}{section*.8}%
+\contentsline {subsubsection}{Analiza długości (length analysis)}{13}{section*.9}%
+\contentsline {section}{\numberline {2.4}Wektoryzacja}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Defenicja}{13}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}TF-IDF}{13}{subsection.2.4.2}%
+\contentsline {subsubsection}{Parametry}{14}{section*.10}%
+\contentsline {subsubsection}{Wyjaśnienie algorytmu}{14}{section*.11}%
+\contentsline {subsubsection}{Przykład użycia}{14}{section*.12}%
+\contentsline {subsection}{\numberline {2.4.3}Word2Vec}{14}{subsection.2.4.3}%
+\contentsline {subsubsection}{Parametry}{14}{section*.13}%
+\contentsline {subsubsection}{Opis algorytmu}{15}{section*.14}%
+\contentsline {subsubsection}{Przykład użycia}{15}{section*.15}%
+\contentsline {subsection}{\numberline {2.4.4}Ocena}{16}{subsection.2.4.4}%
+\contentsline {subsubsection}{Kryteria}{16}{section*.16}%
+\contentsline {subsubsection}{Ocena TF-IDF}{16}{section*.17}%
+\contentsline {subsubsection}{Ocena Word2Vec}{16}{section*.18}%
+\contentsline {section}{\numberline {2.5}Klasteryzacja}{16}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Defenicja}{16}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}K-means}{16}{subsection.2.5.2}%
+\contentsline {subsubsection}{Opis algorytmu}{16}{section*.19}%
+\contentsline {subsubsection}{Parametry}{17}{section*.20}%
+\contentsline {subsubsection}{Przykład użycia}{17}{section*.21}%
+\contentsline {subsection}{\numberline {2.5.3}DBSCAN}{17}{subsection.2.5.3}%
+\contentsline {subsubsection}{Parametry}{17}{section*.22}%
+\contentsline {subsubsection}{Opis algorytmu}{18}{section*.23}%
+\contentsline {subsubsection}{Przykład użycia}{18}{section*.24}%
+\contentsline {subsection}{\numberline {2.5.4}Dobór parametrów}{18}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Wizualizacja}{18}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Defenicja}{18}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Redukcja wymiarowości}{19}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}T-SNE}{19}{subsection.2.6.3}%
+\contentsline {subsubsection}{Parametry}{19}{section*.25}%
+\contentsline {subsubsection}{Opis algorytmu}{19}{section*.26}%
+\contentsline {subsubsection}{Przykład użycia}{19}{section*.27}%
+\contentsline {chapter}{\numberline {3}Rozdzial 3}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Opis aplikacji}{21}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Okno pracy}{21}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Menu}{21}{subsection.3.1.2}%
+\contentsline {subsubsection}{Tworzenie przestrzeni roboczej}{21}{section*.28}%
+\contentsline {subsubsection}{Pobieranie komentarzy}{21}{section*.29}%
+\contentsline {subsection}{\numberline {3.1.3}Workspace}{21}{subsection.3.1.3}%
+\contentsline {subsubsection}{Pole na wykresy}{22}{section*.30}%
+\contentsline {subsection}{\numberline {3.1.4}Text}{22}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Wektoryzacja}{22}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Cluster}{23}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}Result Window}{23}{subsection.3.1.7}%
+\contentsline {section}{\numberline {3.2}Przykład użycia}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Pobieranie danych tekstowych}{23}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Tworzenie Workspace}{23}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Wybór metod i parametrów}{23}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Przetwarzanie tekstu}{23}{subsection.3.2.4}%
+\contentsline {subsubsection}{Alpha}{23}{section*.32}%
+\contentsline {subsubsection}{Stop-words}{23}{section*.33}%
+\contentsline {subsubsection}{Lemmatize}{23}{section*.34}%
+\contentsline {subsection}{\numberline {3.2.5}Wektoryzacja}{23}{subsection.3.2.5}%
+\contentsline {subsubsection}{TF-IDF}{23}{section*.35}%
+\contentsline {subsubsection}{Word2Vec}{23}{section*.36}%
+\contentsline {subsection}{\numberline {3.2.6}Klasteryzacja}{23}{subsection.3.2.6}%
+\contentsline {subsubsection}{K-means}{23}{section*.37}%
+\contentsline {subsubsection}{DBSCAN}{23}{section*.38}%
+\contentsline {subsection}{\numberline {3.2.7}Analiza wynkiow pracy}{23}{subsection.3.2.7}%
+\contentsline {chapter}{\numberline {4}Tytuł 4}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Sekcja}{25}{section.4.1}%
+\contentsline {chapter}{Podsumowanie}{27}{chapter*.40}%

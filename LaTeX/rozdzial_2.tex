@@ -39,13 +39,13 @@
 \section{Dane tekstowe}
 
 	\subsection{Opis}
-		Aby zrealizować ten projekt, potrzebne będą dane tekstowe, które w tym przypadku będą komentarzami z YouTube. Do pozyskiwania informacji o filmach i powiązanych komentarzach będziemy używać YouTube Data API v3. API to jest darmowe i łatwe w użyciu. Aby rozpocząć pracę, należy zarejestrować się i utworzyć projekt w Google Cloud, a następnie aktywować YouTube Data API. Po tym wygenerowany zostanie klucz API, który będziemy używać do uwierzytelniania.
+		Aby zrealizować ten projekt, potrzebne będą dane tekstowe, które w tym przypadku będą komentarzami z YouTube. Do pozyskiwania informacji o filmach i powiązanych komentarzach będziemy używać YouTube Data API v3. API to jest darmowe i łatwe w użyciu. Aby rozpocząć pracę, należy zarejestrować się i utworzyć projekt w Google Cloud, a następnie aktywować YouTube Data API. Po tym wygenerowany zostanie klucz API, który będzie używany do uwierzytelniania.
 		
 	\subsection{Zapytania API}
 		W projekcie wykorzystane będą dwa zapytania HTTP:
 		\begin{itemize}
-			\item "GET https://www.googleapis.com/youtube/v3/commentThreads"
-			\item "GET https://www.googleapis.com/youtube/v3/videos"
+			\item \textit{GET https://www.googleapis.com/youtube/v3/commentThreads}
+			\item \textit{GET https://www.googleapis.com/youtube/v3/videos}
 		\end{itemize}
 	 	Pierwsze zapytanie służy do pobierania komentarzy do konkretnego filmu, a drugie do uzyskiwania informacji o filmie. Szczegółowe informacje można znaleźć w dokumentacji \cite{YouTubeAPI}. Etapy pobierania komentarzy:
 	 	\begin{enumerate}
@@ -71,7 +71,7 @@
  		 Pole \textbf{textDisplay} zawiera tekst komentarza, a pole \textbf{replies} jest kontenerem na odpowiedzi na komentarze. Każda odpowiedź w \textbf{replies.comments} również ma pole \textbf{textDisplay}, które możemy osobno przetwarzać. W końcowym wyniku otrzymamy listę wszystkich komentarzy, gdzie każdy element reprezentuje oddzielny komentarz.
 		
 	\subsection{Przechowywanie}
-		Po uzyskaniu wszystkie komentarze będą przechowywane w osobnym katalogu \textbf{comments}, który zostanie utworzony w przypadku jego braku. Każdy plik z komentarzami będzie miał nazwę \textbf{video\_id.txt} dla łatwej identyfikacji.
+		Po uzyskaniu odpowiedzi wszystkie komentarze będą przechowywane w osobnym katalogu \textbf{comments}. Katalog zostanie utworzony, jeśli nie istnieje. Każdy plik z komentarzami będzie miał nazwę \textbf{video\_id.txt} dla łatwej identyfikacji.
 		Dla uproszczenia procesu przechowywania i dostępu do danych oraz zapewnienia ich kompatybilności z różnymi narzędziami analitycznymi, zdecydowano się na użycie zwykłego pliku tekstowego (.txt) do przechowywania komentarzy. Każdy komentarz będzie zapisany w oddzielnej linii pliku, co upraszcza strukturę danych i umożliwia łatwe ich odczytanie do analizy.
 		Taki sposób przechowywania danych został wybrany z kilku powodów:
 	\begin{itemize}
@@ -83,7 +83,7 @@
 \section{Przetwarzania tekstu}
 
 	\subsection{Defenicja}
-		Następnym procesem jest przetwarzanie tekstu. Ważne jest, aby zrozumieć, jak wyglądają komentarze po ich pobraniu i zapisaniu z YouTube. Implementacja przetwarzania zostanie wykonana za pomocą biblioteki NLTK (Natural Language Toolkit) oraz wbudowanych funkcji Pythona. Dokumentację NLTK można znaleźć tutaj \cite{nltk}. Przetwarzanie tekstu jest podzielone na kilka etapów:
+		Następnym procesem jest przetwarzanie tekstu. Ważne jest, aby zrozumieć, jak wyglądają komentarze po ich pobraniu i zapisaniu z YouTube. Implementacja przetwarzania zostanie wykonana za pomocą biblioteki NLTK (Natural Language Toolkit) versji 3.8.1 oraz wbudowanych funkcji Pythona. Szczegóły biblioteki NLTK można znaleźć w documentacji \cite{nltk}. Przetwarzanie tekstu jest podzielone na kilka etapów:
 		\begin{itemize}
 			\item Przetwarzanie obowiązkowe, które jest wykonywane niezależnie od wybranych parametrów przez użytkownika.
 			\item Przetwarzanie prymitywne, czyli usuwanie symboli i cyfr.
@@ -98,16 +98,17 @@
 	
 		
 	\subsection{Przetwarzanie prymitywne}
-		Przetwarzanie prymitywne polega na usuwaniu niealfabetycznych symboli lub słów. Ten proces nie jest obowiązkowy, jednak jego zastosowanie pomaga pozbyć się różnych języków znaczników, które YouTube używa do wizualizacji emotikonów lub narzędzi do zmiany tekstu.
+		Przetwarzanie prymitywne polega na usuwaniu niealfabetycznych symboli lub słów. Ten proces nie jest obowiązkowy, jednak jego zastosowanie pomaga pozbyć się różnych języków znaczników, które YouTube używa do wizualizacji emotikon lub narzędzi do zmiany tekstu.
 
 		Przykłady takich komentarzy:
 
 		\begin{verbatim}
-			"Great video! (tu musi byc emoji, ale nie wiem jak tu wkleic)"
+			"Great video! :) :("
 			"Check this out: <a href='https://example.com'>link</a>"
 		\end{verbatim}
-		W tym projekcie jest to realizowane za pomocą wbudowanej funkcji Pythona \textbf{isalpha()}, która sprawdza, czy symbole lub słowa zawierają niealfabetyczne znaki.
-		\begin{lstlisting}[language=Python]
+		W tym projekcie jest to realizowane za pomocą wbudowanej funkcji Pythona \textbf{isalpha()}, która sprawdza, czy symbole lub słowa zawierają niealfabetyczne znaki, jak widać na Listingu \ref{lst:removenonalpha}.
+		
+		\begin{lstlisting}[language=Python, caption={Funkcja usuwająca niealfabetyczne symbole}, label={lst:removenonalpha}]
 			def remove_non_alpha(tokens):
 			return [word for word in tokens if word.isalpha()]
 		\end{lstlisting}
@@ -117,24 +118,24 @@
 		\begin{verbatim}
 			"the", "is", "in", "and"
 		\end{verbatim}
-		Usuwanie stop-words zmniejsza rozmiar tekstu i sprawia, że znaczące słowa są bardziej widoczne. Do tego celu używa się słownika stop-words z biblioteki NLTK, który w razie potrzeby można uzupełnić własnymi słowami.
-		\begin{lstlisting}[language=Python]
-		from nltk.corpus import stopwords
-
-		def remove_stop_words(tokens):
+		Usuwanie stop-words zmniejsza rozmiar tekstu i sprawia, że znaczące słowa są bardziej widoczne. Do tego celu używa się słownika stop-words z biblioteki NLTK, który w razie potrzeby można uzupełnić własnymi słowami. Przykład implementacji widać na Listingu \ref{lst:removestopwords}.
+		\begin{lstlisting}[language=Python, caption={Funkcja usuwająca stop słowa}, label={lst:removestopwords}]
+			from nltk.corpus import stopwords
+			
+			def remove_stop_words(tokens):
 			stop_words = set(stopwords.words('english'))
 			return [word for word in tokens if word not in stop_words]
 		\end{lstlisting}
 
 	\subsection{Lematyzacja}
-		Ostatnim opcjonalnym procesem jest lematyzacja, która sprowadza słowa do ich podstawowej formy. Jest to przydatne w sytuacjach, gdy trzeba zgrupować różne formy jednego słowa (np. "running", "ran", "runs" do "run").
+		Ostatnim opcjonalnym procesem jest lematyzacja, która sprowadza słowa do ich podstawowej formy. Jest to przydatne w sytuacjach, gdy trzeba zgrupować różne formy jednego słowa (np. "running", "ran", "runs" do "run"). Przykład implementacji widać na Listingu \ref{lst:lemmatizetokens}.
 
-		\begin{lstlisting}[language=Python]
-		from nltk.stem import WordNetLemmatizer
-
-		def lemmatize_tokens(tokens):
+		\begin{lstlisting}[language=Python, caption={Funkcja lematyzująca tokeny}, label={lst:lemmatizetokens}]
+			from nltk.stem import WordNetLemmatizer
+			
+			def lemmatize_tokens(tokens):
 			lemmatizer = WordNetLemmatizer()
-		return [lemmatizer.lemmatize(word) for word in tokens]
+			return [lemmatizer.lemmatize(word) for word in tokens]
 		\end{lstlisting}
 
 	
@@ -144,16 +145,13 @@
 		\subsubsection{Analiza częstotliwości (freq analysis)}
 			Ta funkcja używa przetworzonych ciągów znaków, tworząc pojedynczą tablicę ze wszystkimi słowami ze wszystkich komentarzy, i stosuje klasę \textbf{collections.Counter} w Pythonie. \textbf{Counter} jest używany do zliczania hashowalnych obiektów, takich jak ciągi znaków lub liczby, i dostarcza wygodne metody do pracy z danymi częstotliwości. W ten sposób funkcja generuje dwie tablice: tablicę słów i odpowiadającą jej tablicę liczby wystąpień każdego słowa w tekście. Te tablice będą używane do tworzenia wykresu słupkowego (bar chart), pokazującego częstotliwość występowania słów.
 			
-			Przykład implementacji algorytmu w projekcie:
-			\begin{lstlisting}[language=Python]
+			Przykład implementacji algorytmu w projekcie jest zaprezentowany na Listingu \ref{lst;freqanalysis}.
+			\begin{lstlisting}[language=Python, caption={Funkcja przeprowadzająca analizę częstotliwości tokenów}, label={lst:freqanalysis}]
 				from collections import Counter
-				import matplotlib.pyplot as plt
 
 				def freq_analysis(tokens):
 					data = ' '.join(self.nlp_data)
 					words = nltk.word_tokenize(data)
-					# words = [word.lower() for word in words]
-					# words = [word for word in words if word.isalnum()]
 					word_freq = Counter(words)
 					words_counts_sorted = word_freq.most_common()
 					self.words_sorted = [word_count[0] for word_count in words_counts_sorted]
@@ -163,22 +161,17 @@
 		\subsubsection{Analiza długości (length analysis)}
 			Ta funkcja również używa przetworzonych ciągów znaków komentarzy, określając liczbę słów w każdym komentarzu. Ostatecznie generowana jest tablica z liczbą słów, która będzie używana do tworzenia histogramu (histogram), pokazującego rozkład długości komentarzy.
 			
-			Przykład implementacji algorytmu w projekcie:
-			\begin{lstlisting}[language=Python]
-				from collections import Counter
-				import matplotlib.pyplot as plt
-				
-				def freq_analysis(tokens):
+			Przykład implementacji algorytmu w projekcie jest zaprezentowany na Listingu \ref{lst;lengthanalysis}.
+			\begin{lstlisting}[language=Python, caption={Funkcja przeprowadzająca analizę długości tokenów}, label={lst:lengthanalysis}]
+
+				def length_analysis(tokens):
 					word_counts = [len(nltk.word_tokenize(el)) for el in self.nlp_data]
 					self.max_size = max(word_counts) + 1
 					self.lengths = [0] * (self.max_size + 1)
 					for count in word_counts:
-					self.lengths[count] += 1
+						self.lengths[count] += 1
 					endTime = time.time()
 			\end{lstlisting}
-	
-	\subsection{Podsumowanie}
-		Wszystkie etapy przetwarzania tekstu, od obowiązkowych do opcjonalnych, odgrywają ważną rolę w przygotowaniu danych do dalszej analizy. Ich poprawne wykonanie gwarantuje strukturalizowany i wygodny do przetwarzania wygląd danych. Wizualizacja wykresów analizujących zawartość komentarzy pozwoli użytkownikom lepiej zrozumieć strukturę i treść komentarzy, a także podejmować uzasadnione decyzje na podstawie przedstawionych danych.
 	
 	
 \section{Wektoryzacja}
@@ -211,7 +204,9 @@
 			
 				
 		\subsubsection{Przykład użycia}
-			\begin{lstlisting}[language=Python]
+			Przykład użycia metody TF-IDF w Listingu \ref{lst:vectorizetfidf}.
+			\begin{lstlisting}[language=Python, caption={Funkcja wektoryzująca korpus za pomocą TF-IDF}, label={lst:vectorizetfidf}]
+
 				from sklearn.feature_extraction.text import TfidfVectorizer
 	
 				def vectorize_tfidf(corpus):
@@ -249,7 +244,7 @@
 						\item sg=0 używa CBOW (domyślnie).
 						\item sg=1 używa Skip-Gram.
 					\end{itemize}
-				\item Negative Sampling: W Word2Vec używa się negatywnego próbkowania dla zwiększenia efektywności uczenia. Parametr negative określa liczbę "negatywnych" przykładów dla każdego pozytywnego przykładu.
+				\item Negative Sampling: W Word2Vec używa się negatywnego próbkowania dla zwiększenia efektywności uczenia. Parametr negative określa liczbę \textit{negatywnych} przykładów dla każdego pozytywnego przykładu.
 				\item Learning Rate: Parametr alpha określa początkową szybkość uczenia, a min\_alpha — minimalną szybkość uczenia, która zmniejsza się do tej wartości w trakcie uczenia..
 			\end{itemize}
 		
@@ -280,7 +275,8 @@
 	
 	
  		\subsubsection{Przykład użycia}
- 			\begin{lstlisting}[language=Python]
+ 			Przykład użycia metody Word2Vec w Listingu \ref{lst:vectorizeword2vec}.
+ 			\begin{lstlisting}[language=Python, caption={Funkcja wektoryzująca za pomocą Word2Vec}, label={lst:vectorizeword2vec}]
 				from gensim.models import Word2Vec
 	
 				def vectorize_word2vec(tokens):
@@ -319,7 +315,7 @@
 \section{Klasteryzacja}
 
 	\subsection{Defenicja}
-		Kolejnym etapem przetwarzania danych jest klasteryzacja, która wykorzystuje zwektoryzowane komentarze i dzieli je na klastry. Zostanie to zrealizowane za pomocą dwóch metod: K-means i DBSCAN, z wykorzystaniem biblioteki sklearn \cite{scikit-learn}.  \cite{dbscan}
+		Kolejnym etapem przetwarzania danych jest klasteryzacja, która wykorzystuje zwektoryzowane komentarze i dzieli je na klastry. Zostanie to zrealizowane za pomocą dwóch metod: K-means i DBSCAN, z wykorzystaniem biblioteki sklearn \cite{scikit-learn, dbscan}.
 	
 	\subsection{K-means}
  		Algorytm K-means dzieli zbiór danych na nieprzekrywające się klastry, z których każdy opisany jest średnią wartością (centroidem) próbek w klastrze. K-means dąży do wyboru centroidów, minimalizując bezwładność, czyli kryterium sumy kwadratów wewnątrz klastrów \cite{k-means}.
@@ -344,14 +340,13 @@
 			\end{itemize}
 			
 		\subsubsection{Przykład użycia}
-			\begin{lstlisting}[language=Python]
+			
+			 Przykład użycia metody K-means w Listingu \ref{lst:kmeansexample}.
+		
+			\begin{lstlisting}[language=Python, caption={Przykład użycia algorytmu K-Means}, label={lst:kmeansexample}]
 				kmeans = KMeans(n_clusters=2, init='k-means++', max_iter=300, n_init=10, random_state=0)
-
-
 				kmeans.fit(X)
-
-
-				y_kmeans = kmeans.predict(X)
+				return kmeans.labels_
 			\end{lstlisting}
 			
 			
@@ -360,7 +355,7 @@
 
 	  
 	\subsection{DBSCAN}
-		Algorytm DBSCAN (Density-Based Spatial Clustering of Applications with Noise) traktuje klastry jako obszary o wysokiej gęstości, oddzielone od obszarów o niskiej gęstości. Dzięki temu DBSCAN może wykrywać klastry o dowolnym kształcie, w przeciwieństwie do K-means, który zakłada, że klastry mają kształt wypukły. Głównym elementem DBSCAN jest pojęcie punktów rdzeniowych, które reprezentują próbki w obszarach o wysokiej gęstości. \cite{dbscan}
+		Algorytm DBSCAN (Density-Based Spatial Clustering of Applications with Noise) traktuje klastry jako obszary o wysokiej gęstości, oddzielone od obszarów o niskiej gęstości. Dzięki temu DBSCAN może wykrywać klastry o dowolnym kształcie, w przeciwieństwie do K-means, który zakłada, że klastry mają kształt wypukły. Głównym elementem DBSCAN jest pojęcie punktów rdzeniowych, które reprezentują próbki w obszarach o wysokiej gęstości \cite{dbscan}.
 
 
 		\subsubsection{Parametry}
@@ -386,15 +381,14 @@
 
 			
 		\subsubsection{Przykład użycia}
-			\begin{lstlisting}[language=Python]
-				X = np.array([[0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
-             			 [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]])
-
-
-					tsne = TSNE(n_components=2, perplexity=5, n_iter=300, random_state=0)
-
-
-					X_embedded = tsne.fit_transform(X)
+		
+			Przykład użycia metody DBSCAN w Listingu \ref{lst:dbscanexample}.
+		
+			\begin{lstlisting}[language=Python, caption={Przykład użycia t-SNE do osadzania danych}, label={lst:dbscanexample}]
+			
+			dbscan = DBSCAN(eps=0.1, min_samples=4)
+			dbscan.fit(X)
+			return dbscan.labels_
 			\end{lstlisting}
 			
 			
@@ -440,13 +434,22 @@
 			\begin{enumerate}
 				\item Przekształcenie odległości na prawdopodobieństwa: Dla każdego punktu obliczane są prawdopodobieństwa Pearsona, które określają prawdopodobieństwo wybrania sąsiedniego punktu jako sąsiada.
 				\item Określenie docelowych prawdopodobieństw: Na niskowymiarowej projekcji obliczane są prawdopodobieństwa Q, podobne do prawdopodobieństw Pearsona, ale w innym wymiarze.
-				\item Minimalizacja rozbieżności (Kullback-Leibler divergence): Używany jest spadek gradientowy do minimalizacji rozbieżności między rozkładami P i Q, co prowadzi do zachowania bliskości punktów.
+				\item Minimalizacja dywergencji (Kullback-Leibler divergence): Używany jest spadek gradientowy do minimalizacji dywergencji między rozkładami P i Q, co prowadzi do zachowania bliskości punktów.
 			\end{enumerate}
 			
 			
 		\subsubsection{Przykład użycia}
-			\begin{lstlisting}[language=Python]
-				print("I use T-SNE")
+		
+			Przykład użycia metody T-SNE w Listingu \ref{lst:tsneexample}.
+		
+			\begin{lstlisting}[language=Python, caption={Przykład użycia t-SNE do osadzania danych}, label={lst:tsneexample}]
+	
+			X = np.array([[0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+			[0, 0], [1, 0], [2, 0], [3, 0], [4, 0]])
+			
+			tsne = TSNE(n_components=2, perplexity=5, n_iter=300, random_state=0)
+			
+			X_embedded = tsne.fit_transform(X)
 			\end{lstlisting}
 			
 			
