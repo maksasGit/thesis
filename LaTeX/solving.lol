@@ -4,7 +4,9 @@
 \contentsline {lstlisting}{\numberline {2.4}{\ignorespaces Funkcja przeprowadzająca analizę częstotliwości tokenów}}{13}{lstlisting.2.4}%
 \contentsline {lstlisting}{\numberline {2.5}{\ignorespaces Funkcja przeprowadzająca analizę długości tokenów}}{13}{lstlisting.2.5}%
 \contentsline {lstlisting}{\numberline {2.6}{\ignorespaces Funkcja wektoryzująca korpus za pomocą TF-IDF}}{14}{lstlisting.2.6}%
-\contentsline {lstlisting}{\numberline {2.7}{\ignorespaces Funkcja wektoryzująca za pomocą Word2Vec}}{15}{lstlisting.2.7}%
-\contentsline {lstlisting}{\numberline {2.8}{\ignorespaces Przykład użycia algorytmu K-Means}}{16}{lstlisting.2.8}%
-\contentsline {lstlisting}{\numberline {2.9}{\ignorespaces Przykład użycia t-SNE do osadzania danych}}{17}{lstlisting.2.9}%
-\contentsline {lstlisting}{\numberline {2.10}{\ignorespaces Przykład użycia t-SNE do osadzania danych}}{19}{lstlisting.2.10}%
+\contentsline {lstlisting}{\numberline {2.7}{\ignorespaces Funkcja wektoryzująca za pomocą Word2Vec}}{16}{lstlisting.2.7}%
+\contentsline {lstlisting}{\numberline {2.8}{\ignorespaces Pseudokod algorytmu K-means}}{17}{lstlisting.2.8}%
+\contentsline {lstlisting}{\numberline {2.9}{\ignorespaces Przykład użycia algorytmu K-Means}}{17}{lstlisting.2.9}%
+\contentsline {lstlisting}{\numberline {2.10}{\ignorespaces Pseudokod algorytmu DBSCAN}}{18}{lstlisting.2.10}%
+\contentsline {lstlisting}{\numberline {2.11}{\ignorespaces Przykład użycia algorytmu DBSCAN}}{18}{lstlisting.2.11}%
+\contentsline {lstlisting}{\numberline {2.12}{\ignorespaces Przykład użycia t-SNE do osadzania danych}}{20}{lstlisting.2.12}%
