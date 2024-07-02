@@ -179,9 +179,8 @@
 	\subsection{Defenicja}
 		Na tym etapie tekst jest gotowy do dalszego przetwarzania. Aby przeprowadzić analizę, konieczne jest przekształcenie komentarzy w formę wektorową (wektoryzacja). Zostaną użyte dwie metody: TF-IDF i Word2Vec. Te metody umożliwiają przedstawienie danych tekstowych w postaci wektorów liczbowych, co ułatwia dalszą analizę i przetwarzanie. Wektoryzacja będzie realizowana przy użyciu bibliotek \textbf{scikit-learn} \cite{scikit-learn} dla metody TF-IDF i \textbf{gensim} \cite{gensim} dla metody Word2Vec. 
 
-		\underline{Moje pytanie}\\
-		\textbf{Tu, jak i w następnych sekcjach mam pytania, bo nie wiem, jak opisać dlaczego wybrałem dokładnie te metody. Wybrałem tak naprawdę dwie najpopularniejsze metody, i wybrałem dwie, bo chciałem je porównać pod względem wyników.}
-
+		Dla możliwości porównywania wybrano dwie z najpopularniejszych metod.
+		
 	
 	\subsection{TF-IDF}
  		TF-IDF (Term Frequency-Inverse Document Frequency) to miara statystyczna używana do oceny ważności terminu w dokumencie w odniesieniu do kolekcji dokumentów (korpusu). Jest szeroko stosowana w zadaniach przetwarzania języka naturalnego i wyszukiwania informacji. W bibliotece Scikit-learn istnieje wygodne narzędzie do obliczania TF-IDF: klasa TfidfVectorizer. \cite{tf-idf}
@@ -291,31 +290,14 @@
 				\item Przed: ["This is a great video", "I love this content"]
 				\item Po: Wektory słów: { "this": [...], "is": [...], "a": [...], "great": [...], "video": [...], "I": [...], "love": [...], "content": [...] }
 			\end{itemize}
- 	
- 	\subsection{Ocena}
- 		Po wektoryzacji tekstu za pomocą metod TF-IDF i Word2Vec ważne jest przeprowadzenie oceny ich skuteczności i zrozumienie, jak dobrze radzą sobie z zadaniem przedstawiania danych tekstowych. W tej sekcji zostaną omówione kryteria oceny i wyniki zastosowania każdej z metod na naszych danych.
- 	
- 		\subsubsection{Kryteria}
- 			Do oceny pracy metod TF-IDF i Word2Vec używane są następujące kryteria:
  		
-			\begin{itemize}
-				\item \textbf{Znaczenie semantyczne:} Jak dobrze metoda uchwytuje semantyczne związki między słowami i kontekstem ich użycia.
-				\item \textbf{Szybkość obliczeń:} Czas potrzebny na wektoryzację tekstów.
-				\item \textbf{Łatwość interpretacji:} Jak łatwo interpretować wyniki wektoryzacji i używać ich w dalszych analizach.
-				\item \textbf{Zastosowalność do zadań uczenia maszynowego:} Jak dobrze wektory nadają się do zadań klasyfikacji, klasteryzacji i innych metod uczenia maszynowego.
-			\end{itemize}
-		
-		\subsubsection{Ocena  TF-IDF}
-			\textit{Tego nie mam w kodzie, moze to i nie jest potrzebne}
-		
-		\subsubsection{Ocena  Word2Vec}
-			\textit{Jest nie wielka czesc, ale napisano to bylo przez chatGPT, zeby ja mog sprawdzic}
-		
 	
 \section{Klasteryzacja}
 
 	\subsection{Defenicja}
 		Kolejnym etapem przetwarzania danych jest klasteryzacja, która wykorzystuje zwektoryzowane komentarze i dzieli je na klastry. Zostanie to zrealizowane za pomocą dwóch metod: K-means i DBSCAN, z wykorzystaniem biblioteki sklearn \cite{scikit-learn, dbscan}.
+		
+		Dla możliwości porównywania wybrano dwie z najpopularniejszych metod.
 	
 	\subsection{K-means}
  		Algorytm K-means dzieli zbiór danych na nieprzekrywające się klastry, z których każdy opisany jest średnią wartością (centroidem) próbek w klastrze. K-means dąży do wyboru centroidów, minimalizując bezwładność, czyli kryterium sumy kwadratów wewnątrz klastrów \cite{k-means}.
@@ -349,9 +331,6 @@
 				return kmeans.labels_
 			\end{lstlisting}
 			
-			
-			Przykład przekształcenia danych:
-			\underline{tu przyklad}
 
 	  
 	\subsection{DBSCAN}
@@ -392,8 +371,6 @@
 			\end{lstlisting}
 			
 			
-			Przykład przekształcenia danych:
-				\underline{tu przyklad}
 		
 	\subsection{Dobór parametrów}
 		Dobór odpowiednich parametrów dla algorytmów klasteryzacji, takich jak K-means i DBSCAN, jest kluczowy dla uzyskania satysfakcjonujących wyników. Poniżej przedstawione są niektóre techniki i wskazówki dotyczące doboru parametrów:
@@ -403,7 +380,6 @@
 			\item DBSCAN: Kluczowymi parametrami są eps i min\_samples. Wybór eps zależy od gęstości danych i można go oszacować na podstawie wykresu odległości K-najbliższych sąsiadów (K-distance plot). Parametr min\_samples można ustawić w zależności od oczekiwanej minimalnej liczby punktów w klastrze.
 		\end{itemize}
 		
-		\underline{this is new}
 			
 	
 	
@@ -412,7 +388,7 @@
 		Ostatnim etapem analizy jest wizualizacja danych. Końcowy wynik to wykres 2D, gdzie każdy punkt będzie reprezentował pewne dane tekstowe (komentarze) z określonym kolorem odpowiadającym klastrowi, do którego należy, lub kolorem braku klastra, jak w przypadku DBSCAN. Na wykresie będą również wizualizowane centroidy każdego klastra w postaci czerwonego krzyżyka.
 	
 	\subsection{Redukcja wymiarowości}
-		Aby możliwa była wizualizacja zwektoryzowanych danych jako punktów 2D, konieczne jest skorzystanie z metody redukcji wymiarowości (T-SNE). Ta metoda jest nieliniową metodą ekstrakcji cech. Na początku trudno jest określić, za co odpowiadają cechy, więc wybór odpowiednich cech jest niemożliwy. Metoda nieliniowa pomoże nam zachować nieliniowe zależności \cite{t-sne}.
+		Aby możliwa była wizualizacja zyzowanych danych jako punktów 2D, konieczne jest skorzystanie z metody redukcji wymiarowości (T-SNE). Ta metoda jest nieliniową metodą ekstrakcji cech. Na początku trudno jest określić, za co odpowiadają cechy, więc wybór odpowiednich cech jest niemożliwy. Metoda nieliniowa pomoże nam zachować nieliniowe zależności \cite{t-sne}.
 	
 		
 	\subsection{T-SNE}
@@ -453,9 +429,6 @@
 			\end{lstlisting}
 			
 			
-			Przykład przekształcenia danych:
-			
-				\textbf{tu będzie zdjęcie}
 	
 	
 

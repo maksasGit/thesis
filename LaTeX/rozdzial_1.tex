@@ -23,11 +23,11 @@
 			\item \textbf{Hierarchiczne algorytmy klasteryzacji}. Algorytmy te porządkują dane, tworząc hierarchię zagnieżdżonych klastrów.
 			\item Algorytmy oparte na gęstości danych:
 			\begin{itemize}
-				\item \textbf{K-średnich (K-means)} - iteracyjny algorytm oparty na minimalizacji sumy kwadratowych odchyleń punktów klastrów od ich centrów.
-				\item \textbf{Rozpowszechnianie podobieństwa (Affinity Propagation)} - algorytm, który rozprzestrzenia wiadomości o podobieństwie między parami obiektów w celu wyboru typowych przedstawicieli każdego klastra.
-				\item \textbf{Przesunięcie średniej (mean shift)} - metoda wybierająca centroidy klastrów w obszarach o największej gęstości.
-				\item \textbf{Klasteryzacja spektralna (spectral clustering}) - metoda wykorzystująca wartości własne macierzy odległości do zmniejszenia wymiarowości przed zastosowaniem innych metod klasteryzacji.
-				\item \textbf{DBSCAN (Density-Based Spatial Clustering of Applications with Noise)} - algorytm grupujący punkty w jeden klaster w obszarach o wysokiej gęstości i oznaczający odosobnione punkty jako szum.
+				\item \textbf{K-średnich (K-means)} -- iteracyjny algorytm oparty na minimalizacji sumy kwadratowych odchyleń punktów klastrów od ich centrów.
+				\item \textbf{Rozpowszechnianie podobieństwa (Affinity Propagation)} -- algorytm, który rozprzestrzenia wiadomości o podobieństwie między parami obiektów w celu wyboru typowych przedstawicieli każdego klastra.
+				\item \textbf{Przesunięcie średniej (mean shift)} -- metoda wybierająca centroidy klastrów w obszarach o największej gęstości.
+				\item \textbf{Klasteryzacja spektralna (spectral clustering}) -- metoda wykorzystująca wartości własne macierzy odległości do zmniejszenia wymiarowości przed zastosowaniem innych metod klasteryzacji.
+				\item \textbf{DBSCAN (Density-Based Spatial Clustering of Applications with Noise)} -- algorytm grupujący punkty w jeden klaster w obszarach o wysokiej gęstości i oznaczający odosobnione punkty jako szum.
 			\end{itemize}
 		\end{enumerate}
 
@@ -53,19 +53,20 @@
 
 	\subsection{Ocena efektywności klasteryzacji}
 		Problem oceny jakości w zadaniu klasteryzacji jest trudny do rozwiązania z co najmniej dwóch powodów. Po pierwsze, zgodnie z twierdzeniem o niemożności Kleinberga \cite{Kleinberg}, nie istnieje optymalny algorytm klasteryzacji. Po drugie, wiele algorytmów klasteryzacji nie jest w stanie samodzielnie określić rzeczywistej liczby klastrów w danych; najczęściej liczba klastrów jest zadawana na wejściu algorytmu i dobierana kilkoma uruchomieniami.
-		Niemniej jednak, wyróżnia się dwie grupy metod oceny jakości klasteryzacji:
-		\begin{enumerate}
-			\item Zewnętrzne metody porównują wynik klasteryzacji z apriorycznie znanym podziałem na klasy. Przykładem zewnętrznej metody oceny może być indeks Randa. Metoda ta ocenia, jak wiele spośród par elementów, które znajdowały się w jednej klasie, oraz tych, które znajdowały się w różnych klasach, zachowało ten stan po zastosowaniu algorytmu klasteryzacji.
-			\item Wewnętrzne metody oceniają jakość klasteryzacji, korzystając jedynie z informacji zawartych w samych danych. Przykładem wewnętrznej metody jest metoda spójności klastra (Cluster Cohesion). Idea tej metody polega na tym, że im bliżej siebie znajdują się obiekty w klastrach, tym lepszy jest podział. Można również wyróżnić metodę separacji klastra (Cluster Separation), która ocenia jakość klasteryzacji na podstawie odległości między obiektami różnych klastrów.
-		\end{enumerate}
+		Niemniej jednak, wyróżnia się dwie grupy metod oceny jakości klasteryzacji:\\
+
+		Zewnętrzne metody porównują wynik klasteryzacji z apriorycznie znanym podziałem na klasy. Przykładem zewnętrznej metody oceny może być indeks Randa. Metoda ta ocenia, jak wiele spośród par elementów, które znajdowały się w jednej klasie, oraz tych, które znajdowały się w różnych klasach, zachowało ten stan po zastosowaniu algorytmu klasteryzacji.\\
+	   
+	    Wewnętrzne metody oceniają jakość klasteryzacji, korzystając jedynie z informacji zawartych w samych danych. Przykładem wewnętrznej metody jest metoda spójności klastra (Cluster Cohesion). Idea tej metody polega na tym, że im bliżej siebie znajdują się obiekty w klastrach, tym lepszy jest podział. Można również wyróżnić metodę separacji klastra (Cluster Separation), która ocenia jakość klasteryzacji na podstawie odległości między obiektami różnych klastrów.
+
 
 
 \section{Przetwarzanie języka naturalnego}
 
 	\subsection{Defenicja}
-		Przetwarzanie języka naturalnego (ang. Natural Language Processing, NLP) to dziedzina badań, która łączy metody uczenia maszynowego i lingwistyki matematycznej w celu opracowania algorytmów do analizy, rozumienia i generowania tekstu w językach naturalnych. \cite{NLP}
-
-
+		Przetwarzanie języka naturalnego (ang. Natural Language Processing, NLP) to dziedzina badań, która łączy metody uczenia maszynowego i lingwistyki matematycznej w celu opracowania algorytmów do analizy, rozumienia i generowania tekstu w językach naturalnych \cite{NLP}.
+		
+		
 	\subsection{Wstępne przetwarzanie tekstu}
 		Wstępne przetwarzanie tekstu jest ważnym etapem NLP, który przekształca tekst w języku naturalnym w format wygodny do rozpoznawania przez algorytmy i dalszej pracy. Przetwarzanie tekstu składa się z różnych etapów, które mogą się różnić w zależności od zadania i implementacji. Oto niektóre z najpopularniejszych podstawowych podejść:
 	\begin{itemize}
@@ -83,20 +84,22 @@
 
 
 	\subsection{Stemming}
-		 Stemming to proces redukcji słowa do jego podstawowej formy, zwanej rdzeniem lub stemem. Liczba poprawnych form wyrazowych, których znaczenia są podobne, ale pisownia różni się sufiksami, przedrostkami, końcówkami itp., jest bardzo duża, co utrudnia tworzenie słowników i dalsze przetwarzanie. Stemming pozwala sprowadzić słowo do jego podstawowej formy. Istota podejścia polega na znalezieniu rdzenia słowa, w tym celu z końca i początku słowa kolejno odcinane są jego części. Reguły odcinania dla stemmera tworzone są z góry i najczęściej stanowią wyrażenia regularne, co sprawia, że podejście to jest pracochłonne, ponieważ przy dodawaniu kolejnego języka potrzebne są nowe badania lingwistyczne. Drugą wadą podejścia jest możliwa utrata informacji podczas odcinania części, na przykład możemy stracić informację o części mowy.
+		 Stemming to proces redukcji słowa do jego podstawowej formy, zwanej rdzeniem lub stemem. Liczne formy wyrazowe różniące się sufiksami, przedrostkami, końcówkami itp. utrudniają tworzenie słowników i dalsze przetwarzanie. Stemming sprowadza słowo do jego podstawowej formy. Istota podejścia polega na znalezieniu rdzenia słowa, w tym celu z końca i początku słowa kolejno odcinane są jego części zgodnie z ustalonymi regułami. Wadą podejścia jest możliwa utrata informacji podczas odcinania części, przez co możemy stracić informację o części mowy.
+		 
+		 
 
 	\subsection{Lematyzacja}
-		Podejście to stanowi alternatywę dla stemmingu. Główna idea polega na sprowadzeniu słowa do formy słownikowej - lematu. Przykład lematyzacji dla języka polskiego:
+		Podejście to stanowi alternatywę dla stemmingu. Główna idea polega na sprowadzeniu słowa do formy słownikowej -- lematu. Przykład lematyzacji dla języka polskiego:
 		\begin{itemize}
-			\item dla rzeczowników - mianownik liczby pojedynczej;
-			\item dla przymiotników - mianownik liczby pojedynczej, rodzaj męski;
-			\item dla czasowników, imiesłowów, rzeczowników odczasownikowych - czasownik w bezokoliczniku aspektu niedokonanego.
+			\item dla rzeczowników -- mianownik liczby pojedynczej;
+			\item dla przymiotników -- mianownik liczby pojedynczej, rodzaj męski;
+			\item dla czasowników, imiesłowów, rzeczowników odczasownikowych -- czasownik w bezokoliczniku aspektu niedokonanego.
 		\end{itemize}
 		
 
 \section{Wektoryzacja}
 
-	\subsection{Opis}
+	\subsection{Defenicja}
 		Większość modeli matematycznych działa w przestrzeniach wektorowych o dużych wymiarach, dlatego konieczne jest przekształcenie tekstu w przestrzeń wektorową. Głównym celem wektoryzacji tekstu jest stworzenie reprezentacji danych tekstowych, która zachowuje informacje semantyczne i syntaktyczne o tekście, a jednocześnie nadaje się do wykorzystania w modelach matematycznych. Pozwala to na efektywną analizę i przetwarzanie danych tekstowych za pomocą algorytmów i metod uczenia maszynowego \cite{Vectorization}. 
 
 	\subsection{Celi wektoryzacji}
@@ -109,21 +112,21 @@
 		\end{itemize}
 
 	\subsection{Metody wektoryzacji}
-		Pierwszym krokiem w wektoryzacji tekstu jest określenie przestrzeni cech, w której tekst będzie reprezentowany jako wektory. Każda cecha może reprezentować słowo, frazę, symbol lub inny element tekstu.
-		Istnieje kilka metod wektoryzacji tekstu, w tym:
+		Pierwszym krokiem w wektoryzacji tekstu jest określenie przestrzeni cech, w której tekst będzie reprezentowany jako wektory. Każda cecha może reprezentować słowo, frazę, symbol lub inny element tekstu. Istnieje kilka metod wektoryzacji tekstu, w tym:
+
 		\begin{itemize}
 			\item \textbf{Bag of Words (BoW)} - każdy dokument jest reprezentowany jako wektor, gdzie każdy element odpowiada poszczególnemu słowu, a wartościami są częstotliwości występowania słów w dokumencie.
 			\item \textbf{TF-IDF (Term Frequency-Inverse Document Frequency)} - metoda ta uwzględnia nie tylko częstotliwość występowania słów w dokumencie (TF), ale także odwrotną częstotliwość występowania słowa we wszystkich dokumentach korpusu (IDF), co pozwala wyróżnić słowa kluczowe.
-			\item \textbf{Word Embeddings} - są to metody oparte na trenowaniu sieci neuronowych, które przekształcają słowa w wektory w przestrzeni ciągłej, zachowując ich właściwości semantyczne.\
+			\item \textbf{Word Embeddings} - są to metody oparte na trenowaniu sieci neuronowych, które przekształcają słowa w wektory w przestrzeni ciągłej, zachowując ich właściwości semantyczne.
 		\end{itemize}
 
 	\subsection{Zastosowanie}
 		Wektoryzacja tekstu znajduje zastosowanie w wielu dziedzinach, w tym:
 		\begin{itemize}
-			\item Analiza nastrojów i sentymentów w mediach społecznościowych i recenzjach.
-			\item Klasyfikacja tekstów według tematyki lub kategorii.
-			\item Systemy rekomendacyjne oparte na opisach tekstowych.
-			\item Automatyczne tłumaczenie tekstu i implementacja chatbotów.
+			\item analiza nastrojów i sentymentów w mediach społecznościowych i recenzjach,
+			\item klasyfikacja tekstów według tematyki lub kategorii,
+			\item systemy rekomendacyjne oparte na opisach tekstowych,
+			\item automatyczne tłumaczenie tekstu i implementacja chatbotów.
 		\end{itemize}
 
 
@@ -139,17 +142,17 @@
 		\subsubsection{Wybór cech}
 			Metody wyboru cech pozostawiają pewne podzbiory oryginalnego zestawu cech, eliminując cechy nadmiarowe i mało informatywne. Główne zalety tego rodzaju algorytmów to:
 			\begin{itemize}
-				\item Zmniejszenie prawdopodobieństwa przeuczenia
-				\item Zwiększenie dokładności predykcji modelu
-				\item Skrócenie czasu uczenia
-				\item Zwiększenie semantycznego zrozumienia modelu.
+				\item zmniejszenie prawdopodobieństwa przeuczenia,
+				\item zwiększenie dokładności predykcji modelu,
+				\item skrócenie czasu uczenia,
+				\item zwiększenie semantycznego zrozumienia modelu.
 			\end{itemize}
 		
 		\subsubsection{Wydobywanie cech}	
 			Innym sposobem zmniejszenia wymiarowości danych wejściowych jest wydobywanie cech. Te metody tworzą z oryginalnych cech nowe, które nadal w pełni opisują przestrzeń zbioru danych, ale zmniejszają jego wymiarowość, tracąc na reprezentatywności danych, ponieważ staje się niejasne, za co odpowiadają nowe cechy. Metody wydobywania cech można podzielić na liniowe i nieliniowe.
 
 		\subsubsection{Metody wydobywania cech}
-			Liniowe metody opierają się na założeniu, że zależność między zmiennymi niezależnymi a zmienną zależną jest liniowa. Oznacza to, że zmiana jednej zmiennej prowadzi do proporcjonalnej zmiany innej. Jedną z najbardziej znanych metod liniowego wydobywania cech jest PCA (Principal Component Analysis). Główną ideą tej metody jest znalezienie hiperpłaszczyzny, na którą przy ortogonalnej projekcji wszystkich cech maksymalizowana jest wariancja.
+			Liniowe metody opierają się na założeniu, że zależność między zmiennymi niezależnymi a zmienną zależną jest liniowa. Oznacza to, że zmiana jednej zmiennej prowadzi do proporcjonalnej zmiany innej. Jedną z najbardziej znanych metod liniowego wydobywania cech jest PCA (Principal Component Analysis). Główną ideą tej metody jest znalezienie hiperpłaszczyzny (płaszczyzny o wyższej liczbie wymiarów), na którą przy ortogonalnej projekcji (projekcji pod kątem prostym) wszystkich cech maksymalizowana jest wariancja (czyli rozproszenie danych).
 		
 			Nieliniowe metody pozwalają modelować bardziej złożone i nieliniowe zależności między zmiennymi. Algorytm t-SNE (t-distributed Stochastic Neighbor Embedding) stara się zachować względne odległości między punktami w oryginalnej przestrzeni wysokowymiarowej, a następnie próbuje odtworzyć to rozkład w przestrzeni niskowymiarowej.
 
