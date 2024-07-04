@@ -1,26 +1,20 @@
 \chapter{Wykorzystanie metody i technologii w aplikacji}
 	
 		
-\section{Aplikacja}
+\section{Opis aplikacji}
 
-	\subsection{Opis aplikacji}
-		Ten projekt ma na celu stworzenie narzędzia do analizy danych tekstowych, obejmującego wstępne przetwarzanie tekstu, wektoryzację i klasteryzację. Głównym celem aplikacji jest umożliwienie użytkownikowi elastycznego dostosowania i wykorzystania różnych metod przetwarzania danych do rozwiązywania konkretnych zadań.
+	Ten projekt ma na celu stworzenie narzędzia do analizy danych tekstowych, obejmującego wstępne przetwarzanie tekstu, wektoryzację i klasteryzację. Głównym celem aplikacji jest umożliwienie użytkownikowi elastycznego dostosowania i wykorzystania różnych metod przetwarzania danych do rozwiązywania konkretnych zadań.
 	
 		
 	\subsection{Zastosowane technologie}
-		Do realizacji projektu wybrano język programowania Python w wersji 3.10.2. Posiada on szereg zalet:
-		\begin{itemize}
-  		  	\item Bogaty zestaw bibliotek do implementacji różnych metod, takich jak wstępne przetwarzanie tekstu, wektoryzacja i klasteryzacja.
-			\item Wysoka efektywność w analizie danych dzięki bibliotekom takim jak NumPy w wersji 1.26.4, scikit-learn w wersji 1.4.2.
-			\item Społeczność i dokumentacja, które ułatwiają rozwój i utrzymanie projektów.
-		\end{itemize}
+		Do realizacji projektu wybrano język programowania Python w wersji 3.10.2. Posiada on szereg zalet, takich jak bogaty zestaw bibliotek do implementacji różnych metod, w tym wstępnego przetwarzania tekstu, wektoryzacji i klasteryzacji. Python cechuje się wysoką efektywnością w analizie danych dzięki bibliotekom takim jak NumPy w wersji 1.26.4 oraz scikit-learn w wersji 1.4.2. Dodatkowo, społeczność i dokumentacja Pythona ułatwiają rozwój i utrzymanie projektów.
 		
 		
 	\subsection{Technologie tworzenia interfejsów graficznych}
 	Główną ideą aplikacji jest stworzenie wygodnego narzędzia do analizy danych tekstowych, w którym użytkownik może samodzielnie wybierać i dostosowywać metody przetwarzania do konkretnych zadań za pomocą interfejsu graficznego. Do opracowania interfejsu graficznego wykorzystano biblioteki PyQt i Matplotlib:
 
 		\begin{itemize}
-			\item \textbf{PyQt 5.15.10} umożliwia tworzenie intuicyjnych interfejsów użytkownika.
+			\item \textbf{PyQt 5.15.10} umożliwia tworzenie intuicyjnych interfejsów użytkownika,
 			\item \textbf{Matplotlib 3.9.0} jest wykorzystywany do wizualizacji danych.
 		\end{itemize}
 		Interfejs graficzny umożliwia użytkownikowi ładowanie danych, konfigurowanie parametrów przetwarzania tekstu, wektoryzacji i klasteryzacji oraz wizualizację wyników.
@@ -37,8 +31,7 @@
 	
 \section{Dane tekstowe}
 
-	\subsection{Opis}
-		Aby zrealizować ten projekt, potrzebne będą dane tekstowe, które w tym przypadku będą komentarzami z YouTube. Do pozyskiwania informacji o filmach i powiązanych komentarzach będziemy używać YouTube Data API v3. API to jest darmowe i łatwe w użyciu. Aby rozpocząć pracę, należy zarejestrować się i utworzyć projekt w Google Cloud, a następnie aktywować YouTube Data API. Po tym wygenerowany zostanie klucz API, który będzie używany do uwierzytelniania.
+	Aby zrealizować ten projekt, potrzebne będą dane tekstowe, które w tym przypadku będą komentarzami z YouTube. Do pozyskiwania informacji o filmach i powiązanych komentarzach będziemy używać YouTube Data API v3. API to jest darmowe i łatwe w użyciu. Aby rozpocząć pracę, należy zarejestrować się i utworzyć projekt w Google Cloud, a następnie aktywować YouTube Data API. Po tym wygenerowany zostanie klucz API, który będzie używany do uwierzytelniania.
 		
 	\subsection{Zapytania API}
 		W projekcie wykorzystane będą dwa zapytania HTTP:
@@ -61,33 +54,27 @@
 	\subsection{Przetwarzanie uzyskanych danych}
 		Wyniki naszych zapytań będą dostarczane w formacie JSON. Szczegółowe informacje o strukturze odpowiedzi JSON można znaleźć w dokumentacji \cite{YouTubeAPI}. Do uzyskiwania informacji o filmie będą używane tylko następujące pola:
 		\begin{itemize}
-			\item \textbf{title}: tytuł filmu
-			\item \textbf{channelTitle}: nazwa autora kanału
-			\item \textbf{thumbnails}: URL miniaturki
+			\item \textbf{title}: tytuł filmu,
+			\item \textbf{channelTitle}: nazwa autora kanału,
+			\item \textbf{thumbnails}: URL miniaturki.
 		\end{itemize}				
 		 Przy pobieraniu komentarzy potrzebne są tylko następujące pola:
 		 \begin{itemize}
-		 	\item \textbf{textDisplay}: treść komentarza
-		 	\item \textbf{replies}: kontener z odpowiedziami na komentarze
+		 	\item \textbf{textDisplay}: treść komentarza,
+		 	\item \textbf{replies}: kontener z odpowiedziami na komentarze.
 		 \end{itemize}
  		 Pole \texttt{textDisplay} zawiera tekst komentarza, a pole \texttt{replies} jest kontenerem na odpowiedzi na komentarze. Każda odpowiedź w \texttt{replies.comments} również ma pole \texttt{textDisplay}, które możemy osobno przetwarzać. W końcowym wyniku otrzymamy listę wszystkich komentarzy, gdzie każdy element reprezentuje oddzielny komentarz.
 		
 	\subsection{Przechowywanie}
-		Po uzyskaniu odpowiedzi wszystkie komentarze będą przechowywane w osobnym katalogu \texttt{comments}. Katalog zostanie utworzony, jeśli nie istnieje. Każdy plik z komentarzami będzie miał nazwę \texttt{video\_id.txt} dla łatwej identyfikacji.
+		Po uzyskaniu odpowiedzi wszystkie komentarze będą przechowywane w osobnym katalogu \texttt{comments}. Katalog zostanie utworzony, jeśli nie istnieje. Każdy plik z komentarzami będzie miał nazwę \texttt{video\_id.txt} dla łatwej identyfikacji.\\
 		
-		Dla uproszczenia procesu przechowywania i dostępu do danych oraz zapewnienia ich kompatybilności z różnymi narzędziami analitycznymi, zdecydowano się na użycie zwykłego pliku tekstowego (.txt) do przechowywania komentarzy. Każdy komentarz będzie zapisany w oddzielnej linii pliku, co upraszcza strukturę danych i umożliwia łatwe ich odczytanie do analizy.
+		Dla uproszczenia procesu przechowywania i dostępu do danych oraz zapewnienia ich kompatybilności z różnymi narzędziami analitycznymi, zdecydowano się na użycie zwykłego pliku tekstowego (.txt) do przechowywania komentarzy. Każdy komentarz będzie zapisany w oddzielnej linii pliku, co upraszcza strukturę danych i umożliwia łatwe ich odczytanie do analizy.\\
 		
-		Taki sposób przechowywania danych został wybrany z kilku powodów:
-
-	\begin{itemize}
-		\item \textbf{Prostota implementacji} -- pliki tekstowe łatwo tworzyć, czytać i edytować za pomocą wielu narzędzi programistycznych i języków programowania.
-		\item \textbf{Kompatybilność} -- praktycznie wszystkie narzędzia analityczne i biblioteki mogą pracować z plikami tekstowymi, co ułatwia integrację danych w różnych etapach analizy.
-		\item \textbf{Mały wpływ na analizę} -- format przechowywania nie ma znaczącego wpływu na sam proces analizy danych. Główne znaczenie ma zawartość komentarzy, a nie sposób ich przechowywania.
-	\end{itemize}
+		Taki sposób przechowywania danych został wybrany z kilku powodów: prostota implementacji, gdyż pliki tekstowe łatwo tworzyć, czytać i edytować za pomocą wielu narzędzi programistycznych i języków programowania; kompatybilność, ponieważ praktycznie wszystkie narzędzia analityczne i biblioteki mogą pracować z plikami tekstowymi, co ułatwia integrację danych w różnych etapach analizy; oraz mały wpływ na analizę, ponieważ format przechowywania nie ma znaczącego wpływu na sam proces analizy danych, a główne znaczenie ma zawartość komentarzy, a nie sposób ich przechowywania.
 
 \section{Przetwarzania tekstu}
 
-	\subsection{Defenicja}
+
 		Następnym procesem jest przetwarzanie tekstu. Ważne jest, aby zrozumieć, jak wyglądają komentarze po ich pobraniu i zapisaniu z YouTube. Implementacja przetwarzania zostanie wykonana za pomocą biblioteki NLTK (Natural Language Toolkit) w wersji 3.8.1 oraz wbudowanych funkcji Pythona. Szczegóły biblioteki NLTK można znaleźć w documentacji \cite{nltk}. Przetwarzanie tekstu jest podzielone na kilka etapów:
 		\begin{itemize}
 			\item przetwarzanie obowiązkowe, które jest wykonywane niezależnie od wybranych parametrów przez użytkownika,
@@ -124,7 +111,7 @@
 			"the", "is", "in", "and"
 		\end{verbatim}
 		Usuwanie stop-words zmniejsza rozmiar tekstu i sprawia, że znaczące słowa są bardziej widoczne. Do tego celu używa się słownika stop-words z biblioteki NLTK, który w razie potrzeby można uzupełnić własnymi słowami. Przykład implementacji widać na Listingu \ref{lst:removestopwords}.
-		\begin{lstlisting}[language=Python, caption={Funkcja usuwająca stop słowa}, label={lst:removestopwords}]
+		\begin{lstlisting}[language=Python, caption={Funkcja usuwająca stop-words}, label={lst:removestopwords}]
 			from nltk.corpus import stopwords
 			
 			def remove_stop_words(tokens):
@@ -181,8 +168,7 @@
 	
 \section{Wektoryzacja}
 	
-	\subsection{Defenicja}
-		Na tym etapie tekst jest gotowy do dalszego przetwarzania. Aby przeprowadzić analizę, konieczne jest przekształcenie komentarzy w formę wektorową (wektoryzacja). Zostaną użyte dwie metody: TF-IDF i Word2Vec. Te metody umożliwiają przedstawienie danych tekstowych w postaci wektorów liczbowych, co ułatwia dalszą analizę i przetwarzanie. Wektoryzacja będzie realizowana przy użyciu bibliotek \texttt{scikit-learn} \cite{scikit-learn} dla metody TF-IDF oraz \texttt{gensim} \cite{gensim} dla metody Word2Vec. Metody zostały wybrane ze względu na swoją popularność, a wybór dwóch metod wynika z potrzeby przeprowadzenia porównań.
+	Na tym etapie tekst jest gotowy do dalszego przetwarzania. Aby przeprowadzić analizę, konieczne jest przekształcenie komentarzy w formę wektorową (wektoryzacja). Zostaną użyte dwie metody: TF-IDF i Word2Vec. Te metody umożliwiają przedstawienie danych tekstowych w postaci wektorów liczbowych, co ułatwia dalszą analizę i przetwarzanie. Wektoryzacja będzie realizowana przy użyciu bibliotek \texttt{scikit-learn} \cite{scikit-learn} dla metody TF-IDF oraz \texttt{gensim} \cite{gensim} dla metody Word2Vec. Metody zostały wybrane ze względu na swoją popularność, a wybór dwóch metod wynika z potrzeby przeprowadzenia porównań.
 		
 		
 	
@@ -191,10 +177,11 @@
 		
 		
 		\subsubsection{Parametry}
+			Do konfiguracji algorytmu TF-IDF używane są następujące parametry:
 			\begin{itemize}
 				\item \textbf{max\_df}: Liczba lub udział. Terminy, które występują w większej liczbie dokumentów niż podano, są ignorowane. Przydatne do usuwania powszechnie używanych słów.
 				\item \textbf{min\_df}: Liczba lub udział. Terminy, które występują w mniejszej liczbie dokumentów niż podano, są ignorowane. Przydatne do usuwania rzadkich słów.
-				\item \textbf{ngra\_range}: Krotka (\texttt{min\_n}, \texttt{max\_n}). Określa zakres dla ekstrakcji n-gramów.
+				\item \textbf{ngra\_range}: Krotka (\texttt{min\_n}, \texttt{max\_n}). Określa zakres wyodrębniania n-gramów. N-gramy to ciągi N kolejnych elementów (zwykle słów lub znaków) z danego tekstu.
 				\item \textbf{stop\_words}: Lista słów lub ciąg znaków określający słowa, które należy ignorować.
 			\end{itemize}
 		
@@ -228,10 +215,11 @@
 			
  
 	\subsection{Word2Vec}
-		Word2Vec to algorytm opracowany do nauki wektorowych reprezentacji słów (embeddingów), które oddają semantyczne relacje między słowami. W bibliotece Gensim dostępny jest wygodny interfejs do pracy z Word2Vec \cite{word2vec}.
+		Word2Vec to algorytm opracowany do nauki wektorowych reprezentacji słów (embeddingów), które oddają semantyczne relacje między słowami. W bibliotece \texttt{gensim} dostępny jest wygodny interfejs do pracy z Word2Vec \cite{word2vec}.
 
 
 		\subsubsection{Parametry}	
+			Do konfiguracji algorytmu Word2Vec używane są następujące parametry:
 			\begin{itemize}
 				\item \textbf{sentences}: Korpus tekstów, przedstawiony jako lista list słów.
 				\item \textbf{vector\_size}: Wymiarowość wektorowej reprezentacji słów.
@@ -242,13 +230,13 @@
 		
 			Dodatkowe ustawienia:
 			\begin{itemize}
-				\item SG (Skip-Gram) i CBOW (Continuous Bag of Words): W Word2Vec są dwa główne podejścia architektoniczne — Skip-Gram i CBOW. Parametr sg w Gensim pozwala wybrać między nimi:
+				\item \textbf{SG (Skip-Gram) i CBOW (Continuous Bag of Words)}: W Word2Vec są dwa główne podejścia architektoniczne — Skip-Gram i CBOW. Parametr sg w Gensim pozwala wybrać między nimi:
 					\begin{itemize}
 						\item \texttt{sg}=0 używa CBOW (domyślnie).
 						\item \texttt{sg}=1 używa Skip-Gram.
 					\end{itemize}
-				\item Negative Sampling: W Word2Vec używa się negatywnego próbkowania dla zwiększenia efektywności uczenia. Parametr negative określa liczbę \textit{negatywnych} przykładów dla każdego pozytywnego przykładu.
-				\item Learning Rate: Parametr alpha określa początkową szybkość uczenia, a \texttt{min\_alpha} — minimalną szybkość uczenia, która zmniejsza się do tej wartości w trakcie uczenia..
+				\item \textbf{Negative Sampling}: W Word2Vec używa się negatywnego próbkowania dla zwiększenia efektywności uczenia. Parametr negative określa liczbę \textit{negatywnych} przykładów dla każdego pozytywnego przykładu.
+				\item \textbf{Learning Rate}: Parametr alpha określa początkową szybkość uczenia, a \texttt{min\_alpha} — minimalną szybkość uczenia, która zmniejsza się do tej wartości w trakcie uczenia.
 			\end{itemize}
 		
 		\subsubsection{Wyjaśnienie algorytmu}
@@ -298,16 +286,15 @@
 	
 \section{Klasteryzacja}
 
-	\subsection{Defenicja}
-		Kolejnym etapem przetwarzania danych jest klasteryzacja, która wykorzystuje zwektoryzowane komentarze i dzieli je na klastry. Zostanie to zrealizowane za pomocą dwóch metod: K-means i DBSCAN, z wykorzystaniem biblioteki sklearn \cite{scikit-learn, dbscan}.
-		
-		Dla możliwości porównywania wybrano dwie z najpopularniejszych metod.
+	Kolejnym etapem przetwarzania danych jest klasteryzacja, która wykorzystuje zwektoryzowane komentarze i dzieli je na klastry. Zostanie to zrealizowane za pomocą dwóch metod: K-means i DBSCAN, z wykorzystaniem biblioteki sklearn \cite{scikit-learn, dbscan}.
+	
+	Dla możliwości porównywania wybrano dwie z najpopularniejszych metod.
 	
 	\subsection{K-means}
  		Algorytm K-means dzieli zbiór danych na nieprzekrywające się klastry, z których każdy opisany jest średnią wartością (centroidem) próbek w klastrze. K-means dąży do wyboru centroidów, minimalizując bezwładność, czyli kryterium sumy kwadratów wewnątrz klastrów \cite{k-means}.
 	
 		\subsubsection{Parametry}
-		Do konfiguracji algorytmu K-means używa się następujących parametrów:
+		Do konfiguracji algorytmu K-means używane są następujące parametry:
 		\begin{itemize}
 			\item \textbf{n\_clusters}: Liczba klastrów (K), na które należy podzielić dane.
 			\item \textbf{init}: Metoda inicjalizacji centroidów.
@@ -367,7 +354,7 @@
 
 
 		\subsubsection{Parametry}
-			Parametry algorytmu DBSCAN:
+			Do konfiguracji algorytmu DBSCAN używane są następujące parametry:
 			\begin{itemize}
 				\item \textbf{eps}: Maksymalna odległość między dwiema próbkami, przy której jedna jest uważana za sąsiada drugiej. Jest to parametr promienia do określania gęstości obszaru.
 				\item \textbf{min\_samples}: Minimalna liczba próbek (w tym sama próbka) potrzebna do uznania obszaru za gęsty, tj. do uznania próbki za rdzeniową.
@@ -431,8 +418,8 @@
 		
 			
 \section{Wizualizacja}
-	\subsection{Defenicja}
-		Ostatnim etapem analizy jest wizualizacja danych. Końcowy wynik to wykres 2D, gdzie każdy punkt będzie reprezentował pewne dane tekstowe (komentarze) z określonym kolorem odpowiadającym klastrowi, do którego należy, lub kolorem braku klastra, jak w przypadku DBSCAN. Na wykresie będą również wizualizowane centroidy każdego klastra w postaci czerwonego krzyżyka.
+
+	Ostatnim etapem analizy jest wizualizacja danych. Końcowy wynik to wykres 2D, gdzie każdy punkt będzie reprezentował pewne dane tekstowe (komentarze) z określonym kolorem odpowiadającym klastrowi, do którego należy, lub kolorem braku klastra, jak w przypadku DBSCAN. Na wykresie będą również wizualizowane centroidy każdego klastra w postaci czerwonego krzyżyka.
 	
 	\subsection{Redukcja wymiarowości}
 		Aby możliwa była wizualizacja zyzowanych danych jako punktów 2D, konieczne jest skorzystanie z metody redukcji wymiarowości (T-SNE). Ta metoda jest nieliniową metodą ekstrakcji cech. Na początku trudno jest określić, za co odpowiadają cechy, więc wybór odpowiednich cech jest niemożliwy. Metoda nieliniowa pomoże nam zachować nieliniowe zależności \cite{t-sne}.
@@ -441,6 +428,7 @@
 	\subsection{T-SNE}
 	
 		\subsubsection{Parametry}
+			Do konfiguracji algorytmu T-SNE używane są następujące parametry:
 			\begin{itemize}
 				\item \textbf{n\_components} -- liczba wymiarów, na które należy zrzutować dane (zwykle 2 lub 3 dla wizualizacji).
 				\item \textbf{perplexity} -- parametr związany z liczbą najbliższych sąsiadów. Wpływa na równowagę między lokalną a globalną strukturą danych.
