@@ -9,8 +9,8 @@
 	\subsection{Menu-bar}
 		Pasek menu umożliwia szybką nawigację po oknie pracy w dowolnym momencie. W menu zaimplementowane są następujące funkcje:
 		\begin{itemize}
-			\item Otwieranie okna dialogowego w celu utworzenia nowej przestrzeni roboczej ("File" -> "New Project").
-			\item Otwieranie okna dialogowego w celu pobrania komentarzy z YouTube ("Comments" -> "YouTube").
+			\item Otwieranie okna dialogowego w celu utworzenia nowej przestrzeni roboczej ("File -- New Project").
+			\item Otwieranie okna dialogowego w celu pobrania komentarzy z YouTube ("Comments -- YouTube").
 		\end{itemize}
 
 		Podglądamy bardziej szczegółowo sposób korzystania z tych funkcji:
@@ -48,68 +48,95 @@
 	\subsection{Workspace}
 		Po utworzeniu przynajmniej jednej przestrzeni roboczej pojawia się menu nawigacyjne zakładek, gdzie każda zakładka odpowiada osobnej przestrzeni roboczej. Można swobodnie przełączać się między tymi zakładkami i zamykać je. Zawartość każdej zakładki obejmuje:
 		\begin{itemize}
-			\item Pole na wykresy.
-			\item Przyciski Previous i Next do przełączania wykresów w polu na wykresy.
-			\item Przycisk Text do otwierania okna dialogowego zarządzania przetwarzaniem tekstu.
-			\item Przycisk Vectorization do otwierania okna dialogowego zarządzania wektoryzacją.
-			\item Przycisk Cluster do otwierania okna dialogowego zarządzania klasteryzacją.
-			\item Przycisk Apply do zastosowania wszystkich wybranych parametrów i otwarcia okna z wynikami klasteryzacji.
+			\item pole na wykresy,
+			\item przyciski \texttt{Previous} i \texttt{Next} do przełączania wykresów w polu na wykresy,
+			\item przycisk \texttt{Text} do otwierania okna dialogowego zarządzania przetwarzaniem tekstu,
+			\item przycisk \texttt{Vectorization} do otwierania okna dialogowego zarządzania wektoryzacją,
+			\item przycisk \texttt{Cluster} do otwierania okna dialogowego zarządzania klasteryzacją,
+			\item przycisk \texttt{Apply} do zastosowania wszystkich wybranych parametrów i otwarcia okna z wynikami klasteryzacji.
 		\end{itemize}
 		
 	\subsubsection{Pole na wykresy}
 			Pole na wykresy w każdej chwili może wyświetlać jeden z trzech proponowanych wykresów:
 			\begin{itemize}
-				\item Wykres częstości słów (freq). 
-				\item Wykres długości tekstu (length).
-				\item Wykres najbliższych sąsiadów (k-nearest). 
+				\item Wykres częstości słów (\textbf{freq\_analysis}). 
+				\item Wykres długości tekstu (\texttt{length\_analysis}).
+				\item Wykres najbliższych sąsiadów (\texttt{k-nearest}). 
 			\end{itemize}					
 			
 			Za pomocą przycisków Previous i Next można przełączać wykresy odpowiednio do przodu i do tyłu.		
 					
 		
 	\subsection{Text}
-			Przycisk Text otwiera okno dialogowe, w którym użytkownik może określić parametry przetwarzania tekstu. Oto jak domyślne okno wygląda \textbf{TextProcessingWindowStandard}. Domyślnie wszystkie parametry są ustawione na wartość true, co oznacza, że są używane.
+			Przycisk Text otwiera okno dialogowe, w którym użytkownik może określić parametry przetwarzania tekstu. Oto jak domyślne okno wygląda na grafiku \ref{fig:TextProcessingWindowStandard}. Domyślnie wszystkie parametry są ustawione na wartość true, co oznacza, że są używane.
 
+			\begin{figure}
+				\centering
+				\scalebox{1.0} {\includegraphics[width=0.5\textwidth]{./img/TextProcessingWindowStandard.jpg}}
+				\caption{Przyklad okna do konfiguracji przetwarzania tekstu}
+				\label{fig:TextProcessingWindowStandard}
+			\end{figure}
+			
 			Użytkownik może wybrać jedną z proponowanych opcji przetwarzania tekstu:
 
+			
 			\begin{itemize}
-				\item Alpha -- podstawowa obróbka opisana wcześniej
-				\item Stop-words -- usuwanie stop słów opisane wcześniej
-				\item Lematize -- lematyzacja opisana wcześniej
+				\item \textbf{alpha} -- podstawowa obróbka opisana wcześniej
+				\item \textbf{stop-words} -- usuwanie stop słów opisane wcześniej
+				\item \textbf{lematize} -- lematyzacja opisana wcześniej
 			\end{itemize}
 			
 	\subsection{Wektoryzacja}
-		Przycisk Vectorization otwiera okno dialogowe, w którym użytkownik może wybrać jeden z proponowanych metod wektoryzacji i określić parametry dla wybranej metody. Oto jak domyślne okno wygląda \textbf{VectorizationWindowStandard}. Domyślnie wybrana jest metoda TF-IDF z domyślnymi parametrami.
+		Przycisk Vectorization otwiera okno dialogowe, w którym użytkownik może wybrać jeden z proponowanych metod wektoryzacji i określić parametry dla wybranej metody. Oto jak domyślne okno wygląda na grafiku \ref{fig:VectorizationWindowStandard}. Domyślnie wybrana jest metoda TF-IDF z domyślnymi parametrami.
 		Następnie wymieniono listę dostępnych metod i parametrów dla każdej metody:
+		
+		
+		\begin{figure}
+			\centering
+			\scalebox{1.0} {\includegraphics[width=0.5\textwidth]{./img/VectorizationWindowStandard.jpg}}
+			\caption{Przyklad okna do konfiguracji wektoryzacji}
+			\label{fig:VectorizationWindowStandard}
+		\end{figure}
+		
+		
 		\begin{itemize}
 			\item Metoda TF-IDF. Dostępne parametry do konfiguracji:
 			\begin{itemize}
-				\item max\_df
-				\item min\_df
+				\item \texttt{max\_df},
+				\item \texttt{min\_df}.
 			\end{itemize}
 			\item Metody Word2vec. Dostępne parametry do konfiguracji:
 			\begin{itemize}
-				\item vector\_size
-				\item window
-				\item min\_count
-				\item sg
+				\item \texttt{vector\_size},
+				\item \texttt{window},
+				\item \texttt{min\_count},
+				\item \texttt{sg}.
 			\end{itemize}
 		\end{itemize}
 			
 	\subsection{Cluster}
-		Przycisk Cluster otwiera okno dialogowe, w którym użytkownik może wybrać jedną z proponowanych metod klasteryzacji i określić parametry dla wybranej metody. Oto jak domyślne okno wygląda \textbf{ClusterWindowStandard}. Domyślnie wybrana jest metoda K-means z domyślnymi parametrami.
+		Przycisk Cluster otwiera okno dialogowe, w którym użytkownik może wybrać jedną z proponowanych metod klasteryzacji i określić parametry dla wybranej metody. Oto jak domyślne okno wygląda na grafiku \ref{fig:ClusterWindowStandard}. Domyślnie wybrana jest metoda K-means z domyślnymi parametrami.
 		Następnie wymieniono listę dostępnych metod i parametrów dla każdej metody:
+		
+	
+		\begin{figure}
+			\centering
+			\scalebox{1.0} {\includegraphics[width=0.5\textwidth]{./img/ClusterWindowStandard.jpg}}
+			\caption{Przyklad okna do konfiguracji klasteryzacji}
+			\label{fig:ClusterWindowStandard}
+		\end{figure}
+
 		\begin{itemize}
 			\item Metoda K-means. Dostępne parametry do konfiguracji:
 			\begin{itemize}
-				\item n\_cluster
-				\item max\_iter
-				\item n\_iter
+				\item \texttt{n\_cluster},
+				\item \texttt{max\_iter},
+				\item \texttt{n\_iter}.
 			\end{itemize}
 			\item Metody DBSCAN. Dostępne parametry do konfiguracji:
 			\begin{itemize}
-				\item min\_samples
-				\item eps
+				\item \texttt{min\_samples},
+				\item \texttt{eps}.
 			\end{itemize}
 		\end{itemize}
 			

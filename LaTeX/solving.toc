@@ -1,8 +1,5 @@
 \babel@toc {polish}{}\relax 
 \contentsline {chapter}{Wstęp}{1}{chapter*.4}%
-\contentsline {section}{\numberline {0.1}Cel projektu}{1}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Idea projektu}{1}{section.0.2}%
-\contentsline {section}{\numberline {0.3}Grupa docelowa}{1}{section.0.3}%
 \contentsline {chapter}{\numberline {1}Techniki analizy danych}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Klasterzyacja}{3}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Defenicja}{3}{subsection.1.1.1}%
@@ -87,22 +84,22 @@
 \contentsline {subsection}{\numberline {3.1.3}Workspace}{21}{subsection.3.1.3}%
 \contentsline {subsubsection}{Pole na wykresy}{23}{section*.32}%
 \contentsline {subsection}{\numberline {3.1.4}Text}{23}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Wektoryzacja}{23}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.5}Wektoryzacja}{24}{subsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.1.6}Cluster}{24}{subsection.3.1.6}%
-\contentsline {subsection}{\numberline {3.1.7}Result Window}{24}{subsection.3.1.7}%
-\contentsline {chapter}{\numberline {4}Użycia aplikacji}{25}{chapter.4}%
-\contentsline {subsection}{\numberline {4.0.1}Pobieranie danych tekstowych}{25}{subsection.4.0.1}%
-\contentsline {subsection}{\numberline {4.0.2}Tworzenie Workspace}{25}{subsection.4.0.2}%
-\contentsline {subsection}{\numberline {4.0.3}Wybór metod i parametrów}{25}{subsection.4.0.3}%
-\contentsline {subsection}{\numberline {4.0.4}Przetwarzanie tekstu}{25}{subsection.4.0.4}%
-\contentsline {subsubsection}{Alpha}{25}{section*.34}%
-\contentsline {subsubsection}{Stop-words}{25}{section*.35}%
-\contentsline {subsubsection}{Lemmatize}{25}{section*.36}%
-\contentsline {subsection}{\numberline {4.0.5}Wektoryzacja}{25}{subsection.4.0.5}%
-\contentsline {subsubsection}{TF-IDF}{25}{section*.37}%
-\contentsline {subsubsection}{Word2Vec}{25}{section*.38}%
-\contentsline {subsection}{\numberline {4.0.6}Klasteryzacja}{25}{subsection.4.0.6}%
-\contentsline {subsubsection}{K-means}{25}{section*.39}%
-\contentsline {subsubsection}{DBSCAN}{25}{section*.40}%
-\contentsline {subsection}{\numberline {4.0.7}Analiza wynkiow pracy}{25}{subsection.4.0.7}%
-\contentsline {chapter}{Podsumowanie}{27}{chapter*.41}%
+\contentsline {subsection}{\numberline {3.1.7}Result Window}{25}{subsection.3.1.7}%
+\contentsline {chapter}{\numberline {4}Użycia aplikacji}{27}{chapter.4}%
+\contentsline {subsection}{\numberline {4.0.1}Pobieranie danych tekstowych}{27}{subsection.4.0.1}%
+\contentsline {subsection}{\numberline {4.0.2}Tworzenie Workspace}{27}{subsection.4.0.2}%
+\contentsline {subsection}{\numberline {4.0.3}Wybór metod i parametrów}{27}{subsection.4.0.3}%
+\contentsline {subsection}{\numberline {4.0.4}Przetwarzanie tekstu}{27}{subsection.4.0.4}%
+\contentsline {subsubsection}{Alpha}{27}{section*.37}%
+\contentsline {subsubsection}{Stop-words}{27}{section*.38}%
+\contentsline {subsubsection}{Lemmatize}{27}{section*.39}%
+\contentsline {subsection}{\numberline {4.0.5}Wektoryzacja}{27}{subsection.4.0.5}%
+\contentsline {subsubsection}{TF-IDF}{27}{section*.40}%
+\contentsline {subsubsection}{Word2Vec}{27}{section*.41}%
+\contentsline {subsection}{\numberline {4.0.6}Klasteryzacja}{27}{subsection.4.0.6}%
+\contentsline {subsubsection}{K-means}{27}{section*.42}%
+\contentsline {subsubsection}{DBSCAN}{27}{section*.43}%
+\contentsline {subsection}{\numberline {4.0.7}Analiza wynkiow pracy}{27}{subsection.4.0.7}%
+\contentsline {chapter}{Podsumowanie}{29}{chapter*.44}%
