@@ -1,9 +1,11 @@
 \chapter{Techniki analizy danych}
 
+	W tym rozdziale omówiono techniki analizy danych, które są wykorzystywane w wielu dziedzinach nauki i przemysłu. Szczegółowo przedstawiono klasteryzację, przetwarzanie języka naturalnego, wektoryzację i metody redukcji wymiarowości.
+	
+
 \section{Klasterzyacja}
 
-	\subsection{Defenicja}
-		Klasteryzacja (ang. clustering) to wielowymiarowa procedura analizy statystycznej, mająca na celu zbieranie danych zawierających informacje (cechy) o próbie obiektów, a następnie porządkowanie tych obiektów w stosunkowo jednorodne grupy. Zakres zastosowania klasteryzacji jest niezwykle szeroki: używa się jej w archeologii, medycynie, psychologii, chemii, biologii, administracji państwowej, filologii, antropologii, marketingu, socjologii, geologii i innych dyscyplinach \cite{Clustering}. 
+	Klasteryzacja (ang. clustering) to wielowymiarowa procedura analizy statystycznej, mająca na celu zbieranie danych zawierających informacje (cechy) o próbie obiektów, a następnie porządkowanie tych obiektów w stosunkowo jednorodne grupy. Zakres zastosowania klasteryzacji jest niezwykle szeroki: używa się jej w archeologii, medycynie, psychologii, chemii, biologii, administracji państwowej, filologii, antropologii, marketingu, socjologii, geologii i innych dyscyplinach \cite{Clustering}. 
 	
 	\subsection{Cele klasteryzacji}
 		Klasteryzacja jest najczęściej wykorzystywana do następujących celów:
@@ -21,14 +23,17 @@
 			\item \textbf{Algorytmy klasteryzacji oparte na grafach}. Klasa ta obejmuje prymitywne algorytmy oparte na budowaniu grafu podobieństwa między obiektami. Obecnie są one praktycznie nie stosowane w praktyce.
 			\item \textbf{Algorytmy klasteryzacji probabilistycznej}. Algorytmy te przypisują każdemu obiektowi z próby treningowej prawdopodobieństwo przynależności do każdego z klastrów.
 			\item \textbf{Hierarchiczne algorytmy klasteryzacji}. Algorytmy te porządkują dane, tworząc hierarchię zagnieżdżonych klastrów.
-			\item Algorytmy oparte na gęstości danych:
-			\begin{itemize}
-				\item \textbf{K-średnich (K-means)} -- iteracyjny algorytm oparty na minimalizacji sumy kwadratowych odchyleń punktów klastrów od ich centrów.
-				\item \textbf{Rozpowszechnianie podobieństwa (Affinity Propagation)} -- algorytm, który rozprzestrzenia wiadomości o podobieństwie między parami obiektów w celu wyboru typowych przedstawicieli każdego klastra.
-				\item \textbf{Przesunięcie średniej (mean shift)} -- metoda wybierająca centroidy klastrów w obszarach o największej gęstości.
-				\item \textbf{Klasteryzacja spektralna (spectral clustering}) -- metoda wykorzystująca wartości własne macierzy odległości do zmniejszenia wymiarowości przed zastosowaniem innych metod klasteryzacji.
-				\item \textbf{DBSCAN (Density-Based Spatial Clustering of Applications with Noise)} -- algorytm grupujący punkty w jeden klaster w obszarach o wysokiej gęstości i oznaczający odosobnione punkty jako szum.
-			\end{itemize}
+			\item Algorytmy oparte na gęstości danych:\\
+			
+				\textbf{K-średnich (K-means)} -- iteracyjny algorytm oparty na minimalizacji sumy kwadratowych odchyleń punktów klastrów od ich centrów.\\
+				
+				\textbf{Rozpowszechnianie podobieństwa (Affinity Propagation)} -- algorytm, który rozprzestrzenia wiadomości o podobieństwie między parami obiektów w celu wyboru typowych przedstawicieli każdego klastra.\\
+				
+				\textbf{Przesunięcie średniej (mean shift)} -- metoda wybierająca centroidy klastrów w obszarach o największej gęstości.\\
+				
+				\textbf{Klasteryzacja spektralna (spectral clustering}) -- metoda wykorzystująca wartości własne macierzy odległości do zmniejszenia wymiarowości przed zastosowaniem innych metod klasteryzacji.\\
+				
+				\textbf{DBSCAN (Density-Based Spatial Clustering of Applications with Noise)} -- algorytm grupujący punkty w jeden klaster w obszarach o wysokiej gęstości i oznaczający odosobnione punkty jako szum.
 		\end{enumerate}
 
 		\subsection{Etapy klasteryzacji}
@@ -43,13 +48,14 @@
 			\end{enumerate}
 
 	\subsection{Zastosowanie}
-		Zastosowanie metody analizy klastrów jest z powodzeniem wykorzystywane w wielu dziedzinach i dyscyplinach. Metoda ta jest również szeroko stosowana w informatyce. Najbardziej udanymi przykładami wykorzystania klasteryzacji w pracy z danymi tekstowymi są:
+		Zastosowanie metody analizy klastrów jest z powodzeniem wykorzystywane w wielu dziedzinach i dyscyplinach. Metoda ta jest również szeroko stosowana w informatyce. Najbardziej udanymi przykładami wykorzystania klasteryzacji w pracy z danymi tekstowymi są: \\ 
 			
-			\begin{itemize}
-				\item Klasteryzacja wyników wyszukiwania.
-				\item Grupowanie użytkowników o podobnych zainteresowaniach, co pomaga w personalizacji treści, rekomendacjach i targetowaniu w reklamie.
-				\item Grupowanie tekstowych dokumentów według ich tematyki, takich jak artykuły prasowe, publikacje naukowe lub wiadomości w mediach społecznościowych.
-			\end{itemize}
+		\textbf{Klasteryzacja wyników wyszukiwania} polega na grupowaniu dokumentów zwróconych w odpowiedzi na zapytanie użytkownika, aby podobne dokumenty pojawiały się razem.\\
+		
+		\textbf{Grupowanie użytkowników o podobnych zainteresowaniach} pozwala na lepszą personalizację treści, rekomendacje oraz targetowanie w reklamie.\\
+		
+		\textbf{Grupowanie tekstowych dokumentów}, takich jak artykuły prasowe, publikacje naukowe czy wiadomości w mediach społecznościowych, polega na organizowaniu ich według tematyki, co ułatwia użytkownikom odnalezienie interesujących ich treści.
+
 
 	\subsection{Ocena efektywności klasteryzacji}
 		Problem oceny jakości w zadaniu klasteryzacji jest trudny do rozwiązania z co najmniej dwóch powodów. Po pierwsze, zgodnie z twierdzeniem o niemożności Kleinberga \cite{Kleinberg}, nie istnieje optymalny algorytm klasteryzacji. Po drugie, wiele algorytmów klasteryzacji nie jest w stanie samodzielnie określić rzeczywistej liczby klastrów w danych; najczęściej liczba klastrów jest zadawana na wejściu algorytmu i dobierana kilkoma uruchomieniami.
@@ -63,8 +69,7 @@
 
 \section{Przetwarzanie języka naturalnego}
 
-	\subsection{Defenicja}
-		Przetwarzanie języka naturalnego (ang. Natural Language Processing, NLP) to dziedzina badań, która łączy metody uczenia maszynowego i lingwistyki matematycznej w celu opracowania algorytmów do analizy, rozumienia i generowania tekstu w językach naturalnych \cite{NLP}.
+	Przetwarzanie języka naturalnego (ang. Natural Language Processing, NLP) to dziedzina badań, która łączy metody uczenia maszynowego i lingwistyki matematycznej w celu opracowania algorytmów do analizy, rozumienia i generowania tekstu w językach naturalnych \cite{NLP}.
 		
 		
 	\subsection{Wstępne przetwarzanie tekstu}
@@ -79,8 +84,7 @@
 		\item lematyzacja,
 		\item wektoryzacja.
 	\end{itemize}
-	Poniżej bardziej szczegółowo opisane są trzy ostatnie metody.
-
+	W kolejnych podrozdziałach szczegółowo omówiono trzy ostatnie metody, ponieważ są one bardziej skomplikowane pod względem koncepcji oraz implementacji.
 
 
 	\subsection{Stemming}
@@ -88,65 +92,40 @@
 		 
 		 
 
-	\subsection{Lematyzacja}
-		Podejście to stanowi alternatywę dla stemmingu. Główna idea polega na sprowadzeniu słowa do formy słownikowej -- lematu. Przykład lematyzacji dla języka polskiego:
-		\begin{itemize}
-			\item dla rzeczowników -- mianownik liczby pojedynczej;
-			\item dla przymiotników -- mianownik liczby pojedynczej, rodzaj męski;
-			\item dla czasowników, imiesłowów, rzeczowników odczasownikowych -- czasownik w bezokoliczniku aspektu niedokonanego.
-		\end{itemize}
+	\subsection{Lematyzacja}		
+		Podejście to stanowi alternatywę dla stemmingu. Główna idea polega na sprowadzeniu słowa do formy słownikowej -- lematu. Przykładem lematyzacji dla języka polskiego jest sprowadzenie rzeczowników do mianownika liczby pojedynczej, przymiotników do mianownika liczby pojedynczej rodzaju męskiego, a czasowników, imiesłowów i rzeczowników odczasownikowych do formy bezokolicznika aspektu niedokonanego.
 		
 
 \section{Wektoryzacja}
 
-	\subsection{Defenicja}
-		Większość modeli matematycznych działa w przestrzeniach wektorowych o dużych wymiarach, dlatego konieczne jest przekształcenie tekstu w przestrzeń wektorową. Głównym celem wektoryzacji tekstu jest stworzenie reprezentacji danych tekstowych, która zachowuje informacje semantyczne i syntaktyczne o tekście, a jednocześnie nadaje się do wykorzystania w modelach matematycznych. Pozwala to na efektywną analizę i przetwarzanie danych tekstowych za pomocą algorytmów i metod uczenia maszynowego \cite{Vectorization}. 
+	Większość modeli matematycznych działa w przestrzeniach wektorowych o dużych wymiarach, dlatego konieczne jest przekształcenie tekstu w przestrzeń wektorową. Głównym celem wektoryzacji tekstu jest stworzenie reprezentacji danych tekstowych, która zachowuje informacje semantyczne i syntaktyczne o tekście, a jednocześnie nadaje się do wykorzystania w modelach matematycznych. Pozwala to na efektywną analizę i przetwarzanie danych tekstowych za pomocą algorytmów i metod uczenia maszynowego \cite{Vectorization}. 
 
-	\subsection{Celi wektoryzacji}
-		Główne celi wektoryzacji tekstu obejmują:
-		\begin{itemize}
-			\item reprezentowanie tekstu do analizy przez algorytmy maszynowe,
-			\item znajdowanie podobieństw między tekstami lub kategoryzowanie tekstów według tematyki,
-			\item rozwiązywanie zadań klasyfikacji, klasteryzacji lub regresji na podstawie danych tekstowych,
-			\item tworzenie modeli uczenia maszynowego do automatycznego uogólniania informacji tekstowych.
-		\end{itemize}
+	\subsection{Cele wektoryzacji}		
+		Główne cele wektoryzacji tekstu obejmują reprezentowanie tekstu do analizy przez algorytmy maszynowe, znajdowanie podobieństw między tekstami lub kategoryzowanie tekstów według tematyki, rozwiązywanie zadań klasyfikacji, klasteryzacji lub regresji na podstawie danych tekstowych oraz tworzenie modeli uczenia maszynowego do automatycznego uogólniania informacji tekstowych.
 
 	\subsection{Metody wektoryzacji}
 		Pierwszym krokiem w wektoryzacji tekstu jest określenie przestrzeni cech, w której tekst będzie reprezentowany jako wektory. Każda cecha może reprezentować słowo, frazę, symbol lub inny element tekstu. Istnieje kilka metod wektoryzacji tekstu, w tym:
 
 		\begin{itemize}
-			\item \textbf{Bag of Words (BoW)} - każdy dokument jest reprezentowany jako wektor, gdzie każdy element odpowiada poszczególnemu słowu, a wartościami są częstotliwości występowania słów w dokumencie.
-			\item \textbf{TF-IDF (Term Frequency-Inverse Document Frequency)} - metoda ta uwzględnia nie tylko częstotliwość występowania słów w dokumencie (TF), ale także odwrotną częstotliwość występowania słowa we wszystkich dokumentach korpusu (IDF), co pozwala wyróżnić słowa kluczowe.
-			\item \textbf{Word Embeddings} - są to metody oparte na trenowaniu sieci neuronowych, które przekształcają słowa w wektory w przestrzeni ciągłej, zachowując ich właściwości semantyczne.
+			\item \textbf{Bag of Words (BoW)} -- każdy dokument jest reprezentowany jako wektor, gdzie każdy element odpowiada poszczególnemu słowu, a wartościami są częstotliwości występowania słów w dokumencie.
+			\item \textbf{TF-IDF (Term Frequency-Inverse Document Frequency)} -- metoda ta uwzględnia nie tylko częstotliwość występowania słów w dokumencie (TF), ale także odwrotną częstotliwość występowania słowa we wszystkich dokumentach korpusu (IDF), co pozwala wyróżnić słowa kluczowe.
+			\item \textbf{Word Embeddings} -- są to metody oparte na trenowaniu sieci neuronowych, które przekształcają słowa w wektory w przestrzeni ciągłej, zachowując ich właściwości semantyczne.
 		\end{itemize}
 
-	\subsection{Zastosowanie}
-		Wektoryzacja tekstu znajduje zastosowanie w wielu dziedzinach, w tym:
-		\begin{itemize}
-			\item analiza nastrojów i sentymentów w mediach społecznościowych i recenzjach,
-			\item klasyfikacja tekstów według tematyki lub kategorii,
-			\item systemy rekomendacyjne oparte na opisach tekstowych,
-			\item automatyczne tłumaczenie tekstu i implementacja chatbotów.
-		\end{itemize}
+	\subsection{Zastosowanie}		
+		Wektoryzacja tekstu znajduje zastosowanie w wielu dziedzinach, w tym w analizie nastrojów i sentymentów w mediach społecznościowych i recenzjach, klasyfikacji tekstów według tematyki lub kategorii, systemach rekomendacyjnych opartych na opisach tekstowych oraz automatycznym tłumaczeniu tekstu i implementacji chatbotów.
 
 
 \section{Redukcja wymiarowości}
 
-	\subsection{Definicja}
-		Redukcja wymiarowości to proces zmniejszania liczby cech (wymiarów) w zbiorze danych, przy jednoczesnym zachowaniu jak największej ilości informacji. Często stosowana jest w uczeniu maszynowym, gdzie głównym celem jest eliminacja nadmiarowych, nieinformatywnych lub mało istotnych cech, które mogą obniżać skuteczność modelu. Po takim przekształceniu model staje się prostszy, co zmniejsza rozmiar zbioru danych w pamięci i przyspiesza działanie algorytmów. Redukcja wymiarowości jest również używana do uproszczenia analizy i wizualizacji danych, na przykład poprzez redukcję do niskich wymiarów takich jak 2D lub 3D \cite{DimensionReduction}.
+	Redukcja wymiarowości to proces zmniejszania liczby cech (wymiarów) w zbiorze danych, przy jednoczesnym zachowaniu jak największej ilości informacji. Często stosowana jest w uczeniu maszynowym, gdzie głównym celem jest eliminacja nadmiarowych, nieinformatywnych lub mało istotnych cech, które mogą obniżać skuteczność modelu. Po takim przekształceniu model staje się prostszy, co zmniejsza rozmiar zbioru danych w pamięci i przyspiesza działanie algorytmów. Redukcja wymiarowości jest również używana do uproszczenia analizy i wizualizacji danych, na przykład poprzez redukcję do niskich wymiarów takich jak 2D lub 3D \cite{DimensionReduction}.
 
 	\subsection{Metody redukcji wymiarowości}
 		Redukcja wymiarowości może być realizowana metodami wyboru cech (ang. feature selection) lub wydobywania cech (ang. feature extraction).
 		
 		
 		\subsubsection{Wybór cech}
-			Metody wyboru cech pozostawiają pewne podzbiory oryginalnego zestawu cech, eliminując cechy nadmiarowe i mało informatywne. Główne zalety tego rodzaju algorytmów to:
-			\begin{itemize}
-				\item zmniejszenie prawdopodobieństwa przeuczenia,
-				\item zwiększenie dokładności predykcji modelu,
-				\item skrócenie czasu uczenia,
-				\item zwiększenie semantycznego zrozumienia modelu.
-			\end{itemize}
+			Metody wyboru cech pozostawiają pewne podzbiory oryginalnego zestawu cech, eliminując cechy nadmiarowe i mało informatywne. Główne zalety tego rodzaju algorytmów to zmniejszenie prawdopodobieństwa przeuczenia, zwiększenie dokładności predykcji modelu, skrócenie czasu uczenia oraz zwiększenie semantycznego zrozumienia modelu.			
 		
 		\subsubsection{Wydobywanie cech}	
 			Innym sposobem zmniejszenia wymiarowości danych wejściowych jest wydobywanie cech. Te metody tworzą z oryginalnych cech nowe, które nadal w pełni opisują przestrzeń zbioru danych, ale zmniejszają jego wymiarowość, tracąc na reprezentatywności danych, ponieważ staje się niejasne, za co odpowiadają nowe cechy. Metody wydobywania cech można podzielić na liniowe i nieliniowe.

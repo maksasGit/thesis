@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  4 JUL 2024 18:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  4 JUL 2024 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -736,13 +736,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 8--9
+Underfull \hbox (badness 1077) in paragraph at lines 7--8
 []\OT4/cmr/m/n/10 W ra-mach ni-niej-szej pracy opra-co-wana b¦-dzie apli-ka-cja
  GUI prze-zna-czona do ana-lizy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
@@ -754,52 +754,100 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 ]
 Rozdzia\l  1.
 
-Underfull \hbox (badness 3068) in paragraph at lines 6--7
+Underfull \hbox (badness 3068) in paragraph at lines 8--9
 \OT4/cmr/m/n/10 ad-mi-ni-stra-cji pa«-stwo-wej, fi-lo-lo-gii, an-tro-po-lo-gii,
  mar-ke-tingu, so-cjo-lo-gii, geo-lo-gii i in-nych
  []
 
 
-Underfull \hbox (badness 1838) in paragraph at lines 23--24
+Underfull \hbox (badness 1838) in paragraph at lines 25--26
 []\OT4/cmr/bx/n/10 Hierarchiczne al-go-rytmy kla-ste-ry-za-cji\OT4/cmr/m/n/10 .
  Al-go-rytmy te po-rz¡d-kuj¡ dane, two-rz¡c
  []
 
 [3]
-Underfull \hbox (badness 2111) in paragraph at lines 26--27
-[]\OT4/cmr/bx/n/10 K-±rednich (K-means) \OT4/cmr/m/n/10 -- ite-ra-cyjny al-go-r
-ytm oparty na mi-ni-ma-li-za-cji sumy
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 30--31
+[]\OT4/cmr/bx/n/10 Rozpowszechnianie po-do-bie«-stwa (Af-fi-nity Pro-pa-ga-tion
+) \OT4/cmr/m/n/10 -- al-go-rytm, który
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 32--33
+[]\OT4/cmr/bx/n/10 Przesuni¦cie ±red-niej (mean shift) \OT4/cmr/m/n/10 -- me-to
+da wy-bie-ra-j¡ca cen-tro-idy kla-strów w
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 55--56
+[]\OT4/cmr/bx/n/10 Grupowanie u»yt-kow-ni-ków o po-dob-nych za-in-te-re-so-wa-n
+iach \OT4/cmr/m/n/10 po-zwala na lep-sz¡
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 91--92
 \OT4/cmr/m/n/10 Liczne formy wy-ra-zowe ró»-ni¡ce si¦ su-fik-sami, przed-rost-k
 ami, ko«-ców-kami itp. utrud-niaj¡
  []
 
 [5]
-Underfull \hbox (badness 4739) in paragraph at lines 111--112
-[]\OT4/cmr/m/n/10 tworzenie mo-deli ucze-nia ma-szy-no-wego do au-to-ma-tycz-ne
-go uogól-nia-nia in-for-ma-cji
- []
-
-
-Underfull \hbox (badness 2932) in paragraph at lines 120--121
+Underfull \hbox (badness 2932) in paragraph at lines 112--113
 \OT4/cmr/m/n/10 prze-ksztaª-caj¡ sªowa w wek-tory w prze-strzeni ci¡-gªej, za-c
 ho-wu-j¡c ich wªa-±ci-wo-±ci
  []
 
-[6] [7]) (rozdzial_2.tex [8]
+[6]) (rozdzial_2.tex [7] [8
+
+]
 Rozdzia\l  2.
 
 Underfull \hbox (badness 1418) in paragraph at lines 7--8
@@ -819,9 +867,7 @@ Underfull \hbox (badness 1215) in paragraph at lines 26--27
 da-nych, kon-fi-gu-ro-wa-nie pa-ra-me-trów
  []
 
-[9
-
-]
+[9]
 LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
 46.
  (C:\Users\imaks\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
@@ -930,19 +976,19 @@ Underfull \hbox (badness 1205) in paragraph at lines 458--459
 
 [19]) (rozdzial_3.tex [20]
 Rozdzia\l  3.
-<./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg, id=433, 239.6955pt x 197.538pt>
+<./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg, id=429, 239.6955pt x 197.538pt>
 File: ./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg Graphic file (type jpg)
 <use ./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg>
 Package pdftex.def Info: ./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg  used on i
 nput line 24.
 (pdftex.def)             Requested size: 213.39568pt x 175.86853pt.
-<./img/CreateWorkspaceDialogWindowFill.jpg, id=434, 236.68425pt x 199.947pt>
+<./img/CreateWorkspaceDialogWindowFill.jpg, id=430, 236.68425pt x 199.947pt>
 File: ./img/CreateWorkspaceDialogWindowFill.jpg Graphic file (type jpg)
 <use ./img/CreateWorkspaceDialogWindowFill.jpg>
 Package pdftex.def Info: ./img/CreateWorkspaceDialogWindowFill.jpg  used on inp
 ut line 31.
 (pdftex.def)             Requested size: 213.39568pt x 180.28012pt.
-<./img/CommentsWindowStep1.jpg, id=436, 377.61075pt x 298.716pt>
+<./img/CommentsWindowStep1.jpg, id=432, 377.61075pt x 298.716pt>
 File: ./img/CommentsWindowStep1.jpg Graphic file (type jpg)
 <use ./img/CommentsWindowStep1.jpg>
 Package pdftex.def Info: ./img/CommentsWindowStep1.jpg  used on input line 43.
@@ -957,20 +1003,20 @@ j po-ja-wia si¦ menu na-wi-ga-cyjne
 
 ] [22 <./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg> <./img/CreateWorkspaceDialo
 gWindowFill.jpg> <./img/CommentsWindowStep1.jpg>]
-<./img/TextProcessingWindowStandard.jpg, id=455, 178.86826pt x 139.722pt>
+<./img/TextProcessingWindowStandard.jpg, id=451, 178.86826pt x 139.722pt>
 File: ./img/TextProcessingWindowStandard.jpg Graphic file (type jpg)
 <use ./img/TextProcessingWindowStandard.jpg>
 Package pdftex.def Info: ./img/TextProcessingWindowStandard.jpg  used on input 
 line 75.
 (pdftex.def)             Requested size: 213.39568pt x 166.69975pt.
-<./img/VectorizationWindowStandard.jpg, id=457, 239.09325pt x 211.38976pt>
+<./img/VectorizationWindowStandard.jpg, id=453, 239.09325pt x 211.38976pt>
 File: ./img/VectorizationWindowStandard.jpg Graphic file (type jpg)
 <use ./img/VectorizationWindowStandard.jpg>
 Package pdftex.def Info: ./img/VectorizationWindowStandard.jpg  used on input l
 ine 96.
 (pdftex.def)             Requested size: 213.39568pt x 188.67816pt.
  [23 <./img/TextProcessingWindowStandard.jpg>]
-<./img/ClusterWindowStandard.jpg, id=466, 237.88875pt x 199.947pt>
+<./img/ClusterWindowStandard.jpg, id=462, 237.88875pt x 199.947pt>
 File: ./img/ClusterWindowStandard.jpg Graphic file (type jpg)
 <use ./img/ClusterWindowStandard.jpg>
 Package pdftex.def Info: ./img/ClusterWindowStandard.jpg  used on input line 12
@@ -981,7 +1027,7 @@ erWindowStandard.jpg>] [26
 
 ]
 Rozdzia\l  4.
-<./img/rys1.jpg, id=484, 447.47176pt x 225.2415pt>
+<./img/rys1.jpg, id=480, 447.47176pt x 225.2415pt>
 File: ./img/rys1.jpg Graphic file (type jpg)
 <use ./img/rys1.jpg>
 Package pdftex.def Info: ./img/rys1.jpg  used on input line 9.
@@ -1028,13 +1074,13 @@ Package rerunfilecheck Info: File `solving.out' has not changed.
 (rerunfilecheck)             Checksum: A42C1C83010A554C61550078096F044A;2411.
  ) 
 Here is how much of TeX's memory you used:
- 17357 strings out of 475248
- 271968 string characters out of 5757812
+ 17353 strings out of 475248
+ 271904 string characters out of 5757812
  2134785 words of memory out of 5000000
  38277 multiletter control sequences out of 15000+600000
  571808 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,11n,82p,732b,2055s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,11n,82p,731b,2055s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1000.pk><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1053,9 +1099,9 @@ c/pl/plti10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/pl/plti9.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /pl/pltt10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /pl/pltt8.pfb>
-Output written on solving.pdf (41 pages, 498239 bytes).
+Output written on solving.pdf (41 pages, 498362 bytes).
 PDF statistics:
- 716 PDF objects out of 1000 (max. 8388607)
- 299 named destinations out of 1000 (max. 500000)
+ 712 PDF objects out of 1000 (max. 8388607)
+ 295 named destinations out of 1000 (max. 500000)
  177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
