@@ -32,11 +32,11 @@
 \contentsline {subsection}{\numberline {2.2.3}Przechowywanie}{11}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Przetwarzania tekstu}{11}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Przetwarzanie obowiązkowe}{11}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Przetwarzanie prymitywne}{11}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Przetwarzanie prymitywne}{12}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Usuwanie stop-words}{12}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Lematyzacja}{12}{subsection.2.3.4}%
 \contentsline {subsection}{\numberline {2.3.5}Analiza}{12}{subsection.2.3.5}%
-\contentsline {subsubsection}{Analiza częstotliwości (freq analysis)}{12}{section*.8}%
+\contentsline {subsubsection}{Analiza częstotliwości (freq analysis)}{13}{section*.8}%
 \contentsline {subsubsection}{Analiza długości (length analysis)}{13}{section*.9}%
 \contentsline {section}{\numberline {2.4}Wektoryzacja}{13}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}TF-IDF}{13}{subsection.2.4.1}%
@@ -46,7 +46,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Word2Vec}{14}{subsection.2.4.2}%
 \contentsline {subsubsection}{Parametry}{14}{section*.13}%
 \contentsline {subsubsection}{Wyjaśnienie algorytmu}{15}{section*.14}%
-\contentsline {subsubsection}{Przykład użycia}{15}{section*.15}%
+\contentsline {subsubsection}{Przykład użycia}{16}{section*.15}%
 \contentsline {section}{\numberline {2.5}Klasteryzacja}{16}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}K-means}{16}{subsection.2.5.1}%
 \contentsline {subsubsection}{Parametry}{16}{section*.16}%
@@ -55,41 +55,42 @@
 \contentsline {subsubsection}{Przykład użycia}{17}{section*.19}%
 \contentsline {subsection}{\numberline {2.5.2}DBSCAN}{17}{subsection.2.5.2}%
 \contentsline {subsubsection}{Parametry}{17}{section*.20}%
-\contentsline {subsubsection}{Wyjaśnienie algorytmu}{17}{section*.21}%
+\contentsline {subsubsection}{Wyjaśnienie algorytmu}{18}{section*.21}%
 \contentsline {subsubsection}{Pseudokod algorytmu}{18}{section*.22}%
 \contentsline {subsubsection}{Przykład użycia}{18}{section*.23}%
 \contentsline {subsection}{\numberline {2.5.3}Dobór parametrów}{18}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Wizualizacja}{18}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Wizualizacja}{19}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Redukcja wymiarowości}{19}{subsection.2.6.1}%
 \contentsline {subsection}{\numberline {2.6.2}T-SNE}{19}{subsection.2.6.2}%
 \contentsline {subsubsection}{Parametry}{19}{section*.24}%
 \contentsline {subsubsection}{Opis algorytmu}{19}{section*.25}%
-\contentsline {subsubsection}{Przykład użycia}{19}{section*.26}%
-\contentsline {chapter}{\numberline {3}Funkcjonalność aplikacji}{21}{chapter.3}%
+\contentsline {subsubsection}{Przykład użycia}{20}{section*.26}%
+\contentsline {chapter}{\numberline {3}Funkcje aplikacji}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Opis aplikacji}{21}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Okno pracy}{21}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Menu-bar}{21}{subsection.3.1.2}%
 \contentsline {subsubsection}{Tworzenie przestrzeni roboczej}{21}{section*.27}%
 \contentsline {subsubsection}{Pobieranie komentarzy}{21}{section*.30}%
-\contentsline {subsection}{\numberline {3.1.3}Workspace}{21}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.3}Workspace}{23}{subsection.3.1.3}%
 \contentsline {subsubsection}{Pole na wykresy}{23}{section*.32}%
 \contentsline {subsection}{\numberline {3.1.4}Text}{23}{subsection.3.1.4}%
 \contentsline {subsection}{\numberline {3.1.5}Wektoryzacja}{24}{subsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.1.6}Cluster}{24}{subsection.3.1.6}%
-\contentsline {subsection}{\numberline {3.1.7}Result Window}{25}{subsection.3.1.7}%
-\contentsline {chapter}{\numberline {4}Użycia aplikacji}{27}{chapter.4}%
-\contentsline {subsection}{\numberline {4.0.1}Pobieranie danych tekstowych}{27}{subsection.4.0.1}%
-\contentsline {subsection}{\numberline {4.0.2}Tworzenie Workspace}{27}{subsection.4.0.2}%
-\contentsline {subsection}{\numberline {4.0.3}Wybór metod i parametrów}{27}{subsection.4.0.3}%
-\contentsline {subsection}{\numberline {4.0.4}Przetwarzanie tekstu}{27}{subsection.4.0.4}%
-\contentsline {subsubsection}{Alpha}{27}{section*.37}%
-\contentsline {subsubsection}{Stop-words}{27}{section*.38}%
-\contentsline {subsubsection}{Lemmatize}{27}{section*.39}%
-\contentsline {subsection}{\numberline {4.0.5}Wektoryzacja}{27}{subsection.4.0.5}%
-\contentsline {subsubsection}{TF-IDF}{27}{section*.40}%
-\contentsline {subsubsection}{Word2Vec}{27}{section*.41}%
-\contentsline {subsection}{\numberline {4.0.6}Klasteryzacja}{27}{subsection.4.0.6}%
-\contentsline {subsubsection}{K-means}{27}{section*.42}%
-\contentsline {subsubsection}{DBSCAN}{27}{section*.43}%
-\contentsline {subsection}{\numberline {4.0.7}Analiza wynkiow pracy}{27}{subsection.4.0.7}%
-\contentsline {chapter}{Podsumowanie}{29}{chapter*.44}%
+\contentsline {subsection}{\numberline {3.1.7}Apply}{25}{subsection.3.1.7}%
+\contentsline {chapter}{\numberline {4}Używanie aplikacji}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Przykład tworzenia workspace}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Pobieranie danych tekstowych}{27}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Tworzenie Workspace}{27}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Przykład ustawienia parametrów i metod}{28}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Przetwarzanie tekstu}{28}{subsection.4.2.1}%
+\contentsline {subsubsection}{Alpha}{28}{section*.38}%
+\contentsline {subsubsection}{Stop-words}{28}{section*.41}%
+\contentsline {subsubsection}{Lemmatize}{29}{section*.43}%
+\contentsline {subsection}{\numberline {4.2.2}Wektoryzacja}{29}{subsection.4.2.2}%
+\contentsline {subsubsection}{TF-IDF}{29}{section*.45}%
+\contentsline {subsubsection}{Word2Vec}{29}{section*.46}%
+\contentsline {subsection}{\numberline {4.2.3}Klasteryzacja}{29}{subsection.4.2.3}%
+\contentsline {subsubsection}{K-means}{29}{section*.47}%
+\contentsline {subsubsection}{DBSCAN}{29}{section*.48}%
+\contentsline {subsection}{\numberline {4.2.4}Analiza wynkiow pracy}{29}{subsection.4.2.4}%
+\contentsline {chapter}{Podsumowanie}{31}{chapter*.49}%

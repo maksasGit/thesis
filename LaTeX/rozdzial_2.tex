@@ -114,7 +114,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 		\begin{verbatim}
 			"the", "is", "in", "and"
 		\end{verbatim}
-		Usuwanie stop-words zmniejsza rozmiar tekstu i sprawia, że znaczące słowa są bardziej widoczne. Do tego celu używa się słownika stop-words z biblioteki NLTK, który w razie potrzeby można uzupełnić własnymi słowami. Przykład implementacji widać na Listingu \ref{lst:removestopwords}.
+		Usuwanie stop-words zmniejsza rozmiar tekstu i sprawia, że znaczące słowa są bardziej widoczne. Do tego celu używa się słownika stop-words z biblioteki NLTK, który w razie potrzeby można uzupełnić własnymi słowami. Przykład implementacji znajduje się na Listingu \ref{lst:removestopwords}.
 		\begin{lstlisting}[language=Python, caption={Funkcja usuwająca stop-words}, label={lst:removestopwords}]
 			from nltk.corpus import stopwords
 			
@@ -124,7 +124,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 		\end{lstlisting}
 
 	\subsection{Lematyzacja}
-		Ostatnim opcjonalnym procesem jest lematyzacja, która sprowadza słowa do ich podstawowej formy. Jest to przydatne w sytuacjach, gdy trzeba zgrupować różne formy jednego słowa (np. "running", "ran", "runs" do "run"). Przykład implementacji widać na Listingu \ref{lst:lemmatizetokens}.
+		Ostatnim opcjonalnym procesem jest lematyzacja, która sprowadza słowa do ich podstawowej formy. Jest to przydatne w sytuacjach, gdy trzeba zgrupować różne formy jednego słowa (np. "running", "ran", "runs" do "run"). Przykład implementacji znajduje się na Listingu \ref{lst:lemmatizetokens}.
 
 		\begin{lstlisting}[language=Python, caption={Funkcja lematyzująca tokeny}, label={lst:lemmatizetokens}]
 			from nltk.stem import WordNetLemmatizer
@@ -141,7 +141,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 		\subsubsection{Analiza częstotliwości (freq analysis)}
 			Analiza częstotliwości (freq analysis) używa przetworzonych ciągów znaków, tworząc pojedynczą tablicę ze wszystkimi słowami ze wszystkich komentarzy, i stosuje klasę \texttt{collections.Counter} w Pythonie. \texttt{Counter} jest używany do zliczania hashowalnych obiektów, takich jak ciągi znaków lub liczby, i dostarcza wygodne metody do pracy z danymi częstotliwości. W ten sposób funkcja generuje dwie tablice: tablicę słów i odpowiadającą jej tablicę liczby wystąpień każdego słowa w tekście. Te tablice będą używane do tworzenia wykresu słupkowego, pokazującego częstotliwość występowania słów.
 			
-			Przykład implementacji algorytmu w projekcie jest zaprezentowany na Listingu \ref{lst;freqanalysis}.
+			Przykład implementacji algorytmu w projekcie znajduje się naa Listingu \ref{lst;freqanalysis}.
 			\begin{lstlisting}[language=Python, caption={Funkcja przeprowadzająca analizę częstotliwości tokenów}, label={lst:freqanalysis}]
 				from collections import Counter
 
@@ -157,7 +157,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 		\subsubsection{Analiza długości (length analysis)}
 			Analiza długości (length analysis) również używa przetworzonych ciągów znaków komentarzy, określając liczbę słów w każdym komentarzu. Ostatecznie generowana jest tablica z liczbą słów, która będzie używana do tworzenia histogramu, pokazującego rozkład długości komentarzy.
 			
-			Przykład implementacji algorytmu w projekcie jest zaprezentowany na Listingu \ref{lst;lengthanalysis}.
+			Przykład implementacji algorytmu w projekcie znajduje się na Listingu \ref{lst;lengthanalysis}.
 			\begin{lstlisting}[language=Python, caption={Funkcja przeprowadzająca analizę długości tokenów}, label={lst:lengthanalysis}]
 
 				def length_analysis(tokens):
@@ -198,7 +198,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			
 				
 		\subsubsection{Przykład użycia}
-			Przykład użycia metody TF-IDF w Listingu \ref{lst:vectorizetfidf}.
+			Przykład użycia metody TF-ID Fznajduje się na Listingu \ref{lst:vectorizetfidf}.
 			\begin{lstlisting}[language=Python, caption={Funkcja wektoryzująca korpus za pomocą TF-IDF}, label={lst:vectorizetfidf}]
 
 				from sklearn.feature_extraction.text import TfidfVectorizer
@@ -270,7 +270,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 	
 	
  		\subsubsection{Przykład użycia}
- 			Przykład użycia metody Word2Vec w Listingu \ref{lst:vectorizeword2vec}.
+ 			Przykład użycia metody Word2Vec znajduje się na Listingu \ref{lst:vectorizeword2vec}.
  			\begin{lstlisting}[language=Python, caption={Funkcja wektoryzująca za pomocą Word2Vec}, label={lst:vectorizeword2vec}]
 				from gensim.models import Word2Vec
 	
@@ -323,7 +323,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			
 		\subsubsection{Pseudokod algorytmu}
 			
-			Pseudokod implementujący algorytmu K-means w Listingu \ref{lst:pseudokodkmeans}.
+			Pseudokod implementujący algorytmu K-means znajduje się na Listingu \ref{lst:pseudokodkmeans}.
 			
 			\begin{lstlisting}[language=Python, caption={Pseudokod algorytmu K-means}, label={lst:pseudokodkmeans}]
 				1. Wybierz losowo k punktów jako początkowe centroidy
@@ -343,7 +343,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			
 		\subsubsection{Przykład użycia}
 			
-			 Przykład użycia metody K-means w Listingu \ref{lst:kmeansexample}.
+			 Przykład użycia metody K-means znajduje się na Listingu \ref{lst:kmeansexample}.
 		
 			\begin{lstlisting}[language=Python, caption={Przykład użycia algorytmu K-Means}, label={lst:kmeansexample}]
 				kmeans = KMeans(n_clusters=2, init='k-means++', max_iter=300, n_init=10, random_state=0)
@@ -382,7 +382,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			
 		\subsubsection{Pseudokod algorytmu}
 			
-			Pseudokod implementujący algorytmu DBSCAN w Listingu \ref{lst:pseudokoddbscan}.
+			Pseudokod implementujący algorytmu DBSCAN znajduje się na Listingu \ref{lst:pseudokoddbscan}.
 			
 			\begin{lstlisting}[language=Python, caption={Pseudokod algorytmu DBSCAN}, label={lst:pseudokoddbscan}]
 				1. Utwórz pusty zbiór klastrów
@@ -401,7 +401,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			
 		\subsubsection{Przykład użycia}
 		
-			Przykład użycia metody DBSCAN w Listingu \ref{lst:dbscanexample}.
+			Przykład użycia metody DBSCAN znajduje się na Listingu \ref{lst:dbscanexample}.
 		
 			\begin{lstlisting}[language=Python, caption={Przykład użycia algorytmu DBSCAN}, label={lst:dbscanexample}]
 			
@@ -455,7 +455,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			
 		\subsubsection{Przykład użycia}
 		
-			Przykład użycia metody T-SNE w Listingu \ref{lst:tsneexample}.
+			Przykład użycia metody T-SNE znajduje się na Listingu \ref{lst:tsneexample}.
 		
 			\begin{lstlisting}[language=Python, caption={Przykład użycia t-SNE do osadzania danych}, label={lst:tsneexample}]
 	
