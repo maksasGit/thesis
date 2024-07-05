@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  4 JUL 2024 21:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  5 JUL 2024 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -766,81 +766,29 @@ Underfull \hbox (badness 1838) in paragraph at lines 25--26
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 1831) in paragraph at lines 26--27
+\OT4/cmr/bx/n/10 (mean shift)\OT4/cmr/m/n/10 , wy-bie-ra-j¡ca cen-tro-idy kla-s
+trów w ob-sza-rach o naj-wi¦k-szej g¦-sto-±ci.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-
-Underfull \hbox (badness 4060) in paragraph at lines 30--31
-[]\OT4/cmr/bx/n/10 Rozpowszechnianie po-do-bie«-stwa (Af-fi-nity Pro-pa-ga-tion
-) \OT4/cmr/m/n/10 -- al-go-rytm, który
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-
-Underfull \hbox (badness 1237) in paragraph at lines 32--33
-[]\OT4/cmr/bx/n/10 Przesuni¦cie ±red-niej (mean shift) \OT4/cmr/m/n/10 -- me-to
-da wy-bie-ra-j¡ca cen-tro-idy kla-strów w
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 1831) in paragraph at lines 55--56
-[]\OT4/cmr/bx/n/10 Grupowanie u»yt-kow-ni-ków o po-dob-nych za-in-te-re-so-wa-n
-iach \OT4/cmr/m/n/10 po-zwala na lep-sz¡
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 91--92
+Underfull \hbox (badness 1077) in paragraph at lines 68--69
 \OT4/cmr/m/n/10 Liczne formy wy-ra-zowe ró»-ni¡ce si¦ su-fik-sami, przed-rost-k
 ami, ko«-ców-kami itp. utrud-niaj¡
  []
 
 [5]
-Underfull \hbox (badness 2932) in paragraph at lines 112--113
+Underfull \hbox (badness 2932) in paragraph at lines 89--90
 \OT4/cmr/m/n/10 prze-ksztaª-caj¡ sªowa w wek-tory w prze-strzeni ci¡-gªej, za-c
 ho-wu-j¡c ich wªa-±ci-wo-±ci
  []
@@ -850,15 +798,9 @@ ho-wu-j¡c ich wªa-±ci-wo-±ci
 ]
 Rozdzia\l  2.
 
-Underfull \hbox (badness 1418) in paragraph at lines 10--11
-\OT4/cmr/m/n/10 wst¦pne prze-twa-rza-nie tek-stu, wek-to-ry-za-cj¦ i kla-ste-ry
--za-cj¦. Gªów-nym ce-lem apli-ka-cji jest
- []
-
-
-Underfull \hbox (badness 5985) in paragraph at lines 10--11
-\OT4/cmr/m/n/10 umo»-li-wie-nie u»yt-kow-ni-kowi ela-stycz-nego do-sto-so-wa-ni
-a i wy-ko-rzy-sta-nia ró»-nych me-tod
+Underfull \hbox (badness 5036) in paragraph at lines 10--11
+\OT4/cmr/m/n/10 wst¦pne prze-twa-rza-nie tek-stu, wek-t-Fo-ry-za-cj¦ i kla-ste-
+ry-za-cj¦. Gªów-nym ce-lem apli-ka-cji
  []
 
 
@@ -874,14 +816,20 @@ LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
-[]\OT4/cmr/m/n/10 Za po-moc¡ \OT4/cmtt/m/n/10 video[]id \OT4/cmr/m/n/10 wy-ko-n
-y-wane jest za-py-ta-nie \OT4/cmtt/m/n/10 GET
+[]\OT4/cmr/m/n/10 Za po-moc¡ \OT4/cmr/bx/n/10 vi-deo[]id \OT4/cmr/m/n/10 wy-ko-
+ny-wane jest za-py-ta-nie \OT4/cmr/bx/n/10 GET
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 53--54
-\OT4/cmr/m/n/10 o fil-mie. To po-zwala u»yt-kow-ni-kowi upew-ni¢ si¦, »e wy-bra
-ny film od-po-wiada jego
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+\OT4/cmr/bx/n/10 https://www.googleapis.com/youtube/v3/videos\OT4/cmr/m/n/10 , 
+aby uzy-ska¢ pod-sta-wowe
+ []
+
+
+Underfull \hbox (badness 4144) in paragraph at lines 54--55
+\OT4/cmr/bx/n/10 GET https://www.googleapis.com/youtube/v3/commentThreads\OT4/c
+mr/m/n/10 , aby po-bra¢
  []
 
 [10{C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/pltt.enc}]
@@ -986,19 +934,19 @@ Underfull \hbox (badness 1205) in paragraph at lines 450--451
 
 [19]) (rozdzial_3.tex [20]
 Rozdzia\l  3.
-<./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg, id=433, 239.6955pt x 197.538pt>
+<./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg, id=437, 239.6955pt x 197.538pt>
 File: ./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg Graphic file (type jpg)
 <use ./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg>
 Package pdftex.def Info: ./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg  used on i
 nput line 27.
 (pdftex.def)             Requested size: 213.39568pt x 175.86853pt.
-<./img/CreateWorkspaceDialogWindowFill.jpg, id=434, 236.68425pt x 199.947pt>
+<./img/CreateWorkspaceDialogWindowFill.jpg, id=438, 236.68425pt x 199.947pt>
 File: ./img/CreateWorkspaceDialogWindowFill.jpg Graphic file (type jpg)
 <use ./img/CreateWorkspaceDialogWindowFill.jpg>
 Package pdftex.def Info: ./img/CreateWorkspaceDialogWindowFill.jpg  used on inp
 ut line 34.
 (pdftex.def)             Requested size: 213.39568pt x 180.28012pt.
-<./img/CommentsWindowStep1.jpg, id=436, 377.61075pt x 298.716pt>
+<./img/CommentsWindowStep1.jpg, id=440, 377.61075pt x 298.716pt>
 File: ./img/CommentsWindowStep1.jpg Graphic file (type jpg)
 <use ./img/CommentsWindowStep1.jpg>
 Package pdftex.def Info: ./img/CommentsWindowStep1.jpg  used on input line 46.
@@ -1013,20 +961,20 @@ j po-ja-wia si¦ menu na-wi-ga-cyjne
 
 ] [22 <./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg> <./img/CreateWorkspaceDialo
 gWindowFill.jpg> <./img/CommentsWindowStep1.jpg>]
-<./img/TextProcessingWindowStandard.jpg, id=454, 178.86826pt x 139.722pt>
+<./img/TextProcessingWindowStandard.jpg, id=458, 178.86826pt x 139.722pt>
 File: ./img/TextProcessingWindowStandard.jpg Graphic file (type jpg)
 <use ./img/TextProcessingWindowStandard.jpg>
 Package pdftex.def Info: ./img/TextProcessingWindowStandard.jpg  used on input 
 line 78.
 (pdftex.def)             Requested size: 213.39568pt x 166.69975pt.
  [23 <./img/TextProcessingWindowStandard.jpg>]
-<./img/VectorizationWindowStandard.jpg, id=464, 239.09325pt x 211.38976pt>
+<./img/VectorizationWindowStandard.jpg, id=468, 239.09325pt x 211.38976pt>
 File: ./img/VectorizationWindowStandard.jpg Graphic file (type jpg)
 <use ./img/VectorizationWindowStandard.jpg>
 Package pdftex.def Info: ./img/VectorizationWindowStandard.jpg  used on input l
 ine 99.
 (pdftex.def)             Requested size: 213.39568pt x 188.67816pt.
-<./img/ClusterWindowStandard.jpg, id=466, 237.88875pt x 199.947pt>
+<./img/ClusterWindowStandard.jpg, id=470, 237.88875pt x 199.947pt>
 File: ./img/ClusterWindowStandard.jpg Graphic file (type jpg)
 <use ./img/ClusterWindowStandard.jpg>
 Package pdftex.def Info: ./img/ClusterWindowStandard.jpg  used on input line 12
@@ -1037,88 +985,95 @@ erWindowStandard.jpg>] [26
 
 ]
 Rozdzia\l  4.
-
-LaTeX Warning: Reference `fig:YouTubeVideoPreview' on page 27 undefined on inpu
-t line 7.
-
-<./img/YouTubeWindowThiContent.jpg, id=485, 377.61075pt x 295.70474pt>
+<./img/YouTubeVideoPreview.jpg, id=489, 952.15726pt x 221.02576pt>
+File: ./img/YouTubeVideoPreview.jpg Graphic file (type jpg)
+<use ./img/YouTubeVideoPreview.jpg>
+Package pdftex.def Info: ./img/YouTubeVideoPreview.jpg  used on input line 11.
+(pdftex.def)             Requested size: 213.39568pt x 49.5364pt.
+<./img/YouTubeWindowThiContent.jpg, id=491, 377.61075pt x 295.70474pt>
 File: ./img/YouTubeWindowThiContent.jpg Graphic file (type jpg)
 <use ./img/YouTubeWindowThiContent.jpg>
 Package pdftex.def Info: ./img/YouTubeWindowThiContent.jpg  used on input line 
-15.
+22.
 (pdftex.def)             Requested size: 213.39568pt x 167.10507pt.
-[27 <./img/YouTubeWindowThiContent.jpg>]
-<./img/NewWorkspaceExampleFull.jpg, id=495, 236.082pt x 199.947pt>
+<./img/NewWorkspaceExampleFull.jpg, id=493, 236.082pt x 199.947pt>
 File: ./img/NewWorkspaceExampleFull.jpg Graphic file (type jpg)
 <use ./img/NewWorkspaceExampleFull.jpg>
 Package pdftex.def Info: ./img/NewWorkspaceExampleFull.jpg  used on input line 
-27.
+34.
 (pdftex.def)             Requested size: 213.39568pt x 180.73471pt.
-<./img/FreqTextParamsAlpha.jpg, id=500, 570.33075pt x 242.1045pt>
+[27 <./img/YouTubeVideoPreview.jpg>] [28 <./img/YouTubeWindowThiContent.jpg> <.
+/img/NewWorkspaceExampleFull.jpg>]
+<./img/FreqTextParamsAlpha.jpg, id=512, 570.33075pt x 242.1045pt>
 File: ./img/FreqTextParamsAlpha.jpg Graphic file (type jpg)
 <use ./img/FreqTextParamsAlpha.jpg>
-Package pdftex.def Info: ./img/FreqTextParamsAlpha.jpg  used on input line 49.
+Package pdftex.def Info: ./img/FreqTextParamsAlpha.jpg  used on input line 56.
 (pdftex.def)             Requested size: 192.0548pt x 81.52388pt.
-<./img/LenTextParamsAlpha.jpg, id=501, 570.933pt x 236.68425pt>
+<./img/LenTextParamsAlpha.jpg, id=513, 570.933pt x 236.68425pt>
 File: ./img/LenTextParamsAlpha.jpg Graphic file (type jpg)
 <use ./img/LenTextParamsAlpha.jpg>
-Package pdftex.def Info: ./img/LenTextParamsAlpha.jpg  used on input line 55.
+Package pdftex.def Info: ./img/LenTextParamsAlpha.jpg  used on input line 62.
 (pdftex.def)             Requested size: 192.0548pt x 79.61565pt.
 
-Underfull \hbox (badness 2547) in paragraph at lines 56--56
-[]\OT4/cmr/m/n/10 Rysunek 4.4: |Przy-kªad ana-lizy dªu-go-±ci
+Underfull \hbox (badness 2547) in paragraph at lines 63--63
+[]\OT4/cmr/m/n/10 Rysunek 4.5: |Przy-kªad ana-lizy dªu-go-±ci
  []
 
 File: ./img/FreqTextParamsAlpha.jpg Graphic file (type jpg)
 <use ./img/FreqTextParamsAlpha.jpg>
-Package pdftex.def Info: ./img/FreqTextParamsAlpha.jpg  used on input line 66.
+Package pdftex.def Info: ./img/FreqTextParamsAlpha.jpg  used on input line 73.
 (pdftex.def)             Requested size: 192.0548pt x 81.52388pt.
 File: ./img/LenTextParamsAlpha.jpg Graphic file (type jpg)
 <use ./img/LenTextParamsAlpha.jpg>
-Package pdftex.def Info: ./img/LenTextParamsAlpha.jpg  used on input line 72.
+Package pdftex.def Info: ./img/LenTextParamsAlpha.jpg  used on input line 79.
 (pdftex.def)             Requested size: 192.0548pt x 79.61565pt.
 
-Underfull \hbox (badness 2547) in paragraph at lines 73--73
-[]\OT4/cmr/m/n/10 Rysunek 4.6: |Przy-kªad ana-lizy dªu-go-±ci
+Underfull \hbox (badness 2547) in paragraph at lines 80--80
+[]\OT4/cmr/m/n/10 Rysunek 4.7: |Przy-kªad ana-lizy dªu-go-±ci
  []
 
 File: ./img/FreqTextParamsAlpha.jpg Graphic file (type jpg)
 <use ./img/FreqTextParamsAlpha.jpg>
-Package pdftex.def Info: ./img/FreqTextParamsAlpha.jpg  used on input line 87.
+Package pdftex.def Info: ./img/FreqTextParamsAlpha.jpg  used on input line 94.
 (pdftex.def)             Requested size: 192.0548pt x 81.52388pt.
 File: ./img/LenTextParamsAlpha.jpg Graphic file (type jpg)
 <use ./img/LenTextParamsAlpha.jpg>
-Package pdftex.def Info: ./img/LenTextParamsAlpha.jpg  used on input line 93.
+Package pdftex.def Info: ./img/LenTextParamsAlpha.jpg  used on input line 100.
 (pdftex.def)             Requested size: 192.0548pt x 79.61565pt.
 
-Underfull \hbox (badness 2547) in paragraph at lines 94--94
-[]\OT4/cmr/m/n/10 Rysunek 4.8: |Przy-kªad ana-lizy dªu-go-±ci
+Underfull \hbox (badness 2547) in paragraph at lines 101--101
+[]\OT4/cmr/m/n/10 Rysunek 4.9: |Przy-kªad ana-lizy dªu-go-±ci
  []
 
-[28 <./img/NewWorkspaceExampleFull.jpg> <./img/FreqTextParamsAlpha.jpg> <./img/
-LenTextParamsAlpha.jpg>]
+[29 <./img/FreqTextParamsAlpha.jpg> <./img/LenTextParamsAlpha.jpg>]
 File: ./img/FreqTextParamsAlpha.jpg Graphic file (type jpg)
 <use ./img/FreqTextParamsAlpha.jpg>
-Package pdftex.def Info: ./img/FreqTextParamsAlpha.jpg  used on input line 107.
+Package pdftex.def Info: ./img/FreqTextParamsAlpha.jpg  used on input line 114.
 
 (pdftex.def)             Requested size: 192.0548pt x 81.52388pt.
 File: ./img/LenTextParamsAlpha.jpg Graphic file (type jpg)
 <use ./img/LenTextParamsAlpha.jpg>
-Package pdftex.def Info: ./img/LenTextParamsAlpha.jpg  used on input line 113.
+Package pdftex.def Info: ./img/LenTextParamsAlpha.jpg  used on input line 120.
 (pdftex.def)             Requested size: 192.0548pt x 79.61565pt.
 
-Underfull \hbox (badness 1052) in paragraph at lines 114--114
-[]\OT4/cmr/m/n/10 Rysunek 4.10: |Przy-kªad ana-lizy dªu-go-±ci
+Underfull \hbox (badness 1052) in paragraph at lines 121--121
+[]\OT4/cmr/m/n/10 Rysunek 4.11: |Przy-kªad ana-lizy dªu-go-±ci
  []
 
-) (podsumowanie.tex [29] [30
+) (podsumowanie.tex [30]) (bibliografia.tex [31
 
-]) (bibliografia.tex [31] [32
+] [32
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 []\OT4/cmr/m/n/9 Impossibility The-orem for Clu-ste-ring \OT4/cmr/m/it/9 The-or
 em for Clu-ste-ring\OT4/cmr/m/n/9 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[]\OT4/cmr/m/n/9 Trip Da-ta-base Blog, \OT4/cmr/m/it/9 Clu-ste-ring Se-arch Re-
+sults Using Car-rot2\OT4/cmr/m/n/9 ,
  []
 
 ) [33] [34
@@ -1150,16 +1105,16 @@ L3 programming layer <2023-08-29>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `solving.out' has not changed.
-(rerunfilecheck)             Checksum: 33B023B72068831270A50E95964B10BA;2875.
+(rerunfilecheck)             Checksum: 4A17639C806DA38D50A0BAE3DB1BCF27;2875.
  ) 
 Here is how much of TeX's memory you used:
- 17396 strings out of 475248
- 273234 string characters out of 5757812
+ 17398 strings out of 475248
+ 273471 string characters out of 5757812
  2134785 words of memory out of 5000000
- 38318 multiletter control sequences out of 15000+600000
+ 38325 multiletter control sequences out of 15000+600000
  571808 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,11n,82p,819b,2055s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,11n,82p,1310b,2055s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1000.pk><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1178,9 +1133,9 @@ c/pl/plti10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/pl/plti9.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /pl/pltt10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /pl/pltt8.pfb>
-Output written on solving.pdf (43 pages, 596177 bytes).
+Output written on solving.pdf (43 pages, 707885 bytes).
 PDF statistics:
- 755 PDF objects out of 1000 (max. 8388607)
- 297 named destinations out of 1000 (max. 500000)
- 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 757 PDF objects out of 1000 (max. 8388607)
+ 292 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

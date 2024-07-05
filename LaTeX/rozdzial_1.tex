@@ -3,7 +3,7 @@
 W tym rozdziale omówiono techniki analizy danych, które są wykorzystywane w wielu dziedzinach nauki i przemysłu. Szczegółowo przedstawiono klasteryzację, przetwarzanie języka naturalnego, wektoryzację i metody redukcji wymiarowości.
 	
 
-\section{Klasterzyacja}
+\section{Klasteryzacja}
 
 	Klasteryzacja (ang. clustering) to wielowymiarowa procedura analizy statystycznej, mająca na celu zbieranie danych zawierających informacje (cechy) o próbie obiektów, a następnie porządkowanie tych obiektów w stosunkowo jednorodne grupy. Zakres zastosowania klasteryzacji jest niezwykle szeroki: używa się jej w archeologii, medycynie, psychologii, chemii, biologii, administracji państwowej, filologii, antropologii, marketingu, socjologii, geologii i innych dyscyplinach \cite{Clustering}. 
 	
@@ -23,38 +23,15 @@ W tym rozdziale omówiono techniki analizy danych, które są wykorzystywane w w
 			\item \textbf{Algorytmy klasteryzacji oparte na grafach}. Klasa ta obejmuje prymitywne algorytmy oparte na budowaniu grafu podobieństwa między obiektami. Obecnie są one praktycznie nie stosowane w praktyce.
 			\item \textbf{Algorytmy klasteryzacji probabilistycznej}. Algorytmy te przypisują każdemu obiektowi z próby treningowej prawdopodobieństwo przynależności do każdego z klastrów.
 			\item \textbf{Hierarchiczne algorytmy klasteryzacji}. Algorytmy te porządkują dane, tworząc hierarchię zagnieżdżonych klastrów.
-			\item Algorytmy oparte na gęstości danych:\\
-			
-				\textbf{K-średnich (K-means)} -- iteracyjny algorytm oparty na minimalizacji sumy kwadratowych odchyleń punktów klastrów od ich centrów.\\
-				
-				\textbf{Rozpowszechnianie podobieństwa (Affinity Propagation)} -- algorytm, który rozprzestrzenia wiadomości o podobieństwie między parami obiektów w celu wyboru typowych przedstawicieli każdego klastra.\\
-				
-				\textbf{Przesunięcie średniej (mean shift)} -- metoda wybierająca centroidy klastrów w obszarach o największej gęstości.\\
-				
-				\textbf{Klasteryzacja spektralna (spectral clustering}) -- metoda wykorzystująca wartości własne macierzy odległości do zmniejszenia wymiarowości przed zastosowaniem innych metod klasteryzacji.\\
-				
-				\textbf{DBSCAN (Density-Based Spatial Clustering of Applications with Noise)} -- algorytm grupujący punkty w jeden klaster w obszarach o wysokiej gęstości i oznaczający odosobnione punkty jako szum.
+			\item \textbf{Algorytmy oparte na gęstości danych}. Te algorytmy obejmują różne techniki. Pierwszym z nich jest \textbf{K-średnich (K-means)}, który jest iteracyjnym algorytmem opartym na minimalizacji sumy kwadratowych odchyleń punktów klastrów od ich centrów. Następnie mamy \textbf{Rozpowszechnianie podobieństwa (Affinity Propagation)}, algorytm, który rozprzestrzenia wiadomości o podobieństwie między parami obiektów w celu wyboru typowych przedstawicieli każdego klastra. Kolejną metodą jest \textbf{Przesunięcie średniej (mean shift)}, wybierająca centroidy klastrów w obszarach o największej gęstości. \textbf{Klasteryzacja spektralna (spectral clustering)} to metoda wykorzystująca wartości własne macierzy odległości do zmniejszenia wymiarowości przed zastosowaniem innych metod klasteryzacji. W końcu mamy \textbf{DBSCAN (Density-Based Spatial Clustering of Applications with Noise)}, algorytm grupujący punkty w jeden klaster w obszarach o wysokiej gęstości i oznaczający odosobnione punkty jako szum.
 		\end{enumerate}
 
-		\subsection{Etapy klasteryzacji}
-			Niezależnie od przedmiotu badań, zastosowanie analizy klastrów obejmuje następujące etapy:
-			
-			\begin{enumerate}
-				\item Wybór próby do klasteryzacji. Zakłada się, że klasyfikować można tylko dane ilościowe, ponieważ wskaźniki liczbowe mogą być ilościowo oceniane.
-				\item Określenie zestawu zmiennych, na podstawie których obiekty w próbie będą oceniane, tj. przestrzeni cech. Cechy mogą być różnymi charakterystykami obiektów, które mają znaczenie dla badań.
-				\item Obliczanie wartości wybranej miary podobieństwa (lub różnicy) między obiektami. Celem jest określenie, w jakim stopniu obiekty w próbie są do siebie podobne lub różnią się względem wybranych cech.
-				\item Zastosowanie metody analizy klastrów do stworzenia grup podobnych obiektów. Zakłada się wykorzystanie jednego z istniejących algorytmów klasteryzacji w taki sposób, aby obiekty w jednym klastrze były maksymalnie podobne do siebie, a obiekty z różnych klastrów maksymalnie się różniły.
-				\item Sprawdzenie wiarygodności wyników klasteryzacji. Może to być osiągnięte za pomocą różnych metod, takich jak wizualizacja klastrów, analiza stabilności klastrów i ocena jakości podziału.
-			\end{enumerate}
+	\subsection{Etapy klasteryzacji}
+		Niezależnie od przedmiotu badań, zastosowanie analizy klastrów obejmuje następujące etapy. Pierwszym z nich jest wybór próby do klasteryzacji. Zakłada się, że klasyfikować można tylko dane ilościowe, ponieważ wskaźniki liczbowe mogą być ilościowo oceniane. Następnie określa się zestaw zmiennych, na podstawie których obiekty w próbie będą oceniane, tj. przestrzeni cech. Cechy mogą być różnymi charakterystykami obiektów, które mają znaczenie dla badań. Kolejnym etapem jest obliczanie wartości wybranej miary podobieństwa (lub różnicy) między obiektami. Celem jest określenie, w jakim stopniu obiekty w próbie są do siebie podobne lub różnią się względem wybranych cech. Następnie stosuje się metodę analizy klastrów do stworzenia grup podobnych obiektów, zakładając wykorzystanie jednego z istniejących algorytmów klasteryzacji w taki sposób, aby obiekty w jednym klastrze były maksymalnie podobne do siebie, a obiekty z różnych klastrów maksymalnie się różniły. Ostatnim etapem jest sprawdzenie wiarygodności wyników klasteryzacji, co może być osiągnięte za pomocą różnych metod, takich jak wizualizacja klastrów, analiza stabilności klastrów i ocena jakości podziału.
 
 	\subsection{Zastosowanie}
-		Zastosowanie metody analizy klastrów jest z powodzeniem wykorzystywane w wielu dziedzinach i dyscyplinach. Metoda ta jest również szeroko stosowana w informatyce. Najbardziej udanymi przykładami wykorzystania klasteryzacji w pracy z danymi tekstowymi są: \\ 
-			
-		\textbf{Klasteryzacja wyników wyszukiwania} polega na grupowaniu dokumentów zwróconych w odpowiedzi na zapytanie użytkownika, aby podobne dokumenty pojawiały się razem.\\
+		Zastosowanie metody analizy klastrów jest z powodzeniem wykorzystywane w wielu dziedzinach i dyscyplinach. Metoda ta jest również szeroko stosowana w informatyce. Najbardziej udanymi przykładami wykorzystania klasteryzacji w pracy z danymi tekstowymi są: \textbf{klasteryzacja wyników wyszukiwania}, która polega na grupowaniu dokumentów zwróconych w odpowiedzi na zapytanie użytkownika, aby podobne dokumenty pojawiały się razem \cite{SearchClustering};\textbf{ grupowanie użytkowników o podobnych zainteresowaniach}, co pozwala na lepszą personalizację treści, rekomendacje oraz targetowanie w reklamie \cite{UserClustering}; \textbf{grupowanie tekstowych dokumentów}, takich jak artykuły prasowe, publikacje naukowe czy wiadomości w mediach społecznościowych, które polega na organizowaniu ich według tematyki, co ułatwia użytkownikom odnalezienie interesujących ich treści \cite{SearchClustering}.
 		
-		\textbf{Grupowanie użytkowników o podobnych zainteresowaniach} pozwala na lepszą personalizację treści, rekomendacje oraz targetowanie w reklamie.\\
-		
-		\textbf{Grupowanie tekstowych dokumentów}, takich jak artykuły prasowe, publikacje naukowe czy wiadomości w mediach społecznościowych, polega na organizowaniu ich według tematyki, co ułatwia użytkownikom odnalezienie interesujących ich treści.
 
 
 	\subsection{Ocena efektywności klasteryzacji}
@@ -131,9 +108,9 @@ W tym rozdziale omówiono techniki analizy danych, które są wykorzystywane w w
 			Innym sposobem zmniejszenia wymiarowości danych wejściowych jest wydobywanie cech. Te metody tworzą z oryginalnych cech nowe, które nadal w pełni opisują przestrzeń zbioru danych, ale zmniejszają jego wymiarowość, tracąc na reprezentatywności danych, ponieważ staje się niejasne, za co odpowiadają nowe cechy. Metody wydobywania cech można podzielić na liniowe i nieliniowe.
 
 		\subsubsection{Metody wydobywania cech}
-			Liniowe metody opierają się na założeniu, że zależność między zmiennymi niezależnymi a zmienną zależną jest liniowa. Oznacza to, że zmiana jednej zmiennej prowadzi do proporcjonalnej zmiany innej. Jedną z najbardziej znanych metod liniowego wydobywania cech jest PCA (Principal Component Analysis). Główną ideą tej metody jest znalezienie hiperpłaszczyzny (płaszczyzny o wyższej liczbie wymiarów), na którą przy ortogonalnej projekcji (projekcji pod kątem prostym) wszystkich cech maksymalizowana jest wariancja (czyli rozproszenie danych).
+			Liniowe metody opierają się na założeniu, że zależność między zmiennymi niezależnymi a zmienną zależną jest liniowa. Oznacza to, że zmiana jednej zmiennej prowadzi do proporcjonalnej zmiany innej. Jedną z najbardziej znanych metod liniowego wydobywania cech jest \textbf{PCA (Principal Component Analysis)}. Główną ideą tej metody jest znalezienie hiperpłaszczyzny (płaszczyzny o wyższej liczbie wymiarów), na którą przy ortogonalnej projekcji (projekcji pod kątem prostym) wszystkich cech maksymalizowana jest wariancja (czyli rozproszenie danych).
 		
-			Nieliniowe metody pozwalają modelować bardziej złożone i nieliniowe zależności między zmiennymi. Algorytm t-SNE (t-distributed Stochastic Neighbor Embedding) stara się zachować względne odległości między punktami w oryginalnej przestrzeni wysokowymiarowej, a następnie próbuje odtworzyć to rozkład w przestrzeni niskowymiarowej.
+			Nieliniowe metody pozwalają modelować bardziej złożone i nieliniowe zależności między zmiennymi. \textbf{Algorytm t-SNE (t-distributed Stochastic Neighbor Embedding)} stara się zachować względne odległości między punktami w oryginalnej przestrzeni wysokowymiarowej, a następnie próbuje odtworzyć to rozkład w przestrzeni niskowymiarowej.
 
 	\subsection{Zastosowanie}
 		Metoda redukcji wymiarowości jest często i skutecznie stosowana w uczeniu maszynowym, przetwarzaniu obrazów i widzeniu komputerowym, bioinformatyce i genomice, analizie finansowej i handlu oraz wielu innych dziedzinach. Zmniejszenie liczby cech pozwala na optymalizację przetwarzania danych.

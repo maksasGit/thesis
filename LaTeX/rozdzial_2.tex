@@ -7,7 +7,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 		
 \section{Opis aplikacji}
 
-	Ten projekt ma na celu stworzenie narzędzia do analizy danych tekstowych, obejmującego wstępne przetwarzanie tekstu, wektoryzację i klasteryzację. Głównym celem aplikacji jest umożliwienie użytkownikowi elastycznego dostosowania i wykorzystania różnych metod przetwarzania danych do rozwiązywania konkretnych zadań.
+	Ten projekt ma na celu stworzenie narzędzia do analizy danych tekstowych, obejmującego wstępne przetwarzanie tekstu, wektForyzację i klasteryzację. Głównym celem aplikacji jest umożliwienie użytkownikowi elastycznego dostosowania i wykorzystania różnych metod przetwarzania danych do rozwiązywania konkretnych zadań.
 	
 		
 	\subsection{Zastosowane technologie}
@@ -15,7 +15,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 		
 		
 	\subsection{Technologie tworzenia interfejsów graficznych}
-	Główną ideą aplikacji jest stworzenie wygodnego narzędzia do analizy danych tekstowych, w którym użytkownik może samodzielnie wybierać i dostosowywać metody przetwarzania do konkretnych zadań za pomocą interfejsu graficznego. Do opracowania interfejsu graficznego wykorzystano biblioteki PyQt i Matplotlib:
+	Główną ideą aplikacji jest stworzenie wygodnego narzędzia do analizy danych tekstowych, w którym użytkownik może samodzielnie wybierać i dostosowywać metody przetwarzania do konkretnych zadań za pomocą interfejsu graficznego. Do opracowania interfejsu graficznego wykorzystano biblioteki PyQt i Matplotlib \cite{PyQt, MatPlotLib}:
 
 		\begin{itemize}
 			\item \textbf{PyQt 5.15.10} umożliwia tworzenie intuicyjnych interfejsów użytkownika,
@@ -49,10 +49,10 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 	 	Pierwsze zapytanie służy do pobierania komentarzy do konkretnego filmu, a drugie do uzyskiwania informacji o filmie. Szczegółowe informacje można znaleźć w dokumentacji \cite{YouTubeAPI}. Etapy pobierania komentarzy:
 	 	\begin{enumerate}
 	 		\item Użytkownik wprowadza w interfejsie graficznym (GUI) link do interesującego go filmu.
-	 		\item Program wyodrębnia \texttt{video\_id} z podanego linku.
-	 		\item Za pomocą \texttt{video\_id} wykonywane jest zapytanie \texttt{GET https://www.googleapis.com/youtube/v3/videos}, aby uzyskać podstawowe informacje o filmie. To pozwala użytkownikowi upewnić się, że wybrany film odpowiada jego oczekiwaniom.
-	 		\item Po potwierdzeniu przez użytkownika, że film jest prawidłowy, wykonywane jest zapytanie \texttt{GET https://www.googleapis.com/youtube/v3/commentThreads}, aby pobrać komentarze do tego filmu.
-	 		\item Uzyskane komentarze są zapisywane w pliku tekstowym, gdzie każdy komentarz jest zapisany w oddzielnej linii. Nazwa pliku odpowiada unikalnemu identyfikatorowi filmu (\texttt{video\_id}).
+	 		\item Program wyodrębnia \textbf{video\_id} z podanego linku.
+	 		\item Za pomocą \textbf{video\_id} wykonywane jest zapytanie \textbf{GET https://www.googleapis.com/youtube/v3/videos}, aby uzyskać podstawowe informacje o filmie. To pozwala użytkownikowi upewnić się, że wybrany film odpowiada jego oczekiwaniom.
+	 		\item Po potwierdzeniu przez użytkownika, że film jest prawidłowy, wykonywane jest zapytanie \textbf{GET https://www.googleapis.com/youtube/v3/commentThreads}, aby pobrać komentarze do tego filmu.
+	 		\item Uzyskane komentarze są zapisywane w pliku tekstowym, gdzie każdy komentarz jest zapisany w oddzielnej linii. Nazwa pliku odpowiada unikalnemu identyfikatorowi filmu (\textbf{video\_id}).
 	 	\end{enumerate}
 	
 	\subsection{Przetwarzanie uzyskanych danych}
@@ -67,10 +67,10 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 		 	\item \textbf{textDisplay}: treść komentarza,
 		 	\item \textbf{replies}: kontener z odpowiedziami na komentarze.
 		 \end{itemize}
- 		 Pole \texttt{textDisplay} zawiera tekst komentarza, a pole \texttt{replies} jest kontenerem na odpowiedzi na komentarze. Każda odpowiedź w \texttt{replies.comments} również ma pole \texttt{textDisplay}, które możemy osobno przetwarzać. W końcowym wyniku otrzymamy listę wszystkich komentarzy, gdzie każdy element reprezentuje oddzielny komentarz.
+ 		 Pole \textbf{textDisplay} zawiera tekst komentarza, a pole \textbf{replies} jest kontenerem na odpowiedzi na komentarze. Każda odpowiedź w \textbf{replies.comments} również ma pole \textbf{textDisplay}, które możemy osobno przetwarzać. W końcowym wyniku otrzymamy listę wszystkich komentarzy, gdzie każdy element reprezentuje oddzielny komentarz.
 		
 	\subsection{Przechowywanie}
-		Po uzyskaniu odpowiedzi wszystkie komentarze będą przechowywane w osobnym katalogu \texttt{comments}. Katalog zostanie utworzony, jeśli nie istnieje. Każdy plik z komentarzami będzie miał nazwę \texttt{video\_id.txt} dla łatwej identyfikacji.\\
+		Po uzyskaniu odpowiedzi wszystkie komentarze będą przechowywane w osobnym katalogu \textbf{comments}. Katalog zostanie utworzony, jeśli nie istnieje. Każdy plik z komentarzami będzie miał nazwę \textbf{video\_id.txt} dla łatwej identyfikacji.\\
 		
 		Dla uproszczenia procesu przechowywania i dostępu do danych oraz zapewnienia ich kompatybilności z różnymi narzędziami analitycznymi, zdecydowano się na użycie zwykłego pliku tekstowego (.txt) do przechowywania komentarzy. Każdy komentarz będzie zapisany w oddzielnej linii pliku, co upraszcza strukturę danych i umożliwia łatwe ich odczytanie do analizy.\\
 		
@@ -90,7 +90,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 		Wszystkie metody, oprócz przetwarzania obowiązkowego i analizy, są opcjonalne, co oznacza, że będą wykonywane tylko wtedy, gdy użytkownik wskaże, że chce używać tych metod.
 		
 	\subsection{Przetwarzanie obowiązkowe}
-		Obowiązkowe etapy przetwarzania tekstu to zmiana wszystkich słów na małe litery oraz proces tokenizacji, który eliminuje potrzebę usuwania spacji. Za pomocą funkcji \texttt{nltk.word\_tokenize} każde słowo zostanie podzielone na tokeny. Te etapy są obowiązkowe, ponieważ upraszczają dalszą pracę z tekstem i gwarantują poprawne działanie wielu późniejszych funkcji, które mogą być czułe na wielkość liter.
+		Obowiązkowe etapy przetwarzania tekstu to zmiana wszystkich słów na małe litery oraz proces tokenizacji, który eliminuje potrzebę usuwania spacji. Za pomocą funkcji \textbf{nltk.word\_tokenize} każde słowo zostanie podzielone na tokeny. Te etapy są obowiązkowe, ponieważ upraszczają dalszą pracę z tekstem i gwarantują poprawne działanie wielu późniejszych funkcji, które mogą być czułe na wielkość liter.
 	
 		
 	\subsection{Przetwarzanie prymitywne}
@@ -102,7 +102,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			"Great video! :) :("
 			"Check this out: <a href='https://example.com'>link</a>"
 		\end{verbatim}
-		W tym projekcie jest to realizowane za pomocą wbudowanej funkcji Pythona \texttt{isalpha()}, która sprawdza, czy symbole lub słowa zawierają niealfabetyczne znaki, jak widać na Listingu \ref{lst:removenonalpha}.
+		W tym projekcie jest to realizowane za pomocą wbudowanej funkcji Pythona \textbf{isalpha()}, która sprawdza, czy symbole lub słowa zawierają niealfabetyczne znaki, jak widać na Listingu \ref{lst:removenonalpha}.
 		
 		\begin{lstlisting}[language=Python, caption={Funkcja usuwająca niealfabetyczne symbole}, label={lst:removenonalpha}]
 			def remove_non_alpha(tokens):
@@ -136,10 +136,10 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 
 	
 	\subsection{Analiza}
-		Na końcu, niezależnie od wybranych przez użytkownika etapów, wszystkie tokeny są sprawdzane pod kątem niepustych wartości, aby uniknąć całkowicie pustych słów i wierszy. Następnie wszystkie tokeny są łączone w jeden ciąg znaków, oddzielony spacjami. Na tym etapie wynik przetwarzania jest zwracany i analizowany za pomocą funkcji analizy częstotliwości (\texttt{freq\_analysis}) i analizy długości (\texttt{length\_analysis}). Te funkcje będą używane do tworzenia wykresów, które pomogą użytkownikowi wizualnie ocenić częstotliwość występowania słów i długość komentarzy w celu podejmowania dalszych decyzji.
+		Na końcu, niezależnie od wybranych przez użytkownika etapów, wszystkie tokeny są sprawdzane pod kątem niepustych wartości, aby uniknąć całkowicie pustych słów i wierszy. Następnie wszystkie tokeny są łączone w jeden ciąg znaków, oddzielony spacjami. Na tym etapie wynik przetwarzania jest zwracany i analizowany za pomocą funkcji analizy częstotliwości (\textbf{freq\_analysis}) i analizy długości (\textbf{length\_analysis}). Te funkcje będą używane do tworzenia wykresów, które pomogą użytkownikowi wizualnie ocenić częstotliwość występowania słów i długość komentarzy w celu podejmowania dalszych decyzji.
 	
 		\subsubsection{Analiza częstotliwości (freq analysis)}
-			Analiza częstotliwości (freq analysis) używa przetworzonych ciągów znaków, tworząc pojedynczą tablicę ze wszystkimi słowami ze wszystkich komentarzy, i stosuje klasę \texttt{collections.Counter} w Pythonie. \texttt{Counter} jest używany do zliczania hashowalnych obiektów, takich jak ciągi znaków lub liczby, i dostarcza wygodne metody do pracy z danymi częstotliwości. W ten sposób funkcja generuje dwie tablice: tablicę słów i odpowiadającą jej tablicę liczby wystąpień każdego słowa w tekście. Te tablice będą używane do tworzenia wykresu słupkowego, pokazującego częstotliwość występowania słów.
+			Analiza częstotliwości (freq analysis) używa przetworzonych ciągów znaków, tworząc pojedynczą tablicę ze wszystkimi słowami ze wszystkich komentarzy, i stosuje klasę \textbf{collections.Counter} w Pythonie. \textbf{Counter} jest używany do zliczania hashowalnych obiektów, takich jak ciągi znaków lub liczby, i dostarcza wygodne metody do pracy z danymi częstotliwości. W ten sposób funkcja generuje dwie tablice: tablicę słów i odpowiadającą jej tablicę liczby wystąpień każdego słowa w tekście. Te tablice będą używane do tworzenia wykresu słupkowego, pokazującego częstotliwość występowania słów.
 			
 			Przykład implementacji algorytmu w projekcie znajduje się naa Listingu \ref{lst;freqanalysis}.
 			\begin{lstlisting}[language=Python, caption={Funkcja przeprowadzająca analizę częstotliwości tokenów}, label={lst:freqanalysis}]
@@ -172,7 +172,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 	
 \section{Wektoryzacja}
 	
-	Na tym etapie tekst jest gotowy do dalszego przetwarzania. Aby przeprowadzić analizę, konieczne jest przekształcenie komentarzy w formę wektorową (wektoryzacja). Zostaną użyte dwie metody: TF-IDF i Word2Vec. Te metody umożliwiają przedstawienie danych tekstowych w postaci wektorów liczbowych, co ułatwia dalszą analizę i przetwarzanie. Wektoryzacja będzie realizowana przy użyciu bibliotek \texttt{scikit-learn} \cite{scikit-learn} dla metody TF-IDF oraz \texttt{gensim} \cite{gensim} dla metody Word2Vec. Metody zostały wybrane ze względu na swoją popularność, a wybór dwóch metod wynika z potrzeby przeprowadzenia porównań.
+	Na tym etapie tekst jest gotowy do dalszego przetwarzania. Aby przeprowadzić analizę, konieczne jest przekształcenie komentarzy w formę wektorową (wektoryzacja). Zostaną użyte dwie metody: TF-IDF i Word2Vec. Te metody umożliwiają przedstawienie danych tekstowych w postaci wektorów liczbowych, co ułatwia dalszą analizę i przetwarzanie. Wektoryzacja będzie realizowana przy użyciu bibliotek \textbf{scikit-learn} \cite{scikit-learn} dla metody TF-IDF oraz \textbf{gensim} \cite{gensim} dla metody Word2Vec. Metody zostały wybrane ze względu na swoją popularność, a wybór dwóch metod wynika z potrzeby przeprowadzenia porównań.
 		
 		
 	
@@ -185,7 +185,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			\begin{itemize}
 				\item \textbf{max\_df}: Liczba lub udział. Terminy, które występują w większej liczbie dokumentów niż podano, są ignorowane. Przydatne do usuwania powszechnie używanych słów.
 				\item \textbf{min\_df}: Liczba lub udział. Terminy, które występują w mniejszej liczbie dokumentów niż podano, są ignorowane. Przydatne do usuwania rzadkich słów.
-				\item \textbf{ngra\_range}: Krotka (\texttt{min\_n}, \texttt{max\_n}). Określa zakres wyodrębniania n-gramów. N-gramy to ciągi N kolejnych elementów (zwykle słów lub znaków) z danego tekstu.
+				\item \textbf{ngra\_range}: Krotka (\textbf{min\_n}, \textbf{max\_n}). Określa zakres wyodrębniania n-gramów. N-gramy to ciągi N kolejnych elementów (zwykle słów lub znaków) z danego tekstu.
 				\item \textbf{stop\_words}: Lista słów lub ciąg znaków określający słowa, które należy ignorować.
 			\end{itemize}
 		
@@ -219,7 +219,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			
  
 	\subsection{Word2Vec}
-		Word2Vec to algorytm opracowany do nauki wektorowych reprezentacji słów (embeddingów), które oddają semantyczne relacje między słowami. W bibliotece \texttt{gensim} dostępny jest wygodny interfejs do pracy z Word2Vec \cite{word2vec}.
+		Word2Vec to algorytm opracowany do nauki wektorowych reprezentacji słów (embeddingów), które oddają semantyczne relacje między słowami. W bibliotece \textbf{gensim} dostępny jest wygodny interfejs do pracy z Word2Vec \cite{word2vec}.
 
 
 		\subsubsection{Parametry}	
@@ -236,11 +236,11 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			\begin{itemize}
 				\item \textbf{SG (Skip-Gram) i CBOW (Continuous Bag of Words)}: W Word2Vec są dwa główne podejścia architektoniczne — Skip-Gram i CBOW. Parametr sg w Gensim pozwala wybrać między nimi:
 					\begin{itemize}
-						\item \texttt{sg}=0 używa CBOW (domyślnie).
-						\item \texttt{sg}=1 używa Skip-Gram.
+						\item \textbf{sg}=0 używa CBOW (domyślnie).
+						\item \textbf{sg}=1 używa Skip-Gram.
 					\end{itemize}
 				\item \textbf{Negative Sampling}: W Word2Vec używa się negatywnego próbkowania dla zwiększenia efektywności uczenia. Parametr negative określa liczbę \textit{negatywnych} przykładów dla każdego pozytywnego przykładu.
-				\item \textbf{Learning Rate}: Parametr alpha określa początkową szybkość uczenia, a \texttt{min\_alpha} — minimalną szybkość uczenia, która zmniejsza się do tej wartości w trakcie uczenia.
+				\item \textbf{Learning Rate}: Parametr alpha określa początkową szybkość uczenia, a \textbf{min\_alpha} — minimalną szybkość uczenia, która zmniejsza się do tej wartości w trakcie uczenia.
 			\end{itemize}
 		
 		\subsubsection{Wyjaśnienie algorytmu}
@@ -306,7 +306,7 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			\item \textbf{tol}: Próg dla zatrzymania algorytmu. Jeśli różnica między starymi a nowymi centroidami jest mniejsza od tej wartości, algorytm zatrzymuje się.
 			\item \textbf{n\_init}: Liczba uruchomień algorytmu z różnymi inicjalizacjami. Wynik z najmniejszą bezwładnością zostanie wybrany jako ostateczny.
 			\item \textbf{random\_state}: Wartość początkowa generatora liczb losowych dla powtarzalności wyników.
-			\item \textbf{algorithm}: Algorytm do obliczania K-means. Możliwe wartości to \texttt{auto}, \texttt{full} i \texttt{elkan}.
+			\item \textbf{algorithm}: Algorytm do obliczania K-means. Możliwe wartości to \textbf{auto}, \textbf{full} i \textbf{elkan}.
 		\end{itemize}
 	
 	
@@ -362,17 +362,17 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 			\begin{itemize}
 				\item \textbf{eps}: Maksymalna odległość między dwiema próbkami, przy której jedna jest uważana za sąsiada drugiej. Jest to parametr promienia do określania gęstości obszaru.
 				\item \textbf{min\_samples}: Minimalna liczba próbek (w tym sama próbka) potrzebna do uznania obszaru za gęsty, tj. do uznania próbki za rdzeniową.
-				\item \textbf{metric}: Metryka do obliczania odległości między punktami (domyślnie \texttt{euclidean}). Może to być dowolna metryka obsługiwana przez funkcję \texttt{scipy.spatial.distance.pdist}.
-				\item \textbf{algorithm}: Algorytm używany do obliczania najbliższych sąsiadów (\texttt{auto}, \texttt{ball\_tree}, \texttt{kd\_tree}, \texttt{brute}).
-				\item \textbf{leaf\_size}: Rozmiar liścia przekazywany algorytmom \texttt{ball\_tree} i \texttt{kd\_tree}. Może to wpłynąć na szybkość budowy i zapytania najbliższych sąsiadów.
-				\item \textbf{p}: Wykładnik odległości Minkowskiego, gdy używana jest metryka \texttt{minkowski} (domyślnie \texttt{p}=2, co odpowiada odległości euklidesowej).
+				\item \textbf{metric}: Metryka do obliczania odległości między punktami (domyślnie \textbf{euclidean}). Może to być dowolna metryka obsługiwana przez funkcję \textbf{scipy.spatial.distance.pdist}.
+				\item \textbf{algorithm}: Algorytm używany do obliczania najbliższych sąsiadów (\textbf{auto}, \textbf{ball\_tree}, \textbf{kd\_tree}, \textbf{brute}).
+				\item \textbf{leaf\_size}: Rozmiar liścia przekazywany algorytmom \textbf{ball\_tree} i \textbf{kd\_tree}. Może to wpłynąć na szybkość budowy i zapytania najbliższych sąsiadów.
+				\item \textbf{p}: Wykładnik odległości Minkowskiego, gdy używana jest metryka \textbf{minkowski} (domyślnie \textbf{p}=2, co odpowiada odległości euklidesowej).
 			\end{itemize}
 			
 			
 		\subsubsection{Wyjaśnienie algorytmu}
 			Algorytm DBSCAN działa w następujący sposób:
 			\begin{enumerate}
-				\item \textbf{Określenie punktów rdzeniowych} -- próbki, dla których liczba sąsiadów w obrębie \texttt{eps} nie jest mniejsza niż \texttt{min\_samples}.
+				\item \textbf{Określenie punktów rdzeniowych} -- próbki, dla których liczba sąsiadów w obrębie \textbf{eps} nie jest mniejsza niż \textbf{min\_samples}.
 				\item \textbf{Tworzenie klastrów} -- dla każdej próbki rdzeniowej tworzony jest klaster poprzez znalezienie wszystkich jej sąsiadów, którzy również są próbkami rdzeniowymi, oraz ich własnych sąsiadów itd. Każdy klaster obejmuje także próbki nie będące rdzeniowymi, które są sąsiadami próbek rdzeniowych w klastrze.
 				\item \textbf{Wykrywanie szumów} -- wszystkie próbki, które nie są rdzeniowe i nie znajdują się w wystarczającej odległości od próbek rdzeniowych, są uznawane za szumy.
 			\end{enumerate}
@@ -416,8 +416,8 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 		Dobór odpowiednich parametrów dla algorytmów klasteryzacji, takich jak K-means i DBSCAN, jest kluczowy dla uzyskania satysfakcjonujących wyników. Poniżej przedstawione są niektóre techniki i wskazówki dotyczące doboru parametrów:
 		
 		\begin{itemize}
-			\item \textbf{K-means}: Ważnym parametrem jest liczba klastrów (\texttt{n\_clusters}). Można użyć metody "łokcia" (elbow method) lub średniego współczynnika sylwetki (silhouette score) do określenia optymalnej liczby klastrów. Parametry takie jak \texttt{max\_iter}, \texttt{tol} oraz \texttt{n\_init} mogą być dostosowane w celu poprawy zbieżności i stabilności algorytmu.
-			\item \textbf{DBSCAN}: Kluczowymi parametrami są \texttt{eps} i \texttt{min\_samples}. Wybór \texttt{eps} zależy od gęstości danych i można go oszacować na podstawie wykresu odległości K-najbliższych sąsiadów (K-distance plot). Parametr min\_samples można ustawić w zależności od oczekiwanej minimalnej liczby punktów w klastrze.
+			\item \textbf{K-means}: Ważnym parametrem jest liczba klastrów (\textbf{n\_clusters}). Można użyć metody "łokcia" (elbow method) lub średniego współczynnika sylwetki (silhouette score) do określenia optymalnej liczby klastrów. Parametry takie jak \textbf{max\_iter}, \textbf{tol} oraz \textbf{n\_init} mogą być dostosowane w celu poprawy zbieżności i stabilności algorytmu.
+			\item \textbf{DBSCAN}: Kluczowymi parametrami są \textbf{eps} i \textbf{min\_samples}. Wybór \textbf{eps} zależy od gęstości danych i można go oszacować na podstawie wykresu odległości K-najbliższych sąsiadów (K-distance plot). Parametr min\_samples można ustawić w zależności od oczekiwanej minimalnej liczby punktów w klastrze.
 		\end{itemize}
 		
 			
@@ -439,8 +439,8 @@ Rozdział opisuje wybrane metody i technologie dla projektu. Omawia etapy wyboru
 				\item \textbf{early\_exaggeration} -- parametr kontrolujący odległości między punktami na początkowym etapie optymalizacji.
 				\item \textbf{learning\_rate} -- szybkość uczenia się dla spadku gradientowego.
 				\item \textbf{n\_iter} -- liczba iteracji do optymalizacji.
-				\item \textbf{metric} -- metryka do obliczania odległości między punktami (domyślnie \texttt{euclidean}).
-				\item \textbf{init} -- metoda inicjalizacji (\texttt{random} lub \texttt{pca}).			
+				\item \textbf{metric} -- metryka do obliczania odległości między punktami (domyślnie \textbf{euclidean}).
+				\item \textbf{init} -- metoda inicjalizacji (\textbf{random} lub \textbf{pca}).			
 				\item \textbf{random\_state} -- początkowa wartość generatora liczb losowych dla reprodukowalności wyników.
 			\end{itemize}				
 		
