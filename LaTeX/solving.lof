@@ -1,22 +1,26 @@
 \babel@toc {polish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Interfejs graficzny po wprowadzeniu linku do filmu (krok 1)}}{11}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Interfejs graficzny po uzyskaniu informacji o filmie (krok 3)}}{11}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Przyklad poczatkowego okna}}{22}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Przyklad wypelnionego okna}}{22}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Przyklad poczatkowego okna do pobierania komentarzy}}{22}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Przyklad okna do konfiguracji przetwarzania tekstu}}{23}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Przyklad okna do konfiguracji wektoryzacji}}{24}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Przyklad okna do konfiguracji klasteryzacji}}{25}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Przykład początkowego okna.}}{22}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Przykład wypełnionego okna.}}{22}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Przykład początkowego okna do pobierania komentarzy.}}{22}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Przykład okna do konfiguracji przetwarzania tekstu.}}{23}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Przykład okna do konfiguracji wektoryzacji.}}{24}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Przykład okna do konfiguracji klasteryzacji.}}{25}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Przyklad okna do pobierania komentarzy}}{27}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Przyklad okna do pobierania komentarzy}}{28}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Przyklad full complete window }}{28}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha}}{29}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Przykład analizy długości tekstu z Alpha}}{29}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha}}{29}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Przykład analizy długości tekstu z Alpha}}{29}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha}}{29}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Przykład analizy długości tekstu z Alpha}}{29}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha}}{30}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Przykład analizy długości tekstu z Alpha}}{30}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Przyklad okna do pobierania komentarzy}}{27}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Przyklad okna do pobierania komentarzy}}{28}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Przykład wypełnionego okna }}{28}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Przykład analizy częstotliwości tekstu bez TextProcessing}}{29}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Przykład analizy długości tekstu bez TextProcessing}}{29}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha}}{29}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Przykład analizy długości tekstu z Alpha}}{29}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha i Stop-words}}{29}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Przykład analizy długości tekstu z Alpha i Stop-words}}{29}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha i Stop-words i Lemmatize}}{30}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Przykład analizy długości tekstu z Alpha i Stop-words i Lemmatize }}{30}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha i Stop-words i Lemmatize}}{30}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Przykład analizy długości tekstu z Alpha i Stop-words i Lemmatize }}{30}{figure.caption.49}%

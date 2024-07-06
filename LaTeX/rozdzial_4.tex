@@ -4,7 +4,7 @@ W tym rozdziale opisano proces interakcji z różnymi funkcjami aplikacji i ich 
 
 	\section{Przykład tworzenia workspace}
 	
-		Rozważmy sytuację, w której wybieramy film z YouTube do analizy. W naszym przykładzie rozważymy film, który jest przedstawiony na grafice \ref{fig:YouTubeVideoPreview}.
+		Rozważmy sytuację, w której wybieramy film z YouTube do analizy. W naszym przykładzie rozważymy film, który jest przedstawiony na Rysunku \ref{fig:YouTubeVideoPreview}.
 		
 		\begin{figure}
 			\centering
@@ -15,7 +15,7 @@ W tym rozdziale opisano proces interakcji z różnymi funkcjami aplikacji i ich 
 		
 		\subsection{Pobieranie danych tekstowych}
 		
-		Pierwszym krokiem jest pobranie danych. Po uruchomieniu aplikacji należy otworzyć okno dialogowe YouTube Comments za pomocą paska menu ("Comments -- YouTube"). Następnie należy wkleić link do filmu i kliknąć przycisk "Find Video". Po tej operacji okno powinno wyglądać jak na grafice \ref{fig:YouTubeWindowThiContent}, gdzie wyświetlone są podstawowe informacje o filmie. Po potwierdzeniu, że to właściwy film, należy kliknąć przycisk "Download Comments". Proces może chwilę potrwać w zależności od liczby komentarzy. Po zakończeniu pomyślnym zostanie wyświetlony komunikat "Comments downloaded successfully", co oznacza, że komentarze zostały pobrane i zapisane w folderze "Comments" pod nazwą pliku "90OC4TQ7uHc.txt".
+		Pierwszym krokiem jest pobranie danych. Po uruchomieniu aplikacji należy otworzyć okno dialogowe YouTube Comments za pomocą paska menu \textbf{Comments} -- \textbf{YouTube}. Następnie należy wkleić link do filmu i kliknąć przycisk \textbf{Find Video}. Po tej operacji okno powinno wyglądać jak na Rysunku \ref{fig:YouTubeWindowThiContent}, gdzie wyświetlone są podstawowe informacje o filmie. Po potwierdzeniu, że to właściwy film, należy kliknąć przycisk \textbf{Download Comments}. Proces może chwilę potrwać w zależności od liczby komentarzy. Po zakończeniu pomyślnym zostanie wyświetlony komunikat \textbf{Comments downloaded successfully}, co oznacza, że komentarze zostały pobrane i zapisane w folderze \textbf{Comments} pod nazwą pliku \textbf{video\_id.txt}, w tym przykładzie jest to~~\textbf{90OC4TQ7uHc.txt}.
 		
 		\begin{figure}
 			\centering
@@ -26,13 +26,14 @@ W tym rozdziale opisano proces interakcji z różnymi funkcjami aplikacji i ich 
 		
 		\subsection{Tworzenie Workspace}
 		
-		Aby utworzyć projekt (workspace) do pracy z pobranymi komentarzami, należy przejść do menu ("File -- New Project"), gdzie można wprowadzić ścieżkę do pliku z danymi. Można również skorzystać z przycisku "Browse.." w celu wyboru pliku "90OC4TQ7uHc.txt" i wprowadzenia nazwy Workspace dla identyfikacji. Okno powinno wyglądać jak na grafice \ref{fig:NewWorkspaceExampleFull}.
+		Aby utworzyć projekt (workspace) do pracy z pobranymi komentarzami, należy przejść do~~menu \textbf{File} -- \textbf{New Project}, gdzie można wprowadzić ścieżkę do pliku z danymi. Można również skorzystać z przycisku \textbf{Browse..} w celu wyboru pliku \textbf{90OC4TQ7uHc.txt} i wprowadzenia nazwy Workspace dla identyfikacji. Okno powinno wyglądać jak na Rysunku \ref{fig:NewWorkspaceExampleFull}.
+		
 		
 		
 		\begin{figure}
 			\centering
 			\scalebox{1.0} {\includegraphics[width=0.5\textwidth]{./img/NewWorkspaceExampleFull.jpg}}
-			\caption{Przyklad full complete window }
+			\caption{Przykład wypełnionego okna }
 			\label{fig:NewWorkspaceExampleFull}
 		\end{figure}
 	
@@ -42,25 +43,25 @@ W tym rozdziale opisano proces interakcji z różnymi funkcjami aplikacji i ich 
 		
 		\subsection{Przetwarzanie tekstu}
 		
-			Za pomocą przycisków "Previous" i "Next" można przeglądać zmiany ustawień przetwarzania tekstu oraz zobaczyć wyniki analizy częstotliwości i długości tekstu na wykresach.
+			Za pomocą przycisków \textbf{Previous} i \textbf{Next} można przeglądać zmiany ustawień przetwarzania tekstu oraz zobaczyć wyniki analizy częstotliwości i długości tekstu na wykresach.
 			
 		\subsubsection{Alpha}
 			
-			Rozważmy użycie tylko parametru Alpha. Najlepszym sposobem na zobaczenie efektu metody Alpha jest nie używanie TextProcessing i korzystanie tylko z Alpha. Przykładowe wykresy bez TextProcessing: freq\_analysis na rysunku \ref{fig:FreqTextParamsNone} oraz length\_analysis na rysunku \ref{fig:LenTextParamsNone}. Przykładowe wykresy z użyciem TextProcessing i Alpha: freq\_analysis na rysunku \ref{fig:FreqTextParamsAlpha} oraz length\_analysis na rysunku \ref{fig:LenTextParamsAlpha}.
-			
+		Rozważmy zastosowanie parametru \textbf{alpha}. Efekt użycia parametru \textbf{alpha} można wyraźnie zobaczyć na rysunkach \textbf{freq\_analysis} i \textbf{length\_analysis}. Na ysunku \ref{fig:FreqTextParamsNone} wśród często występujących tokenów znajduje się duża liczba znaków specjalnych, podczas gdy na Rysunku \ref{fig:FreqTextParamsAlpha} pozostają tylko tokeny bez znaków specjalnych. Rysunki \ref{fig:LenTextParamsNone} i \ref{fig:LenTextParamsAlpha} pokazują, jak znacząco zmienia się średnia liczba tokenów w komentarzu. To pokazuje, że Alpha działa poprawnie.
+					
 			
 			\begin{figure}[ht]
 				\centering
 				\begin{minipage}{0.45\textwidth}
 					\centering
-					\includegraphics[width=\linewidth]{./img/FreqTextParamsAlpha.jpg}
-					\caption{Przykład analizy częstotliwości tekstu z Alpha}
+					\includegraphics[width=\linewidth]{./img/FreqTextParamsNone.jpg}
+					\caption{Przykład analizy częstotliwości tekstu bez TextProcessing}
 					\label{fig:FreqTextParamsNone}
 				\end{minipage}\hfill
 				\begin{minipage}{0.45\textwidth}
 					\centering
-					\includegraphics[width=\linewidth]{./img/LenTextParamsAlpha.jpg}
-					\caption{Przykład analizy długości tekstu z Alpha}
+					\includegraphics[width=\linewidth]{./img/LenTextParamsNone.jpg}
+					\caption{Przykład analizy długości tekstu bez TextProcessing}
 					\label{fig:LenTextParamsNone}
 				\end{minipage}
 			\end{figure}
@@ -85,56 +86,71 @@ W tym rozdziale opisano proces interakcji z różnymi funkcjami aplikacji i ich 
 			
 		\subsubsection{Stop-words}
 			
-			Rozważmy użycie tylko parametru Stop-words. Najlepszym sposobem na zobaczenie efektu metody Stop-words jest użycie TextProcessing z Alpha oraz używanie Alpha i Stop-words. Przykładowe wykresy z użyciem TextProcessing i Alpha: freq\_analysis na rysunku \ref{fig:FreqTextParamsAlpha} oraz length\_analysis na rysunku \ref{fig:LenTextParamsAlpha}. Przykładowe wykresy z użyciem TextProcessing, Alpha i Stop-words: freq\_analysis na rysunku \ref{fig:FreqTextParamsAlphaStop} oraz length\_analysis na rysunku \ref{fig:LenTextParamsAlphaStop}.
+		Rozważmy zastosowanie parametru \textbf{stop-words}. Efekt użycia parametru \textbf{stop-words} można wyraźnie zobaczyć na wykresach \textbf{freq\_analysis} i \textbf{length\_analysis}. Rysunek \ref{fig:FreqTextParamsAlpha} zawiera dużą liczbę przyimków i artikeli wśród często występujących tokenów, podczas gdy na rysunku \ref{fig:FreqTextParamsAlphaStop} pozostają tylko rzeczowniki pospolite, które niosą ze sobą najwięcej informacji. Na rysunkach \ref{fig:LenTextParamsAlpha} i \ref{fig:LenTextParamsAlphaStop} pokazują, że średnia liczba tokenów w komentarzu również spada. Wskazuje to, że słowa stop działają poprawnie.
 			
 			\begin{figure}[ht]
 				\centering
 				\begin{minipage}{0.45\textwidth}
 					\centering
-					\includegraphics[width=\linewidth]{./img/FreqTextParamsAlpha.jpg}
-					\caption{Przykład analizy częstotliwości tekstu z Alpha}
+					\includegraphics[width=\linewidth]{./img/FreqTextParamsAlphaStop.jpg}
+					\caption{Przykład analizy częstotliwości tekstu z Alpha i Stop-words}
 					\label{fig:FreqTextParamsAlphaStop}
 				\end{minipage}\hfill
 				\begin{minipage}{0.45\textwidth}
 					\centering
-					\includegraphics[width=\linewidth]{./img/LenTextParamsAlpha.jpg}
-					\caption{Przykład analizy długości tekstu z Alpha}
+					\includegraphics[width=\linewidth]{./img/LenTextParamsAlphaStop.jpg}
+					\caption{Przykład analizy długości tekstu z Alpha i Stop-words}
 					\label{fig:LenTextParamsAlphaStop}
 				\end{minipage}
 			\end{figure}
 		
 		\subsubsection{Lemmatize}
 		
-			Rozważmy użycie parametru Lemmatize. Najlepszym sposobem na zobaczenie efektu metody Lemmatize jest użycie TextProcessing z Alpha i Stop-words oraz używanie Alpha, Stop-words i Lemmatize. Przykładowe wykresy z użyciem TextProcessing, Alpha i Stop-words: freq\_analysis na rysunku \ref{fig:FreqTextParamsAlphaStop} oraz length\_analysis na rysunku \ref{fig:LenTextParamsAlphaStop}. Przykładowe wykresy z użyciem TextProcessing, Alpha, Stop-words i Lemmatize: freq\_analysis na rysunku \ref{fig:FreqTextParamsAlphaStopLem} oraz length\_analysis na rysunku \ref{fig:LenTextParamsAlphaStopLem}.
+		Rozważmy zastosowanie parametru \textbf{lemmatize}. Efekt jego użycia jest wyraźnie widoczny na wykresie \textbf{freq\_analysis}. Działanie parametru \textbf{lemmatize} najlepiej ilustruje łączenie form zwierząt \textbf{animals} i \textbf{animal}, co można zaobserwować na Rysunku \ref{fig:FreqTextParamsAlphaStop} oraz Rysunku \ref{fig:FreqTextParamsAlphaStopLem}. Po zastosowaniu lematyzacji, \textbf{animal} staje się najczęstszą formą. Podobne zmiany można zauważyć w przypadku \textbf{humans} i \textbf{human}.
+			
 			
 			\begin{figure}[ht]
 				\centering
 				\begin{minipage}{0.45\textwidth}
 					\centering
-					\includegraphics[width=\linewidth]{./img/FreqTextParamsAlpha.jpg}
-					\caption{Przykład analizy częstotliwości tekstu z Alpha}
+					\includegraphics[width=\linewidth]{./img/FreqTextParamsAlphaStopLem.jpg}
+					\caption{Przykład analizy częstotliwości tekstu z Alpha i Stop-words i Lemmatize}
 					\label{fig:FreqTextParamsAlphaStopLem}
 				\end{minipage}\hfill
 				\begin{minipage}{0.45\textwidth}
 					\centering
-					\includegraphics[width=\linewidth]{./img/LenTextParamsAlpha.jpg}
-					\caption{Przykład analizy długości tekstu z Alpha}
+					\includegraphics[width=\linewidth]{./img/LenTextParamsAlphaStopLem.jpg}
+					\caption{Przykład analizy długości tekstu z Alpha i Stop-words i Lemmatize }
 					\label{fig:LenTextParamsAlphaStopLem}
 				\end{minipage}
 			\end{figure}
 
 		
 		\subsection{Wektoryzacja}
-		
-		
-		
+			Resultat widoczny tylko po uzyciu Apply Changes
 		
 		\subsubsection{TF-IDF}
-		
+			
 		
 		\subsubsection{Word2Vec}
+
 		
 		
+		\begin{figure}[ht]
+			\centering
+			\begin{minipage}{0.45\textwidth}
+				\centering
+				\includegraphics[width=\linewidth]{./img/w2v_standard.jpeg}
+				\caption{Przykład analizy częstotliwości tekstu z Alpha i Stop-words i Lemmatize}
+				\label{fig:w2v_standard}
+			\end{minipage}\hfill
+			\begin{minipage}{0.45\textwidth}
+				\centering
+				\includegraphics[width=\linewidth]{./img/w2v_size500.jpeg}
+				\caption{Przykład analizy długości tekstu z Alpha i Stop-words i Lemmatize }
+				\label{fig:w2v_size500}
+			\end{minipage}
+		\end{figure}
 		
 		\subsection{Klasteryzacja}
 		
