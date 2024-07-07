@@ -86,7 +86,7 @@ W tym rozdziale opisano proces interakcji z różnymi funkcjami aplikacji i ich 
 			
 		\subsubsection{Stop-words}
 			
-		Rozważmy zastosowanie parametru \textbf{stop-words}. Efekt użycia parametru \textbf{stop-words} można wyraźnie zobaczyć na wykresach \textbf{freq\_analysis} i \textbf{length\_analysis}. Rysunek \ref{fig:FreqTextParamsAlpha} zawiera dużą liczbę przyimków i artikeli wśród często występujących tokenów, podczas gdy na rysunku \ref{fig:FreqTextParamsAlphaStop} pozostają tylko rzeczowniki pospolite, które niosą ze sobą najwięcej informacji. Na rysunkach \ref{fig:LenTextParamsAlpha} i \ref{fig:LenTextParamsAlphaStop} pokazują, że średnia liczba tokenów w komentarzu również spada. Wskazuje to, że \textbf{stop-words} działają poprawnie.
+		Rozważmy zastosowanie parametru \textbf{stop-words}. Efekt użycia parametru \textbf{stop-words} można wyraźnie zobaczyć na wykresach \textbf{freq\_analysis} i \textbf{length\_analysis}. Rysunek \ref{fig:FreqTextParamsAlpha} zawiera dużą liczbę przyimków i artikeli wśród często występujących tokenów, podczas gdy na rysunku \ref{fig:FreqTextParamsAlphaStop} pozostają tylko rzeczowniki pospolite, które niosą ze sobą najwięcej informacji. Na rysunkach \ref{fig:LenTextParamsAlpha} i~~\ref{fig:LenTextParamsAlphaStop} pokazują, że średnia liczba tokenów w komentarzu również spada. Wskazuje to, że \textbf{stop-words} działają poprawnie.
 			
 			\begin{figure}[ht]
 				\centering
@@ -106,7 +106,7 @@ W tym rozdziale opisano proces interakcji z różnymi funkcjami aplikacji i ich 
 		
 		\subsubsection{Lemmatize}
 		
-		Rozważmy zastosowanie parametru \textbf{lemmatize}. Efekt jego użycia jest wyraźnie widoczny na wykresie \textbf{freq\_analysis}. Działanie parametru \textbf{lemmatize} najlepiej ilustruje łączenie form zwierząt \textbf{animals} i \textbf{animal}, co można zaobserwować na Rysunku \ref{fig:FreqTextParamsAlphaStop} oraz Rysunku \ref{fig:FreqTextParamsAlphaStopLem}. Po zastosowaniu lematyzacji, \textbf{animal} staje się najczęstszą formą. Podobne zmiany można zauważyć w przypadku \textbf{humans} i \textbf{human}.
+		Rozważmy zastosowanie parametru \textbf{lemmatize}. Efekt jego użycia jest wyraźnie widoczny na~~wykresie \textbf{freq\_analysis}. Działanie parametru \textbf{lemmatize} najlepiej ilustruje łączenie form zwierząt \textbf{animals} i \textbf{animal}, co można zaobserwować na Rysunku \ref{fig:FreqTextParamsAlphaStop} oraz Rysunku \ref{fig:FreqTextParamsAlphaStopLem}. Po~~zastosowaniu lematyzacji, \textbf{animal} staje się najczęstszą formą. Podobne zmiany można zauważyć w przypadku \textbf{humans} i \textbf{human}.
 			
 			
 			\begin{figure}[ht]
@@ -130,7 +130,7 @@ W tym rozdziale opisano proces interakcji z różnymi funkcjami aplikacji i ich 
 			Wynik wektoryzacji możliwy do ocenienia dopiero po wizualizacji. W kolejnych sekcjach przedstawione wizualne wykorzystanie TF-IDF i Word2Vec z różnymi parametrami.
 		
 		\subsubsection{TF-IDF}
-			Podczas korzystania z metody \textbf{TF-IDF} rozważmy dwa przypadki. Użycie domyślnych parametrów na Rysunku \ref{fig:tfstandard} i użycie parametrów (\textbf{max\_df} = 0.5, \textbf{min\_df} = 0.5) na Rysunku \ref{fig:tf0505}. W takich przypadkach analiza skupień jest praktycznie niemożliwa. Dane są bardzo mieszane, z najczęściej występującymi tokenami skupionymi w centrum i rzadko występującymi tokenami na krawędziach. Różnica przy zmianie parametrów nie jest bardzo widoczna, ale na Rysunku \ref{fig:tf0505} możemy zauważyć linie kierujące od środka do krawędzi, podczas gdy na Rysunku \ref{fig:tfstandard} 1 wykres jest równomiernie rozłożony na okręgu.
+			Podczas korzystania z metody \textbf{TF-IDF} rozważmy dwa przypadki. Użycie domyślnych parametrów na Rysunku \ref{fig:tfstandard} i użycie parametrów (\textbf{max\_df} = 0.5, \textbf{min\_df} = 0.5) na Rysunku \ref{fig:tf0505}. W takich przypadkach analiza skupień jest praktycznie niemożliwa. Dane są bardzo mieszane, z najczęściej występującymi tokenami skupionymi w centrum i rzadko występującymi tokenami na~~krawędziach. Różnica przy zmianie parametrów nie jest bardzo widoczna, ale na Rysunku \ref{fig:tf0505} możemy zauważyć linie kierujące od środka do krawędzi, podczas gdy na Rysunku \ref{fig:tfstandard} 1 wykres jest równomiernie rozłożony na okręgu.
 		
 		\begin{figure}
 			\centering
@@ -204,7 +204,7 @@ W tym rozdziale opisano proces interakcji z różnymi funkcjami aplikacji i ich 
 		
 		\subsubsection{DBSCAN}
 		
-		Rozważmy cztery przypadki pracy z DBSCAN. Rozważmy zmianę \textbf{eps} jak na rysunkach \ref{fig:w2cdbscan4_0-05} i \ref{fig:w2cdbscan4_0-075}. I zmianę \textbf{min\_pts} na rysunkach \ref{fig:w2cdbscan2_0-05} i \ref{fig:w2cdbscan10_0-05}. We wszystkich przypadkach widzimy, że DBSCAN jest bardzo wrażliwy na wybór parametrów. Na Rysunku \ref{fig:w2cdbscan4_0-05} i Rysunku \ref{fig:w2cdbscan10_0-05}  większość komentarzy nie jest zawarta w żadnym klastrze, a większość klastrów składa się z bardzo małej liczby komentarzy. Na Rysunku \ref{fig:w2cdbscan4_0-075} i Rysunku \ref{fig:w2cdbscan2_0-05}, ponieważ parametry były bardzo korzystne dla grupowania, większość komentarzy została skupiona w jednym dużym klastrze.
+		Rozważmy cztery przypadki pracy z DBSCAN. Rozważmy zmianę \textbf{eps} jak na rysunkach \ref{fig:w2cdbscan4_0-05} i~~\ref{fig:w2cdbscan4_0-075}. I zmianę \textbf{min\_pts} na rysunkach \ref{fig:w2cdbscan2_0-05} i \ref{fig:w2cdbscan10_0-05}. We wszystkich przypadkach widzimy, że~~DBSCAN jest bardzo wrażliwy na wybór parametrów. Na Rysunku \ref{fig:w2cdbscan4_0-05} i Rysunku \ref{fig:w2cdbscan10_0-05}  większość komentarzy nie jest zawarta w żadnym klastrze, a większość klastrów składa się z~~bardzo małej liczby komentarzy. Na Rysunku \ref{fig:w2cdbscan4_0-075} i Rysunku \ref{fig:w2cdbscan2_0-05}, ponieważ parametry były bardzo korzystne dla grupowania, większość komentarzy została skupiona w jednym dużym klastrze.
 		
 			\begin{figure}[ht]
 			\centering
