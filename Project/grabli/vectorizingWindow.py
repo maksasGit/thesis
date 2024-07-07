@@ -16,7 +16,7 @@ class VectorizationWindow(QDialog):
         self.setGeometry(100, 100, 400, 300)
         layout = QVBoxLayout()
         self.choice_box = QComboBox(self)
-        self.choice_box.addItems(["Bag of Words", "TF-IDF", "Word2Vec"])
+        self.choice_box.addItems(["TF-IDF", "Word2Vec"])
         self.choice_box.currentIndexChanged.connect(self.choice_changed)
         layout.addWidget(self.choice_box)
         self.parameters_widget = QWidget()
@@ -28,12 +28,10 @@ class VectorizationWindow(QDialog):
         layout.addWidget(self.apply_button)
         self.setLayout(layout)
         method = self.workspace.vectorization_options.get("method")
-        if method == "bag_of_words":
+        if method == "tf-idf":
             self.choice_box.setCurrentIndex(0)
-        elif method == "tf-idf":
-            self.choice_box.setCurrentIndex(1)
         elif method == "word2vec":
-            self.choice_box.setCurrentIndex(2)
+            self.choice_box.setCurrentIndex(1)
         else:
             print("Unknown vectorization method:", method)
 
@@ -50,19 +48,19 @@ class VectorizationWindow(QDialog):
             if widget is not None:
                 widget.deleteLater()
         if index == 0:
-            label, line_edit = self.create_param_line_edit("Max words amount:" ,self.workspace.vectorization_options.get("max_words"))
-            self.parameters_layout.addWidget(label)
-            self.parameters_layout.addWidget(line_edit)
+            labels_texts = ["max_freq:", "min_freq:"]
+            defaults = [self.workspace.vectorization_options.get("max_freq"),
+                        self.workspace.vectorization_options.get("min_freq")]
+            for label_text, default_value in zip(labels_texts, defaults):
+                label, line_edit = self.create_param_line_edit(label_text, default_value)
+                self.parameters_layout.addWidget(label)
+                self.parameters_layout.addWidget(line_edit)
         elif index == 1:
-            label, line_edit = self.create_param_line_edit("Min word freq:", self.workspace.vectorization_options.get("min_freq"))
-            self.parameters_layout.addWidget(label)
-            self.parameters_layout.addWidget(line_edit)
-        elif index == 2:
-            labels_texts = ["Vector size:", "Window size:", "Min word freq:", "Iteration amount:"]
+            labels_texts = ["Vector size:", "Window size:", "Min word freq:", "SG:"]
             defaults = [self.workspace.vectorization_options.get("vector_size"),
-                        self.workspace.vectorization_options.get("context_window"),
+                        self.workspace.vectorization_options.get("window"),
                         self.workspace.vectorization_options.get("min_count"),
-                        self.workspace.vectorization_options.get("iterations")]
+                        self.workspace.vectorization_options.get("sg")]
             for label_text, default_value in zip(labels_texts, defaults):
                 label, line_edit = self.create_param_line_edit(label_text, default_value)
                 self.parameters_layout.addWidget(label)
@@ -70,48 +68,32 @@ class VectorizationWindow(QDialog):
 
     def apply_clicked(self):
         chosen_method_index = self.choice_box.currentIndex()
-        # chosen_method = self.choice_box.currentText()
         if chosen_method_index == 0:
-            max_words = self.parameters_layout.itemAt(1).widget().text()
-            vectorization_options = {
-                'method' : 'bag_of_words',
-                'max_words' : int(max_words) if max_words else None
-            }
-            self.workspace.set_vectorization_options(vectorization_options)
-            print(f"Max words amount: {max_words}")
-        elif chosen_method_index == 1:
             min_freq = self.parameters_layout.itemAt(1).widget().text()
-
-            # check min_freq 0 , inf , int
-
+            max_freq = self.parameters_layout.itemAt(3).widget().text()
             vectorization_options = {
                 'method' : 'tf-idf',
-                'min_freq' : int(min_freq) if min_freq else None
+                'max_freq': float(max_freq) if max_freq else None,
+                'min_freq' : float(min_freq) if min_freq else None
             }
             self.workspace.set_vectorization_options(vectorization_options)
             print(f"Min word freq: {min_freq}")
-        elif chosen_method_index == 2:
+        elif chosen_method_index == 1:
             vector_size = self.parameters_layout.itemAt(1).widget().text()
             context_window = self.parameters_layout.itemAt(3).widget().text()
             min_count = self.parameters_layout.itemAt(5).widget().text()
-            iterations = self.parameters_layout.itemAt(7).widget().text()
-
-            # check vector_size
-            # check context_window
-            # check min_count
-            # check iterations
-
+            sg = self.parameters_layout.itemAt(7).widget().text()
 
             vectorization_options = {
                 'method' : 'word2vec',
                 'vector_size' : int(vector_size) if vector_size else None,
                 'context_window' : int(context_window) if context_window else None,
                 'min_count' : int(min_count) if min_count else None,
-                'iterations' : int(iterations) if iterations else None,
+                'sg' : int(sg) if sg else None,
             }
             self.workspace.set_vectorization_options(vectorization_options)
             print(f"Vector size: {vector_size}")
             print(f"Window: {context_window}")
             print(f"Min word freq: {min_count}")
-            print(f"Iteration amount: {iterations}")
+            print(f"SG: {sg}")
         self.close()

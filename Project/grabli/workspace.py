@@ -39,7 +39,8 @@ class Workspace:
         # if ok
         self.vectorization_options = options
         self.apply_vectorize()
-        self.k_nears()
+        if (self.vectorization_options.get("method") == "word2vec"):
+            self.k_nears()
 
     def set_clustering_options(self, options):
         # if ok
@@ -123,10 +124,11 @@ class Workspace:
         try:
             self.vectorization_text = self.vectorization.fit(self.nlp_data)
             print("Vectorization = OK")
-            print("Testing...")
-            print("###############################################")
-            self.vectorization.check_model_quality(self.nlp_data)
-            print("###############################################")
+            if self.vectorization.method == "word2vec":
+                print("Testing...")
+                print("###############################################")
+                self.vectorization.check_model_quality(self.nlp_data)
+                print("###############################################")
         except Exception as e:
             print("Error during vectorization:", e)
 

@@ -29,7 +29,7 @@ class TextProcess:
         if options is None:
             options = {}
         self.alpha = options.get('alpha', False)
-        self.stop_word = options.get('stop_words', False)
+        self.stop_word = options.get('stop-words', False)
         self.lemmatize = options.get('lemmatizer', False)
         if self.lemmatize:
             self.lemmatizer = WordNetLemmatizer()

@@ -24,8 +24,7 @@ class Vectoriz:
         window = options.get('window', 10)
         min_count = options.get('min_count', 5)
         sg = options.get('sg', 1)
-        epochs = options.get('epochs', 20)
-        self.vectorizer = lambda corpus: Word2Vec(corpus, vector_size=vector_size, window=window, min_count=min_count, sg=sg, epochs=epochs)
+        self.vectorizer = lambda corpus: Word2Vec(corpus, vector_size=vector_size, window=window, min_count=min_count, sg=sg)
 
     def _init_tfidf(self):
         self.vectorizer = TfidfVectorizer()
@@ -59,7 +58,10 @@ class Vectoriz:
                     text_corpus.append("unknown")
             return text_corpus
         else:
-            raise ValueError("Only supported for 'word2vec' method or model not fitted.")
+            text_corpus = []
+            for vector in vectors:
+                text_corpus.append("unknown")
+            return text_corpus
 
     def check_model_quality(self, corpus):
         words_to_check = ['good', 'bad', 'user']

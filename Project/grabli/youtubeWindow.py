@@ -11,9 +11,6 @@ class VideoInfoDialog(QtWidgets.QDialog):
         super().__init__(parent)
         self.init_ui()
 
-    #TODO Add label (CommentsCounter) represented amount of comments that will be downloaded
-    #TODO Add choiseBox (UsingReplyComents) ? (yes) downloand with all reply comments : (no) download without. Deafualt true , connected with (CommentsCounter)
-
     def init_ui(self):
         self.setWindowTitle("YouTube Comments")
         self.resize(634, 460)
