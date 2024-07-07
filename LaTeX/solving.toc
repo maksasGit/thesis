@@ -88,9 +88,9 @@
 \contentsline {subsubsection}{Lemmatize}{30}{section*.45}%
 \contentsline {subsection}{\numberline {4.2.2}Wektoryzacja}{30}{subsection.4.2.2}%
 \contentsline {subsubsection}{TF-IDF}{30}{section*.47}%
-\contentsline {subsubsection}{Word2Vec}{30}{section*.48}%
+\contentsline {subsubsection}{Word2Vec}{30}{section*.50}%
 \contentsline {subsection}{\numberline {4.2.3}Klasteryzacja}{30}{subsection.4.2.3}%
-\contentsline {subsubsection}{K-means}{30}{section*.50}%
-\contentsline {subsubsection}{DBSCAN}{30}{section*.51}%
-\contentsline {subsection}{\numberline {4.2.4}Analiza wynkiow pracy}{30}{subsection.4.2.4}%
-\contentsline {chapter}{Podsumowanie}{31}{chapter*.52}%
+\contentsline {subsubsection}{K-means}{30}{section*.52}%
+\contentsline {subsubsection}{DBSCAN}{32}{section*.56}%
+\contentsline {subsection}{\numberline {4.2.4}Analiza wynkiow pracy}{32}{subsection.4.2.4}%
+\contentsline {chapter}{Podsumowanie}{37}{chapter*.62}%

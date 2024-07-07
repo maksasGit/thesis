@@ -11,16 +11,31 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Przykład okna do konfiguracji wektoryzacji.}}{24}{figure.caption.35}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Przykład okna do konfiguracji klasteryzacji.}}{25}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Przyklad okna do pobierania komentarzy}}{27}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Przyklad okna do pobierania komentarzy}}{28}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Przykład wypełnionego okna }}{28}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Przykład analizy częstotliwości tekstu bez TextProcessing}}{29}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Przykład analizy długości tekstu bez TextProcessing}}{29}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha}}{29}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Przykład analizy długości tekstu z Alpha}}{29}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha i Stop-words}}{29}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Przykład analizy długości tekstu z Alpha i Stop-words}}{29}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha i Stop-words i Lemmatize}}{30}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Przykład analizy długości tekstu z Alpha i Stop-words i Lemmatize }}{30}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha i Stop-words i Lemmatize}}{30}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Przykład analizy długości tekstu z Alpha i Stop-words i Lemmatize }}{30}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Przykład filmu na YouTube.}}{27}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Przykład wypełnionego okna pobierania komentarzy.}}{28}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Przykład wykonanego okna tworzenia nowego obszaru roboczego.}}{28}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Przykład analizy częstotliwości tekstu bez TextProcessing.}}{29}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Przykład analizy długości tekstu bez TextProcessing.}}{29}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Przykład analizy częstotliwości tekstu z Alpha.}}{29}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Przykład analizy długości tekstu z Alpha.}}{29}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Przykład analizy częstotliwości tekstu z alpha i stop-words.}}{29}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Przykład analizy długości tekstu z alpha i stop-words.}}{29}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Przykład analizy częstotliwości tekstu z alpha i stop-words i lemmatize.}}{30}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Przykład analizy długości tekstu z alpha i stop-words i lemmatize.}}{30}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Przykład TF-IDF przy użyciu parametrów domyślnych.}}{31}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Przykład TF-IDF przy użyciu niestandardowych parametrów.}}{31}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Przykład Word2Vec przy vector\_size = 150.}}{32}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Przykład Word2Vec przy vector\_size = 500.}}{32}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Przykład K-means przy n\_clusters = 5.}}{32}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Przykład K-means przy n\_clusters = 15.}}{33}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Przykład K-means przy n\_clusters = 35.}}{33}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Przykład DBSCAN przy eps = 4 i min\_pts = 0.05.}}{34}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Przykład DBSCAN przy eps = 4 i min\_pts = 0.075.}}{34}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Przykład DBSCAN przy eps = 2 i min\_pts = 0.05.}}{34}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Przykład DBSCAN przy eps = 10 i min\_pts = 0.05.}}{34}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Przykład wyniku pracy.}}{35}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Przykład wyniku pracy.}}{35}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Przykład wyniku pracy.}}{35}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Przykład wyniku pracy.}}{35}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Przykład wyniku pracy.}}{35}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Przykład wyniku pracy.}}{35}{figure.caption.61}%
