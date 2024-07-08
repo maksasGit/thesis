@@ -8,7 +8,7 @@ Ten rozdział  opisuje interfejs użytkownika, dostępne funkcje oraz sposób in
 	Graficzna część aplikacji składa się z okna roboczego i przestrzeni roboczej, w której użytkownik ustawia parametry generowania wyników.
 
 	\subsection{Okno pracy}
-		Okno pracy składa się z menu zawierającym dwa pola \textbf{File} i \textbf{Comments}, oraz główną strefą, w której znajduje się menu zakładek. Każda zakładka odpowiada osobnej przestrzeni roboczej \textbf{workspace}.
+		Okno pracy składa się z menu zawierającym dwa pola \textbf{File} i \textbf{Comments} oraz główną strefą, w której znajduje się menu zakładek. Każda zakładka odpowiada osobnej przestrzeni roboczej \textbf{workspace}.
 
 		
 	\subsection{Menu-bar}
@@ -21,19 +21,19 @@ Ten rozdział  opisuje interfejs użytkownika, dostępne funkcje oraz sposób in
 
 		
 		\subsubsection{Tworzenie przestrzeni roboczej}
-			Aby utworzyć nową przestrzeń roboczą, należy podać nazwę przestrzeni roboczej (Workspace name) i plik źródłowy (Source file) zawierający dane tekstowe. Początkowe okno przedstawiono na Rysunku \ref{fig:CreateWorkspaceWindowEmpty}. Użytkownik musi podać dowolną nazwę dla przestrzeni roboczej i wybrać ścieżkę do~~pliku tekstowego z danymi. Można to zrobić ręcznie lub wybrać plik za pomocą okna dialogowego FileDialog z biblioteki PyQt, co pozwala odnaleźć potrzebny plik na komputerze. Przykład wypełnionego poprawnie okna znajduje się na Rysunku \ref{fig:CreateWorkspaceWindowFill}.
+			Aby utworzyć nową przestrzeń roboczą, należy podać nazwę przestrzeni roboczej (Workspace name) i plik źródłowy (Source file) zawierający dane tekstowe. Początkowe okno przedstawiono na~~Rysunku \ref{fig:CreateWorkspaceWindowEmpty}. Użytkownik musi podać dowolną nazwę dla przestrzeni roboczej i wybrać ścieżkę do~~pliku tekstowego z danymi. Można to zrobić ręcznie lub wybrać plik za pomocą okna dialogowego FileDialog z biblioteki PyQt, co pozwala odnaleźć potrzebny plik na komputerze. Przykład wypełnionego poprawnie okna znajduje się na Rysunku \ref{fig:CreateWorkspaceWindowFill}.
 			
 			\begin{figure}
 				\centering
 				\scalebox{1.0} {\includegraphics[width=0.5\textwidth]{./img/СreateWorkspaceDialogWindowEmpty.jpg}}
-				\caption{Przykład początkowego okna.}
+				\caption{Przykład początkowego okna}
 				\label{fig:CreateWorkspaceWindowEmpty}
 			\end{figure}
 			
 			\begin{figure}
 				\centering
 				\scalebox{1.0} {\includegraphics[width=0.5\textwidth]{./img/CreateWorkspaceDialogWindowFill.jpg}}
-				\caption{Przykład wypełnionego okna.}
+				\caption{Przykład wypełnionego okna}
 				\label{fig:CreateWorkspaceWindowFill}
 			\end{figure}
 
@@ -45,7 +45,7 @@ Ten rozdział  opisuje interfejs użytkownika, dostępne funkcje oraz sposób in
 			\begin{figure}
 				\centering
 				\scalebox{1.0} {\includegraphics[width=0.5\textwidth]{./img/CommentsWindowStep1.jpg}}
-				\caption{Przykład początkowego okna do pobierania komentarzy.}
+				\caption{Przykład początkowego okna do pobierania komentarzy}
 				\label{fig:CommentsWindowStep1}
 			\end{figure}
 		
@@ -72,12 +72,12 @@ Ten rozdział  opisuje interfejs użytkownika, dostępne funkcje oraz sposób in
 					
 		
 	\subsection{Text}
-			Przycisk \textbf{Text} otwiera okno dialogowe, w którym użytkownik może określić parametry przetwarzania tekstu. Domyślne okno widać na Rysunku \ref{fig:TextProcessingWindowStandard}. Domyślnie wszystkie parametry są~~ustawione na wartość true, co oznacza, że są używane.
+			Przycisk \textbf{Text} otwiera okno dialogowe, w którym użytkownik może określić parametry przetwarzania tekstu. Domyślne okno widać na Rysunku \ref{fig:TextProcessingWindowStandard}. Wszystkie parametry są~~ustawione na wartość true, co oznacza, że są używane.
 
 			\begin{figure}
 				\centering
 				\scalebox{1.0} {\includegraphics[width=0.5\textwidth]{./img/TextProcessingWindowStandard.jpg}}
-				\caption{Przykład okna do konfiguracji przetwarzania tekstu.}
+				\caption{Przykład okna do konfiguracji przetwarzania tekstu}
 				\label{fig:TextProcessingWindowStandard}
 			\end{figure}
 			
@@ -91,25 +91,25 @@ Ten rozdział  opisuje interfejs użytkownika, dostępne funkcje oraz sposób in
 			\end{itemize}
 			
 	\subsection{Wektoryzacja}
-		Przycisk Vectorization otwiera okno dialogowe, w którym użytkownik może wybrać jedną z~~proponowanych metod wektoryzacji i określić parametry dla wybranej metody. Domyślne okno umieszczono na Rysunku \ref{fig:VectorizationWindowStandard}. Domyślnie wybrana jest metoda TF-IDF z domyślnymi parametrami.
+		Przycisk Vectorization otwiera okno dialogowe, w którym użytkownik może wybrać jedną z~~proponowanych metod wektoryzacji i określić parametry dla wybranej metody. Standardowe okno umieszczono na Rysunku \ref{fig:VectorizationWindowStandard}. Początkowo wybrana jest metoda TF-IDF z domyślnymi parametrami.
 		Następnie wymieniono listę dostępnych metod i parametrów dla każdej metody:
 		
 		
 		\begin{figure}
 			\centering
 			\scalebox{1.0} {\includegraphics[width=0.5\textwidth]{./img/VectorizationWindowStandard.jpg}}
-			\caption{Przykład okna do konfiguracji wektoryzacji.}
+			\caption{Przykład okna do konfiguracji wektoryzacji}
 			\label{fig:VectorizationWindowStandard}
 		\end{figure}
 		
 		
 		\begin{itemize}
-			\item Dostępne parametry do konfiguracji TF-IDF:
+			\item Dostępnymi parametrami do konfiguracji TF-IDF są:
 			\begin{itemize}
 				\item \textbf{max\_df},
 				\item \textbf{min\_df}.
 			\end{itemize}
-			\item  Dostępne parametry do konfiguracji Word2vec:
+			\item  Dostępnymi parametrami do konfiguracji Word2vec są:
 			\begin{itemize}
 				\item \textbf{vector\_size},
 				\item \textbf{window},
@@ -119,25 +119,25 @@ Ten rozdział  opisuje interfejs użytkownika, dostępne funkcje oraz sposób in
 		\end{itemize}
 			
 	\subsection{Cluster}
-		Przycisk Cluster otwiera okno dialogowe, w którym użytkownik może wybrać jedną z~~proponowanych metod klasteryzacji i określić parametry dla wybranej metody. Domyślne okno widać na Rysunku \ref{fig:ClusterWindowStandard}. Domyślnie wybrana jest metoda K-means z domyślnymi parametrami.
+		Przycisk Cluster otwiera okno dialogowe, w którym użytkownik może wybrać jedną z~~proponowanych metod klasteryzacji i określić parametry dla wybranej metody. Domyślne okno widać na Rysunku \ref{fig:ClusterWindowStandard}. Początkowo wybrana jest metoda K-means z domyślnymi parametrami.
 		Następnie wymieniono listę dostępnych metod i parametrów dla każdej metody:
 		
 	
 		\begin{figure}
 			\centering
 			\scalebox{1.0} {\includegraphics[width=0.5\textwidth]{./img/ClusterWindowStandard.jpg}}
-			\caption{Przykład okna do konfiguracji klasteryzacji.}
+			\caption{Przykład okna do konfiguracji klasteryzacji}
 			\label{fig:ClusterWindowStandard}
 		\end{figure}
 
 		\begin{itemize}
-			\item Dostępne parametry do konfiguracji K-means:
+			\item Dostępnymi parametrami do konfiguracji K-means są:
 			\begin{itemize}
 				\item \textbf{n\_cluster},
 				\item \textbf{max\_iter},
 				\item \textbf{n\_iter}.
 			\end{itemize}
-			\item Dostępne parametry do konfiguracji DBSCAN:
+			\item Dostępnymi parametrami do konfiguracji DBSCAN są:
 			\begin{itemize}
 				\item \textbf{min\_samples},
 				\item \textbf{eps}.

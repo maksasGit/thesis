@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  7 JUL 2024 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.30)  8 JUL 2024 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -800,12 +800,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-[4]
+
 Underfull \hbox (badness 1838) in paragraph at lines 43--44
 []\OT4/cmr/bx/n/10 Wewn¦trzne me-tody \OT4/cmr/m/n/10 oce-niaj¡ ja-ko±¢ kla-ste
 -ry-za-cji, ko-rzy-sta-j¡c je-dy-nie z in-for-ma-cji
@@ -943,10 +943,6 @@ cmr/bx/n/10 Co-un-ter \OT4/cmr/m/n/10 jest u»y-wany do zli-cza-nia ha-sho-wal-n
 ych
  []
 
-
-LaTeX Warning: Reference `lst;lengthanalysis' on page 13 undefined on input lin
-e 180.
-
 [13]
 Underfull \hbox (badness 2418) in paragraph at lines 200--201
 \OT4/cmr/m/n/10 Jest  sze-roko sto-so-wana w za-da-niach prze-twa-rza-nia j¦-zy
@@ -964,12 +960,6 @@ nc}]
 Underfull \hbox (badness 4726) in paragraph at lines 286--287
 []\OT4/cmr/m/n/10 Propagacja wsteczna (Back-pro-pa-ga-tion): Bª¡d prze-wi-dy-wa
 -nia jest ob-li-czany przez
- []
-
-
-Overfull \hbox (50.95448pt too wide) in paragraph at lines 309--309
-[]\OT4/cmtt/m/n/10 Po: Wektory sªów: { "this": [...], "is": [...], "a": [...], 
-"great": [...], "video": [...],[] 
  []
 
 [16] [17]
@@ -1004,13 +994,13 @@ mia-ro-wej pro-jek-cji ob-li-czane
 
 ) (rozdzial_3.tex [20]
 Rozdzia\l  3.
-<./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg, id=442, 239.6955pt x 197.538pt>
+<./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg, id=443, 239.6955pt x 197.538pt>
 File: ./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg Graphic file (type jpg)
 <use ./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg>
 Package pdftex.def Info: ./img/Ð¡reateWorkspaceDialogWindowEmpty.jpg  used on i
 nput line 28.
 (pdftex.def)             Requested size: 213.39568pt x 175.86853pt.
-<./img/CreateWorkspaceDialogWindowFill.jpg, id=443, 236.68425pt x 199.947pt>
+<./img/CreateWorkspaceDialogWindowFill.jpg, id=444, 236.68425pt x 199.947pt>
 File: ./img/CreateWorkspaceDialogWindowFill.jpg Graphic file (type jpg)
 <use ./img/CreateWorkspaceDialogWindowFill.jpg>
 Package pdftex.def Info: ./img/CreateWorkspaceDialogWindowFill.jpg  used on inp
@@ -1035,14 +1025,14 @@ Underfull \hbox (badness 1005) in paragraph at lines 60--61
 -wa-nia wszyst-kich wy-bra-nych pa-ra-me-trów i otwar-cia okna
  []
 
-<./img/TextProcessingWindowStandard.jpg, id=462, 178.86826pt x 139.722pt>
+<./img/TextProcessingWindowStandard.jpg, id=463, 178.86826pt x 139.722pt>
 File: ./img/TextProcessingWindowStandard.jpg Graphic file (type jpg)
 <use ./img/TextProcessingWindowStandard.jpg>
 Package pdftex.def Info: ./img/TextProcessingWindowStandard.jpg  used on input 
 line 79.
 (pdftex.def)             Requested size: 213.39568pt x 166.69975pt.
 [23 <./img/TextProcessingWindowStandard.jpg>]
-<./img/VectorizationWindowStandard.jpg, id=472, 239.09325pt x 211.38976pt>
+<./img/VectorizationWindowStandard.jpg, id=473, 239.09325pt x 211.38976pt>
 File: ./img/VectorizationWindowStandard.jpg Graphic file (type jpg)
 <use ./img/VectorizationWindowStandard.jpg>
 Package pdftex.def Info: ./img/VectorizationWindowStandard.jpg  used on input l
@@ -1054,7 +1044,7 @@ Underfull \hbox (badness 2111) in paragraph at lines 122--124
 w-nik mo»e wy-bra¢ jedn¡
  []
 
-<./img/ClusterWindowStandard.jpg, id=474, 237.88875pt x 199.947pt>
+<./img/ClusterWindowStandard.jpg, id=475, 237.88875pt x 199.947pt>
 File: ./img/ClusterWindowStandard.jpg Graphic file (type jpg)
 <use ./img/ClusterWindowStandard.jpg>
 Package pdftex.def Info: ./img/ClusterWindowStandard.jpg  used on input line 12
@@ -1065,18 +1055,18 @@ erWindowStandard.jpg>] [26
 
 ]
 Rozdzia\l  4.
-<./img/YouTubeVideoPreview.jpg, id=493, 952.15726pt x 221.02576pt>
+<./img/YouTubeVideoPreview.jpg, id=494, 952.15726pt x 221.02576pt>
 File: ./img/YouTubeVideoPreview.jpg Graphic file (type jpg)
 <use ./img/YouTubeVideoPreview.jpg>
 Package pdftex.def Info: ./img/YouTubeVideoPreview.jpg  used on input line 11.
 (pdftex.def)             Requested size: 213.39568pt x 49.5364pt.
-<./img/YouTubeWindowThiContent.jpg, id=495, 377.61075pt x 295.70474pt>
+<./img/YouTubeWindowThiContent.jpg, id=496, 377.61075pt x 295.70474pt>
 File: ./img/YouTubeWindowThiContent.jpg Graphic file (type jpg)
 <use ./img/YouTubeWindowThiContent.jpg>
 Package pdftex.def Info: ./img/YouTubeWindowThiContent.jpg  used on input line 
 22.
 (pdftex.def)             Requested size: 213.39568pt x 167.10507pt.
-<./img/NewWorkspaceExampleFull.jpg, id=497, 236.082pt x 199.947pt>
+<./img/NewWorkspaceExampleFull.jpg, id=498, 236.082pt x 199.947pt>
 File: ./img/NewWorkspaceExampleFull.jpg Graphic file (type jpg)
 <use ./img/NewWorkspaceExampleFull.jpg>
 Package pdftex.def Info: ./img/NewWorkspaceExampleFull.jpg  used on input line 
@@ -1084,18 +1074,12 @@ Package pdftex.def Info: ./img/NewWorkspaceExampleFull.jpg  used on input line
 (pdftex.def)             Requested size: 213.39568pt x 180.73471pt.
 [27 <./img/YouTubeVideoPreview.jpg>] [28 <./img/YouTubeWindowThiContent.jpg> <.
 /img/NewWorkspaceExampleFull.jpg>]
-Underfull \hbox (badness 1552) in paragraph at lines 50--51
-\OT4/cmr/m/n/10 zo-ba-czy¢ na ry-sun-kach \OT4/cmr/bx/n/10 freq[]analysis \OT4/
-cmr/m/n/10 i \OT4/cmr/bx/n/10 length[]analysis\OT4/cmr/m/n/10 . Na Ry-sunku []4
-.4[] w±ród cz¦-sto
- []
-
-<./img/FreqTextParamsNone.jpg, id=516, 579.96675pt x 242.1045pt>
+<./img/FreqTextParamsNone.jpg, id=517, 579.96675pt x 242.1045pt>
 File: ./img/FreqTextParamsNone.jpg Graphic file (type jpg)
 <use ./img/FreqTextParamsNone.jpg>
 Package pdftex.def Info: ./img/FreqTextParamsNone.jpg  used on input line 57.
 (pdftex.def)             Requested size: 192.0548pt x 80.1718pt.
-<./img/LenTextParamsNone.jpg, id=517, 570.33075pt x 235.47975pt>
+<./img/LenTextParamsNone.jpg, id=518, 570.33075pt x 235.47975pt>
 File: ./img/LenTextParamsNone.jpg Graphic file (type jpg)
 <use ./img/LenTextParamsNone.jpg>
 Package pdftex.def Info: ./img/LenTextParamsNone.jpg  used on input line 63.
@@ -1105,12 +1089,12 @@ Underfull \hbox (badness 2547) in paragraph at lines 64--64
 []\OT4/cmr/m/n/10 Rysunek 4.5: |Przy-kªad ana-lizy dªu-go-±ci
  []
 
-<./img/FreqTextParamsAlpha.jpg, id=518, 570.33075pt x 242.1045pt>
+<./img/FreqTextParamsAlpha.jpg, id=519, 570.33075pt x 242.1045pt>
 File: ./img/FreqTextParamsAlpha.jpg Graphic file (type jpg)
 <use ./img/FreqTextParamsAlpha.jpg>
 Package pdftex.def Info: ./img/FreqTextParamsAlpha.jpg  used on input line 74.
 (pdftex.def)             Requested size: 192.0548pt x 81.52388pt.
-<./img/LenTextParamsAlpha.jpg, id=519, 570.933pt x 236.68425pt>
+<./img/LenTextParamsAlpha.jpg, id=520, 570.933pt x 236.68425pt>
 File: ./img/LenTextParamsAlpha.jpg Graphic file (type jpg)
 <use ./img/LenTextParamsAlpha.jpg>
 Package pdftex.def Info: ./img/LenTextParamsAlpha.jpg  used on input line 80.
@@ -1120,13 +1104,19 @@ Underfull \hbox (badness 2547) in paragraph at lines 81--81
 []\OT4/cmr/m/n/10 Rysunek 4.7: |Przy-kªad ana-lizy dªu-go-±ci
  []
 
-<./img/FreqTextParamsAlphaStop.jpg, id=524, 615.4995pt x 307.1475pt>
+
+Underfull \hbox (badness 1281) in paragraph at lines 89--90
+[]\OT4/cmr/m/n/10 Rozwa»aj¡c za-sto-so-wa-nie pa-ra-me-tru \OT4/cmr/bx/n/10 sto
+p-words\OT4/cmr/m/n/10 , mo»na wy-ra¹-nie zo-ba-czy¢ efekt jego
+ []
+
+<./img/FreqTextParamsAlphaStop.jpg, id=525, 615.4995pt x 307.1475pt>
 File: ./img/FreqTextParamsAlphaStop.jpg Graphic file (type jpg)
 <use ./img/FreqTextParamsAlphaStop.jpg>
 Package pdftex.def Info: ./img/FreqTextParamsAlphaStop.jpg  used on input line 
 95.
 (pdftex.def)             Requested size: 192.0548pt x 95.83806pt.
-<./img/LenTextParamsAlphaStop.jpg, id=525, 576.35326pt x 287.27325pt>
+<./img/LenTextParamsAlphaStop.jpg, id=526, 576.35326pt x 287.27325pt>
 File: ./img/LenTextParamsAlphaStop.jpg Graphic file (type jpg)
 <use ./img/LenTextParamsAlphaStop.jpg>
 Package pdftex.def Info: ./img/LenTextParamsAlphaStop.jpg  used on input line 1
@@ -1140,13 +1130,13 @@ Underfull \hbox (badness 2547) in paragraph at lines 102--102
 [29 <./img/FreqTextParamsNone.jpg> <./img/LenTextParamsNone.jpg> <./img/FreqTex
 tParamsAlpha.jpg> <./img/LenTextParamsAlpha.jpg> <./img/FreqTextParamsAlphaStop
 .jpg> <./img/LenTextParamsAlphaStop.jpg>]
-<./img/FreqTextParamsAlphaStopLem.jpg, id=538, 610.07925pt x 307.74976pt>
+<./img/FreqTextParamsAlphaStopLem.jpg, id=539, 610.07925pt x 307.74976pt>
 File: ./img/FreqTextParamsAlphaStopLem.jpg Graphic file (type jpg)
 <use ./img/FreqTextParamsAlphaStopLem.jpg>
 Package pdftex.def Info: ./img/FreqTextParamsAlphaStopLem.jpg  used on input li
 ne 116.
 (pdftex.def)             Requested size: 192.0548pt x 96.88063pt.
-<./img/LenTextParamsAlphaStopLem.jpg, id=539, 604.05675pt x 296.307pt>
+<./img/LenTextParamsAlphaStopLem.jpg, id=540, 604.05675pt x 296.307pt>
 File: ./img/LenTextParamsAlphaStopLem.jpg Graphic file (type jpg)
 <use ./img/LenTextParamsAlphaStopLem.jpg>
 Package pdftex.def Info: ./img/LenTextParamsAlphaStopLem.jpg  used on input lin
@@ -1157,23 +1147,17 @@ Underfull \hbox (badness 1052) in paragraph at lines 123--123
 []\OT4/cmr/m/n/10 Rysunek 4.11: |Przy-kªad ana-lizy dªu-go-±ci
  []
 
-
-Underfull \hbox (badness 1102) in paragraph at lines 133--134
-[]\OT4/cmr/m/n/10 Podczas ko-rzy-sta-nia z me-tody \OT4/cmr/bx/n/10 TF-IDF \OT4
-/cmr/m/n/10 roz-wa»my dwa przy-padki. U»y-cie do-my±l-nych
- []
-
-<./img/if-idfstandard.jpeg, id=544, 560.0925pt x 487.8225pt>
+<./img/if-idfstandard.jpeg, id=545, 560.0925pt x 487.8225pt>
 File: ./img/if-idfstandard.jpeg Graphic file (type jpg)
 <use ./img/if-idfstandard.jpeg>
 Package pdftex.def Info: ./img/if-idfstandard.jpeg  used on input line 137.
 (pdftex.def)             Requested size: 213.39568pt x 185.8583pt.
-<./img/tf-idf0505.jpeg, id=546, 577.4373pt x 477.7047pt>
+<./img/tf-idf0505.jpeg, id=547, 577.4373pt x 477.7047pt>
 File: ./img/tf-idf0505.jpeg Graphic file (type jpg)
 <use ./img/tf-idf0505.jpeg>
 Package pdftex.def Info: ./img/tf-idf0505.jpeg  used on input line 144.
 (pdftex.def)             Requested size: 213.39568pt x 176.53658pt.
-<./img/w2v_standard.jpeg, id=551, 622.2447pt x 513.8397pt>
+<./img/w2v_standard.jpeg, id=552, 622.2447pt x 513.8397pt>
 File: ./img/w2v_standard.jpeg Graphic file (type jpg)
 <use ./img/w2v_standard.jpeg>
 Package pdftex.def Info: ./img/w2v_standard.jpeg  used on input line 158.
@@ -1183,7 +1167,7 @@ Underfull \hbox (badness 1783) in paragraph at lines 159--159
 []\OT4/cmr/m/n/10 Rysunek 4.14: |Przy-kªad Word2Vec przy
  []
 
-<./img/w2v_size500.jpeg, id=552, 591.8913pt x 533.3526pt>
+<./img/w2v_size500.jpeg, id=553, 591.8913pt x 533.3526pt>
 File: ./img/w2v_size500.jpeg Graphic file (type jpg)
 <use ./img/w2v_size500.jpeg>
 Package pdftex.def Info: ./img/w2v_size500.jpeg  used on input line 164.
@@ -1199,81 +1183,132 @@ Underfull \hbox (badness 1215) in paragraph at lines 178--179
 u-ge-ruje, »e ilo±¢ kla-strów jest
  []
 
-<./img/w2vkmeans5.jpeg, id=556, 555.0336pt x 515.2851pt>
+<./img/w2vkmeans5.jpeg, id=557, 555.0336pt x 515.2851pt>
 File: ./img/w2vkmeans5.jpeg Graphic file (type jpg)
 <use ./img/w2vkmeans5.jpeg>
 Package pdftex.def Info: ./img/w2vkmeans5.jpeg  used on input line 185.
 (pdftex.def)             Requested size: 213.39568pt x 198.10625pt.
 [30 <./img/FreqTextParamsAlphaStopLem.jpg> <./img/LenTextParamsAlphaStopLem.jpg
 >] [31 <./img/if-idfstandard.jpeg> <./img/tf-idf0505.jpeg>]
-<./img/w2vkmeans15.jpeg, id=579, 540.5796pt x 482.0409pt>
+<./img/w2vkmeans15.jpeg, id=580, 540.5796pt x 482.0409pt>
 File: ./img/w2vkmeans15.jpeg Graphic file (type jpg)
 <use ./img/w2vkmeans15.jpeg>
 Package pdftex.def Info: ./img/w2vkmeans15.jpeg  used on input line 192.
 (pdftex.def)             Requested size: 213.39568pt x 190.2827pt.
-<./img/w2vkmeans35.jpeg, id=580, 568.7649pt x 515.2851pt>
+<./img/w2vkmeans35.jpeg, id=581, 568.7649pt x 515.2851pt>
 File: ./img/w2vkmeans35.jpeg Graphic file (type jpg)
 <use ./img/w2vkmeans35.jpeg>
 Package pdftex.def Info: ./img/w2vkmeans35.jpeg  used on input line 199.
 (pdftex.def)             Requested size: 213.39568pt x 193.33365pt.
-<./img/w2cdbscan4_0-05.jpeg, id=589, 575.2692pt x 466.8642pt>
+<./img/w2cdbscan4_0-05.jpeg, id=590, 575.2692pt x 466.8642pt>
 File: ./img/w2cdbscan4_0-05.jpeg Graphic file (type jpg)
 <use ./img/w2cdbscan4_0-05.jpeg>
 Package pdftex.def Info: ./img/w2cdbscan4_0-05.jpeg  used on input line 213.
 (pdftex.def)             Requested size: 192.0548pt x 155.86084pt.
-<./img/w2cdbscan4_0-075.jpeg, id=590, 589.7232pt x 472.6458pt>
+<./img/w2cdbscan4_0-075.jpeg, id=591, 589.7232pt x 472.6458pt>
 File: ./img/w2cdbscan4_0-075.jpeg Graphic file (type jpg)
 <use ./img/w2cdbscan4_0-075.jpeg>
 Package pdftex.def Info: ./img/w2cdbscan4_0-075.jpeg  used on input line 219.
 (pdftex.def)             Requested size: 192.0548pt x 153.92538pt.
-<./img/w2cdbscan2_0-05.jpeg, id=591, 613.5723pt x 481.3182pt>
+<./img/w2cdbscan2_0-05.jpeg, id=592, 613.5723pt x 481.3182pt>
 File: ./img/w2cdbscan2_0-05.jpeg Graphic file (type jpg)
 <use ./img/w2cdbscan2_0-05.jpeg>
 Package pdftex.def Info: ./img/w2cdbscan2_0-05.jpeg  used on input line 229.
 (pdftex.def)             Requested size: 192.0548pt x 150.65393pt.
-<./img/w2cdbscan10_0-05.jpeg, id=592, 648.2619pt x 497.2176pt>
+<./img/w2cdbscan10_0-05.jpeg, id=593, 648.2619pt x 497.2176pt>
 File: ./img/w2cdbscan10_0-05.jpeg Graphic file (type jpg)
 <use ./img/w2cdbscan10_0-05.jpeg>
 Package pdftex.def Info: ./img/w2cdbscan10_0-05.jpeg  used on input line 235.
 (pdftex.def)             Requested size: 192.0548pt x 147.30763pt.
- [32 <./img/w2v_standard.jpeg> <./img/w2v_size500.jpeg> <./img/w2vkmeans5.jpeg>
-] [33 <./img/w2vkmeans15.jpeg> <./img/w2vkmeans35.jpeg>]
-<./img/resultbolt.jpeg, id=612, 711.8595pt x 509.5035pt>
+
+Underfull \hbox (badness 1127) in paragraph at lines 243--244
+[]\OT4/cmr/m/n/10 Wyniki ana-lizy da-nych dla da-nego przy-kªadu byª otrzy-many
+ przy u»y-ciu pa-ra-me-trów
+ []
+
+[32 <./img/w2v_standard.jpeg> <./img/w2v_size500.jpeg> <./img/w2vkmeans5.jpeg>]
+[33 <./img/w2vkmeans15.jpeg> <./img/w2vkmeans35.jpeg>]
+<./img/resultbolt.jpeg, id=613, 595.5048pt x 487.0998pt>
 File: ./img/resultbolt.jpeg Graphic file (type jpg)
 <use ./img/resultbolt.jpeg>
 Package pdftex.def Info: ./img/resultbolt.jpeg  used on input line 254.
-(pdftex.def)             Requested size: 192.0548pt x 137.45894pt.
-<./img/resultAmazing.jpeg, id=613, 711.8595pt x 509.5035pt>
+(pdftex.def)             Requested size: 192.0548pt x 157.09406pt.
+
+Underfull \hbox (badness 2334) in paragraph at lines 255--255
+\OT4/cmr/m/n/10 pracy, przed-sta-wia-j¡cy kla-ster o na-zwie
+ []
+
+<./img/resultAmazing.jpeg, id=614, 595.5048pt x 487.0998pt>
 File: ./img/resultAmazing.jpeg Graphic file (type jpg)
 <use ./img/resultAmazing.jpeg>
 Package pdftex.def Info: ./img/resultAmazing.jpeg  used on input line 260.
-(pdftex.def)             Requested size: 192.0548pt x 137.45894pt.
-File: ./img/resultAmazing.jpeg Graphic file (type jpg)
-<use ./img/resultAmazing.jpeg>
-Package pdftex.def Info: ./img/resultAmazing.jpeg  used on input line 270.
-(pdftex.def)             Requested size: 192.0548pt x 137.45894pt.
-<./img/resultContent.jpeg, id=614, 711.8595pt x 509.5035pt>
+(pdftex.def)             Requested size: 192.0548pt x 157.09406pt.
+
+Underfull \hbox (badness 2334) in paragraph at lines 261--261
+\OT4/cmr/m/n/10 pracy, przed-sta-wia-j¡cy kla-ster o na-zwie
+ []
+
+<./img/resultAll.jpeg, id=615, 595.5048pt x 487.0998pt>
+File: ./img/resultAll.jpeg Graphic file (type jpg)
+<use ./img/resultAll.jpeg>
+Package pdftex.def Info: ./img/resultAll.jpeg  used on input line 270.
+(pdftex.def)             Requested size: 192.0548pt x 157.09406pt.
+<./img/resultContent.jpeg, id=616, 595.5048pt x 487.0998pt>
 File: ./img/resultContent.jpeg Graphic file (type jpg)
 <use ./img/resultContent.jpeg>
 Package pdftex.def Info: ./img/resultContent.jpeg  used on input line 276.
-(pdftex.def)             Requested size: 192.0548pt x 137.45894pt.
-<./img/resultHuman.jpeg, id=615, 711.8595pt x 509.5035pt>
+(pdftex.def)             Requested size: 192.0548pt x 157.09406pt.
+
+Underfull \hbox (badness 2334) in paragraph at lines 277--277
+\OT4/cmr/m/n/10 pracy, przed-sta-wia-j¡cy kla-ster o na-zwie
+ []
+
+<./img/resultHuman.jpeg, id=617, 595.5048pt x 487.0998pt>
 File: ./img/resultHuman.jpeg Graphic file (type jpg)
 <use ./img/resultHuman.jpeg>
 Package pdftex.def Info: ./img/resultHuman.jpeg  used on input line 286.
-(pdftex.def)             Requested size: 192.0548pt x 137.45894pt.
-<./img/resultTigers.jpeg, id=616, 711.8595pt x 509.5035pt>
+(pdftex.def)             Requested size: 192.0548pt x 157.09406pt.
+
+Underfull \hbox (badness 2334) in paragraph at lines 287--287
+\OT4/cmr/m/n/10 pracy, przed-sta-wia-j¡cy kla-ster o na-zwie
+ []
+
+<./img/resultTigers.jpeg, id=618, 595.5048pt x 487.0998pt>
 File: ./img/resultTigers.jpeg Graphic file (type jpg)
 <use ./img/resultTigers.jpeg>
 Package pdftex.def Info: ./img/resultTigers.jpeg  used on input line 292.
-(pdftex.def)             Requested size: 192.0548pt x 137.45894pt.
+(pdftex.def)             Requested size: 192.0548pt x 157.09406pt.
+
+Underfull \hbox (badness 2334) in paragraph at lines 293--293
+\OT4/cmr/m/n/10 pracy, przed-sta-wia-j¡cy kla-ster o na-zwie
+ []
+
 ) (podsumowanie.tex [34 <./img/w2cdbscan4_0-05.jpeg> <./img/w2cdbscan4_0-075.jp
 eg> <./img/w2cdbscan2_0-05.jpeg> <./img/w2cdbscan10_0-05.jpeg>] [35 <./img/resu
-ltbolt.jpeg> <./img/resultAmazing.jpeg> <./img/resultContent.jpeg> <./img/resul
-tHuman.jpeg> <./img/resultTigers.jpeg>]
-[36
+ltbolt.jpeg> <./img/resultAmazing.jpeg> <./img/resultAll.jpeg> <./img/resultCon
+tent.jpeg> <./img/resultHuman.jpeg> <./img/resultTigers.jpeg>] [36
 
-]) (bibliografia.tex [37] [38
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (bibliografia.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--1
+
+ []
+
+[37] [38
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
@@ -1295,37 +1330,26 @@ sults Using Car-rot2\OT4/cmr/m/n/9 ,
 
  [41] [42
 
-] (solving.lot)
-\tf@lot=\write8
-\openout8 = `solving.lot'.
-
- [43] [44
-
 ] (solving.lof)
-\tf@lof=\write9
-\openout9 = `solving.lof'.
+\tf@lof=\write8
+\openout8 = `solving.lof'.
 
-
-[45] (solving.aux)
+ [43] (solving.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `solving.out' has not changed.
-(rerunfilecheck)             Checksum: B88FE7A6E59097E07C5553B84BA14FEE;2882.
+(rerunfilecheck)             Checksum: 1880B59144F9AC5363C5B3FFC090BF8F;2824.
  ) 
 Here is how much of TeX's memory you used:
- 17549 strings out of 475248
- 278603 string characters out of 5757812
+ 17545 strings out of 475248
+ 278605 string characters out of 5757812
  2131785 words of memory out of 5000000
- 38461 multiletter control sequences out of 15000+600000
+ 38463 multiletter control sequences out of 15000+600000
  571808 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,11n,82p,1359b,2057s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,11n,82p,1360b,2057s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 0500.pk> <C:\Users\imaks\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1000.pk><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1343,9 +1367,9 @@ i10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plt
 i9.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt
 10.pfb><C:/Users/imaks/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt
 8.pfb>
-Output written on solving.pdf (49 pages, 2156163 bytes).
+Output written on solving.pdf (47 pages, 2159964 bytes).
 PDF statistics:
- 862 PDF objects out of 1000 (max. 8388607)
- 310 named destinations out of 1000 (max. 500000)
- 328 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 854 PDF objects out of 1000 (max. 8388607)
+ 307 named destinations out of 1000 (max. 500000)
+ 333 words of extra memory for PDF output out of 10000 (max. 10000000)
 

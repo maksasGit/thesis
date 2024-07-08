@@ -21,7 +21,7 @@
 \contentsline {subsubsection}{Wydobywanie cech}{7}{section*.6}%
 \contentsline {subsubsection}{Metody wydobywania cech}{7}{section*.7}%
 \contentsline {subsection}{\numberline {1.4.2}Zastosowanie}{7}{subsection.1.4.2}%
-\contentsline {chapter}{\numberline {2}Wykorzystanie metody i technologii aplikacji}{9}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Wykorzystane metody i technologie}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Opis implementacji}{9}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Zastosowane technologie}{9}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Technologie tworzenia interfejsów graficznych}{9}{subsection.2.1.2}%
@@ -92,5 +92,5 @@
 \contentsline {subsection}{\numberline {4.2.3}Klasteryzacja}{30}{subsection.4.2.3}%
 \contentsline {subsubsection}{K-means}{30}{section*.52}%
 \contentsline {subsubsection}{DBSCAN}{32}{section*.56}%
-\contentsline {subsection}{\numberline {4.2.4}Analiza wynkiow pracy}{32}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.4}Analiza wynkiów pracy}{32}{subsection.4.2.4}%
 \contentsline {chapter}{Podsumowanie}{37}{chapter*.62}%

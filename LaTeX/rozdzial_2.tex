@@ -1,4 +1,4 @@
-\chapter{Wykorzystanie metody i technologii aplikacji}
+\chapter{Wykorzystane metody i technologie}
 
 	
 W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono etapy wyboru narzędzi i technologii dla aplikacji graficznej, która umożliwia importowanie danych tekstowych z YouTube, wstępne przetwarzanie tekstu, wektoryzację, grupowanie oraz wizualizację tekstu z elastycznymi ustawieniami parametrów i metod.
@@ -34,7 +34,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 	
 \section{Dane tekstowe}
 
-	Aby realizować ten projekt, potrzebne są dane tekstowe, które w tym przypadku są~~komentarzami z YouTube. Do pozyskiwania informacji o filmach i powiązanych komentarzach używany YouTube Data API v3. API to jest darmowe i łatwe w użyciu. Aby rozpocząć pracę należy zarejestrować się i utworzyć projekt w Google Cloud, a następnie aktywować YouTube Data API. Po tych krokach wygenerowany zostanie klucz API, który jest potrzebny do uwierzytelniania.
+	Aby realizować ten projekt, potrzebne są dane tekstowe, które w tym przypadku są~~komentarzami z YouTube. Do pozyskiwania informacji o filmach i powiązanych komentarzach używane jest YouTube Data API v3. API to jest darmowe i łatwe w użyciu. Aby rozpocząć pracę należy zarejestrować się i utworzyć projekt w Google Cloud, a następnie aktywować YouTube Data API. Po tych krokach wygenerowany zostanie klucz API, który jest potrzebny do uwierzytelniania.
 		
 	\subsection{Zapytania API}
 		W projekcie wykorzystane są dwa zapytania HTTP:
@@ -45,7 +45,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 		\end{verbatim}
 		
 
-	 	Pierwsze zapytanie służy do pobierania komentarzy do konkretnego filmu, a drugie do~~uzyskiwania informacji o filmie. Szczegółowe informacje można znaleźć w dokumentacji \cite{YouTubeAPI}. Kroki pobierania komentarzy:
+	 	Pierwsze zapytanie służy do pobierania komentarzy do konkretnego filmu, a drugie do~~uzyskiwania informacji o filmie. Szczegółowe informacje można znaleźć w dokumentacji \cite{YouTubeAPI}. Krokami pobierania komentarzy są:
 	 	\begin{enumerate}
 	 		\item Użytkownik wprowadza w interfejsie graficznym (GUI) link do interesującego go filmu. W~~tym momencie interfejs graficzny wygląda jak na grafiku \ref{fig:CommentsWindowKrok1}
 	 		\item Program wyodrębnia \textbf{video\_id} z podanego linku.
@@ -73,7 +73,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 	 	
 	
 	\subsection{Przetwarzanie uzyskanych danych}
-		Wyniki naszych zapytań są dostarczane w formacie JSON. Szczegółowe informacje o~~strukturze odpowiedzi JSON można znaleźć w dokumentacji \cite{YouTubeAPI}. Do uzyskiwania informacji o filmie używają się następujące pola:
+		Wyniki naszych zapytań są dostarczane w formacie JSON. Szczegółowe informacje o~~strukturze odpowiedzi JSON można znaleźć w dokumentacji \cite{YouTubeAPI}. Do uzyskiwania informacji o filmie używane są następujące pola:
 		\begin{itemize}
 			\item \textbf{title}: tytuł filmu,
 			\item \textbf{channelTitle}: nazwa autora kanału,
@@ -113,7 +113,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 	\subsection{Przetwarzanie prymitywne}
 		Przetwarzanie prymitywne polega na usuwaniu niealfabetycznych symboli lub słów. Ten proces nie jest obowiązkowy, jednak jego zastosowanie pomaga pozbyć się różnych języków znaczników, które YouTube używa do wizualizacji emotikon lub narzędzi do zmiany tekstu.
 
-		Przykłady takich komentarzy:
+		Przykładem takich komentarzy są:
 
 		\begin{verbatim}
 			Great video! :) :(
@@ -141,7 +141,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 		\end{lstlisting}
 
 	\subsection{Lematyzacja}
-		Ostatnim opcjonalnym procesem jest lematyzacja, która sprowadza słowa do ich podstawowej formy. Jest to przydatne w sytuacjach, gdy trzeba zgrupować różne formy jednego słowa. Na~~przykład:
+		Ostatnim opcjonalnym procesem jest lematyzacja, która sprowadza słowa do ich podstawowej formy. Jest to przydatne w sytuacjach, gdy trzeba zgrupować różne formy jednego słowa, na~~przykład:
 		\begin{verbatim}
 			running, ran, runs do run
 		\end{verbatim}
@@ -177,7 +177,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 		\subsubsection{Analiza długości}
 			Analiza długości (length analysis) również używa przetworzonych ciągów znaków komentarzy, określając liczbę słów w każdym komentarzu. Ostatecznie generowana jest tablica z liczbą słów, która jest używana do tworzenia histogramu, pokazującego rozkład długości komentarzy.
 			
-			Przykład implementacji algorytmu w projekcie znajduje się na Listingu \ref{lst;lengthanalysis}.
+			Przykład implementacji algorytmu w projekcie znajduje się na Listingu \ref{lst:lengthanalysis}.
 			\begin{lstlisting}[language=Python, caption={Funkcja przeprowadzająca analizę długości tokenów}, label={lst:lengthanalysis}]
 
 				def length_analysis(tokens):
@@ -192,7 +192,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 	
 \section{Wektoryzacja}
 	
-	Na tym etapie tekst jest gotowy do dalszego przetwarzania. Aby przeprowadzić analizę, konieczne jest przekształcenie komentarzy w formę wektorową (wektoryzacja). Zostaną użyte dwie metody: TF-IDF i Word2Vec. Te metody umożliwiają przedstawienie danych tekstowych w postaci wektorów liczbowych. Wektoryzacja jest realizowana przy użyciu bibliotek \textbf{scikit-learn} \cite{scikit-learn} dla metody TF-IDF oraz \textbf{gensim} \cite{gensim} dla metody Word2Vec. Metody zostały wybrane ze względu na~~swoją popularność, a wybór dwóch metod wynika z potrzeby przeprowadzenia porównań.
+	Na tym etapie tekst jest gotowy do dalszego przetwarzania. Aby przeprowadzić analizę, konieczne jest przekształcenie komentarzy w formę wektorową (wektoryzacja). Zostaną użyte dwie metody: TF-IDF i Word2Vec. Te metody umożliwiają przedstawienie danych tekstowych w~~postaci wektorów liczbowych. Wektoryzacja jest realizowana przy użyciu bibliotek \textbf{scikit-learn} \cite{scikit-learn} dla~~metody TF-IDF oraz \textbf{gensim} \cite{gensim} dla metody Word2Vec. Metody zostały wybrane ze względu na~~swoją popularność, a wybór dwóch metod wynika z potrzeby przeprowadzenia porównań.
 		
 		
 	
@@ -203,14 +203,14 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 		\subsubsection{Parametry}
 			Do konfiguracji algorytmu TF-IDF używane są następujące parametry:
 			\begin{itemize}
-				\item \textbf{max\_df} (liczba lub udział procentowy): Terminy, które występują w większej liczbie dokumentów niż podano są ignorowane,
+				\item \textbf{max\_df (liczba lub udział procentowy)}: Terminy, które występują w większej liczbie dokumentów niż podano są ignorowane,
 				\item \textbf{min\_df (liczba lub udział procentowy)}: Terminy, które występują w mniejszej liczbie dokumentów niż podano, są ignorowane,
-				\item \textbf{ngra\_range}: Krotka (\textbf{min\_n}, \textbf{max\_n}). Określa zakres wyodrębniania n-gramów. N-gramy to ciągi N kolejnych elementów (zwykle słów lub znaków) z danego tekstu,
+				\item \textbf{ngra\_range (min\_n, max\_n)}. Określa zakres wyodrębniania n-gramów. N-gramy to ciągi N kolejnych elementów (zwykle słów lub znaków) z danego tekstu,
 				\item \textbf{stop\_words}: Lista słów lub ciąg znaków określający słowa, które należy ignorować.
 			\end{itemize}
 		
 		\subsubsection{Algorytm TF-IDF}
-			W tej sekcji omówione kluczowe miary analizy tekstu: Term Frequency (TF), Inverse Document Frequency (IDF) oraz ich kombinacja TF-IDF.
+			W tej sekcji omówione są kluczowe miary analizy tekstu: Term Frequency (TF), Inverse Document Frequency (IDF) oraz ich kombinacja: TF-IDF.
 			\begin{itemize}
 				\item \textbf{Term Frequency (TF)} -- miara częstości występowania danego słowa w dokumencie. TF~~jest obliczane jako liczba wystąpień danego słowa (termu) w dokumencie podzielona przez całkowitą liczbę słów w dokumencie. To pozwala określić, jak ważne jest słowo w~~danym dokumencie.
 			\item \textbf{Inverse Document Frequency (IDF)} -- miara, która ocenia, jak rzadko lub często występuje dane słowo we wszystkich dokumentach w korpusie. IDF jest obliczane jako logarytm dziesiętny z odwrotnego stosunku liczby dokumentów zawierających term do~~całkowitej liczby dokumentów w korpusie.  IDF pomaga wyróżnić słowa, które są istotne dla jednego dokumentu w kontekście wszystkich dokumentów.
@@ -230,7 +230,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 				return tfidf_matrix
 			\end{lstlisting}
 
-			Przykład przekształcenia danych za pomocą TF-IDF:
+			Przykładem przekształcenia danych za pomocą TF-IDF jest:
 			\begin{verbatim}
 				Przed: ["This is a great video", "I love this content"]
 				Po: [[0.5, 0.5, 0, 0.5, 0, 0.5], [0, 0, 0.7, 0, 0.7, 0]]
@@ -267,7 +267,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 		\subsubsection{Algorytm Word2vec}
 			W tej sekcji omówiono algorytm Word2Vec oraz jego dwie główne warianty: Skip-Gram i~CBOW.
 			\begin{enumerate}
-				\item Inicjalizacja wag: Wagi sieci neuronowej są inicjalizowane losowymi wartościami. Są to wagi między warstwą wejściową a ukrytą, oraz między warstwą ukrytą a wyjściową.
+				\item Inicjalizacja wag: Wagi sieci neuronowej są inicjalizowane losowymi wartościami. Są to wagi między warstwą wejściową a ukrytą oraz między warstwą ukrytą a wyjściową.
 				\item Przejście do przodu (Forward Pass): Dla każdego słowa w zdaniu tworzony jest wektor wejściowy. W przypadku Skip-Gram ten wektor wejściowy jest używany do przewidywania słów kontekstowych. W przypadku CBOW słowa kontekstowe są używane do przewidywania bieżącego słowa.
 				\begin{itemize}
 					\item Skip-Gram:
@@ -302,12 +302,12 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 				return word_vectors
 			\end{lstlisting}
 
-			Przykład przekształcenia danych za pomocą Word2vec:
+			Przykładem przekształcenia danych za pomocą Word2vec jest:
 
 			\begin{verbatim}
 				Przed: ["This is a great video", "I love this content"]
-				Po: Wektory słów: { "this": [...], "is": [...], "a": [...], "great": [...], "video": [...], 
-					"I": [...], "love": [...], "content": [...] }
+				Po: Wektory słów: { "this": [...], "is": [...], "a": [...], "great": [...],
+				"video": [...], "I": [...], "love": [...], "content": [...] }
 			\end{verbatim}
  		
 	
@@ -318,7 +318,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 	Dla możliwości porównywania wybrano dwie z najpopularniejszych metod.
 	
 	\subsection{K-means}
- 		Algorytm K-means dzieli zbiór danych na nieprzekrywające się klastry, z których każdy opisany jest średnią wartością (centroidem) próbek w klastrze. K-means dąży do wyboru centroidów, minimalizując bezwładność, czyli kryterium sumy kwadratów wewnątrz klastrów \cite{k-means}.
+ 		Algorytm K-means dzieli zbiór danych na nieprzykrywające się klastry, z których każdy opisany jest średnią wartością (centroidem) próbek w klastrze. K-means dąży do wyboru centroidów, minimalizując bezwładność, czyli kryterium sumy kwadratów wewnątrz klastrów \cite{k-means}.
 	
 		\subsubsection{Parametry}
 		Do konfiguracji algorytmu K-means używane są następujące parametry:
@@ -396,7 +396,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 			Algorytm DBSCAN ma następujące kroki:
 			\begin{enumerate}
 				\item \textbf{Określenie punktów rdzeniowych} -- próbki, dla których liczba sąsiadów w obrębie \textbf{eps} nie jest mniejsza niż \textbf{min\_samples}.
-				\item \textbf{Tworzenie klastrów} -- dla każdej próbki rdzeniowej tworzony jest klaster poprzez znalezienie wszystkich jej sąsiadów, którzy również są próbkami rdzeniowymi, oraz ich własnych sąsiadów itd. Każdy klaster obejmuje także próbki nie będące rdzeniowymi, które są sąsiadami próbek rdzeniowych w klastrze.
+				\item \textbf{Tworzenie klastrów} -- dla każdej próbki rdzeniowej tworzony jest klaster poprzez znalezienie wszystkich jej sąsiadów, którzy również są próbkami rdzeniowymi. Następnie dla~~tych nowo znalezionych próbek rdzeniowych również poszukuje się ich sąsiadów, będących próbkami rdzeniowymi, kontynuując ten proces iteracyjnie. W ten sposób klaster rośnie, obejmując coraz więcej próbek rdzeniowych. Dodatkowo każdy klaster obejmuje także próbki niebędące rdzeniowymi, które są sąsiadami próbek rdzeniowych w klastrze.
 				\item \textbf{Wykrywanie szumów} -- wszystkie próbki, które nie są rdzeniowe i nie znajdują się w~~wystarczającej odległości od próbek rdzeniowych, są uznawane za szumy.
 			\end{enumerate}
 			Algorytm DBSCAN jest deterministyczny i zawsze generuje takie same klastry dla tych samych danych wejściowych w tej samej kolejności. Jednak wyniki mogą się różnić przy podaniu danych w~~innej kolejności. Wynika to z faktu, że kolejność przetwarzania danych wpływa na sposób, w~~jaki próbki są przypisywane do klastrów.
@@ -457,7 +457,7 @@ W tym rozdziale omówiono wybrane metody i technologie dla projektu. Omówiono e
 		\subsubsection{Parametry}
 			Do konfiguracji algorytmu t-SNE używane są następujące parametry:
 			\begin{itemize}
-				\item \textbf{n\_components} -- liczba wymiarów, na które należy zrzutować dane (zwykle 2 lub 3 dla wizualizacji),
+				\item \textbf{n\_components} -- liczba wymiarów, na które należy zrzutować dane (zwykle 2 lub 3 dla~~wizualizacji),
 				\item \textbf{perplexity} -- parametr związany z liczbą najbliższych sąsiadów. Wpływa na równowagę między lokalną a globalną strukturą danych,
 				\item \textbf{early\_exaggeration} -- parametr kontrolujący odległości między punktami na początkowym etapie optymalizacji,
 				\item \textbf{learning\_rate} -- szybkość uczenia się dla spadku gradientowego,
